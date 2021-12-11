@@ -1,0 +1,52 @@
+.Employement{
+    font-size: 20px;
+    color:#404040;
+    font-family: 'DIN medium';
+    padding-left: 15px; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: 3px solid rgb(72, 83, 238) underline;
+    color:   rgb(72, 83, 238)
+  }
+ 
+  .Details{
+      padding-left: 20px;
+  }
+  .Button{
+    text-transform: uppercase;
+    font-weight: initial;
+    text-shadow: initial;
+    font-family: 'DIN Bold';
+    letter-spacing: 0.5px;
+    background-color:#2F87CC ;
+    color:white;
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+
+  }
+  .child{
+      padding-left: 15px;
+  }
+ 
+ 
