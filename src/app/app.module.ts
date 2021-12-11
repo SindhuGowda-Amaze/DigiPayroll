@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DepartmentComponent } from './Pages/department/department.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { HeaderComponent } from './Pages/header/header.component';
+import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HeaderComponent } from './Pages/header/header.component';
     AppComponent,
     CompanyProfileComponent,
     DepartmentComponent,
-    HeaderComponent
+    HeaderComponent,
+    DepartmentModifyComponent
   ],
   imports: [
     BrowserModule,
