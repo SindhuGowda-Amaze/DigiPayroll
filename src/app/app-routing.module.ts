@@ -22,7 +22,7 @@ import { OtRatesComponent } from './Pages/ot-rates/ot-rates.component';
 import { PayGroupComponent } from './Pages/pay-group/pay-group.component';
 import { PhillHealthComponent } from './Pages/phill-health/phill-health.component';
 import { SSSComponent } from './Pages/sss/sss.component';
-import{TaxTableComponent} from './Pages/tax-table/tax-table.component'
+import { TaxTableComponent } from './Pages/tax-table/tax-table.component'
 import { UserComponent } from './Pages/user/user.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
@@ -73,27 +73,6 @@ const routes: Routes = [
   },
   {
     path: "EmployeeForm", component: EmployeeFormComponent
-  },
-  {
-    path: "CompanyAdjustment", component: CompanyAdjustmentComponent
-  },
-  {
-    path: "Adjustment", component: AdjustmentComponent
-  },
-  {
-    path: "OtRates", component: OtRatesComponent
-  },
-  {
-    path: "PayGroup", component: PayGroupComponent
-  },
-  {
-    path: "Bank", component: BankComponent
-  },
-  {
-    path: "CostCenter", component: CostCenterComponent
-  },
-  {
-    path: "Employee", component: EmployeeComponent
   },
   {
     path: "Help", component: HelpComponent
