@@ -1,8 +1,4 @@
 
-   .Heading{
-    padding-left: 30px;
-    font-size: 20px;
-}
 ul {
     list-style-type: none;
     margin: 0;
@@ -40,7 +36,8 @@ ul {
 
 .Heading{
   padding-left: 15px;
-  font-size: 22px;
+  font-size: 15px;
+  font-weight: bold;
   color: black;
   text-decoration-line: underline;
 }
@@ -58,6 +55,8 @@ padding: 5px;
 width:40%;
 float: right;
 margin-right: 15px;
+font-size: 15px;
+font-weight: bold;
 }
 
 .edit {
@@ -72,11 +71,15 @@ margin-right: 15px;
 
   .FilterClass{
     padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
     color: black;
   }
 
-  .ViewModify{
+  .View{
     color: black;
+    font-size: 15px;
+    font-weight: bold;
   }
 
   .table td {
@@ -108,3 +111,12 @@ margin-right: 15px;
     color: white;
   }
    
+  .form-control{
+    font-size: 15px;
+    font-weight: bold;
+  }
+ 
+  .newFont{
+    font-size: 12px;
+    font-weight: bold;
+  }
