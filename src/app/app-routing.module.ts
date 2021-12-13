@@ -31,6 +31,7 @@ import { PayrollComponent } from './Pages/payroll/payroll.component';
 // import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
+import { FooterComponent } from './Pages/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -98,7 +99,6 @@ const routes: Routes = [
   },
   {path:'Department',component:DepartmentComponent},
   {path:'DepartmentModify',component:DepartmentModifyComponent},
-  
   {path:'Department',component:DepartmentComponent},
   {path:'DepartmentModify',component:DepartmentModifyComponent},
   {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
@@ -114,7 +114,8 @@ const routes: Routes = [
   {path:'CostCenter',component:CostCenterComponent},
   {path:'TaxTable',component:TaxTableComponent},
   {path:'User',component:UserComponent},
-  {path:'Adolfo',component:AdolfoComponent}
+  {path:'Adolfo',component:AdolfoComponent},
+  {path:'Footer',component:FooterComponent}
 
 
 ];

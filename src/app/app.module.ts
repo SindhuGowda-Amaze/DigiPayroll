@@ -23,6 +23,7 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HelpComponent } from './Pages/help/help.component';
 
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
+import { FooterComponent } from './Pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,8 @@ import { EmployeeFormComponent } from './Pages/employee-form/employee-form.compo
     CostCenterFormComponent,
     OtRatesFormComponent,
     AdjustmentFormComponent,
+    EmployeeFormComponent,
+    FooterComponent,
     HelpComponent,
     EmployeeFormComponent
   ],
