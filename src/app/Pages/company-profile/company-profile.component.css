@@ -190,15 +190,7 @@ th{
   padding: 0px;
 }
 
-.companyinfo{
-  font-weight: 700;
-  font-size: 18px;
-  background-color: rgb(7, 106, 119);;
-  text-align: left;
-  padding: 10px;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-}
+
 
 .container-fluid{
   background-color: rgb(226, 224, 224);
@@ -240,14 +232,15 @@ th{
 .companyinfo{
   font-weight: 700;
   font-size: 18px;
-  background-color: rgb(7, 106, 119);;
+  background-color: grey;
   text-align: left;
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
   color: white;
 }
 .btn{
-  background-color: rgb(7, 106, 119);
+  /* background-color: rgb(7, 106, 119); */
+  background-color: grey;
   color: white;
   padding: 10px;
   border-radius: 20px;
