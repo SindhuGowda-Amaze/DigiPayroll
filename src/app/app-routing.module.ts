@@ -28,8 +28,9 @@ import { CompanyProfileComponent } from './Pages/company-profile/company-profile
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 import { DepartmentComponent } from './Pages/department/department.component';
 import { PayrollComponent } from './Pages/payroll/payroll.component';
-import { EmployeeFormComponent } from './employee-form/employee-form.component';
+// import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { HelpComponent } from './Pages/help/help.component';
+import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 
 const routes: Routes = [
   {

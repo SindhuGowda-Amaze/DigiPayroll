@@ -28,7 +28,6 @@ ul {
 .Guidelines{
     font-size: 20px;
     color:#404040;
-    font-family: 'DIN medium';
     padding-left: 15px;  
 }
 .card-padding{
@@ -41,7 +40,7 @@ ul {
 
 
 .button{
-  text-transform: uppercase;
+text-transform: uppercase;
 font-weight: initial;
 text-shadow: initial;
 font-family: 'DIN Bold';
@@ -53,5 +52,21 @@ border:none;
 padding: 5px;
 width:40%;
 margin-left: 30px
+}
+.img{
+  width: 25px;
+  height: 10%;
+}
+.img:hover{
+    background-color: chartreuse;
+    color: white;
+}
+.imgcancel{
+  width: 25px;
+  height: 10%;
+}
+.imgcancel:hover{
+  background-color: red;
+  color: white;
 }
 

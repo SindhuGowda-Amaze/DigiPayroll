@@ -10,6 +10,10 @@
 .dropdown-submenu {
   position: relative;
 }
+.menutext{
+  color: #2f87cc;
+  margin-top: 20px;
+}
 
 .dropdown-submenu>.dropdown-menu {
   top: 0;

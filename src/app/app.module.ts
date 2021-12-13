@@ -22,6 +22,7 @@ import { AdjustmentFormComponent } from './Pages/adjustment-form/adjustment-form
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HelpComponent } from './Pages/help/help.component';
 
+import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { HelpComponent } from './Pages/help/help.component';
     OtRatesFormComponent,
     AdjustmentFormComponent,
     HelpComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,
