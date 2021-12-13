@@ -1,0 +1,19 @@
+.negative-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.head-height{
+    height: 10vh;
+    margin-bottom: -1px;
+    overflow-y: hidden;
+}
+.side-height{
+    height: 90vh;
+}
+.outlet{
+    background-color: #ececec;
+    height: 90vh;
+    width: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
