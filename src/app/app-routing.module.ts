@@ -43,6 +43,51 @@ const routes: Routes = [
   {
     path: "CompanyProfile", component: CompanyProfileComponent
   },
+  {
+    path: "sssForm", component: SssFormComponent
+  },
+  {
+    path: "PayRollForm", component: PayRollFormComponent
+  },
+  {
+    path: "UserForm", component: UserFormComponent
+  },
+  {
+    path: "PhilHealthForm", component: PhilHealthFormComponent
+  },
+  {
+    path: "CompanyAdjustmentForm", component: CompanyAdjustmentFormComponent
+  },
+  {
+    path: "BankForm", component: BankFormComponent
+  },
+  {
+    path: "PayGroupForm", component: PayGroupFormComponent
+  },
+  {
+    path: "DepartmentForm", component: DepartmentFormComponent
+  },
+  {
+    path: "CostCenterForm", component: CostCenterFormComponent
+  },
+  {
+    path: "OtRatesForm", component: OtRatesFormComponent
+  },
+  {
+    path: "AdjustmentForm", component: AdjustmentFormComponent
+  },
+  // {
+  //   path: "CompanyAdjustment", component: CompanyAdjustmentComponent
+  // },
+  // {
+  //   path: "Adjustment", component: AdjustmentComponent
+  // },
+  // {
+  //   path: "OtRates", component: OtRatesComponent
+  // },
+  // {
+  //   path: "PayGroup", component: PayGroupComponent
+  // },
   {path:'Department',component:DepartmentComponent},
   {path:'DepartmentModify',component:DepartmentModifyComponent},
   {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
