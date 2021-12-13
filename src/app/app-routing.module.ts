@@ -33,6 +33,8 @@ import { EmployeeFormComponent } from './Pages/employee-form/employee-form.compo
 import { FooterComponent } from './Pages/footer/footer.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/PayRoll', pathMatch: 'full' },
+
   {
     path: "CompanyProfile", component: CompanyProfileComponent
   },
