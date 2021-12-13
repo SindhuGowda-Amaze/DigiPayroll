@@ -53,14 +53,13 @@ th{
 }
 
 .FormHeadText{
-    
-    font-family: 'DIN Regular';
     color: #494949 !important;
     font-size: 20px !important;
     font-weight: bold;
     margin-left: 5px;
     margin-top: 25px;
     margin-bottom: 0px;
+
 }
 
 body{

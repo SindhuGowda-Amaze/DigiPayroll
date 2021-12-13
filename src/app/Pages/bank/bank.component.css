@@ -46,7 +46,6 @@ ul {
   text-transform: uppercase;
 font-weight: initial;
 text-shadow: initial;
-font-family: 'DIN Bold';
 letter-spacing: 0.5px;
 background-color:#2F87CC ;
 color:white;
@@ -65,7 +64,6 @@ margin-left: 30px
      border-radius: 16px;
      color: white;
      margin-top: 6px;
-     font-family: sans-serif;
    }
 
 

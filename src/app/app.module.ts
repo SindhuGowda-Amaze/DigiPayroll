@@ -20,7 +20,7 @@ import { CostCenterFormComponent } from './Pages/cost-center-form/cost-center-fo
 import { OtRatesFormComponent } from './Pages/ot-rates-form/ot-rates-form.component';
 import { AdjustmentFormComponent } from './Pages/adjustment-form/adjustment-form.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
-
+import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +40,7 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
     CostCenterFormComponent,
     OtRatesFormComponent,
     AdjustmentFormComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,
