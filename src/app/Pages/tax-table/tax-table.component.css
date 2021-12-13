@@ -1,7 +1,8 @@
 .taxtable{
     font-weight: 600;
-    font-size: 18px; 
+    font-size: 15px; 
     text-align: center;
+    font-weight: bold;
   
 }
 
@@ -34,15 +35,13 @@ table, td {
       font-size: 16px;
       color:white; 
     }
-    .Daily{
-        font-family:  'Open Sans', sans-serif;
-    }
+   
     .Card{
       background-color: White;
       padding:1%;
     }
     .Label{
-      font-family:  'Open Sans', sans-serif;
+     
       font-size:15px;
       font-weight: bold;
       padding-left: 15px;
@@ -67,8 +66,8 @@ table, td {
       margin-left: -70px;
       margin-top: 8px;
     }
-    .fonttxt{
-      font-size: 12px;
+    .Deduct{
+      font-size: 15px;
       font-weight: bold;
     }
 

@@ -2,6 +2,8 @@
     background-color: #21a4da;
     color: white;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .SubmitBTN:hover {background-color: #28a745;}
@@ -9,6 +11,8 @@
 .CancelBTN{
     color: black;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .card{
@@ -42,14 +46,21 @@ th{
     margin-top: -20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
     
+}
+
+.leavereq{
+    font-size: 12px;
+    font-weight: bold;
 }
 
 
 
 .FormHeadText{
     color: #494949 !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: bold;
     margin-left: 5px;
     margin-top: 25px;
