@@ -39,7 +39,7 @@ ul {
   } */
 .applyleavetxt{
     padding: 0px 10px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -222,12 +222,11 @@ th{
 }
 
 .companyinfo{
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 14px;
   background: #e4e5e6!important;
   text-align: left;
   padding: 10px;
-  font-family: 'Open Sans', sans-serif;
   color: #404040!important;
 }
 .btn{
@@ -267,5 +266,8 @@ label{
 .icon{
   height:fit-content;
 }
-
+.newFont{
+  font-size:12px;
+  font-weight: bold;
+}
 
