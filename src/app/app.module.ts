@@ -7,6 +7,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DepartmentComponent } from './Pages/department/department.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { HeaderComponent } from './Pages/header/header.component';
+import { SssFormComponent } from './sss-form/sss-form.component';
+import { PayRollFormComponent } from './pay-roll-form/pay-roll-form.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { PhilHealthFormComponent } from './phil-health-form/phil-health-form.component';
+import { CompanyAdjustmentFormComponent } from './company-adjustment-form/company-adjustment-form.component';
+import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
+import { BankFormComponent } from './bank-form/bank-form.component';
+import { PayGroupFormComponent } from './pay-group-form/pay-group-form.component';
+import { DepartmentFormComponent } from './department-form/department-form.component';
+import { CostCenterFormComponent } from './cost-center-form/cost-center-form.component';
+import { OtRatesFormComponent } from './ot-rates-form/ot-rates-form.component';
+import { AdjustmentFormComponent } from './adjustment-form/adjustment-form.component';
+import { CompanyAdjustmentComponent } from './company-adjustment/company-adjustment.component';
+import { AdjustmentComponent } from './adjustment/adjustment.component';
+import { OtRatesComponent } from './ot-rates/ot-rates.component';
+import { PayGroupComponent } from './pay-group/pay-group.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 import { BankComponent } from './Pages/bank/bank.component';
@@ -29,9 +45,25 @@ import { AdolfoComponent } from './Pages/adolfo/adolfo.component';
   declarations: [
     AppComponent,
     CompanyProfileComponent,
+    HeaderComponent,
+    SssFormComponent,
+    PayRollFormComponent,
+    UserFormComponent,
+    PhilHealthFormComponent,
+    CompanyAdjustmentFormComponent,
     DepartmentComponent,
     HeaderComponent,
     DepartmentModifyComponent,
+    BankFormComponent,
+    PayGroupFormComponent,
+    DepartmentFormComponent,
+    CostCenterFormComponent,
+    OtRatesFormComponent,
+    AdjustmentFormComponent,
+    CompanyAdjustmentComponent,
+    AdjustmentComponent,
+    OtRatesComponent,
+    PayGroupComponent,
     BankComponent,
     CostCenterComponent,
     PayGroupComponent,
