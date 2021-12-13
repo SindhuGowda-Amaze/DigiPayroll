@@ -62,3 +62,67 @@
   .FirstRow{
     margin-top: 100px;
   } */
+
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover {
+    text-decoration: 3px solid rgb(28, 32, 94) underline;
+  }
+
+  .AddExpense{
+      background-color: #4282be;
+      color: white;
+      font-family: 'DIN Bold';
+      font-weight: bold;
+      border-left: solid 1px #f5f5f5;
+      font-size: 15px;
+      line-height: 12px;
+      text-align: center;
+      white-space: nowrap;
+      width: 110px;
+      float: right;
+  }
+
+  .EXPD{
+    font-size: 20px;
+  }
+
+ 
+  .container-fluid{
+    font-family: 'DIN Bold';
+    padding: 0px;
+    margin: 0px;
+  }
+  th{
+      background-color: #e4e5e6;
+  }
+  td{
+      background-color: white;
+      color: #494949;
+  }
+
+  .table{
+    padding: 10px;
+  } 
+
+  .FirstRow{
+    margin-top: 100px;
+  }
