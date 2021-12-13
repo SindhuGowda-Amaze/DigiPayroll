@@ -232,16 +232,16 @@ th{
 .companyinfo{
   font-weight: 700;
   font-size: 18px;
-  background-color: grey;
+  background: #e4e5e6!important;
   text-align: left;
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #404040!important;
 }
 .btn{
   /* background-color: rgb(7, 106, 119); */
-  background-color: grey;
-  color: white;
+  background-color: #4282be;
+  color: #fff;
   padding: 10px;
   border-radius: 20px;
   width: 50%;
