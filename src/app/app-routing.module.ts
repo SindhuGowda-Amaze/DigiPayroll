@@ -37,13 +37,30 @@ import { UserComponent } from './Pages/user/user.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 import { DepartmentComponent } from './Pages/department/department.component';
+import { PayrollComponent } from './Pages/payroll/payroll.component';
 
 const routes: Routes = [
   {
     path: "CompanyProfile", component: CompanyProfileComponent
   },
   {path:'Department',component:DepartmentComponent},
-  {path:'DepartmentModify',component:DepartmentModifyComponent}
+  {path:'DepartmentModify',component:DepartmentModifyComponent},
+  {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
+  {path:'PayRoll',component:PayrollComponent},
+  {path:'Employee',component:EmployeeComponent},
+  {path:'Government',component:GovernmentComponent},
+  {path:'OtRates',component:OtRatesComponent},
+  {path:'PayGroup',component:PayGroupComponent},
+  {path:'PhillHealth',component:PhillHealthComponent},
+  {path:'SSS',component:SSSComponent},
+  {path:'Bank',component:BankComponent},
+  {path:'Adjustment',component:AdjustmentComponent},
+  {path:'CostCenter',component:CostCenterComponent},
+  {path:'TaxTable',component:TaxTableComponent},
+  {path:'User',component:UserComponent},
+  {path:'Adolfo',component:AdolfoComponent}
+
+
 ];
 
 @NgModule({
