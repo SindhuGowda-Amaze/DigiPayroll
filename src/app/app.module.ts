@@ -25,6 +25,8 @@ import { AdjustmentFormComponent } from './adjustment-form/adjustment-form.compo
 // import { PayGroupComponent } from './pay-group/pay-group.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { DepartmentModifyComponent } from './Pages/department-modify/department-
     CompanyProfileComponent,
     DepartmentComponent,
     HeaderComponent,
-    DepartmentModifyComponent
+    DepartmentModifyComponent,
+    EmployeeComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,

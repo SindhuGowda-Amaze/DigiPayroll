@@ -37,6 +37,7 @@ import { UserComponent } from './Pages/user/user.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 import { DepartmentComponent } from './Pages/department/department.component';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
 const routes: Routes = [
   {
@@ -75,20 +76,34 @@ const routes: Routes = [
   {
     path: "AdjustmentForm", component: AdjustmentFormComponent
   },
-  // {
-  //   path: "CompanyAdjustment", component: CompanyAdjustmentComponent
-  // },
-  // {
-  //   path: "Adjustment", component: AdjustmentComponent
-  // },
-  // {
-  //   path: "OtRates", component: OtRatesComponent
-  // },
-  // {
-  //   path: "PayGroup", component: PayGroupComponent
-  // },
+  {
+    path: "EmployeeForm", component: EmployeeFormComponent
+  },
+  {
+    path: "CompanyAdjustment", component: CompanyAdjustmentComponent
+  },
+  {
+    path: "Adjustment", component: AdjustmentComponent
+  },
+  {
+    path: "OtRates", component: OtRatesComponent
+  },
+  {
+    path: "PayGroup", component: PayGroupComponent
+  },
+  {
+    path: "Bank", component: BankComponent
+  },
+  {
+    path: "CostCenter", component: CostCenterComponent
+  },
+  {
+    path: "Employee", component: EmployeeComponent
+  },
   {path:'Department',component:DepartmentComponent},
-  {path:'DepartmentModify',component:DepartmentModifyComponent}
+  {path:'DepartmentModify',component:DepartmentModifyComponent},
+  
+
 ];
 
 @NgModule({
