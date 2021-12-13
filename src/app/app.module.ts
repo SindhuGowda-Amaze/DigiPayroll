@@ -20,6 +20,8 @@ import { CostCenterFormComponent } from './Pages/cost-center-form/cost-center-fo
 import { OtRatesFormComponent } from './Pages/ot-rates-form/ot-rates-form.component';
 import { AdjustmentFormComponent } from './Pages/adjustment-form/adjustment-form.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
+import { HelpComponent } from './Pages/help/help.component';
+
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
 
@@ -42,7 +44,9 @@ import { FooterComponent } from './Pages/footer/footer.component';
     OtRatesFormComponent,
     AdjustmentFormComponent,
     EmployeeFormComponent,
-    FooterComponent
+    FooterComponent,
+    HelpComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,

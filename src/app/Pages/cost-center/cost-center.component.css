@@ -54,6 +54,27 @@ border-radius: 5px;
 border:none;
 padding: 5px;
 width:40%;
-margin-left: 30px
+margin-left:
+ 30px
 }
+
+
+
+.img{
+  width: 25px;
+  height: 10%;
+}
+.img:hover{
+    background-color: chartreuse;
+    color: white;
+}
+.imgcancel{
+  width: 25px;
+  height: 10%;
+}
+.imgcancel:hover{
+  background-color: red;
+  color: white;
+}
+
 

@@ -66,3 +66,22 @@ margin-left: 30px
      margin-top: 6px;
    }
 
+
+   .img{
+    width: 25px;
+    height: 10%;
+  }
+  .img:hover{
+      background-color: chartreuse;
+      color: white;
+  }
+  .imgcancel{
+    width: 25px;
+    height: 10%;
+  }
+  .imgcancel:hover{
+    background-color: red;
+    color: white;
+  }
+  
+  

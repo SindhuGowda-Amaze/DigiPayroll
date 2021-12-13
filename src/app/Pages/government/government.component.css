@@ -43,3 +43,13 @@
     font-family:sans-serif;
     text-align: center;
 }
+
+.taxtable{
+    font-weight: 600;
+    font-size: 18px; 
+    text-align: center;
+  
+}
+.input{
+    padding: 10px;
+}
