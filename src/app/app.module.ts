@@ -21,6 +21,7 @@ import { OtRatesFormComponent } from './Pages/ot-rates-form/ot-rates-form.compon
 import { AdjustmentFormComponent } from './Pages/adjustment-form/adjustment-form.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
+import { FooterComponent } from './Pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { EmployeeFormComponent } from './Pages/employee-form/employee-form.compo
     CostCenterFormComponent,
     OtRatesFormComponent,
     AdjustmentFormComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
