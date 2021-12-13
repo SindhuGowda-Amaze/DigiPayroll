@@ -89,3 +89,21 @@ margin-right: 15px;
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .img{
+    width: 25px;
+    height: 10%;
+  }
+  .img:hover{
+      background-color: chartreuse;
+      color: white;
+  }
+  .imgcancel{
+    width: 25px;
+    height: 10%;
+  }
+  .imgcancel:hover{
+    background-color: red;
+    color: white;
+  }
+  
