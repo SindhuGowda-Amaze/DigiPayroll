@@ -16,7 +16,7 @@ ul {
   
   li a {
     display: block;
-    color: grey;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -38,8 +38,10 @@ ul {
 }
 
 .Heading{
-    padding-left: 5px;
-    font-size: 20px;
+  padding-left: 15px;
+  font-size: 22px;
+  color: black;
+  text-decoration-line: underline;
 }
 
 .button{
@@ -53,7 +55,8 @@ border-radius: 5px;
 border:none;
 padding: 5px;
 width:40%;
-margin-left: 30px
+float: right;
+margin-right: 15px;
 }
 
 .edit {
@@ -64,4 +67,25 @@ margin-left: 30px
     border-radius: 16px;
     color: white;
     margin-top: 6px;
+  }
+
+  .FilterClass{
+    padding-left: 15px;
+    color: black;
+  }
+
+  .ViewModify{
+    color: black;
+  }
+
+  .table td {
+    color: #494949;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: white;
+  }
+
+  .HrLine{
+    margin-left: 15px;
+    margin-right: 15px;
   }
