@@ -12,6 +12,16 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { PhilHealthFormComponent } from './phil-health-form/phil-health-form.component';
 import { CompanyAdjustmentFormComponent } from './company-adjustment-form/company-adjustment-form.component';
 import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
+import { BankFormComponent } from './bank-form/bank-form.component';
+import { PayGroupFormComponent } from './pay-group-form/pay-group-form.component';
+import { DepartmentFormComponent } from './department-form/department-form.component';
+import { CostCenterFormComponent } from './cost-center-form/cost-center-form.component';
+import { OtRatesFormComponent } from './ot-rates-form/ot-rates-form.component';
+import { AdjustmentFormComponent } from './adjustment-form/adjustment-form.component';
+import { CompanyAdjustmentComponent } from './company-adjustment/company-adjustment.component';
+import { AdjustmentComponent } from './adjustment/adjustment.component';
+import { OtRatesComponent } from './ot-rates/ot-rates.component';
+import { PayGroupComponent } from './pay-group/pay-group.component';
 
 
 @NgModule({
@@ -26,7 +36,17 @@ import { DepartmentModifyComponent } from './Pages/department-modify/department-
     CompanyAdjustmentFormComponent,
     DepartmentComponent,
     HeaderComponent,
-    DepartmentModifyComponent
+    DepartmentModifyComponent,
+    BankFormComponent,
+    PayGroupFormComponent,
+    DepartmentFormComponent,
+    CostCenterFormComponent,
+    OtRatesFormComponent,
+    AdjustmentFormComponent,
+    CompanyAdjustmentComponent,
+    AdjustmentComponent,
+    OtRatesComponent,
+    PayGroupComponent
   ],
   imports: [
     BrowserModule,
