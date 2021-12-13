@@ -1,16 +1,16 @@
-.container-fluid{
+/* .container-fluid{
     background-color: rgb(226, 224, 224);
-  }
-  .container{
+  } */
+  /* .container{
     background-color: white;
-  }
-  .Adolfo{
+  } */
+  /* .Adolfo{
     background-color:lightgray;
     color:black;
     text-align: center;
     font-weight:bold;
     font-size:15px;
-  }
+  } */
   .negative-padding{
     padding:0px;
   }
@@ -69,4 +69,13 @@
     width:15px;
     height: auto;
   }
+  .btn{
   
+    border: none;
+    background-color: #2F87CC ;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+    margin-top: 6px;
+    padding:5px;
+  }

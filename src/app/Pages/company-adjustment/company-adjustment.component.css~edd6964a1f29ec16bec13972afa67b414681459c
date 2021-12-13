@@ -65,5 +65,5 @@ margin-left: 30px
     border-radius: 16px;
     color: white;
     margin-top: 6px;
-    font-family: sans-serif;
+   
   }
