@@ -1,3 +1,7 @@
+.Heading{
+    padding-left: 30px;
+    font-size: 20px;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -25,12 +29,7 @@ ul {
   .card{
     background-color: white;
 }
-.Guidelines{
-    font-size: 20px;
-    color:#404040;
-    font-family: 'DIN medium';
-    padding-left: 15px;  
-}
+
 .card-padding{
     padding:1%;
 }
@@ -38,7 +37,10 @@ ul {
   border-radius: 5px;
 }
 
-
+.Heading{
+    padding-left: 5px;
+    font-size: 20px;
+}
 
 .button{
   text-transform: uppercase;
@@ -55,3 +57,13 @@ width:40%;
 margin-left: 30px
 }
 
+.Button {
+    width: 85%;
+    border: none;
+    background-color: #2F87CC ;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+    margin-top: 6px;
+   
+  }
