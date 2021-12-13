@@ -22,7 +22,6 @@ import { AdjustmentFormComponent } from './Pages/adjustment-form/adjustment-form
 import { NgxDropzoneModule } from 'ngx-dropzone';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
