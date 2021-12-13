@@ -7,12 +7,12 @@
 .SubmitBTN:hover {background-color: #28a745;}
 
 .CancelBTN{
-    background-color: #21a4da;
-    color: white;
+    /* background-color: #21a4da; */
+    color: black;
     cursor: pointer;
 }
 
-.CancelBTN:hover {background-color: #dc3545;}
+/* .CancelBTN:hover {background-color: #dc3545;} */
 
 .card{
     padding: 20px;
