@@ -121,3 +121,12 @@ font-weight: bold;
       font-size: 12px;
       font-weight: bold;
     }
+
+    .newFont{
+      font-size: 15px;
+      font-weight: bold;
+    }
+  
+    .SelectData{
+      text-align: center;
+    }
