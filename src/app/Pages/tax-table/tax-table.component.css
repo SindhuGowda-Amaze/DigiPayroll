@@ -1,9 +1,7 @@
 .taxtable{
-    font-weight: 600;
-    font-size: 15px; 
-    text-align: center;
     font-weight: bold;
-  
+    font-size: 15px; 
+    font-weight: bold;
 }
 
 table, td {
@@ -24,6 +22,9 @@ table, td {
     border: 1px black;
     text-align: left;
     padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+
   }
 
   tr:nth-child(even) {
@@ -71,6 +72,41 @@ table, td {
     .Deduct{
       font-size: 15px;
       font-weight: bold;
+    }
+    .FilterClass{
+      
+      font-size: 15px;
+      font-weight: bold;
+      color: black;
+    }
+    .View{
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      /* padding: 14px 16px; */
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      text-decoration: 3px solid rgb(72, 83, 238) underline;
+      color:   rgb(72, 83, 238)
     }
 
     

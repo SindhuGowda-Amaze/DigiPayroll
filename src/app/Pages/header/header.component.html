@@ -1,15 +1,10 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-1">
             <img src="../../../assets/images/89_89_L.png" class="logo" alt="logo">
         </div>
-        <div class="col-lg-1">
-            <h6 class="menutext" routerLink="/PayRoll">Payroll Runs</h6>
-        </div>
-        <div class="col-lg-1">
-            <h6 class="menutext">Reports</h6>
-        </div>
+
         <div class="col-lg-1">
             <div class="dropdown">
                 <h6 class=" dropdown-toggle menutext" type="button" id="dropdownMenu1" data-toggle="dropdown"
@@ -22,11 +17,11 @@
                     <li class="dropdown-submenu">
                         <a class="dropdown-item menutext" tabindex="-1">Company</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a tabindex="-1" routerLink="/CompanyProfile">Profile</a></li>
-                            <li class="dropdown-item"><a routerLink="/CostCenter">Cost Centres</a></li>
-                            <li class="dropdown-item"><a routerLink="/Department">Departments</a></li>
-                            <li class="dropdown-item"><a routerLink="/Bank">Banks</a></li>
-                            <li class="dropdown-item"><a routerLink="/PayGroup">Pay Group</a></li>
+                            <li class="dropdown-item"><a  class="menuitem" tabindex="-1" routerLink="/CompanyProfile">Profile</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/CostCenter">Cost Centres</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Department">Departments</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Bank">Banks</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/PayGroup">Pay Group</a></li>
                         </ul>
                     </li>
                     <!-- <li class="dropdown-item"><a routerLink="/PayRoll">Payroll</a></li> -->
@@ -34,14 +29,14 @@
                     <li class="dropdown-submenu">
                         <a class="dropdown-item menutext" tabindex="-1">Payroll</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a tabindex="-1" routerLink="/OtRates">OT Rates</a></li>
-                            <li class="dropdown-item"><a routerLink="/Adjustment"> Adjustment Template</a></li>
-                            <li class="dropdown-item"><a routerLink="/CompanyAdjustment"> Company Adjustment</a></li>
-                            <li class="dropdown-item"><a routerLink="/TaxTable">Tax Table</a></li>
+                            <li class="dropdown-item"><a class="menuitem" tabindex="-1" routerLink="/OtRates">OT Rates</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Adjustment"> Adjustment Template</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/CompanyAdjustment"> Company Adjustment</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/TaxTable">Tax Table</a></li>
                             <!-- <li class="dropdown-item"><a routerLink="/CompanyProfile">References</a></li> -->
-                            <li class="dropdown-item"><a routerLink="/PhillHealth">PhilHealth</a></li>
-                            <li class="dropdown-item"><a routerLink="/SSS">SSS</a></li>
-                            <li class="dropdown-item"><a routerLink="/Government">Govt. OR Records</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/PhillHealth">PhilHealth</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/SSS">SSS</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Government">Govt. OR Records</a></li>
                             <!-- <li class="dropdown-item"><a routerLink="/PayGroup">Access Control</a></li> -->
                         </ul>
                     </li>
@@ -53,14 +48,34 @@
             <h6 class="menutext" routerLink="/Employee">Employees</h6>
         </div>
         <div class="col-lg-1">
+            <h6 class="menutext" routerLink="/Employee">Attendence</h6>
+        </div>
+        <div class="col-lg-1">
+            <h6 class="menutext" routerLink="/Employee">Leaves</h6>
+        </div>
+        <div class="col-lg-1">
             <h6 class="menutext" routerLink="/User">Users</h6>
         </div>
+
+        <div class="col-lg-1">
+            <h6 class="menutext" routerLink="/PayRoll">Payroll Runs</h6>
+        </div>
+
+        <div class="col-lg-1">
+            <h6 class="menutext">Reports</h6>
+        </div>
+
         <div class="col-lg-1">
             <h6 class="menutext" routerLink="/Help">Help</h6>
         </div>
-        <div class="col-lg-3"></div>
+        <div class="col-lg-2"></div>
         <div class="col-lg-1">
             <img src="../../../assets/images/logout.png" class="logout" (click)="logout()" class="logout">
         </div>
     </div>
 </div>
+
+
+
+
+

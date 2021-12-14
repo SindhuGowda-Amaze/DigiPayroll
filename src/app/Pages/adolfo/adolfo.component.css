@@ -72,7 +72,7 @@ td{
   padding-left: 10px;
 }
 .inputfield{
-    background-color: #777;
+    background-color:#f2f2f2;
 }
 .table{
     border-color: black;
@@ -157,9 +157,7 @@ font-size: 20px;
 .leavereq{
 padding-left: 10px;
 }
-.inputfield{
-  background-color: rgb(238, 234, 234);;
-}
+
 .table{
   border-color: black;
 }
