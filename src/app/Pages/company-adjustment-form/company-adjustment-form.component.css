@@ -60,3 +60,12 @@ th{
 body{
     color: #494949 !important;
 }
+
+.fontheading{
+    font-size: 15px;
+    font-weight: bold;
+    }
+    .fonttxt{
+      font-size: 12px;
+      font-weight: bold;
+    }
