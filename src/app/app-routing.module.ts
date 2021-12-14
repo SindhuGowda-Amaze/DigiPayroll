@@ -36,6 +36,8 @@ import{LeaveReportComponent} from './Pages/Reports/leave-report/leave-report.com
 import{OvertimeReportComponent} from './Pages/Reports/overtime-report/overtime-report.component';
 import{ PayrollReportComponent} from './Pages/Reports/payroll-report/payroll-report.component';
 import{ StaffReportComponent}from './Pages/Reports/staff-report/staff-report.component'
+import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
+import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/PayRoll', pathMatch: 'full' },
@@ -81,6 +83,12 @@ const routes: Routes = [
   },
   {
     path: "Help", component: HelpComponent
+  },
+  {
+    path: "LeaveListDashboard", component: LeaveListDashboardComponent
+  },
+  {
+    path: "ApplyLeave", component: ApplyLeaveComponent
   },
   {path:'Department',component:DepartmentComponent},
   {path:'Department',component:DepartmentComponent},

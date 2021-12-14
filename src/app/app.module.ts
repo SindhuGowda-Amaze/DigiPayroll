@@ -28,6 +28,8 @@ import { PayrollReportComponent } from './Pages/Reports/payroll-report/payroll-r
 import { GeneratePayslipComponent } from './Pages/Reports/generate-payslip/generate-payslip.component';
 import { StaffReportComponent } from './Pages/Reports/staff-report/staff-report.component';
 import { OvertimeReportComponent } from './Pages/Reports/overtime-report/overtime-report.component';
+import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
+import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { OvertimeReportComponent } from './Pages/Reports/overtime-report/overtim
     PayrollReportComponent,
     GeneratePayslipComponent,
     StaffReportComponent,
-    OvertimeReportComponent
+    OvertimeReportComponent,
+    LeaveListDashboardComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
