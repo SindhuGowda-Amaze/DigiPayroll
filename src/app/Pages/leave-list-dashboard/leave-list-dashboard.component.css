@@ -82,9 +82,9 @@ ul {
 .dropdown {
   position: absolute;
   right: 10px;
-  background-color: #4282be;
+  background-color: #fbfdff;
   box-shadow: 0px 0px 3px 3px #4282be;
-  color: white;
+  color: black;
   outline: none;
   opacity: 0;
   z-index: -1;
