@@ -23,7 +23,7 @@
 }
 
 .blocks-item-link {
-    color: rgba(110, 157, 66, 1);
+    color: black;
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
@@ -33,10 +33,10 @@
 }
 
 .blocks-item {
-    border: 1px solid rgba(110, 157, 66, 1);
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
-    color: rgba(110, 157, 66, 1);
+    color: white;
     display: flex;
     flex: 1 0 340px;
     margin: 0 0 30px;
@@ -53,9 +53,10 @@
     width: 102%;
 }
 .blocks-item :hover{
-    background-color: rgba(110, 157, 66, 1);
+    background-color: #2F87CC ;
     color: white;
     text-decoration: none;
+    border-color: #2F87CC ;
 }
 
 .H2line{
