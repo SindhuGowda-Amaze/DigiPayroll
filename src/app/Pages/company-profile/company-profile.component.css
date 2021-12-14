@@ -189,6 +189,7 @@ th{
 
 .container-fluid{
   background-color: rgb(226, 224, 224);
+  font-family: Dinn Bold;
 }
 .container{
   background-color: white;
@@ -230,7 +231,7 @@ th{
   color: #404040!important;
 }
 .btn{
-  background-color: rgb(7, 106, 119);
+  background-color:  #2F87CC;
   /* background-color: #404040; */
   color: #fff;
   padding: 10px;
