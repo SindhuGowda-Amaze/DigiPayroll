@@ -112,11 +112,12 @@ font-weight: bold;
     margin-left: 15px;
     margin-right: 15px;
   }
-  .form-control{
+
+  .fontheading{
     font-size: 15px;
     font-weight: bold;
-  }
-  .newFont{
-    font-size: 15px;
-    font-weight: bold;
-  }
+    }
+    .fonttxt{
+      font-size: 12px;
+      font-weight: bold;
+    }
