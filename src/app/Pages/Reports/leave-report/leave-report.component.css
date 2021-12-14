@@ -128,7 +128,7 @@ ul {
     font-family: 'DIN bold';
     color: black;
     -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
   .leavelist{
@@ -138,4 +138,13 @@ ul {
   .submitbtn{
     background-color: #2F87CC;
     color: white;
+}
+.FilterClass {
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: "DIN Bold";
+  color: black;
+}
+.card{
+  padding: 20px;
 }
