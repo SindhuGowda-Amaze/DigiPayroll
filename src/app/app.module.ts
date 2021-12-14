@@ -12,7 +12,6 @@ import { PayRollFormComponent } from './Pages/pay-roll-form/pay-roll-form.compon
 import { UserFormComponent } from './Pages/user-form/user-form.component';
 import { PhilHealthFormComponent } from './Pages/phil-health-form/phil-health-form.component';
 import { CompanyAdjustmentFormComponent } from './Pages/company-adjustment-form/company-adjustment-form.component';
- import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 import { BankFormComponent } from './Pages/bank-form/bank-form.component';
 import { PayGroupFormComponent } from './Pages/pay-group-form/pay-group-form.component';
 import { DepartmentFormComponent } from './Pages/department-form/department-form.component';
@@ -21,7 +20,6 @@ import { OtRatesFormComponent } from './Pages/ot-rates-form/ot-rates-form.compon
 import { AdjustmentFormComponent } from './Pages/adjustment-form/adjustment-form.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HelpComponent } from './Pages/help/help.component';
-
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
 
@@ -31,7 +29,6 @@ import { FooterComponent } from './Pages/footer/footer.component';
     CompanyProfileComponent,
     DepartmentComponent,
     HeaderComponent,
-    DepartmentModifyComponent,
     SssFormComponent,
     PayRollFormComponent,
     UserFormComponent,

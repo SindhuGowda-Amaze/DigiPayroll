@@ -184,7 +184,27 @@ font-weight: bold;
     font-size: 15px;
     font-weight: bold;
   }
-.newFont{
-  font-size: 15px;
-  font-weight: bold;
-}
+  .img{
+    width: 25px;
+    height: 10%;
+  }
+  .img:hover{
+      background-color: chartreuse;
+      color: white;
+  }
+  .imgcancel{
+    width: 25px;
+    height: 10%;
+  }
+  .imgcancel:hover{
+    background-color: red;
+    color: white;
+  }
+  .newFont{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .SelectData{
+    text-align: center;
+  }

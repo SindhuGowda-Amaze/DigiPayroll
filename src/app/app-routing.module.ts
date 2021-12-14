@@ -25,7 +25,6 @@ import { SSSComponent } from './Pages/sss/sss.component';
 import { TaxTableComponent } from './Pages/tax-table/tax-table.component'
 import { UserComponent } from './Pages/user/user.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
-import { DepartmentModifyComponent } from './Pages/department-modify/department-modify.component';
 import { DepartmentComponent } from './Pages/department/department.component';
 import { PayrollComponent } from './Pages/payroll/payroll.component';
 import { HelpComponent } from './Pages/help/help.component';
@@ -78,9 +77,7 @@ const routes: Routes = [
     path: "Help", component: HelpComponent
   },
   {path:'Department',component:DepartmentComponent},
-  {path:'DepartmentModify',component:DepartmentModifyComponent},
   {path:'Department',component:DepartmentComponent},
-  {path:'DepartmentModify',component:DepartmentModifyComponent},
   {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
   {path:'PayRoll',component:PayrollComponent},
   {path:'Employee',component:EmployeeComponent},

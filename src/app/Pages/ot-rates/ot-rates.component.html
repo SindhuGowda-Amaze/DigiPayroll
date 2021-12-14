@@ -1,74 +1,3 @@
-<!-- <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul>
-                        <li><a class="active">View</a></li>
-                        <li routerLink="/DependentDetailsModify"><a>Modify</a></li>
-                    </ul>
-                </div>
-            </div>
-         <div class="card card-padding">
-             <div class="row">
-                 <div class="col-lg-12">
-                     <p class="Heading">OT Rates</p>
-                 </div>
-             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">Day</th>
-                                <th scope="col">Normal</th>
-                                <th scope="col">OT</th>
-                                <th scope="col">ND</th>
-                                <th scope="col">NDOT</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>yes</td>
-                                <td>3H</td>
-                                <td>NA</td>
-                                <td>NA</td>
-                           <td class="align">
-                                    <button class="edit">Edit</button>  <br>
-                                    <button class="edit">Delete</button>  <br>
-                                </td>  -->
-                                <!-- <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>yes</td>
-                                <td>3H</td>
-                                <td>NA</td>
-                                <td>NA</td>
-                                <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>                              
-            </div><br>
-            <div class="row">
-                <div class="col-lg-8"></div>
-                <div class="col-lg-4">
-                   <button class="button">Add</button> -->
-                    <!-- <a href="/OtRatesForm"><button class="button">Add</button> </a>
-                    <button class="button">Cancel</button>
-
-                </div>
-            </div>
-         </div>
-        </div>
-    </div>
-    <div class="col-lg-1"></div>
-</div>  -->
-
-
-
 
 <div class="container-fluid">
     <div class="row">
@@ -107,37 +36,56 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <table class="table table-bordered">
+                        <table class="table">
                             <thead>
                                 <tr class="newFont">
-                                    <th scope="col">Day</th>
-                                    <th scope="col">Normal</th>
-                                    <th scope="col">OT</th>
-                                    <th scope="col">ND</th>
-                                    <th scope="col">NDOT</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                                <tr  class="newFont" >
-                                    <td>2</td>
-                                    <td>yes</td>
-                                    <td>3H</td>
-                                    <td>NA</td>
-                                    <td>NA</td>
-                                    <!-- <td class="align">
-                                        <button class="edit">Edit</button>  <br>
-                                        <button class="edit">Delete</button>  <br>
-                                    </td>  -->
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr class="newFont">
-                                    <td>2</td>
-                                    <td>yes</td>
-                                    <td>3H</td>
-                                    <td>NA</td>
-                                    <td>NA</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
+                                    <th class="SelectData">Select</th>
+                                    <th>Day</th>
+                                    <th>Normal</th>
+                                    <th>OT</th>
+                                    <th>ND</th>
+                                    <th>NDOT</th>
+                                    <th>Action</th>
+                                <tr>
                             </thead>
+                            <tbody>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>Ordinary Day</td>
+                                    <td>0.000</td>
+                                    <td>1.250</td>
+                                    <td>0.100</td>
+                                    <td>1.375</td>
+                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                </tr>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>Rest Day</td>
+                                    <td>1.300</td>
+                                    <td>1.690</td>
+                                    <td>1.430</td>
+                                    <td>1.859</td>
+                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                </tr>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>Legal Holiday Day</td>
+                                    <td>1.000</td>
+                                    <td>2.600</td>
+                                    <td>1.200</td>
+                                    <td>2.860</td>
+                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                </tr>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>Double Holiday Day</td>
+                                    <td>2.000</td>
+                                    <td>3.900</td>
+                                    <td>3.300</td>
+                                    <td>4.290</td>
+                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
