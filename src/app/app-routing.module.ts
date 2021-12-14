@@ -34,6 +34,14 @@ import { AttendenceDetailsComponent } from './Pages/Attendence/attendence-detail
 import { OvertimeDetailsComponent } from './Pages/Attendence/overtime-details/overtime-details.component';
 import { RegularisationDetailsComponent } from './Pages/Attendence/regularisation-details/regularisation-details.component';
 import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shift.component';
+import { AttendenceReportComponent } from './Pages/Reports/attendence-report/attendence-report.component';
+import{GeneratePayslipComponent} from './Pages/Reports/generate-payslip/generate-payslip.component';
+import{LeaveReportComponent} from './Pages/Reports/leave-report/leave-report.component';
+import{OvertimeReportComponent} from './Pages/Reports/overtime-report/overtime-report.component';
+import{ PayrollReportComponent} from './Pages/Reports/payroll-report/payroll-report.component';
+import{ StaffReportComponent}from './Pages/Reports/staff-report/staff-report.component'
+import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
+import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/PayRoll', pathMatch: 'full' },
@@ -80,6 +88,12 @@ const routes: Routes = [
   {
     path: "Help", component: HelpComponent
   },
+  {
+    path: "LeaveListDashboard", component: LeaveListDashboardComponent
+  },
+  {
+    path: "ApplyLeave", component: ApplyLeaveComponent
+  },
   {path:'Department',component:DepartmentComponent},
   {path:'Department',component:DepartmentComponent},
   {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
@@ -100,7 +114,17 @@ const routes: Routes = [
   {path:'AttendenceDetails',component:AttendenceDetailsComponent},
   {path:'OvertimeDetails',component:OvertimeDetailsComponent},
   {path:'RegularisationDetails',component:RegularisationDetailsComponent},
-  {path:'WeeklyShift',component:WeeklyShiftComponent}
+  {path:'WeeklyShift',component:WeeklyShiftComponent},
+  {path:'AttendenceReport',component:AttendenceReportComponent},
+  {path:'GeneratePayslip',component:GeneratePayslipComponent},
+  {path:'LeaveReport',component:LeaveReportComponent},
+  {path:'OvertimeReport',component:OvertimeReportComponent},
+  {path:'PayrollReportComponent',component:PayrollReportComponent},
+  {path:' StaffReportComponent',component: StaffReportComponent}
+
+
+
+
 
 
 ];

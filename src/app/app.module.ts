@@ -26,6 +26,14 @@ import { AttendenceDetailsComponent } from './Pages/Attendence/attendence-detail
 import { OvertimeDetailsComponent } from './Pages/Attendence/overtime-details/overtime-details.component';
 import { RegularisationDetailsComponent } from './Pages/Attendence/regularisation-details/regularisation-details.component';
 import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shift.component';
+import { AttendenceReportComponent } from './Pages/Reports/attendence-report/attendence-report.component';
+import { LeaveReportComponent } from './Pages/Reports/leave-report/leave-report.component';
+import { PayrollReportComponent } from './Pages/Reports/payroll-report/payroll-report.component';
+import { GeneratePayslipComponent } from './Pages/Reports/generate-payslip/generate-payslip.component';
+import { StaffReportComponent } from './Pages/Reports/staff-report/staff-report.component';
+import { OvertimeReportComponent } from './Pages/Reports/overtime-report/overtime-report.component';
+import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
+import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +59,15 @@ import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shi
     AttendenceDetailsComponent,
     OvertimeDetailsComponent,
     RegularisationDetailsComponent,
-    WeeklyShiftComponent
+    WeeklyShiftComponent,
+    AttendenceReportComponent,
+    LeaveReportComponent,
+    PayrollReportComponent,
+    GeneratePayslipComponent,
+    StaffReportComponent,
+    OvertimeReportComponent,
+    LeaveListDashboardComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
