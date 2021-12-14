@@ -48,7 +48,7 @@ th{
 
 .FormHeadText{
     color: #494949 !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: bold;
     margin-left: 5px;
     margin-top: 25px;
@@ -59,3 +59,12 @@ th{
 body{
     color: #494949 !important;
 }
+
+.fontheading{
+    font-size: 15px;
+    font-weight: bold;
+    }
+    .fonttxt{
+      font-size: 12px;
+      font-weight: bold;
+    }
