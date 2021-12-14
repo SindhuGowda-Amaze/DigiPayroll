@@ -40,11 +40,14 @@
     font-size: 12px;
     background: #e4e5e6 !important;
     vertical-align: middle;
+    font-family: "DIN Bold";
 }
 
  .table td {
   color: #494949;
   font-size: 12px;
   vertical-align: middle;
+  font-family: "DIN Medium";
+
 }
 
