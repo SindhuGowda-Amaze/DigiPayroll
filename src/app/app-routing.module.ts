@@ -30,6 +30,10 @@ import { PayrollComponent } from './Pages/payroll/payroll.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
+import { AttendenceDetailsComponent } from './Pages/Attendence/attendence-details/attendence-details.component';
+import { OvertimeDetailsComponent } from './Pages/Attendence/overtime-details/overtime-details.component';
+import { RegularisationDetailsComponent } from './Pages/Attendence/regularisation-details/regularisation-details.component';
+import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shift.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/PayRoll', pathMatch: 'full' },
@@ -92,7 +96,11 @@ const routes: Routes = [
   {path:'TaxTable',component:TaxTableComponent},
   {path:'User',component:UserComponent},
   {path:'Adolfo',component:AdolfoComponent},
-  {path:'Footer',component:FooterComponent}
+  {path:'Footer',component:FooterComponent},
+  {path:'AttendenceDetails',component:AttendenceDetailsComponent},
+  {path:'OvertimeDetails',component:OvertimeDetailsComponent},
+  {path:'RegularisationDetails',component:RegularisationDetailsComponent},
+  {path:'WeeklyShift',component:WeeklyShiftComponent}
 
 
 ];
