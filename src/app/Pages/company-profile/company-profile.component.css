@@ -230,13 +230,14 @@ th{
   color: #404040!important;
 }
 .btn{
-  /* background-color: rgb(7, 106, 119); */
-  background-color: #404040;
+  background-color: rgb(7, 106, 119);
+  /* background-color: #404040; */
   color: #fff;
   padding: 10px;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   font-weight: 700;
+  font-size: 12px;
 }
 .btn:hover{
   background-color: silver;
