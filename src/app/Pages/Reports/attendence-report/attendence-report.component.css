@@ -104,4 +104,11 @@ ul {
 .txt{
     color: red;
 }
+
+.FilterClass {
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: "DIN Bold";
+  color: black;
+}
   

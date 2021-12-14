@@ -125,7 +125,7 @@ ul {
   .Heading {
     padding-left: 15px;
     font-size: 14px;
-    font-weight: bold;
+    font-family: 'DIN bold';
     color: black;
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
