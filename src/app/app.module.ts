@@ -22,6 +22,16 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
+import { AttendenceDetailsComponent } from './Pages/Attendence/attendence-details/attendence-details.component';
+import { OvertimeDetailsComponent } from './Pages/Attendence/overtime-details/overtime-details.component';
+import { RegularisationDetailsComponent } from './Pages/Attendence/regularisation-details/regularisation-details.component';
+import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shift.component';
+import { AttendenceReportComponent } from './Pages/Reports/attendence-report/attendence-report.component';
+import { LeaveReportComponent } from './Pages/Reports/leave-report/leave-report.component';
+import { PayrollReportComponent } from './Pages/Reports/payroll-report/payroll-report.component';
+import { GeneratePayslipComponent } from './Pages/Reports/generate-payslip/generate-payslip.component';
+import { StaffReportComponent } from './Pages/Reports/staff-report/staff-report.component';
+import { OvertimeReportComponent } from './Pages/Reports/overtime-report/overtime-report.component';
 import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
 import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
@@ -46,6 +56,16 @@ import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
     FooterComponent,
     HelpComponent,
     EmployeeFormComponent,
+    AttendenceDetailsComponent,
+    OvertimeDetailsComponent,
+    RegularisationDetailsComponent,
+    WeeklyShiftComponent,
+    AttendenceReportComponent,
+    LeaveReportComponent,
+    PayrollReportComponent,
+    GeneratePayslipComponent,
+    StaffReportComponent,
+    OvertimeReportComponent,
     LeaveListDashboardComponent,
     ApplyLeaveComponent
   ],

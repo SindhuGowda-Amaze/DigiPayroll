@@ -30,6 +30,16 @@ import { PayrollComponent } from './Pages/payroll/payroll.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
+import { AttendenceDetailsComponent } from './Pages/Attendence/attendence-details/attendence-details.component';
+import { OvertimeDetailsComponent } from './Pages/Attendence/overtime-details/overtime-details.component';
+import { RegularisationDetailsComponent } from './Pages/Attendence/regularisation-details/regularisation-details.component';
+import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shift.component';
+import { AttendenceReportComponent } from './Pages/Reports/attendence-report/attendence-report.component';
+import{GeneratePayslipComponent} from './Pages/Reports/generate-payslip/generate-payslip.component';
+import{LeaveReportComponent} from './Pages/Reports/leave-report/leave-report.component';
+import{OvertimeReportComponent} from './Pages/Reports/overtime-report/overtime-report.component';
+import{ PayrollReportComponent} from './Pages/Reports/payroll-report/payroll-report.component';
+import{ StaffReportComponent}from './Pages/Reports/staff-report/staff-report.component'
 import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
 import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
@@ -100,7 +110,21 @@ const routes: Routes = [
   {path:'TaxTable',component:TaxTableComponent},
   {path:'User',component:UserComponent},
   {path:'Adolfo',component:AdolfoComponent},
-  {path:'Footer',component:FooterComponent}
+  {path:'Footer',component:FooterComponent},
+  {path:'AttendenceDetails',component:AttendenceDetailsComponent},
+  {path:'OvertimeDetails',component:OvertimeDetailsComponent},
+  {path:'RegularisationDetails',component:RegularisationDetailsComponent},
+  {path:'WeeklyShift',component:WeeklyShiftComponent},
+  {path:'AttendenceReport',component:AttendenceReportComponent},
+  {path:'GeneratePayslip',component:GeneratePayslipComponent},
+  {path:'LeaveReport',component:LeaveReportComponent},
+  {path:'OvertimeReport',component:OvertimeReportComponent},
+  {path:'PayrollReportComponent',component:PayrollReportComponent},
+  {path:' StaffReportComponent',component: StaffReportComponent}
+
+
+
+
 
 
 ];
