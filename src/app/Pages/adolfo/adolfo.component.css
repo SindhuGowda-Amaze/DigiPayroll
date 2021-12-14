@@ -271,4 +271,37 @@ height:fit-content;
 font-size:12px;
 font-weight:bold;
 }
+.button{
+text-transform: uppercase;
+font-weight: initial;
+text-shadow: initial;
+letter-spacing: 0.5px;
+background-color:#2F87CC ;
+color:white;
+border-radius: 5px;
+border:none;
+padding: 5px;
+width:40%;
+float: right;
+margin-right: 15px;
+font-size: 15px;
+font-weight: bold;
+}
+.button2{
+    text-transform: uppercase;
+    font-weight: initial;
+    text-shadow: initial;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    padding: 5px;
+    width:40%;
+    color: black;
+    float:left;
+    margin-right:15px;
+    font-size:15px;
+    font-weight:bold;
+    height: 34px;
+    background-color: white;
+    border: none;
+}
 
