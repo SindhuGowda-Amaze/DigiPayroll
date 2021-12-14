@@ -22,6 +22,12 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
+import { AttendenceReportComponent } from './Pages/Reports/attendence-report/attendence-report.component';
+import { LeaveReportComponent } from './Pages/Reports/leave-report/leave-report.component';
+import { PayrollReportComponent } from './Pages/Reports/payroll-report/payroll-report.component';
+import { GeneratePayslipComponent } from './Pages/Reports/generate-payslip/generate-payslip.component';
+import { StaffReportComponent } from './Pages/Reports/staff-report/staff-report.component';
+import { OvertimeReportComponent } from './Pages/Reports/overtime-report/overtime-report.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +49,13 @@ import { FooterComponent } from './Pages/footer/footer.component';
     EmployeeFormComponent,
     FooterComponent,
     HelpComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    AttendenceReportComponent,
+    LeaveReportComponent,
+    PayrollReportComponent,
+    GeneratePayslipComponent,
+    StaffReportComponent,
+    OvertimeReportComponent
   ],
   imports: [
     BrowserModule,
