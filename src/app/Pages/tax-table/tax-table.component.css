@@ -12,7 +12,8 @@ table, td {
   }
 
   table {
-      background-color: #2F87CC; 
+      /* background-color: #2F87CC;  */
+      background-color: silver;
     font-family: sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -26,7 +27,8 @@ table, td {
   }
 
   tr:nth-child(even) {
-    background-color: #dddddd;
+    /* background-color: #dddddd; */
+    background-color: white;
   }
   .menu
     {
