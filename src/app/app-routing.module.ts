@@ -30,6 +30,8 @@ import { PayrollComponent } from './Pages/payroll/payroll.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
+import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
+import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/PayRoll', pathMatch: 'full' },
@@ -75,6 +77,12 @@ const routes: Routes = [
   },
   {
     path: "Help", component: HelpComponent
+  },
+  {
+    path: "LeaveListDashboard", component: LeaveListDashboardComponent
+  },
+  {
+    path: "ApplyLeave", component: ApplyLeaveComponent
   },
   {path:'Department',component:DepartmentComponent},
   {path:'Department',component:DepartmentComponent},

@@ -22,6 +22,8 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';
+import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
+import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { FooterComponent } from './Pages/footer/footer.component';
     EmployeeFormComponent,
     FooterComponent,
     HelpComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    LeaveListDashboardComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
