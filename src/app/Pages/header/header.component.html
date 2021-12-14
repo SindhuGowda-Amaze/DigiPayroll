@@ -48,7 +48,15 @@
             <h6 class="menutext" routerLink="/Employee">Employees</h6>
         </div>
         <div class="col-lg-1">
-            <h6 class="menutext" routerLink="/Employee">Attendence</h6>
+            <h6  class=" dropdown-toggle menutext" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-expanded="false" routerLink="/">Attendence</h6>
+            
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a  class="menuitem" tabindex="-1" routerLink="/CompanyProfile">Attendence Details</a></li>
+                    <li class="dropdown-item"><a class="menuitem" routerLink="/CostCenter">OverTime Details</a></li>
+                    <li class="dropdown-item"><a class="menuitem" routerLink="/Department">Regularisations</a></li>
+                    <li class="dropdown-item"><a class="menuitem" routerLink="/Bank">Weekly Shift</a></li>
+                </ul>
         </div>
         <div class="col-lg-1">
             <h6 class="menutext" routerLink="/Employee">Leaves</h6>
@@ -62,7 +70,16 @@
         </div>
 
         <div class="col-lg-1">
-            <h6 class="menutext">Reports</h6>
+            <h6  class=" dropdown-toggle menutext" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-expanded="false">Reports</h6>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a  class="menuitem" tabindex="-1" routerLink="/CompanyProfile">Attendence Report</a></li>
+                <li class="dropdown-item"><a class="menuitem" routerLink="/CostCenter">Leave Report</a></li>
+                <li class="dropdown-item"><a class="menuitem" routerLink="/Department">PayRoll Report</a></li>
+                <li class="dropdown-item"><a class="menuitem" routerLink="/Bank">Generate PaySlips</a></li>
+                <li class="dropdown-item"><a class="menuitem" routerLink="/Bank">Staff Report</a></li>
+                <li class="dropdown-item"><a class="menuitem" routerLink="/Bank">Overtime Report</a></li>
+            </ul>
         </div>
 
         <div class="col-lg-1">

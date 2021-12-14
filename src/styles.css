@@ -25,7 +25,7 @@
       format('opentype');
   }
   body{
-    font-family: 'DIN Regular';
+    font-family: 'DIN Bold';
     cursor: pointer; 
   }
   .Dinbold{
