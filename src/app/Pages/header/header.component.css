@@ -142,6 +142,7 @@
 
 li {
   float: left;
+  margin-right: 40px;
 }
 
 li a {
@@ -153,7 +154,7 @@ li a {
 }
 
 li a:hover {
-  text-decoration: 3px solid rgb(72, 83, 238) underline;
+  text-decoration:none;
   color:   rgb(72, 83, 238)
-} */
+}  */
 
