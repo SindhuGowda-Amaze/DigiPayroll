@@ -44,7 +44,7 @@ import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-
 import { ApplyLeaveComponent } from './Pages/apply-leave/apply-leave.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/PayRoll', pathMatch: 'full' },
+  { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
 
   {
     path: "CompanyProfile", component: CompanyProfileComponent

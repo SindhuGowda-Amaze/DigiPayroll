@@ -20,6 +20,9 @@ ul {
   li a:hover {
     text-decoration: 3px solid rgb(28, 32, 94) underline;
   }
+  td{
+    background-color: white;
+  }
 
   .requestbtn{
       background-color: #4282be;
@@ -90,28 +93,7 @@ ul {
     padding-left: 1px;
   }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    text-decoration: 3px solid rgb(28, 32, 94) underline;
-  }
+
   .leavelist{
     padding: 0px 20px;
   }
