@@ -2,7 +2,7 @@
     background-color: #21a4da;
     color: white;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -11,7 +11,7 @@
 .CancelBTN{
     color: black;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -68,4 +68,7 @@ th{
 
 body{
     color: #494949 !important;
+}
+.inputfield{
+    background-color: #f2f2f2;
 }

@@ -2,6 +2,7 @@
     background-color: #21a4da;
     color: white;
     cursor: pointer;
+  
 }
 
 .SubmitBTN:hover {background-color: #28a745;}
@@ -9,6 +10,7 @@
 .CancelBTN{
     color: black;
     cursor: pointer;
+
 }
 
 
@@ -62,10 +64,13 @@ body{
 }
 
 .fontheading{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     }
     .fonttxt{
       font-size: 12px;
       font-weight: bold;
     }
+.inputfield{
+    background-color: #f2f2f2;
+}
