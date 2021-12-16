@@ -138,31 +138,6 @@ export class CompanyProfileComponent implements OnInit {
       PhilHealth_Optional_Commission:any
 		  id:any;
 
-  files: File[] = [];
-  onSelect(event: { addedFiles: any; }) {
-    debugger
-    console.log(event);
-    this.files.push(event.addedFiles[0]);
-    this.uploadattachments();
-    console.log("content", this.files);
-  }
-
-
-  onRemove(event:any)
-  {
-debugger
-console.log(event);
-this.files.splice(this.files.indexOf(event),1);
-  }
-
-  public uploadattachments() {
-    debugger
-    // this.DgofficeServiceService.AttachmentsUpload(this.files).subscribe(res => {
-    //   debugger
-    //   this.Company_logo = res;
-      alert("ATTACHMENT UPLOADED");
-    // })
-  }
 
   GetCompanyProfile() {
     // this.DgofficeServiceService.GetCompanyProfile().subscribe(
@@ -847,5 +822,57 @@ this.files.splice(this.files.indexOf(event),1);
     }
   
 
+    files: File[] = [];
+    onSelect(event: { addedFiles: any; }) {
+      debugger
+      console.log(event);
+      this.files.push(event.addedFiles[0]);
+      this.uploadattachments();
+      console.log("content", this.files);
+    }
+  
+  
+    onRemove(event:any)
+    {
+  debugger
+  console.log(event);
+  this.files.splice(this.files.indexOf(event),1);
+    }
+  
+    public uploadattachments() {
+      debugger
+      // this.DgofficeServiceService.AttachmentsUpload(this.files).subscribe(res => {
+      //   debugger
+      //   this.Company_logo = res;
+        alert("ATTACHMENT UPLOADED");
+      // })
+    }
+  
+  
+    files2: File[] = [];
+    onSelect2(event: { addedFiles: any; }) {
+      debugger
+      console.log(event);
+      this.files.push(event.addedFiles[0]);
+      this.uploadattachments2();
+      console.log("content", this.files);
+    }
+  
+  
+    onRemove2(event:any)
+    {
+  debugger
+  console.log(event);
+  this.files.splice(this.files.indexOf(event),1);
+    }
+  
+    public uploadattachments2() {
+      debugger
+      // this.DgofficeServiceService.AttachmentsUpload(this.files).subscribe(res => {
+      //   debugger
+      //   this.Company_logo = res;
+        alert("ATTACHMENT UPLOADED");
+      // })
+    }
 
 }
