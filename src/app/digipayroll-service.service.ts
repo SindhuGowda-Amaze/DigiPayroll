@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DigipayrollServiceService {
 
-  public baseURL = "http://localhost:4199/";   
-  // public baseURL = "http://103.133.214.197/DigiPayrollAPI";
+  //public baseURL = "http://localhost:4199/";   
+   public baseURL = "http://103.133.214.197/DigiPayroll/";
   
 
   public GetMyAttendenceDetails() {
@@ -27,6 +27,18 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  public GetMyWeeklyShift() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetMyWeeklyShift";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  
+  public GetUserDetails() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetUserDetails";
+    return this.http.get<any[]>(APIURL);
+  }
 
 
 
@@ -74,7 +86,11 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
-  
+  public DeleteUserDetails(id: any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteUserDetails?ID=" + id;
+    return this.http.get<any[]>(APIURL);
+  }
 
 
 
