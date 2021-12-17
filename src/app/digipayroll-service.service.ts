@@ -4,26 +4,40 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DigipayrollServiceService {
-  public baseURL = "http://103.133.214.197/DigiPayrollAPI";   
+
+  public baseURL = "http://localhost:4199/";   
+  // public baseURL = "http://103.133.214.197/DigiPayrollAPI";
+  
 
   constructor(private http: HttpClient  ) { }
 
-  public GetPayGroup() {
+  public GetPhilHealth() {
     debugger
-    let APIURL = this.baseURL+"Master/GetPayGroup";
+    let APIURL = this.baseURL+"Master/GetPhilHealth";
     return this.http.get<any[]>(APIURL);
   }
 
-  public InsertPayGroup(json:any) {
+  public InsertPhilHealth(json:any){
+    let APIURL=this.baseURL+"Master/InsertPhilHealth";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdatePhilHealth(json: any) {
     debugger
-    let APIURL = this.baseURL+"Master/InsertPayGroup";
+    let APIURL = this.baseURL + "Master/UpdatePhilHealth";
     return this.http.post<any[]>(APIURL, json);
   }
 
-  public UpdatePayGroup(json: any) {
+  public DeletePhilHealth(ID : any) {
     debugger
-    let APIURL = this.baseURL + "Master/UpdatePayGroup";
-    return this.http.post<any[]>(APIURL, json);
+    
+    return this.http.get<any[]>(this.baseURL+ "Master/DeletePhilHealth?ID=" +ID);
+  }
+
+  public GetCompanyProfile() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetCompanyProfile";
+    return this.http.get<any[]>(APIURL);
   }
 
   public InsertCompanyProfile(json : any) {
@@ -39,11 +53,7 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
-  public DeletePayGroup(ID : any) {
-    debugger
-    
-    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayGroup?ID=" +ID);
-  }
+  
 
 
 
