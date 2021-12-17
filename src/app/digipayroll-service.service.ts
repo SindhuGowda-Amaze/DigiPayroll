@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DigipayrollServiceService {
   public baseURL = "http://103.133.214.197/DigiPayrollAPI";   
+  
   constructor(private http: HttpClient  ) { }
 
 
