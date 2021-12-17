@@ -22,83 +22,20 @@
                         <th>Expected Out Time</th>
                         <th>Punch Out Time</th>
                         <th>Work Hours</th>
-                        <th>Extra Hours</th>
+                        <th>Extra Hours</th>                      
+                    </tr>
+                    <tr *ngFor="let shift of shiftdetails">
+                      <td>{{shift.date}}</td>
+                      <td>{{shift.shift}}</td>
+                      <td>{{shift.expectedInTime}}</td>
+                      <td>{{shift.punchInTime}}</td>
+                      <td>{{shift.expectedOutTime}}</td>
+                      <td>{{shift.punchOutTime}}</td>
+                      <td>{{shift.workHours}}</td>
+                      <td>{{shift.extraHours}}</td>
                       
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                       
-                        <td class="txt">1 Aug 2021</td>
-                        <td class="txt">General Shift</td>
-                        <td class="txt">8:00</td>
-                        <td class="txt">8:10</td>
-                        <td class="txt">5:00</td>
-                        <td class="txt">5:15</td>
-                        <td class="txt">9h</td>
-                        <td class="txt">NA</td>
-
-                    </tr>
-                    <tr>
-                       
-                        <td class="txt">28 Jul 2021</td>
-                        <td class="txt">Night Shift</td>
-                        <td class="txt">8:00</td>
-                        <td class="txt">8:05</td>
-                        <td class="txt">5:00</td>
-                        <td class="txt">5:15</td>
-                        <td class="txt">9h</td>
-                        <td class="txt">NA</td>
-
-                    </tr>
-                    <tr>
-                        
-                        <td class="txt">21 Jul 2021</td>
-                        <td class="txt">General Shift</td>
-                        <td class="txt">8:00</td>
-                        <td class="txt">8:11</td>
-                        <td class="txt">7:00</td>
-                        <td class="txt">7:10</td>
-                        <td class="txt">9h</td>
-                        <td class="txt">NA</td>
-
-                    </tr>
-                    <tr>
-                        
-                        <td class="txt">14 Jul 2021</td>
-                        <td class="txt">HR OFF</td>
-                        <td class="txt">9:00</td>
-                        <td class="txt">9:10</td>
-                        <td class="txt">7:00</td>
-                        <td class="txt">7:30</td>
-                        <td class="txt">9h</td>
-                        <td class="txt">NA</td>
-
-                    </tr>
-                    <tr>
-                       
-                        <td class="txt">7 Jul 2021</td>
-                        <td class="txt">General Shift</td>
-                        <td class="txt">8:00</td>
-                        <td class="txt">8:14</td>
-                        <td class="txt">6:00</td>
-                        <td class="txt">6:20</td>
-                        <td class="txt">9h</td>
-                        <td class="txt">NA</td>
-
-                    </tr>
-                    <tr>
-                       
-                        <td class="txt">1 Jul 2021</td>
-                        <td class="txt">Night Shift</td>
-                        <td class="txt">8:00</td>
-                        <td class="txt">8:15</td>
-                        <td class="txt">5:00</td>
-                        <td class="txt">5:30</td>
-                        <td class="txt">9h</td>
-                        <td class="txt">NA</td>
-                    </tr>
-                </tbody>
             </table>
         </div>
     </div>

@@ -18,6 +18,12 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  public GetRegularization() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetRegularization";
+    return this.http.get<any[]>(APIURL);
+  }
+
 
 
 
