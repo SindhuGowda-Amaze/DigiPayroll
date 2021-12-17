@@ -15,16 +15,16 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
-  public InsertFoodSenseProjects(json : any) {
+  public InsertCompanyProfile(json : any) {
     debugger
-    let APIURL = this.baseURL + "Master/InsertFoodSenseProjects";
+    let APIURL = this.baseURL + "Master/InsertCompany_Profile";
     return this.http.post<any[]>(APIURL,json);
   }
 
 
-  public UpdateFoodSenseProject(json : any) {
+  public UpdateCompanyProfile(json : any) {    //not yet done
     debugger
-    let APIURL = this.baseURL + "Master/UpdateFoodSenseProject";
+    let APIURL = this.baseURL + "Master/UpdateCompanyProfile";
     return this.http.post<any[]>(APIURL,json);
   }
 
