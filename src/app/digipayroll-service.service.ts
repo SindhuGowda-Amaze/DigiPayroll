@@ -6,7 +6,6 @@ import { HttpClient } from '@angular/common/http';
 export class DigipayrollServiceService {
   public baseURL = "http://103.133.214.197/DigiPayrollAPI";   
 
-<<<<<<< HEAD
   public GetMyAttendenceDetails() {
     debugger
     let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
@@ -22,9 +21,7 @@ export class DigipayrollServiceService {
 
 
 
-=======
   constructor(private http: HttpClient  ) { }
->>>>>>> 39b6db46bf5c1e5286aa379329a69f51fc9c24aa
 
   public GetPayGroup() {
     debugger
