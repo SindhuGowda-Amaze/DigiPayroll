@@ -25,6 +25,19 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL + "Master/UpdatePayGroup";
     return this.http.post<any[]>(APIURL, json);
   }
+  
+  public InsertCompanyProfile(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertCompany_Profile";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+
+  public UpdateCompanyProfile(json : any) {    //not yet done
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateCompanyProfile";
+    return this.http.post<any[]>(APIURL,json);
+  }
 
   public DeletePayGroup(ID : any) {
     debugger

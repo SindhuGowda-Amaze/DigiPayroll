@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-company-profile',
@@ -732,13 +734,13 @@ export class CompanyProfileComponent implements OnInit {
        "Non_Tax_Essential_Sealing": this.Non_Tax_Essential_Sealing ,
        "Deminimis_Exemption": this.Deminimis_Exemption 
      };
-    //  this.DgofficeServiceService.InsertCompany_Profile(json).subscribe(
-    //    data => {
-    //      debugger
-    //      let id = data;
-    //  alert("Successfully saved!!")
-    //    location.href=""
-      //  })
+     this.DigipayrollServiceService.InsertCompanyProfile(json).subscribe(
+       data => {
+         debugger
+         let id = data;
+     alert("Successfully saved!!")
+       location.href=""
+       })
    }
  
   
@@ -756,7 +758,7 @@ export class CompanyProfileComponent implements OnInit {
      
      var json = {
       
-           "company_Logo": this.Company_logo,
+        "company_Logo": this.Company_logo,
         "company_Name": this.Company_Name,
         "nature_Of_Business": this.Nature_Of_Business,
         "address1": this.Address1,
@@ -768,7 +770,7 @@ export class CompanyProfileComponent implements OnInit {
         "password": this.Password, 
         "fax": this.Fax, 
         "tin": this.Tin, 
-            "ssN_No": this.SSN_No ,
+        "ssN_No": this.SSN_No ,
         "philHealthNumber": this.PhilHealthNumber, 
         "hdmfNumber": this.HDMFNumber, 
         "admin_AuthorisedPerson": this.Admin_AuthorisedPerson, 
@@ -812,13 +814,13 @@ export class CompanyProfileComponent implements OnInit {
         "Deminimis_Exemption": this.Deminimis_Exemption 
       };
     
-      // this.DgofficeServiceService.UpdateCompanyProfile(json).subscribe(
-      //   data => {
-      //   debugger
-      //   let result = data;
-      //   Swal.fire("Update Sucessfully");
+      this.DigipayrollServiceService.UpdateCompanyProfile(json).subscribe(
+        data => {
+        debugger
+        let result = data;
+        Swal.fire("Update Sucessfully");
       location.href="/CompanyProfileDashboard";
-      // })
+      })
     }
   
 
