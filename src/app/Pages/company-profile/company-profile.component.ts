@@ -629,7 +629,6 @@ export class CompanyProfileComponent implements OnInit {
    }
  
  
- 
  GetOverTime_Comeptition_Optional_BasicSalary(event:any){
    debugger;
    this.OverTime_Comeptition_Optional_BasicSalary=event.target.value
@@ -843,11 +842,11 @@ export class CompanyProfileComponent implements OnInit {
   
     public uploadattachments() {
       debugger
-      // this.DgofficeServiceService.AttachmentsUpload(this.files).subscribe(res => {
-      //   debugger
-      //   this.Company_logo = res;
+      this.DigipayrollServiceService.AttachmentsUpload(this.files).subscribe(res => {
+        debugger
+        this.Company_logo = res;
         alert("ATTACHMENT UPLOADED");
-      // })
+      })
     }
   
   
@@ -860,21 +859,20 @@ export class CompanyProfileComponent implements OnInit {
       console.log("content", this.files);
     }
   
-  
     onRemove2(event:any)
     {
   debugger
   console.log(event);
-  this.files.splice(this.files.indexOf(event),1);
+  this.files2.splice(this.files.indexOf(event),1);
     }
   
     public uploadattachments2() {
       debugger
-      // this.DgofficeServiceService.AttachmentsUpload(this.files).subscribe(res => {
-      //   debugger
-      //   this.Company_logo = res;
+      this.DigipayrollServiceService.AttachmentsUpload(this.files2).subscribe(res => {
+        debugger
+        this.E_Signatory = res;
         alert("ATTACHMENT UPLOADED");
-      // })
+      })
     }
 
 }

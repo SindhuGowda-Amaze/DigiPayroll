@@ -4,7 +4,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DigipayrollServiceService {
-  public baseURL = "http://103.133.214.197/DigiPayrollAPI";   
+  public baseURL = "http://103.133.214.197/DigiPayroll";   
+  // http://103.133.214.197/DigiPayroll/Master/GetCostCenter
   constructor(private http: HttpClient  ) { }
 
 
@@ -33,10 +34,43 @@ export class DigipayrollServiceService {
   //   return this.http.post<any[]>(APIURL,json);
   // }
 
-    public DeleteFoodSenseProject_id(id : any) {
+    public DeleteCompanyProfile_id(id : any) {
     debugger
-    let APIURL = this.baseURL + "Master/DeleteFoodSenseProject?ID="+id;
+    let APIURL = this.baseURL + "Master/DeleteCompanyProfile?ID="+id;
     return this.http.get<any[]>(APIURL);
+  }
+
+
+
+  public GetCostCenter() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetCostCenter";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public InsertCostCenter(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertCostCenter";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdateCostCenter(json : any) {    //not yet done
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateCostCenter";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  
+  public AttachmentsUpload(files: any) {
+    debugger
+    let formdata: FormData = new FormData();
+    for (let i = 0; i < files.length; i++) {
+      formdata.append('file_upload', files[i], files[i].name);
+    }
+    debugger
+    let APIURL = this.baseURL + "Master/UploadImages/";
+    return this.http.post(APIURL, formdata);
+
   }
 }
 

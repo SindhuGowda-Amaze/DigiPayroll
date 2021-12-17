@@ -46,14 +46,14 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Management Team</td>
-                                    <td>CR001</td>
-                                    <td>For the Outsourced Employees</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                <tr  class="newFont" *ngFor="let details of result">
+                                    <!-- <td class="SelectData"><input type="checkbox" ></td>  {{details.SelectedDate}} -->
+                                    <td>{{details.name}}</td>
+                                    <td>{{details.code}}</td>
+                                    <td>{{details.remarks}}</td>
+                                    <!-- <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td> {{details.Action}} -->
                                 </tr>
-                                <tr  class="newFont">
+                                <!-- <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
                                     <td>Production Team</td>
                                     <td>CR003</td>
@@ -80,7 +80,7 @@
                                     <td>CR009</td>
                                     <td>0.6+ Years Experience Team</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
