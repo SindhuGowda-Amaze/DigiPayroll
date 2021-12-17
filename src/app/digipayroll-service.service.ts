@@ -9,6 +9,21 @@ export class DigipayrollServiceService {
   // public baseURL = "http://103.133.214.197/DigiPayrollAPI";
   
 
+  public GetMyAttendenceDetails() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetMyOverTimeDetails() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetMyOverTimeDetails";
+    return this.http.get<any[]>(APIURL);
+  }
+
+
+
+
   constructor(private http: HttpClient  ) { }
 
   public GetPhilHealth() {
