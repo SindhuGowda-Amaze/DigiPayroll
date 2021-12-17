@@ -46,14 +46,14 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>IDFC Bank</td>
-                                    <td>IDFC008</td>
-                                    <td>Good Bank</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                <tr  class="newFont" *ngFor="let details of result">
+                                    <td class="SelectData"><input type="checkbox">{{details.selectedData}}</td>
+                                    <td>{{details.name}}</td>
+                                    <td>{{details.code}}</td>
+                                    <td>{{details.remarks}}</td>
+                                    <td><img class="imgcancel" (click)="Ondelete(details)"  src="/assets/cancel (1).png"></td>
                                 </tr>
-                                <tr  class="newFont">
+                                <!-- <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
                                     <td>RAK Bank</td>
                                     <td>RAK009</td>
@@ -80,7 +80,7 @@
                                     <td>ICICI002</td>
                                     <td>Good Bank</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
+                                </tr> -->
                             </tbody>
 
                         </table>

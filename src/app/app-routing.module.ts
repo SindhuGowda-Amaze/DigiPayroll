@@ -77,6 +77,9 @@ const routes: Routes = [
     path: "CostCenterForm", component: CostCenterFormComponent
   },
   {
+    path: "CostCenterForm/:id", component: CostCenterFormComponent
+  },
+  {
     path: "OtRatesForm", component: OtRatesFormComponent
   },
   {

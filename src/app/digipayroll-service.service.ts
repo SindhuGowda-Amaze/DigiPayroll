@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DigipayrollServiceService {
-  public baseURL = "http://103.133.214.197/DigiPayroll";   
+  public baseURL = "http://103.133.214.197/DigiPayroll/";   
   // http://103.133.214.197/DigiPayroll/Master/GetCostCenter
   constructor(private http: HttpClient  ) { }
 
@@ -28,6 +28,12 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL, json);
   }
 
+  
+  public GetCompanyProfile() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetPayGroup";
+    return this.http.get<any[]>(APIURL);
+  }
   public InsertCompanyProfile(json : any) {
     debugger
     let APIURL = this.baseURL + "Master/InsertCompany_Profile";
@@ -51,19 +57,13 @@ export class DigipayrollServiceService {
     debugger
     let APIURL = this.baseURL + "Master/DeleteCompanyProfile?ID="+id;
     return this.http.get<any[]>(APIURL);
-    }
-    
-  public DeletePayGroup(ID : any) {
-    debugger
-    
-    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayGroup?ID=" +ID);
   }
 
 
 
   public GetCostCenter() {
     debugger
-    let APIURL = this.baseURL + "Master/GetCostCenter";
+    let APIURL = this.baseURL + "Master/GetCostcenter";
     return this.http.get<any[]>(APIURL);
   }
 
@@ -79,6 +79,62 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
+  public DeleteCostCenter(id : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteCostCenter?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
+
+
+  public GetDepartment() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetDepartment";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public InsertDepartment(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertDepartment";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdateDepartment(json : any) {    //not yet done
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateDepartment";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public DeleteDepartment(id : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteDepartment?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetBanks() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetBanks";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public InsertBanks(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertBanks";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdateBanks(json : any) {    //not yet done
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateBanks";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public DeleteBanks(id : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteBanks?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
+  
+
   
   public AttachmentsUpload(files: any) {
     debugger
@@ -91,7 +147,6 @@ export class DigipayrollServiceService {
     return this.http.post(APIURL, formdata);
 
   }
-
 }
 
 
