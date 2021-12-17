@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
 
 
+
 @Component({
   selector: 'app-company-profile',
   templateUrl: './company-profile.component.html',

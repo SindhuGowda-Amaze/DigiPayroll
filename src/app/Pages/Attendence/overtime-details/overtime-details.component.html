@@ -81,33 +81,15 @@
                                 <th>Status</th>
                                
                             </tr>
+                            <tr *ngFor="let time of timedetails">
+                               <td>{{time.date}}</td>
+                               <td>{{time.shift}}</td>
+                               <td>{{time.oTHrs}}</td>
+                               <td>{{time.comments}}</td>
+                               <td>{{time.status}}</td>                            
+                            </tr>
+
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>28 Nov 2021 </td>
-                                <td>General Shift</td>
-                                <td>3h</td>
-                                <td>Hourly pay rate x 1.5 x overtime hours worked</td>
-                                <td>Approved</td>
-                              
-                            </tr>
-                            <tr>
-                                <td>2 Nov 2021 </td>
-                                <td>Night Shift</td>
-                                <td>1h</td>
-                                <td>Hourly pay rate x 2.5 x overtime hours worked</td>
-                                <td style="color: red;">Rejected</td>
-                                
-                            </tr>
-                            <tr>
-                                <td>28 Jul 2021 </td>
-                                <td>HR OFF</td>
-                                <td>1d</td>
-                                <td>Hourly pay rate x 0.8 x overtime hours worked</td>
-                                <td>Pending</td>
-                               
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
             </div>

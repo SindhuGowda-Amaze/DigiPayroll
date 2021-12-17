@@ -7,33 +7,70 @@ export class DigipayrollServiceService {
   public baseURL = "http://103.133.214.197/DigiPayroll/";   
   // http://103.133.214.197/DigiPayroll/Master/GetCostCenter
   constructor(private http: HttpClient  ) { }
+  
 
- 
-
-  public GetPayGroup() {
+  public GetMyAttendenceDetails() {
     debugger
-    let APIURL = this.baseURL+"Master/GetPayGroup";
+    let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
     return this.http.get<any[]>(APIURL);
   }
 
-  public InsertPayGroup(json:any) {
+  public GetMyOverTimeDetails() {
     debugger
-    let APIURL = this.baseURL+"Master/InsertPayGroup";
-    return this.http.post<any[]>(APIURL, json);
+    let APIURL = this.baseURL + "Master/GetMyOverTimeDetails";
+    return this.http.get<any[]>(APIURL);
   }
 
-  public UpdatePayGroup(json: any) {
+  public GetRegularization() {
     debugger
-    let APIURL = this.baseURL + "Master/UpdatePayGroup";
-    return this.http.post<any[]>(APIURL, json);
+    let APIURL = this.baseURL+"Master/GetRegularization";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetMyWeeklyShift() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetMyWeeklyShift";
+    return this.http.get<any[]>(APIURL);
   }
 
   
-  public GetCompanyProfile() {
+  public GetUserDetails() {
     debugger
-    let APIURL = this.baseURL+"Master/GetPayGroup";
+    let APIURL = this.baseURL+"Master/GetUserDetails";
     return this.http.get<any[]>(APIURL);
   }
+
+  public GetPhilHealth() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetPhilHealth";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public InsertPhilHealth(json:any){
+    let APIURL=this.baseURL+"Master/InsertPhilHealth";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdatePhilHealth(json: any) {
+    debugger
+    let APIURL = this.baseURL + "Master/UpdatePhilHealth";
+    return this.http.post<any[]>(APIURL, json);
+  }
+
+  public DeletePhilHealth(ID : any) {
+    debugger
+    
+    return this.http.get<any[]>(this.baseURL+ "Master/DeletePhilHealth?ID=" +ID);
+  }
+
+  public GetCompanyProfile() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetCompanyProfile";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  
+ 
   public InsertCompanyProfile(json : any) {
     debugger
     let APIURL = this.baseURL + "Master/InsertCompany_Profile";
@@ -113,6 +150,11 @@ export class DigipayrollServiceService {
   public GetBanks() {
     debugger
     let APIURL = this.baseURL + "Master/GetBanks";
+    return this.http.get<any[]>(APIURL);
+  }
+  public DeleteUserDetails(id: any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteUserDetails?ID=" + id;
     return this.http.get<any[]>(APIURL);
   }
 

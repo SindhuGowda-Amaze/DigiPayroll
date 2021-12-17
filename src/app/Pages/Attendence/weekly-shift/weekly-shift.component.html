@@ -54,46 +54,16 @@
                                 <th>STARTTIME</th>
                                 <th>ENDTIME</th>
                             </tr>
+                            <tr *ngFor="let week of WeeklyShift">
+                               <td>{{week.sHIFTDATE}}</td>
+                               <td>{{week.sHIFTNAME}}</td>
+                               <td>{{week.sTARTTIME}}</td>
+                               <td>{{week.eNDTIME}}</td>
+
+                           
+                            </tr>
+
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>2 Jul 2021</td>
-                                <td>General Shift</td>
-                                <td>10:00</td>
-                                <td>7:00</td>
-                            </tr>
-                            <tr>
-                                <td>28 Jul 2021</td>
-                                <td>Night Shift</td>
-                                <td>5:00</td>
-                                <td>8:00</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>8 Aug 2021</td>
-                                <td>HR OFF</td>
-                                <td>1:00</td>
-                                <td>5:00</td>
-                            </tr>
-                            <tr>
-                                <td>2 Aug 2021</td>
-                                <td>Night Shift</td>
-                                <td>5:00</td>
-                                <td>8:00</td>
-                            </tr>
-                            <tr>
-                                <td>8 Aug 2021</td>
-                                <td>HR OFF</td>
-                                <td>5:00</td>
-                                <td>8:00</td>
-                            </tr>
-                            <tr>
-                                <td>20 Aug 2021</td>
-                                <td>General Shift</td>
-                                <td>5:00</td>
-                                <td>8:00</td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
             </div>
