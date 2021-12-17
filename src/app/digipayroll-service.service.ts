@@ -8,6 +8,21 @@ export class DigipayrollServiceService {
   
   constructor(private http: HttpClient  ) { }
 
+  public GetMyAttendenceDetails() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetMyOverTimeDetails() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetMyOverTimeDetails";
+    return this.http.get<any[]>(APIURL);
+  }
+
+
+
+
 
   public GetCompanyProfile() {
     debugger
