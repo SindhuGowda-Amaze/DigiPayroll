@@ -1,9 +1,43 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
 export class DigipayrollServiceService {
+  public baseURL = "http://103.133.214.197/DigiPayrollAPI";   
+  constructor(private http: HttpClient  ) { }
 
-  constructor() { }
+
+  public GetCompanyProfile() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetCompanyProfile";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public InsertFoodSenseProjects(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertFoodSenseProjects";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+
+  public UpdateFoodSenseProject(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateFoodSenseProject";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  // public DeleteFoodSenseProject(json : any) {              MasterEntity 
+  //   debugger
+  //   let APIURL = this.baseURL + "Master/DeleteFoodSenseProject";
+  //   return this.http.post<any[]>(APIURL,json);
+  // }
+
+    public DeleteFoodSenseProject_id(id : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteFoodSenseProject?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
 }
+
+
