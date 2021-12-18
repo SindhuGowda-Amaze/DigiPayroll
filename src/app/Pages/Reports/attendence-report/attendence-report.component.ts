@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
+import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-attendence-report',
   templateUrl: './attendence-report.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttendenceReportComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ActivatedRoute: ActivatedRoute, private DigipayrollServiceService: DigipayrollServiceService) { }
 
   ngOnInit(): void {
   }

@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 export class CostCenterComponent implements OnInit {
   SelectedData: any;
   id: any;
-  result: any;
+  costcenter: any;
   constructor(private ActivatedRoute: ActivatedRoute, private DigipayrollServiceService: DigipayrollServiceService) { }
 
   ngOnInit(): void {
@@ -30,7 +30,7 @@ export class CostCenterComponent implements OnInit {
     this.DigipayrollServiceService.GetCostCenter().subscribe(
       data => {
         debugger
-        this.result = data;
+        this.costcenter = data;
       })
   }
 

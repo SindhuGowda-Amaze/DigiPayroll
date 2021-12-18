@@ -175,6 +175,12 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL + "Master/DeleteBanks?ID="+id;
     return this.http.get<any[]>(APIURL);
   }
+
+  public GetPayGroup() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetPayGroup";
+    return this.http.get<any[]>(APIURL);
+  }
   
 
   
