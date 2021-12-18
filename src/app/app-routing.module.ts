@@ -53,6 +53,9 @@ const routes: Routes = [
     path: "sssForm", component: SssFormComponent
   },
   {
+    path: "sssForm/:id", component: SssFormComponent
+  },
+  {
     path: "PayRollForm", component: PayRollFormComponent
   },
   {
@@ -62,7 +65,13 @@ const routes: Routes = [
     path: "PhilHealthForm", component: PhilHealthFormComponent
   },
   {
+    path: "PhilHealthForm/:id", component: PhilHealthFormComponent
+  },
+  {
     path: "CompanyAdjustmentForm", component: CompanyAdjustmentFormComponent
+  },
+  {
+    path: "CompanyAdjustmentForm/:id", component: CompanyAdjustmentFormComponent
   },
   {
     path: "BankForm", component: BankFormComponent
@@ -78,6 +87,9 @@ const routes: Routes = [
   },
   {
     path: "OtRatesForm", component: OtRatesFormComponent
+  },
+  {
+    path: "OtRatesForm/:id", component: OtRatesFormComponent
   },
   {
     path: "AdjustmentForm", component: AdjustmentFormComponent
@@ -108,6 +120,7 @@ const routes: Routes = [
   {path:'Adjustment',component:AdjustmentComponent},
   {path:'CostCenter',component:CostCenterComponent},
   {path:'TaxTable',component:TaxTableComponent},
+  {path:'TaxTable/:id',component:TaxTableComponent},
   {path:'User',component:UserComponent},
   {path:'Adolfo',component:AdolfoComponent},
   {path:'Footer',component:FooterComponent},
@@ -121,11 +134,6 @@ const routes: Routes = [
   {path:'OvertimeReport',component:OvertimeReportComponent},
   {path:'PayrollReportComponent',component:PayrollReportComponent},
   {path:' StaffReportComponent',component: StaffReportComponent}
-
-
-
-
-
 
 ];
 

@@ -13,6 +13,7 @@ export class PhillHealthComponent implements OnInit {
   constructor(private DigipayrollServiceService: DigipayrollServiceService, private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
+    debugger
     this.GetPhilHealth();
   }
 
@@ -28,6 +29,7 @@ export class PhillHealthComponent implements OnInit {
     this.DigipayrollServiceService.GetPhilHealth().subscribe(data=>{
       debugger
       this.salarylist=data ;
+      debugger
      })
   }
 

@@ -23,7 +23,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a href="/CompanyAdjustmentForm">Modify</a></li>
+                        <li><a (click)="Update">Modify</a></li>
                     </ul>
                 </div>
 
@@ -51,19 +51,19 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr class="newFont">
+                                <tr class="newFont" *ngFor="let company of companylist">
                                     <td class="SelectData"><input type="checkbox"></td>
-                                    <td>A</td>
-                                    <td>Harbard</td>
-                                    <td>CN002</td>
-                                    <td>₱ 20,000</td>
-                                    <td>NA</td>
-                                    <td>NA</td>
-                                    <td>NA</td>
-                                    <td>Yes</td>
-                                    <td><img class="imgcancel" src="/assets/cancel (1).png"></td>
+                                    <td>{{company.type}}</td>
+                                    <td>{{company.name}}</td>
+                                    <td>{{company.code}}</td>
+                                    <td>{{company.amount}}</td>
+                                    <td>{{company.remarks}}</td>
+                                    <td>{{company.beforeTax}}</td>
+                                    <td>{{company.taxable}}</td>
+                                    <td>{{company.maxAccumulated}}</td>
+                                    <td><img class="imgcancel" src="/assets/cancel (1).png" (click)="delete(company.id)"></td>
                                 </tr>
-                                <tr class="newFont">
+                                <!-- <tr class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
                                     <td>B</td>
                                     <td>Lothbrok</td>
@@ -110,7 +110,7 @@
                                     <td>NA</td>
                                     <td>Yes</td>
                                     <td><img class="imgcancel" src="/assets/cancel (1).png"></td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
