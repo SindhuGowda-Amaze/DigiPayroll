@@ -24,7 +24,8 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a href="/PhilHealthForm">Modify</a></li>
+                        <!-- <li><a href="/PhilHealthForm" >Modify</a></li> -->
+                        <li><a (click)="Update">Modify</a></li>
                     </ul>
                 </div>
 
@@ -54,7 +55,7 @@
                                     <td>{{salary.monthly_Share}}</td>
                                     <td>{{salary.personal_Share}}</td>
                                     <td>{{salary.employee_Share}}</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"
+                                    <td><img class="imgcancel" src="/assets/cancel (1).png"
                                             (click)="delete(salary.id)"></td>
                                 </tr>
                                 <!-- <tr class="newFont">
