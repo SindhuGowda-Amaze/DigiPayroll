@@ -23,7 +23,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li routerLink="/DepartmentForm"><a href="/DepartmentForm">Modify</a></li>
+                        <li><a href="/DepartmentForm">Modify</a></li>
                     </ul>
                 </div>
 
@@ -57,8 +57,8 @@
                                 </tr>
                             </thead> -->
                             <thead>
-                                <tr class="newFont">
-                                    <th class="SelectData">Select</th>
+                                <tr class="newFont" >
+                                    <th class="SelectData" >Select</th>
                                     <th>Name</th>
                                     <th>Code</th>
                                     <th>Remarks</th>
@@ -66,14 +66,14 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Management Dept.</td>
-                                    <td>DP001</td>
-                                    <td>Outsourced Employees</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                <tr  class="newFont" *ngFor="let details of result">
+                                    <td class="SelectData"><input type="checkbox">{{details.selectedData}}</td>
+                                    <td>{{details.name}}</td>
+                                    <td>{{details.code}}</td>
+                                    <td>{{details.remarks}}</td>
+                                    <td><img class="imgcancel" (click)="Ondelete(details)"  src="/assets/cancel (1).png"></td>
                                 </tr>
-                                <tr  class="newFont">
+                                <!-- <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
                                     <td>Production Dept.</td>
                                     <td>DP002</td>
@@ -100,7 +100,7 @@
                                     <td>DP005</td>
                                     <td>Outsourced Employees</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>

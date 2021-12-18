@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user-form',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserFormComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private DigiPayrollServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
+  
   ngOnInit(): void {
+    
   }
+
+  
 
 }

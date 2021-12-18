@@ -72,50 +72,18 @@
                                     <th>Date Added</th>
                                     <th>Action</th>
                                 <tr>
+                                    <tr *ngFor="let user of userdetails">
+                                        <td>{{user.userName}}</td>
+                                        <td>{{user.email}}</td>
+                                        <td>{{user.role}}</td>
+                                        <td>{{user.dateAdded}}</td>
+                                        <td>
+                                            <img class="img" src="../../../assets/cancel (1).png" alt="delete"
+                                                (click)="delete(user)">
+                                        </td>
+                                    <tr>
                             </thead>
-                            <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Adam</td>
-                                    <td>adam@gmail.com</td>
-                                    <td>Admin</td>
-                                    <td>20-12-2021</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Harry</td>
-                                    <td>harry@gmail.com</td>
-                                    <td>HR</td>
-                                    <td>11-10-2021</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Ecbert</td>
-                                    <td>ecbert@gmail.com</td>
-                                    <td>Team Lead</td>
-                                    <td>08-07-2021</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Luther</td>
-                                    <td>luther@gmail.com</td>
-                                    <td>Finance</td>
-                                    <td>11-03-2021</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Adolf</td>
-                                    <td>adolf@gmail.com</td>
-                                    <td>Analyst</td>
-                                    <td>05-02-2021</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                      </table>
                     </div>
                 </div>
             </div>

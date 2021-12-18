@@ -23,10 +23,9 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li routerLink="/CostCenterForm"><a href="/CostCenterForm">Modify</a></li>
+                        <li routerLink="/CostCenterForm"><a href="CostCenterForm">Modify</a></li>   <!--(click)="Modify(details)" -->
                     </ul>
                 </div>
-
                 <div class="col-lg-4">
                     <a href="/CostCenterForm"><button class="button">Add</button> </a>
                 </div>
@@ -46,41 +45,41 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Management Team</td>
-                                    <td>CR001</td>
-                                    <td>For the Outsourced Employees</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                <tr  class="newFont" *ngFor="let details of result">
+                                    <td class="SelectData"><input type="checkbox">{{details.selectedData}}</td>
+                                    <td>{{details.name}}</td>
+                                    <td>{{details.code}}</td>
+                                    <td>{{details.remarks}}</td>
+                                    <td><img class="imgcancel" (click)="Ondelete(details)"  src="/assets/cancel (1).png"></td>
                                 </tr>
-                                <tr  class="newFont">
+                                <!-- <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Production Team</td>
-                                    <td>CR003</td>
+                                    <td>Production Dept.</td>
+                                    <td>DP002</td>
                                     <td>Company Staff</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
                                 </tr>
                                 <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Deployeement Team</td>
-                                    <td>CR005</td>
+                                    <td>Deployeement Dept.</td>
+                                    <td>DP003</td>
                                     <td>Contract Employees</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
                                 </tr>
                                 <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Managers Team</td>
-                                    <td>CR007</td>
-                                    <td>5+ Years Experience Team</td>
+                                    <td>Managers Dept.</td>
+                                    <td>DP004</td>
+                                    <td>Company Staff</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
                                 </tr>
                                 <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Entry Level Team</td>
-                                    <td>CR009</td>
-                                    <td>0.6+ Years Experience Team</td>
+                                    <td>Entry Level Dept.</td>
+                                    <td>DP005</td>
+                                    <td>Outsourced Employees</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
