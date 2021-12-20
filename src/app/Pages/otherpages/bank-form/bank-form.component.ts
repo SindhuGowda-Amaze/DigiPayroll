@@ -29,7 +29,7 @@ export class BankFormComponent implements OnInit {
         debugger
         let id = data;
     alert("Successfully saved!!")
-      location.href="/Department"
+      location.href="/Bank"
       })
   }
 

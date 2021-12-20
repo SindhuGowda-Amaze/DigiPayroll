@@ -9,28 +9,28 @@ import Swal from 'sweetalert2';
 export class CostCenterFormComponent implements OnInit {
 
   constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
-name:any;
-code:any;
-remarks:any;
-details:any;
-result:any;
-id:any;
+  name: any;
+  code: any;
+  remarks: any;
+  details: any;
+  result: any;
+  id: any;
   ngOnInit(): void {
   }
 
-  OnSubmit(){
-    debugger 
-   var json = {  
+  OnSubmit() {
+    debugger
+    var json = {
       "name": this.name,
       "code": this.code,
-      "remarks":this.remarks   
+      "remarks": this.remarks
     };
     this.DigipayrollServiceService.InsertCostCenter(json).subscribe(
       data => {
         debugger
         let id = data;
-    alert("Successfully saved!!")
-      location.href="/CostCenter"
+        alert("Successfully saved!!")
+        location.href = "/CostCenter"
       })
   }
 
@@ -39,30 +39,30 @@ id:any;
       data => {
         debugger
         this.result = data;
-		this.result=this.result.filter((x: { id: any; })=>x.id==Number(this.id));
-		this.name=this.result[0].name;
-		this.code=this.result[0].code;
-    this.remarks=this.result[0].remarks;
+        this.result = this.result.filter((x: { id: any; }) => x.id == Number(this.id));
+        this.name = this.result[0].name;
+        this.code = this.result[0].code;
+        this.remarks = this.result[0].remarks;
       }
     )
   }
 
 
-  Update(){
+  Update() {
     debugger
-     var json = {
+    var json = {
       "name": this.name,
       "code": this.code,
-      "remarks":this.remarks           
-      };
-    
-      this.DigipayrollServiceService.UpdateCostCenter(json).subscribe(
-        data => {
+      "remarks": this.remarks
+    };
+
+    this.DigipayrollServiceService.UpdateCostCenter(json).subscribe(
+      data => {
         debugger
         let result = data;
         Swal.fire("Update Sucessfully");
-      location.href="/CostCenter";
+        location.href = "/CostCenter";
       })
-    }
- 
+  }
+
 }
