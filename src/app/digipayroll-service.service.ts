@@ -59,7 +59,7 @@ export class DigipayrollServiceService {
 
   public DeleteSSS(ID : any) {
     debugger
-    
+    let APIURL = this.baseURL + "Master/DeleteSSS";
     return this.http.get<any[]>(this.baseURL+ "Master/DeleteSSS?ID=" +ID);
   }
 
@@ -263,6 +263,12 @@ export class DigipayrollServiceService {
     debugger
     let APIURL = this.baseURL + "Master/DeleteUserDetails?ID=" + id;
     return this.http.get<any[]>(APIURL);
+  }
+
+  public DeletePayroll(ID : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeletePayroll";
+    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayroll?ID=" +ID);
   }
 
   public InsertBanks(json : any) {

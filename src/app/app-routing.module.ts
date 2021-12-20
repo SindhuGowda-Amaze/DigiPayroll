@@ -26,7 +26,7 @@ import { TaxTableComponent } from './Pages/tax-table/tax-table.component'
 import { UserComponent } from './Pages/Attendence/user/user.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { DepartmentComponent } from './Pages/department/department.component';
-import { PayrollComponent } from './Pages/otherpages/payroll/payroll.component';
+import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
 import { HelpComponent } from './Pages/help/help.component';
 import { EmployeeFormComponent } from './Pages/otherpages/employee-form/employee-form.component';
 import { FooterComponent } from './Pages/footer/footer.component';

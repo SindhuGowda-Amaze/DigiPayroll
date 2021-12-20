@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
-import { ActivatedRoute } from '@angular/router';
+
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-payroll',
   templateUrl: './payroll.component.html',
@@ -8,7 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PayrollComponent implements OnInit {
   selectdata:any;
-  constructor(private DigiPayrollServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
+  details: any;
+  constructor(private DigiPayrollServiceService:DigipayrollServiceService) { }
 
   ngOnInit(): void {
     this.GetPayroll();
@@ -20,6 +22,16 @@ export class PayrollComponent implements OnInit {
       debugger
       this.selectdata=data ;
      })
+  }
+
+  public Ondelete(id:any) {
+    this.DigiPayrollServiceService.DeletePayroll(id).subscribe(
+      data => {
+        debugger
+        this.GetPayroll();
+        Swal.fire('Deleted');
+      }
+    )
   }
 
 

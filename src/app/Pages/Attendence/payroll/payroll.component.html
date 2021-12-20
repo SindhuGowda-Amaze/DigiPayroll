@@ -52,15 +52,16 @@
                                 <tr>
                             </thead>
                            <tr *ngFor="let data of selectdata">
-                               <td>{{data.Year}}</td>
+                            <td class="SelectData"><input type="checkbox">{{data.selectedData}}</td>
+                               <td>{{data.year}}</td>
                                <td>{{data.month}}</td>
                                <td>{{data.period}}</td>
-                               <td>{{data.payrollRuntype}}</td>
-                               <td>{{data.payGroup}}</td>
+                               <td>{{data.pay_Roll_Run_Type}}</td>
+                               <td>{{data.pay_Group}}</td>
                                <td>{{data.description}}</td>
-                               <td>{{data.transactionDate}}</td>
+                               <td>{{data.transaction_Date}}</td>
                                <td>{{data.status}}</td>
-                               <td>{{data.action}}</td>
+                               <td><img class="imgcancel" (click)="Ondelete(details)"  src="/assets/cancel (1).png"></td>
                            </tr>
 
 

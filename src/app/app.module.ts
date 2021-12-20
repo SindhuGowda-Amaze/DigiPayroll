@@ -44,6 +44,7 @@ import { PhillHealthComponent } from './Pages/Attendence/phill-health/phill-heal
 import { SSSComponent } from './Pages/otherpages/sss/sss.component';
 import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
 import { UserComponent } from './Pages/Attendence/user/user.component';
+import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { UserComponent } from './Pages/Attendence/user/user.component';
     PhillHealthComponent,
     SSSComponent,
     AdjustmentComponent,
-    UserComponent
+    UserComponent,
+    PayrollComponent
 
   ],
   imports: [
