@@ -44,12 +44,12 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Rank and file</td>
-                                    <td><img class="imgcancel" src="/assets/cancel (1).png"></td>
+                                <tr  class="newFont"  *ngFor="let details of result">
+                                    <td class="SelectData"><input type="checkbox">{{details.selectedData}}</td>
+                                    <td>{{details.description}}</td>
+                                    <td><img class="imgcancel" (click)="Ondelete(details)"  src="/assets/cancel (1).png"></td>
                                 </tr>
-                                <tr  class="newFont">
+                                <!-- <tr  class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>
                                     <td>Officer</td>
                                     <td><img class="imgcancel" src="/assets/cancel (1).png"></td>
@@ -63,7 +63,7 @@
                                     <td class="SelectData"><input type="checkbox"></td>
                                     <td>Officer - Deployeed</td>
                                     <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>

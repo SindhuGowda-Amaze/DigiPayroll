@@ -64,7 +64,11 @@ export class DigipayrollServiceService {
   }
 
    
-  
+  public GetCompanyAdjustment() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetCompanyAdjustment ";
+    return this.http.get<any[]>(APIURL);
+  } 
   
   public GetRegularization() {
     debugger
@@ -86,11 +90,6 @@ export class DigipayrollServiceService {
   }
 
  
-  public GetCompanyAdjustment() {
-    debugger
-    let APIURL = this.baseURL+"Master/GetCompanyAdjustment";
-    return this.http.get<any[]>(APIURL);
-  }
 
   public InsertCompanyAdjustment(json:any){
     let APIURL=this.baseURL+"Master/InsertCompanyAdjustment";
@@ -105,7 +104,7 @@ export class DigipayrollServiceService {
 
   public DeleteCompanyAdjustment(ID : any) {
     debugger
-    
+    let APIURL = this.baseURL + "Master/DeleteCompanyAdjustment";
     return this.http.get<any[]>(this.baseURL+ "Master/DeleteCompanyAdjustment?ID=" +ID);
   }
 
@@ -182,6 +181,13 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL + "Master/GetMyOverTimeDetails";
     return this.http.get<any[]>(APIURL);
   }
+  
+  // public DeleteFoodSenseProject(json : any) {              MasterEntity 
+  //   debugger
+  //   let APIURL = this.baseURL + "Master/DeleteFoodSenseProject";
+  //   return this.http.post<any[]>(APIURL,json);
+  // }
+  
 
     public DeleteCompanyProfile_id(id : any) {
     debugger
@@ -266,6 +272,12 @@ export class DigipayrollServiceService {
   public DeleteBanks(id : any) {
     debugger
     let APIURL = this.baseURL + "Master/DeleteBanks?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetPayGroup() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetPayGroup";
     return this.http.get<any[]>(APIURL);
   }
   

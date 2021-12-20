@@ -62,7 +62,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr *ngFor="let shift of shiftdetails">
+                                <td>{{shift.date}}</td>
+                                <td>{{shift.shift}}</td>
+                                <td>{{shift.expectedInTime}}</td>
+                                <td>{{shift.punchInTime}}</td>
+                                <td>{{shift.expectedOutTime}}</td>
+                                <td>{{shift.punchOutTime}}</td>
+                                <td>{{shift.workHours}}</td>
+                                <td>{{shift.extraHours}}</td>                            
+                              </tr>
+                            <!-- <tr>
 
                                 <td>1 Aug 2021</td>
                                 <td>General Shift</td>
@@ -133,7 +143,7 @@
                                 <td>9h</td>
                                 <td>NA</td>
 
-                            </tr>
+                            </tr> -->
 
 
 

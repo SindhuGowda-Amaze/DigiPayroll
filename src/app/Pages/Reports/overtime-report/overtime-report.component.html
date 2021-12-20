@@ -67,12 +67,18 @@
                                 <th>Shift</th>
                                 <th>OT Hrs</th>
                                 <th>Comments</th>
-                                <th>Status</th>
-                               
+                                <th>Status</th>       
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr *ngFor="let time of timedetails">
+                                <td>{{time.date}}</td>
+                                <td>{{time.shift}}</td>
+                                <td>{{time.otHours}}</td>
+                                <td>{{time.comments}}</td>
+                                <td>{{time.status}}</td>                            
+                             </tr>
+                            <!-- <tr>
                                 <td>28 Nov 2021 </td>
                                 <td>General Shift</td>
                                 <td>3h</td>
@@ -95,7 +101,7 @@
                                 <td>Hourly pay rate x 0.8 x overtime hours worked</td>
                                 <td>Pending</td>
                                
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>

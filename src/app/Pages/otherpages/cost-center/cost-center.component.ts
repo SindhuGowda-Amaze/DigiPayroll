@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-cost-center',
   templateUrl: './cost-center.component.html',
@@ -10,7 +11,7 @@ import Swal from 'sweetalert2';
 export class CostCenterComponent implements OnInit {
   SelectedData: any;
   id: any;
-  result: any;
+  costcenter: any;
   constructor(private ActivatedRoute: ActivatedRoute, private DigipayrollServiceService: DigipayrollServiceService) { }
 
   ngOnInit(): void {
@@ -30,7 +31,7 @@ export class CostCenterComponent implements OnInit {
     this.DigipayrollServiceService.GetCostCenter().subscribe(
       data => {
         debugger
-        this.result = data;
+        this.costcenter = data;
       })
   }
 

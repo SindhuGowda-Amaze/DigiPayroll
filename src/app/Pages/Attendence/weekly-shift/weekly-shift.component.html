@@ -33,7 +33,7 @@
                         <input type="date" class="form-control">
                     </div>
                     <div class="col-md-2">
-                        <button class=" form-control submitbtn leavelist">Refresh</button>
+                        <button class=" form-control submitbtn leavelist" (click)="Refresh()">Refresh</button>
                     </div>
                 </div>
                 <br>
@@ -54,11 +54,11 @@
                                 <th>STARTTIME</th>
                                 <th>ENDTIME</th>
                             </tr>
-                            <tr *ngFor="let week of weeklyShift">
+                            <tr *ngFor="let week of WeeklyShift">
                                <td>{{week.shiftDate}}</td>
                                <td>{{week.shiftName}}</td>
                                <td>{{week.startTime}}</td>
-                               <td>{{week.endTime}}</td>                         
+                               <td>{{week.endTime}}</td>   
                             </tr>
                         </thead>
                     </table>

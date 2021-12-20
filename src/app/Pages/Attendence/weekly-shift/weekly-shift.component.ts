@@ -25,4 +25,7 @@ export class WeeklyShiftComponent implements OnInit {
     )
   }
 
+  Refresh(){
+    location.reload();
+  }
 }
