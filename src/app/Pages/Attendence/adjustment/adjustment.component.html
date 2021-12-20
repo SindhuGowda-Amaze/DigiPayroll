@@ -50,6 +50,7 @@
                                     <!-- <th>Action</th> -->
                                 <tr>
                                     <tr *ngFor="let employee of employeedetails">
+                                        <td class="SelectData"><input type="checkbox">{{employee.selectedData}}</td>
                                         <td>{{employee.type}}</td>
                                         <td>{{employee.name}}</td>
                                         <td>{{employee.code}}</td>

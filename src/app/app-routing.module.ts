@@ -11,7 +11,7 @@ import { DepartmentFormComponent } from './Pages/department-form/department-form
 import { CostCenterFormComponent } from './Pages/otherpages/cost-center-form/cost-center-form.component';
 import { OtRatesFormComponent } from './Pages/otherpages/ot-rates-form/ot-rates-form.component';
 import { AdjustmentFormComponent } from './Pages/otherpages/adjustment-form/adjustment-form.component';
-import { AdjustmentComponent } from './Pages/otherpages/adjustment/adjustment.component';
+import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
 import { AdolfoComponent } from './Pages/otherpages/adolfo/adolfo.component';
 import { BankComponent } from './Pages/Attendence/bank/bank.component';
 import { CompanyAdjustmentComponent } from './Pages/Attendence/company-adjustment/company-adjustment.component';

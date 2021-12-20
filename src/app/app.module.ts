@@ -42,6 +42,7 @@ import { OtRatesComponent } from './Pages/Attendence/ot-rates/ot-rates.component
 import { CompanyAdjustmentComponent } from './Pages/Attendence/company-adjustment/company-adjustment.component';
 import { PhillHealthComponent } from './Pages/Attendence/phill-health/phill-health.component';
 import { SSSComponent } from './Pages/otherpages/sss/sss.component';
+import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { SSSComponent } from './Pages/otherpages/sss/sss.component';
     OtRatesComponent,
     CompanyAdjustmentComponent,
     PhillHealthComponent,
-    SSSComponent
+    SSSComponent,
+    AdjustmentComponent
 
   ],
   imports: [
