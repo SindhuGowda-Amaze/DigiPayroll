@@ -54,15 +54,12 @@
                                 <th>STARTTIME</th>
                                 <th>ENDTIME</th>
                             </tr>
-                            <tr *ngFor="let week of WeeklyShift">
-                               <td>{{week.sHIFTDATE}}</td>
-                               <td>{{week.sHIFTNAME}}</td>
-                               <td>{{week.sTARTTIME}}</td>
-                               <td>{{week.eNDTIME}}</td>
-
-                           
+                            <tr *ngFor="let week of weeklyShift">
+                               <td>{{week.shiftDate}}</td>
+                               <td>{{week.shiftName}}</td>
+                               <td>{{week.startTime}}</td>
+                               <td>{{week.endTime}}</td>                         
                             </tr>
-
                         </thead>
                     </table>
                 </div>

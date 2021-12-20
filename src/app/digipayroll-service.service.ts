@@ -14,6 +14,11 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
     return this.http.get<any[]>(APIURL);
   }
+  public GetAdjustment() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
+    return this.http.get<any[]>(APIURL);
+  }
 
   public GetMyOverTimeDetails() {
     debugger

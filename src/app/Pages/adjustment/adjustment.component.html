@@ -47,85 +47,20 @@
                                     <th>Before</th>
                                     <th>Taxable</th>
                                     <th>Max Accumulated</th>
-                                    <th>Action</th>
+                                    <!-- <th>Action</th> -->
                                 <tr>
+                                    <tr *ngFor="let employee of employeedetails">
+                                        <td>{{employee.type}}</td>
+                                        <td>{{employee.name}}</td>
+                                        <td>{{employee.code}}</td>
+                                        <td>{{employee.amount}}</td>
+                                        <td>{{employee.remarks}}</td>
+                                        <td>{{employee.before}}</td>
+                                        <td>{{employee.taxable}}</td>
+                                        <td>{{employee.maxAccumulated}}</td>
+                                    </tr>
                             </thead>
-                            <tbody>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>SSS Loan</td>
-                                    <td>SSS4 Loan</td>
-                                    <td>Sal Loan 4</td>
-                                    <td>₱ 20,000</td>
-                                    <td>For Aldrin Bersamira</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td>None</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>External Loan</td>
-                                    <td>SSS4 Loan</td>
-                                    <td>Sal Loan 4</td>
-                                    <td>₱ 34,000</td>
-                                    <td>For Nelia Jumao-As</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td>None</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Loan</td>
-                                    <td>SSS4 Loan</td>
-                                    <td>Sal Loan 4</td>
-                                    <td>₱ 19,000</td>
-                                    <td>For Aldrin Bersamira</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td>None</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>SSS Clamity Loan</td>
-                                    <td>SSS4 Calmity Loan 4</td>
-                                    <td>SSSC Loan 2</td>
-                                    <td>₱ 28,000</td>
-                                    <td>For Aldrin Bersamira</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td>None</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>SSS Loan</td>
-                                    <td>SSS3 Loan</td>
-                                    <td>Sal Loan 3</td>
-                                    <td>₱ 18,000</td>
-                                    <td>For Alex sagun</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td>₱ 5,000</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>Deminimis Allowance</td>
-                                    <td>Rice Allowance</td>
-                                    <td>RI-ALL</td>
-                                    <td>₱ 5,000</td>
-                                    <td>Can Cover for food allovance</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td>₱ 8,000</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                               
-                            </tbody>
-                        </table>
+                         </table>
                     </div>
                 </div>
             </div>

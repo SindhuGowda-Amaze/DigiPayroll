@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./weekly-shift.component.css']
 })
 export class WeeklyShiftComponent implements OnInit {
-  WeeklyShift:any;
+  weeklyShift:any;
   constructor(private DigiServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class WeeklyShiftComponent implements OnInit {
     debugger
    this.DigiServiceService.GetMyWeeklyShift().subscribe(data=>{
       debugger
-      this.WeeklyShift=data;
+      this.weeklyShift=data;
     },
     )
   }
