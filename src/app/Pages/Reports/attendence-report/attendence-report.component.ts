@@ -8,10 +8,20 @@ import Swal from 'sweetalert2';
   styleUrls: ['./attendence-report.component.css']
 })
 export class AttendenceReportComponent implements OnInit {
-
+  shiftdetails:any;
+  data:any;
   constructor(private ActivatedRoute: ActivatedRoute, private DigipayrollServiceService: DigipayrollServiceService) { }
 
   ngOnInit(): void {
+    this.GetMyAttendenceDetails()
   }
-
+  public GetMyAttendenceDetails()
+  {
+    debugger
+   this.DigipayrollServiceService.GetMyAttendenceDetails().subscribe(data=>{
+      debugger
+      this.shiftdetails=data;
+    },
+    )
+  }
 }

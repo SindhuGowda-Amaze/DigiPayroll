@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-cost-center',
   templateUrl: './cost-center.component.html',

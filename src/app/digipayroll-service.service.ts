@@ -4,18 +4,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DigipayrollServiceService {
-<<<<<<< HEAD
 
   // public baseURL = "http://localhost:4199/";   
   public baseURL = "http://103.133.214.197/DigiPayroll/";
  
   constructor(private http: HttpClient  ) { }
-=======
-  public baseURL = "http://103.133.214.197/DigiPayroll/";   
-  // http://103.133.214.197/DigiPayroll/Master/GetCostCenter
-  constructor(private http: HttpClient  ) { }
-  
->>>>>>> df0c18896481c663e049a43da8dc23af2a73cac5
 
   public GetPhilHealth() {
     debugger
@@ -69,7 +62,7 @@ export class DigipayrollServiceService {
   public GetCompanyAdjustment() {
     debugger
     let APIURL = this.baseURL+"Master/GetCompanyAdjustment ";
-
+    return this.http.get<any[]>(APIURL);
   } 
   
   public GetRegularization() {
@@ -104,7 +97,7 @@ export class DigipayrollServiceService {
 
   public DeleteCompanyAdjustment(ID : any) {
     debugger
-    
+    let APIURL = this.baseURL + "Master/DeleteCompanyAdjustment";
     return this.http.get<any[]>(this.baseURL+ "Master/DeleteCompanyAdjustment?ID=" +ID);
   }
 
@@ -178,12 +171,15 @@ export class DigipayrollServiceService {
   public GetMyOverTimeDetails() {
     debugger
     let APIURL = this.baseURL + "Master/GetMyOverTimeDetails";
+    return this.http.get<any[]>(APIURL);
+  }
+  
   // public DeleteFoodSenseProject(json : any) {              MasterEntity 
   //   debugger
   //   let APIURL = this.baseURL + "Master/DeleteFoodSenseProject";
   //   return this.http.post<any[]>(APIURL,json);
   // }
-  }
+  
 
     public DeleteCompanyProfile_id(id : any) {
     debugger
