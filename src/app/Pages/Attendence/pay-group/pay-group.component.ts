@@ -33,7 +33,7 @@ export class PayGroupComponent implements OnInit {
   }
 
   public Ondelete(id:any) {
-    this.DigipayrollServiceService.DeleteDepartment(id).subscribe(
+    this.DigipayrollServiceService.DeletePayGroup(id).subscribe(
       data => {
         debugger
         this.GetPayGroup();

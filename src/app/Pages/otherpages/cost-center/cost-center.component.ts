@@ -35,6 +35,11 @@ export class CostCenterComponent implements OnInit {
       })
   }
 
+  Update (costcentredata: any){
+    debugger
+   location.href="/sssForm/"+ costcentredata.id;
+  }
+
   public Ondelete(id:any) {
     this.DigipayrollServiceService.DeleteCostCenter(id).subscribe(
       data => {

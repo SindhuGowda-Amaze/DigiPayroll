@@ -37,8 +37,8 @@ export class BankComponent implements OnInit {
     this.DigipayrollServiceService.DeleteBanks(id).subscribe(
       data => {
         debugger
-        this.GetBanks();
         Swal.fire('Deleted');
+        this.GetBanks();
       }
     )
   }

@@ -26,6 +26,8 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
+  
+
   public UpdatePhilHealth(json: any) {
     debugger
     let APIURL = this.baseURL + "Master/UpdatePhilHealth";
@@ -59,7 +61,7 @@ export class DigipayrollServiceService {
 
   public DeleteSSS(ID : any) {
     debugger
-    let APIURL = this.baseURL + "Master/DeleteSSS";
+    
     return this.http.get<any[]>(this.baseURL+ "Master/DeleteSSS?ID=" +ID);
   }
 
@@ -205,7 +207,7 @@ export class DigipayrollServiceService {
 
   public InsertCostCenter(json : any) {
     debugger
-    let APIURL = this.baseURL + "Master/InsertCostCenter";
+    let APIURL = this.baseURL + "Master/InsertCostcenter";
     return this.http.post<any[]>(APIURL,json);
   }
 
@@ -294,6 +296,27 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL + "Master/GetPayGroup";
     return this.http.get<any[]>(APIURL);
   }
+
+
+  public InsertPayGroup(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertPayGroup";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdateUpdatePayGroupBanks(json : any) {    //not yet done
+    debugger
+    let APIURL = this.baseURL + "Master/UpdatePayGroup";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public DeletePayGroup(id : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeletePayGroup?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
+
+
   
 
   
