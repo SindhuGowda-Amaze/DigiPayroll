@@ -70,6 +70,9 @@
                                     <th>Email</th>
                                     <th>Role</th>
                                     <th>Date Added</th>
+                                    <th>Is Active?</th>
+                                    <th>Is Total?</th>
+                                    <th>Is Locked?</th>
                                     <th>Action</th>
                                 <tr>
                                     <tr *ngFor="let user of userdetails">
@@ -78,9 +81,12 @@
                                         <td>{{user.email}}</td>
                                         <td>{{user.role}}</td>
                                         <td>{{user.dateAdded}}</td>
+                                        <td>{{user.isActive}}</td>
+                                        <td>{{user.isTotal}}</td>
+                                        <td>{{user.isLocked}}</td>
                                         <td>
-                                            <img class="img" src="../../../assets/cancel (1).png" alt="delete"
-                                                (click)="delete(user)">
+                                            <img class="img" src="/assets/cancel (1).png" alt="delete"
+                                                (click)="Ondelete(user.id)">
                                         </td>
                                     <tr>
                             </thead>

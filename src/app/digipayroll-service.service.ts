@@ -91,7 +91,10 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
- 
+  public InsertUserDetails(json:any){
+    let APIURL=this.baseURL+"Master/InsertUserDetails";
+    return this.http.post<any[]>(APIURL,json);
+  }
 
   public InsertCompanyAdjustment(json:any){
     let APIURL=this.baseURL+"Master/InsertCompanyAdjustment";
@@ -229,6 +232,11 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  public InsertPayroll(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertPayroll";
+    return this.http.post<any[]>(APIURL,json);
+  }
 
 
 
@@ -267,10 +275,10 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
-  public DeletePayroll(ID : any) {
+  public DeletePayroll(id : any) {
     debugger
     let APIURL = this.baseURL + "Master/DeletePayroll";
-    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayroll?ID=" +ID);
+    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayroll?ID=" +id);
   }
 
   public InsertBanks(json : any) {

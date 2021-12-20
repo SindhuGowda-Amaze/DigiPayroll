@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import { ActivatedRoute } from '@angular/router';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -24,20 +24,15 @@ export class UserComponent implements OnInit {
     },
     )
   }
-  delete(user: any) {
-    var json = {
-      "ID": user.id
-    }
-   this.DigipayrollServiceService.DeleteUserDetails(user.id).subscribe(
+
+  public Ondelete(id:any) {
+    this.DigipayrollServiceService.DeleteUserDetails(id).subscribe(
       data => {
         debugger
-        this.DigipayrollServiceService.GetUserDetails().subscribe(
-          data => {
-            debugger
-            this.result = data;
-          })
-      })
+        this.GetUserDetails();
+        Swal.fire('Deleted');
+      }
+    )
   }
-
 
 }

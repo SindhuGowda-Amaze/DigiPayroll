@@ -12,4 +12,8 @@ export class LeaveReportComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  refresh(){
+    location.reload();
+  }
+
 }

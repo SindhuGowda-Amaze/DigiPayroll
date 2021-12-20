@@ -19,6 +19,9 @@
         <div class="card BOXCARD">
             <div class="row leavereq">
                 <div class="col-md-2">
+                    <label class="fonttxt">UserName<span style="color: red;">*</span></label>
+                </div>
+                <div class="col-md-2">
                     <label class="fonttxt">Email ID<span style="color: red;">*</span></label>
                 </div>
                 <div class="col-md-2">
@@ -27,23 +30,26 @@
                 <div class="col-md-2">
                     <label  class="fonttxt">Date Added<span style="color: red;">*</span></label>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <label  class="fonttxt">Is Active?<span style="color: red;">*</span></label>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <label  class="fonttxt">Is Total?<span style="color: red;">*</span></label>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <label  class="fonttxt">Is Locked?<span style="color: red;">*</span></label>
                 </div>
             </div>
             <div class="row leavereq">
                 <div class="col-md-2">
-                    <input type="text" class="form-control inputfield">
+                    <input type="text" class="form-control inputfield" [(ngModel)]="username">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control inputfield" [(ngModel)]="email">
                 </div>
                 <div class="col-md-2">
                     <div class="dropdown">
-                        <select class="form-control inputfield  fonttxt">
+                        <select class="form-control inputfield  fonttxt" [(ngModel)]="role">
                             <option value="Select">Select Roll</option>
                             <option value="1">Roll Type 1</option>
                             <option value="2">Roll Type 2</option>
@@ -53,29 +59,29 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <input type="date" class="form-control inputfield">
+                    <input type="date" class="form-control inputfield" [(ngModel)]="dateAdded">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <div class="dropdown">
-                        <select class="form-control inputfield fonttxt">
+                        <select class="form-control inputfield fonttxt" [(ngModel)]="isActive">
                             <option value="Select">Select Y/N ?</option>
                             <option value="1">Y</option>
                             <option value="2">N</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <div class="dropdown">
-                        <select class="form-control inputfield fonttxt">
+                        <select class="form-control inputfield fonttxt" [(ngModel)]="isTotal">
                             <option value="Select">Select Y/N ?</option>
                             <option value="1">Y</option>
                             <option value="2">N</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <div class="dropdown">
-                        <select class="form-control inputfield fonttxt">
+                        <select class="form-control inputfield fonttxt" [(ngModel)]="isLocked">
                             <option value="Select">Select Y/N ?</option>
                             <option value="1">Y</option>
                             <option value="2">N</option>
@@ -90,7 +96,7 @@
                     <button class="form-control CancelBTN fontheading">Cancel</button>
                 </div>
                 <div class="col-lg-1">
-                    <button class="form-control SubmitBTN fontheading">Submit</button>
+                    <button class="form-control SubmitBTN" (click)="OnSubmit()" >Submit</button>
                 </div>
             </div>
         </div><br>
