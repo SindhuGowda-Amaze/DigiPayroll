@@ -1,4 +1,3 @@
-
 <br>
 <div class="container-fluid">
     <div class="row">
@@ -25,7 +24,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a  href="/sssForm">Modify</a></li>
+                        <li><a (click)="Update">Modify</a></li>
                     </ul>
                 </div>
 
@@ -55,19 +54,19 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr class="newFont">
+                                <tr class="newFont" *ngFor="let SSSdata of SSSdatalist">
                                     <td class="SelectData"><input type="checkbox"></td>
-                                    <td>₱ 20,000</td>
-                                    <td>₱ 25,000</td>
-                                    <td>₱ 26,000</td>
-                                    <td>₱ 1,500</td>
-                                    <td>₱ 800</td>
-                                    <td>₱ 2,300</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                    <td>₱ 30</td>
-                                    <td>₱ 2500</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
+                                    <td>{{SSSdata.min_Range}}</td>
+                                    <td>{{SSSdata.max_Range}}</td>
+                                    <td>{{SSSdata.monthly_Salary_Creadited}}</td>
+                                    <td>{{SSSdata.sS_ER}}</td>
+                                    <td>{{SSSdata.sS_EE}}</td>
+                                    <td>{{SSSdata.sS_Total}}</td>
+                                    <td>{{SSSdata.mpF_ER}}</td>
+                                    <td>{{SSSdata.mpF_EE}}</td>
+                                    <td>{{SSSdata.eC_ER}}</td>
+                                    <td>{{SSSdata.total_Contribution}}</td>
+                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png" (click)="delete(SSSdata.id)"></td>
                                 </tr>
                                 <tr class="newFont">
                                     <td class="SelectData"><input type="checkbox"></td>

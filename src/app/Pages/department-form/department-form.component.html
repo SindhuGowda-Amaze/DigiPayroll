@@ -29,13 +29,13 @@
         </div>
         <div class="row leavereq">
             <div class="col-md-2">
-                <input type="text" class="form-control inputfield">
+                <input type="text" class="form-control inputfield" [(ngModel)]="name">
             </div>
             <div class="col-md-2">
-                <input type="text" class="form-control inputfield">
+                <input type="text" class="form-control inputfield" [(ngModel)]="code">
             </div>
             <div class="col-md-2">
-                <textarea type="text" class="form-control inputfield" placeholder="Write here remarks"></textarea>
+                <textarea type="text" class="form-control inputfield" placeholder="Write here remarks" [(ngModel)]="remarks"></textarea>
             </div>
         </div>
         <br>
@@ -45,7 +45,9 @@
                 <button class="form-control CancelBTN">Cancel</button>
             </div>
             <div class="col-lg-1">
-                <button class="form-control SubmitBTN">Submit</button>
+                <button class="form-control SubmitBTN" (click)="OnSubmit()" >Submit</button>
+                <!-- <button class="form-control SubmitBTN" *ngif="id==null || id==undefined" (click)="OnSubmit()" >Submit</button>
+                <button class="form-control SubmitBTN" *ngif="id!==null || id!==undefined"  (click)="Update()">Edit</button>   -->
             </div>
         </div>
     </div><br>
