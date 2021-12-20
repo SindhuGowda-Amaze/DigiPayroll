@@ -36,7 +36,6 @@ export class OtRatesComponent implements OnInit {
 
   delete(id: any){
     debugger;
-  
     this.DigipayrollServiceService.DeleteOTRates(id).subscribe(
       data => {
        Swal.fire('Deleted Successfully...!')   

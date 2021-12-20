@@ -131,8 +131,7 @@ export class DigipayrollServiceService {
   }
 
   public DeleteOTRates(ID : any) {
-    debugger
-    
+    debugger 
     return this.http.get<any[]>(this.baseURL+ "Master/DeleteOTRates?ID=" +ID);
   }
 
@@ -200,6 +199,7 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  
 
 
   public GetCostCenter() {
