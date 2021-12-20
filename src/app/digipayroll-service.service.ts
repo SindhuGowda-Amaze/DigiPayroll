@@ -221,6 +221,14 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  public GetPayroll() {
+    debugger
+    let APIURL = this.baseURL+"Master/GetPayroll ";
+    return this.http.get<any[]>(APIURL);
+  }
+
+
+
 
   public GetDepartment() {
     debugger
