@@ -17,7 +17,7 @@ export class DigipayrollServiceService {
   }
   public GetAdjustment() {
     debugger
-    let APIURL = this.baseURL + "Master/GetMyAttendenceDetails";
+    let APIURL = this.baseURL + "Master/GetAdjustment";
     return this.http.get<any[]>(APIURL);
   }
 
