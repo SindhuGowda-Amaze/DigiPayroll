@@ -38,7 +38,6 @@ export class OtRatesFormComponent implements OnInit {
       debugger
       this.result = data;
       this.result=this.result.filter((x: {id: any;})=>x.id==Number(this.id));
- 
       this.day=this.result[0].day;
       this.normal=this.result[0].normal;
       this.oT=this.result[0].oT;
