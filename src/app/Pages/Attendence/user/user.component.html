@@ -73,6 +73,7 @@
                                     <th>Action</th>
                                 <tr>
                                     <tr *ngFor="let user of userdetails">
+                                        <td class="SelectData"><input type="checkbox">{{user.selectedData}}</td>
                                         <td>{{user.userName}}</td>
                                         <td>{{user.email}}</td>
                                         <td>{{user.role}}</td>

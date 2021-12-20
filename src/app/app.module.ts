@@ -43,6 +43,7 @@ import { CompanyAdjustmentComponent } from './Pages/Attendence/company-adjustmen
 import { PhillHealthComponent } from './Pages/Attendence/phill-health/phill-health.component';
 import { SSSComponent } from './Pages/otherpages/sss/sss.component';
 import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
+import { UserComponent } from './Pages/Attendence/user/user.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.co
     CompanyAdjustmentComponent,
     PhillHealthComponent,
     SSSComponent,
-    AdjustmentComponent
+    AdjustmentComponent,
+    UserComponent
 
   ],
   imports: [

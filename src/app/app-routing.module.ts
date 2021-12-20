@@ -23,7 +23,7 @@ import { PayGroupComponent } from './Pages/Attendence/pay-group/pay-group.compon
 import { PhillHealthComponent } from './Pages/Attendence/phill-health/phill-health.component';
 import { SSSComponent } from './Pages/otherpages/sss/sss.component';
 import { TaxTableComponent } from './Pages/tax-table/tax-table.component'
-import { UserComponent } from './Pages/otherpages/user/user.component';
+import { UserComponent } from './Pages/Attendence/user/user.component';
 import { CompanyProfileComponent } from './Pages/company-profile/company-profile.component';
 import { DepartmentComponent } from './Pages/department/department.component';
 import { PayrollComponent } from './Pages/otherpages/payroll/payroll.component';
