@@ -15,6 +15,8 @@ export class UserFormComponent implements OnInit {
   isActive: any;
   isTotal: any;
   isLocked: any;
+  model_Access: any;
+  model_AccessList: any;
   constructor(private DigipayrollServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
   
   ngOnInit(): void {
@@ -30,7 +32,8 @@ export class UserFormComponent implements OnInit {
       "dateAdded":this.dateAdded,
       "isActive":this.isActive,
       "isTotal":this.isTotal,
-      "isLocked":this.isLocked
+      "isLocked":this.isLocked,
+      "model_Access":this.model_Access
 
     };
     this.DigipayrollServiceService.InsertUserDetails(json).subscribe(
