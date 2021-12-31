@@ -45,9 +45,13 @@ import { ApplyLeaveComponent } from './Pages/otherpages/apply-leave/apply-leave.
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
+<<<<<<< HEAD
 import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecompanyprofile.component';
 import { UpdateBankComponent } from './update-bank/update-bank.component';
 
+=======
+import { CurrencyMasterComponent } from './currency-master/currency-master.component';
+>>>>>>> ca6129bd7cbe61caab3557167db92e321bd7f554
 
 const routes: Routes = [
   { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
@@ -148,10 +152,14 @@ const routes: Routes = [
   { path: 'EmployeeForm/:id', component: EmployeeFormComponent },
   {path:'StaffReportComponent',component: StaffReportComponent},
   {path:'TaxtableAnnual',component:TaxtableAnnualComponent},
+<<<<<<< HEAD
   {path:'Updatecompanyprofile',component:UpdatecompanyprofileComponent},
   {path:'UpdateBank',component:UpdateBankComponent}
 
 
+=======
+  {path:'CurrencyMaster',component:CurrencyMasterComponent}
+>>>>>>> ca6129bd7cbe61caab3557167db92e321bd7f554
 
 ];
 
