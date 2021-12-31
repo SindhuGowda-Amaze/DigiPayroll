@@ -23,7 +23,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a href="/DepartmentForm">Modify</a></li>
+                        <li><a (click)="update()">Modify</a></li>
                     </ul>
                 </div>
 
@@ -58,7 +58,7 @@
                             </thead> -->
                             <thead>
                                 <tr class="newFont" >
-                                    <th class="SelectData" >Select</th>
+                                    <th class="SelectData">Select</th>
                                     <th>Name</th>
                                     <th>Code</th>
                                     <th>Remarks</th>
@@ -67,7 +67,7 @@
                             </thead>
                             <tbody>
                                 <tr class="newFont" *ngFor="let details of result">
-                                    <td class="SelectData"><input type="checkbox">{{details.selectedData}}</td>
+                                    <td class="SelectData" (click)="GetId(details.id)"><input type="checkbox"></td>
                                     <td>{{details.name}}</td>
                                     <td>{{details.code}}</td>
                                     <td>{{details.remarks}}</td>
