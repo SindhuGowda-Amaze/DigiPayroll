@@ -70,6 +70,7 @@ ul {
   }
   .leavereq{
     padding-left: 10px;
+    background-color: #fff;
   }
   .inputfield{
       background-color: rgb(238, 234, 234);
@@ -103,8 +104,12 @@ ul {
 .card{
   padding: 20px;
 }
-th{
-  background-color: #e4e5e6;
+.legend{
+  font-size: 10px;
+  padding: 2px;
+}
+.tiles{
+  background-color: whitesmoke;
 }
 .dropdown-toggle{
   text-align: left;

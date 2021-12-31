@@ -24,8 +24,6 @@ export class AttendenceReportComponent implements OnInit {
     },
     )
   }
-
-
   refresh(){
     location.reload();
   }
