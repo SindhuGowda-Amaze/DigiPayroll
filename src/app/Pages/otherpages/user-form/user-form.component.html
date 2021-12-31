@@ -54,10 +54,11 @@
                     <div class="dropdown">
                         <select class="form-control inputfield  fonttxt" [(ngModel)]="role">
                             <option value="Select">Select Roll</option>
-                            <option value="1">Roll Type 1</option>
-                            <option value="2">Roll Type 2</option>
-                            <option value="3">Roll Type 3</option>
-                            <option value="4">Roll Type 4</option>
+                            <option value="1">HR</option>
+                            <option value="1">Admin</option>
+                            <option value="1">Manager</option>
+                            <option value="1">Sr HR</option>
+                            <option value="1">Team Lead</option>
                         </select>
                     </div>
                 </div>
@@ -121,6 +122,10 @@
                     <div class="dropdown">
                         <select class="form-control inputfield fonttxt" name="Model Access" Id="Model Access" [(ngModel)]="model_Access">
                             <option value="">Select </option>
+                            <option value="">OT Rates </option>
+                            <option value="">Tax Table </option>
+                            <option value="">Attendance </option>
+                            <option value="">Comapny Profile </option>
                             <option *ngFor="let model_Access of model_AccessList" value={{model_Access.id}}>{{model_Access.short}} </option>
                         </select>
                     </div>
