@@ -45,8 +45,16 @@ import { SSSComponent } from './Pages/otherpages/sss/sss.component';
 import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
 import { UserComponent } from './Pages/Attendence/user/user.component';
 import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
+import { NgWizardConfig, NgWizardModule, THEME } from 'ng-wizard';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { NgxFullCalendarModule } from '../../node_modules/ngx-fullcalendar';
+
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
+const ngWizardConfig: NgWizardConfig = {
+  theme: THEME.circles
+};
+
 
 @NgModule({
   declarations: [
@@ -91,6 +99,7 @@ import { CompanyDashboardComponent } from './Pages/company-dashboard/company-das
     AdjustmentComponent,
     UserComponent,
     PayrollComponent,
+    EmployeeDashboardComponent,
     TaxtableAnnualComponent,
     CompanyDashboardComponent
 
@@ -101,7 +110,9 @@ import { CompanyDashboardComponent } from './Pages/company-dashboard/company-das
     FormsModule,
     NgbModule,
     NgxDropzoneModule,
-    HttpClientModule
+    NgxFullCalendarModule,
+    HttpClientModule,
+    NgWizardModule.forRoot(ngWizardConfig),
   ],
   providers: [HttpClient],
   
