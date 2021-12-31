@@ -113,7 +113,7 @@ const routes: Routes = [
     path: "ApplyLeave", component: ApplyLeaveComponent
   },
   {path:'Department',component:DepartmentComponent},
-  {path:'Department',component:DepartmentComponent},
+  {path:'DepartmentForm/:id',component:DepartmentFormComponent},
   {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
   {path:'CompanyDashboard',component:CompanyDashboardComponent},
   {path:'PayRoll',component:PayrollComponent},

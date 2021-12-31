@@ -32,6 +32,11 @@ export class DepartmentComponent implements OnInit {
       })
   }
 
+  GetId(id: any) {
+    this.id = id
+  }
+
+
   public Ondelete(id:any) {
     this.DigipayrollServiceService.DeleteDepartment(id).subscribe(
       data => {
@@ -42,8 +47,8 @@ export class DepartmentComponent implements OnInit {
     )
   }
 
-   // Modify(details: any){
-  //   debugger
-  //  location.href="/CostCenterForm/"+ details.id;
-  // }
+  update(){
+  debugger
+   location.href="/DepartmentForm/"+ this.id;
+  }
 }
