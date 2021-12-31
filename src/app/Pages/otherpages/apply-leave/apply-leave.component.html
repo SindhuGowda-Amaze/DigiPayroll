@@ -90,7 +90,9 @@
                 </div>
              
                 <br>
-                <div class="row">
+
+
+                <!-- <div class="row">
                     <div class="col-md-12">
                         <div class="container-fluid">
                             <table class="table">
@@ -108,7 +110,9 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                
             </div>
             <br>
             <div class="card">
@@ -128,20 +132,19 @@
                                         <th>Entitlement Till Date</th>
                                         <th>Availed Till Date</th>
                                         <th>Current Balance</th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Maternity Leave</td>
-                                        <td>10</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>9</td>
+                                    <tr *ngFor="let leaveBalance of myleaveBalanceList">
+                                        <td>{{leaveBalance.sL_No}}</td>
+                                        <td>{{leaveBalance.leaveType}}</td>
+                                        <td>{{leaveBalance.annualQuota}}</td>
+                                        <td>{{leaveBalance.carriedForward}}</td>
+                                        <td>{{leaveBalance.entitlementTillDate}}</td>
+                                        <td>{{leaveBalance.availedTillDate}}</td>
+                                        <td>{{leaveBalance.currentBalance}}</td>
                                     </tr>
-                                    <tr>
+                                    <!-- <tr>
                                         <td>1</td>
                                         <td>Sick Leave</td>
                                         <td>10</td>
@@ -158,7 +161,7 @@
                                         <td>1</td>
                                         <td>11</td>
                                         <td>0</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>

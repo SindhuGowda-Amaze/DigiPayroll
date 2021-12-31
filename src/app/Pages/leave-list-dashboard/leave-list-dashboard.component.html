@@ -49,21 +49,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>28 Jul 2021 </td>
-                                <td>29 Jul 2021 </td>
-
-                                <td>Casual Leave<br>
-                                    <span style="color: silver;font-size: 12px;">Going To Beach</span>
+                            <tr *ngFor="let leaveReport of myleaveReportList">
+                                <td>{{leaveReport.fromDate}}</td>
+                                <td>{{leaveReport.toDate}}</td>
+                                <td>{{leaveReport.leaveType}}<br>
+                                    <span style="color: silver;font-size: 12px;">{{leaveReport.leaveReason}}</span>
                                 </td>
-                                <td>1</td>
-                                <td>Manager Approval<br>
-                                    <span style="color: red;">Rejected</span>
+                                <td>{{leaveReport.leaveDaysCount}}</td>
+                                <td>{{leaveReport.leaveStage}}<br>
+                                    <span style="color: red;">{{leaveReport.leaveStatus}}</span>
                                 </td>
                                 <td style="color: #4282be;"><img src="../../../assets/images/eye.png" data-toggle="modal"
                                         data-target="#bigimg16"> view details</td>
-
-
                                 <td>
                                     <div class="col-md-1 dropdown-container" tabindex="-1">
                                         <div class="three-dots"></div>
@@ -78,8 +75,19 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
 
+                            <!-- <tr *ngFor="let leaveReport of myleaveReportList">                              
+                                <td>{{leaveReport.fromDate}}</td>
+                                <td>{{leaveReport.toDate}}</td>
+                                <td>{{leaveReport.leaveType}}<br>
+                                    <span style="color: silver;font-size: 12px;">{{leaveReport.leaveReason}}</span>
+                                </td>
+                                <td>{{leaveReport.leaveDaysCount}}</td>
+                                <td>{{leaveReport.leaveStage}}<br>
+                                    <span style="color: #4282be;">{{leaveReport.leaveStatus}}</span>
+                                </td>
+                            </tr> -->
+                            <!-- <tr>
                                 <td>10 Aug 2021 </td>
                                 <td>10 Aug 2021 </td>
                                 <td>Medical Leave<br>
@@ -102,18 +110,12 @@
                                                 <div>Cancel</div>
                                             </a>
                                         </div>
-
-
-
                                     </div>
                                 </td>
-
-
                             </tr>
                             <tr>
                                 <td>10 Sep 2021 </td>
                                 <td>10 Sep 2021 </td>
-
                                 <td>Sick leave<br>
                                     <span style="color: silver;font-size: 12px;">Fever</span>
                                 </td>
@@ -134,10 +136,7 @@
                                                 <div>Cancel</div>
                                             </a>
                                         </div>
-
-
                                     </div>
-
                                 </td>
                             </tr>
                             <tr>
@@ -164,9 +163,8 @@
                                             </a>
                                         </div>
                                     </div>
-
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -188,20 +186,21 @@
                                         <th>Entitlement Till Date</th>
                                         <th>Availed Till Date</th>
                                         <th>Current Balance</th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Maternity Leave</td>
-                                        <td>10</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>9</td>
+                                    <tr *ngFor="let leaveBalance of myleaveBalanceList">
+                                        <td>{{leaveBalance.sL_No}}</td>
+                                        <td>{{leaveBalance.leaveType}}</td>
+                                        <td>{{leaveBalance.annualQuota}}</td>
+                                        <td>{{leaveBalance.carriedForward}}</td>
+                                        <td>{{leaveBalance.entitlementTillDate}}</td>
+                                        <td>{{leaveBalance.availedTillDate}}</td>
+                                        <td>{{leaveBalance.currentBalance}}</td>
                                     </tr>
-                                    <tr>
+
+                                    
+                                    <!-- <tr>
                                         <td>1</td>
                                         <td>Sick Leave</td>
                                         <td>10</td>
@@ -218,7 +217,7 @@
                                         <td>1</td>
                                         <td>11</td>
                                         <td>0</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -235,7 +234,7 @@
 
 
 
-
+<!-- Code for popup -->
 
     <div id="bigimg16" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
