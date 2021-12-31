@@ -15,9 +15,7 @@ import { DatePipe } from '@angular/common';
 })
 export class LeaveListDashboardComponent implements OnInit {
 
-  IntID: boolean = false;
-  public ID: any = [];
-  temp: any
+  Staffleaveenitilment: any
   constructor(public DigiofficeService: DigipayrollServiceService, public router: Router, public datePipe: DatePipe) { }
   public showorhidecontent: any;
   options: FullCalendarOptions | undefined;
@@ -34,22 +32,33 @@ export class LeaveListDashboardComponent implements OnInit {
   public todaydate = new Date().getDate();
   public options1: any;
   public todayDay = this.datePipe.transform(new Date().getDay(), 'EEEE');
-  public selecallbtn: any;
-
-  roledid: any;
+  roledid: any
   ngOnInit(): void {
-    this.selecallbtn = false;
     this.roledid = localStorage.getItem('roledid');
-    this.getstaffleaves();
-  }
 
+    this.getstaffleaves();
+    this.DigiofficeService.GetMyDetails().subscribe(data => {
+      debugger
+      this.Staffleaveenitilment = data.filter(x => x.id == 10357);
+    });
+
+  }
+  date: any;
+  public getdate(event: any) {
+    debugger
+    this.date = event.target.value;
+    this.DigiofficeService.GetStaffLeaves(10331, 1, "01-01-2020", "01-01-2025").subscribe(data => {
+      debugger
+      this.staffleaves = data.filter(x => x.uuid == localStorage.getItem('staffid') && x.filterdate == this.date);
+    })
+  }
   term: any;
   staffleaves: any;
   public getstaffleaves() {
     debugger
-    this.DigiofficeService.GetStaffLeaves(10331, 1, "01-01-2020", "01-01-2025").subscribe((data: any) => {
+    this.DigiofficeService.GetStaffLeaves(10331, 1, "01-01-2020", "01-01-2025").subscribe(data => {
       debugger
-      this.staffleaves = data.filter((x: { supervisor: string | null; }) => x.supervisor == localStorage.getItem('staffid'));
+      this.staffleaves = data.filter(x => x.uuid == 10357);
       this.buildcallender(this.staffleaves);
     })
   }
@@ -57,76 +66,39 @@ export class LeaveListDashboardComponent implements OnInit {
     debugger
     this.router.navigate(['/NewLeaveRequest']);
   }
-
-  public makeunderline(event: { currentTarget: any; }) {
+  medicalurl: any;
+  public getmedicalurl(id: any) {
     debugger
-    var element = event.currentTarget;
-    element.c("color");
-    element.addClass("bottom__active");
-
-  };
-
-  selectALL(checked: boolean) { // pass true or false to check or uncheck all
-    this.selecallbtn = true;
-    var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs[i].type == "checkbox") {
-        inputs[i].checked = checked;
-        // This way it won't flip flop them and will set them all to the same value which is passed into the function
-      }
-    }
-  }
-
-
-
-  date: any;
-  public getdate(event: any) {
-    debugger
-    this.date = event.target.value;
-
-    this.DigiofficeService.GetStaffLeaves(10331, 1, "01-01-2020", "01-01-2025").subscribe((data: any) => {
+    this.DigiofficeService.GetStaffLeaves(10331, 1, "01-01-2020", "01-01-2025").subscribe(data => {
       debugger
-      this.staffleaves = data.filter((x: { supervisor: string | null; filterdate: any; }) => x.supervisor == localStorage.getItem('staffid') && x.filterdate == this.date);
+      let temp: any = data.filter(x => x.id == id.id);
+      this.medicalurl = temp[0].medicalUrl;
+    })
+  }
+  // public makeunderline(evt:any) {
+  //   debugger
+  //   var i, tablinks;
+
+  //   tablinks = document.getElementsByClassName("activ1");
+  //   for (i = 0; i < tablinks.length; i++) {
+  //     tablinks[i].className = tablinks[i].className.replace(" active", "");
+  //   }
+
+  //   evt.currentTarget.className += " active";
+  // }
+
+
+  public CancelLeave(list: any) {
+    debugger
+
+
+    this.DigiofficeService.CancelLeave(list.id, list.noOfDays, list.uuid, list.leaveTypeID, 'Cancelled').subscribe(data => {
+      debugger
+      Swal.fire('Cancelled Successfully');
+      this.ngOnInit();
     })
 
   }
-
-
-
-  medicalUrl: any
-  public getmedicalUrl(medicalUrl: any) {
-    debugger
-    this.medicalUrl = medicalUrl
-  }
-  public getCheckbocdetails(evn: any) {
-    let temp: any = evn;
-    this.temp = Object.entries(temp);
-    debugger
-    if (this.temp.every((val: { checked: boolean; }) => val.checked == true)) {
-      this.IntID = false;
-      this.ID = [];
-      this.temp.forEach((val: { checked: boolean; }) => { val.checked = false });
-      this.IntID = false;
-    }
-    else {
-      debugger;
-      this.selecallbtn = true;
-      //  this.ID = [];
-      debugger
-      this.temp.forEach((val: { checked: boolean; }) => { val.checked = true });
-      this.IntID = true;
-      var obj: any = {};
-      obj["id"] = evn.id;
-      obj["staffID"] = evn.staffID;
-      obj["leaveTypeID"] = evn.leaveTypeID;
-      obj["noOfDays"] = evn.noOfDays;
-
-
-      this.ID.push(obj);
-
-    }
-  }
-
 
   changeStatus(evn: any) {
 
