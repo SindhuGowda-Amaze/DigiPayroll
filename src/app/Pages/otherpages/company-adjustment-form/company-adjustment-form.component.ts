@@ -41,7 +41,6 @@ export class CompanyAdjustmentFormComponent implements OnInit {
       debugger
       this.result = data;
       this.result=this.result.filter((x: {id: any;})=>x.id==Number(this.id));
-
       this.type=this.result[0].type;
       this.name=this.result[0].name;
       this.code=this.result[0].code;
@@ -63,7 +62,7 @@ export class CompanyAdjustmentFormComponent implements OnInit {
     "Remarks": this.writeremarks,
     "BeforeTax": this.before,
     "Taxable": this.taxable,
-    "MaxAccumulated": this.maxaccumulated,
+    "Max Accumulated": this.maxaccumulated,
 
   };
 
@@ -71,11 +70,12 @@ export class CompanyAdjustmentFormComponent implements OnInit {
     data => {
     debugger
     let result = data;
-    location.href="/CompanyAdjustment/"
+    alert("Successfully saved!!")
+    location.href="/CompanyAdjustment"
   })
 
-  alert("Selected Type is "+this.type)
-  alert("Selected Name is "+this.name)
+
+ 
   }
 
 

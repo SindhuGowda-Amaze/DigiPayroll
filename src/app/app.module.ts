@@ -49,6 +49,7 @@ import { NgWizardConfig, NgWizardModule, THEME } from 'ng-wizard';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { NgxFullCalendarModule } from '../../node_modules/ngx-fullcalendar';
 
+import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
@@ -99,6 +100,7 @@ const ngWizardConfig: NgWizardConfig = {
     UserComponent,
     PayrollComponent,
     EmployeeDashboardComponent,
+    TaxtableAnnualComponent,
     CompanyDashboardComponent
 
   ],

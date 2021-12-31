@@ -43,6 +43,7 @@ import{ StaffReportComponent}from './Pages/Attendence/staff-report/staff-report.
 import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
 import { ApplyLeaveComponent } from './Pages/otherpages/apply-leave/apply-leave.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
 
 const routes: Routes = [
@@ -142,6 +143,9 @@ const routes: Routes = [
   {path:' StaffReportComponent',component: StaffReportComponent},
   {path:'EmployeeDashboard',component: EmployeeDashboardComponent},
   { path: 'EmployeeForm/:id', component: EmployeeFormComponent },
+  {path:'StaffReportComponent',component: StaffReportComponent},
+  {path:'TaxtableAnnual',component:TaxtableAnnualComponent}
+
 ];
 
 @NgModule({

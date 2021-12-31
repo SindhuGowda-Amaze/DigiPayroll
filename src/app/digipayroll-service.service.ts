@@ -22,6 +22,20 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  public GetTaxtableAnnual() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetTaxtableAnnual";
+    return this.http.get<any[]>(APIURL);
+  }
+  
+  public InsertAdjustment(json:any){
+    let APIURL=this.baseURL+"Master/InsertAdjustment";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+
+
+
   public InsertPhilHealth(json:any){
     let APIURL=this.baseURL+"Master/InsertPhilHealth";
     return this.http.post<any[]>(APIURL,json);
@@ -80,6 +94,7 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL+"Master/GetCompanyAdjustment ";
     return this.http.get<any[]>(APIURL);
   } 
+ 
   
   public GetRegularization() {
     debugger

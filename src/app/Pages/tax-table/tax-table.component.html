@@ -53,7 +53,7 @@
                     <label class="Deduct">Deductions</label>
                 </div>
             </div>
-            <div class="row">
+            <div class="row deduction">
                 <div class="col-lg-12 table">
                     <table>
                         <tr>
@@ -64,20 +64,20 @@
                             <td><span class="menu">5</span></td>
                             <td><span class="menu">6</span></td>
                         </tr>
-
+                      
                         <tr>
-                            <td>0.00<br>+0% over</td>
-                            <td>0.00<br>+20% over</td>
-                            <td>82.19<br>+25% over</td>
-                            <td>326.58<br>+30% over</td>
-                            <td>456.98<br>+32% over</td>
-                            <td>7,0898.98<br>+35% over</td>
+                            <td>{{SSSdatalist.daily_Deduction1}}<br>{{SSSdatalist.daily_Deduction_Value1}}</td>
+                            <td>{{SSSdatalist.daily_Deduction2}}<br>{{SSSdatalist.daily_Deduction_Value2}}</td>
+                            <td>{{SSSdatalist.daily_Deduction3}}<br>{{SSSdatalist.daily_Deduction_Value3}}</td>
+                            <td>{{SSSdatalist.daily_Deduction4}}<br>{{SSSdatalist.daily_Deduction_Value4}}</td>
+                            <td>{{SSSdatalist.daily_Deduction5}}<br>{{SSSdatalist.daily_Deduction_Value5}}</td>
+                            <td>{{SSSdatalist.daily_Deduction6}}<br>{{SSSdatalist.daily_Deduction_Value6}}</td>
                         </tr>
                     </table>
                 </div>
             </div>
             <label class="Deduct">Taxtable</label>
-            <div class="row">
+            <div class="row value">
                 <div class="col-lg-12 table">
                     <table>
                         <tr>
@@ -88,16 +88,14 @@
                             <td><span class="menu">5</span></td>
                             <td><span class="menu">6</span></td>
                         </tr>
-                        <tr>
-                            <td>0.00</td>
-                            <td>654.00</td>
-                            <td>1096.00</td>
-                            <td>2,987.00</td>
-                            <td>5,877.00</td>
-                            <td>21,787.00</td>
-                        </tr>
-
-
+                         <tr>
+                            <td>{{SSSdatalist.daily_TaxTable1}}</td>
+                            <td>{{SSSdatalist.daily_TaxTable2}}</td>
+                            <td>{{SSSdatalist.daily_TaxTable3}}</td>
+                            <td>{{SSSdatalist.daily_TaxTable4}}</td>
+                            <td>{{SSSdatalist.daily_TaxTable5}}</td>
+                            <td>{{SSSdatalist.daily_TaxTable6}}</td>
+                        </tr> 
                     </table>
                 </div>
             </div>
@@ -119,15 +117,14 @@
                             <td><span class="menu">5</span></td>
                             <td><span class="menu">6</span></td>
                         </tr>
-                        <tr>
-                            <td>0.00<br>+0% over</td>
-                            <td>0.00<br>+20% over</td>
-                            <td>82.19<br>+25% over</td>
-                            <td>326.58<br>+30% over</td>
-                            <td>456.98<br>+32% over</td>
-                            <td>7,0898.98<br>+35% over</td>
+                         <tr>
+                            <td>{{SSSdatalist.weekly_Deduction1}}<br>{{SSSdatalist.weekly_Deduction_Value1}}</td>
+                            <td>{{SSSdatalist.weekly_Deduction2}}<br>{{SSSdatalist.weekly_Deduction_Value2}}</td>
+                            <td>{{SSSdatalist.weekly_Deduction3}}<br>{{SSSdatalist.weekly_Deduction_Value3}}</td>
+                            <td>{{SSSdatalist.weekly_Deduction4}}<br>{{SSSdatalist.weekly_Deduction_Value4}}</td>
+                            <td>{{SSSdatalist.weekly_Deduction5}}<br>{{SSSdatalist.weekly_Deduction_Value5}}</td>
+                            <td>{{SSSdatalist.weekly_Deduction6}}<br>{{SSSdatalist.weekly_Deduction_Value6}}</td>
                         </tr>
-
                     </table>
                 </div>
             </div>
@@ -136,22 +133,23 @@
                 <div class="col-lg-12 table">
                     <table>
                         <tr>
-                            <td><span class="menu">1</span></td>
-                            <td><span class="menu">2</span></td>
-                            <td><span class="menu">3</span></td>
-                            <td><span class="menu">4</span></td>
-                            <td><span class="menu">5</span></td>
-                            <td><span class="menu">6</span></td>
+                            <th><span class="menu">1</span></th>
+                            <th><span class="menu">2</span></th>
+                            <th><span class="menu">3</span></th>
+                            <th><span class="menu">4</span></th>
+                            <th><span class="menu">5</span></th>
+                            <th><span class="menu">6</span></th>
                         </tr>
-                        <tr>
-                            <td>0.00</td>
-                            <td>654.00</td>
-                            <td>1096.00</td>
-                            <td>2,987.00</td>
-                            <td>5,877.00</td>
-                            <td>21,787.00</td>
-                        </tr>
-
+                       <tr>
+                        <td>{{SSSdatalist.weekly_Taxtable1}}</td>
+                        <td>{{SSSdatalist.weekly_Taxtable2}}</td>
+                        <td>{{SSSdatalist.weekly_Taxtable3}}</td>
+                        <td>{{SSSdatalist.weekly_Taxtable4}}</td>
+                        <td>{{SSSdatalist.weekly_Taxtable5}}</td>
+                        <td>{{SSSdatalist.weekly_Taxtable6}}</td>
+                           
+                        </tr> 
+                         
                     </table>
                 </div>
             </div>
@@ -173,14 +171,41 @@
                             <td><span class="menu">5</span></td>
                             <td><span class="menu">6</span></td>
                         </tr>
-                        <tr>
-                            <td>0.00<br>+0% over</td>
-                            <td>0.00<br>+20% over</td>
-                            <td>82.19<br>+25% over</td>
-                            <td>326.58<br>+30% over</td>
-                            <td>456.98<br>+32% over</td>
-                            <td>7,0898.98<br>+35% over</td>
-                        </tr>
+                         <tr>
+                            <td>{{SSSdatalist.semi_Monthly_Deduction1}}<br>{{SSSdatalist.semi_Monthly_Deduction_Value1}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Deduction2}}<br>{{SSSdatalist.semi_Monthly_Deduction_Value2}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Deduction3}}<br>{{SSSdatalist.semi_Monthly_Deduction_Value3}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Deduction4}}<br>{{SSSdatalist.semi_Monthly_Deduction_Value4}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Deduction5}}<br>{{SSSdatalist.semi_Monthly_Deduction_Value5}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Deduction6}}<br>{{SSSdatalist.semi_Monthly_Deduction_Value6}}</td>
+                           
+                        </tr> 
+                        <!-- <tr *ngFor="let data of deductions">
+                            <td>{{data.semi_Monthly_Deduction1}}
+                                <br>
+                                {{data.Semi_Monthly_Deduction_Value1}}
+                            </td>
+                            <td>{{data.semi_Monthly_Deduction2}}
+                                <br>
+                                {{data.semi_Monthly_Deduction_Value2}}
+                            </td>
+                            <td>{{data.semi_Monthly_Deduction3}}
+                                <br>
+                                {{data.semi_Monthly_Deduction_Value3}}
+                            </td>
+                            <td>{{data.semi_Monthly_Deduction4}}
+                                <br>
+                                {{data.semi_Monthly_Deduction_Value4}}
+                            </td>
+                            <td>{{data.semi_Monthly_Deduction5}}
+                                <br>
+                                {{data.semi_Monthly_Deduction_Value5}}
+                            </td>
+                            <td>{{data.semi_Monthly_Deduction6}}
+                                <br>
+                                 {{data.semi_Monthly_Deduction_Value6}}
+                            </td>
+                        </tr> -->
 
                     </table>
                 </div>
@@ -196,16 +221,24 @@
                             <td><span class="menu">4</span></td>
                             <td><span class="menu">5</span></td>
                             <td><span class="menu">6</span></td>
-                        </tr>
-                        <tr>
-                            <td>0.00</td>
-                            <td>654.00</td>
-                            <td>1096.00</td>
-                            <td>2,987.00</td>
-                            <td>5,877.00</td>
-                            <td>21,787.00</td>
-                        </tr>
-
+                         </tr>
+                         <tr>
+                            <td>{{SSSdatalist.semi_Monthly_Taxtable1}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Taxtable2}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Taxtable3}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Taxtable4}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Taxtable5}}</td>
+                            <td>{{SSSdatalist.semi_Monthly_Taxtable6}}</td>
+                          
+                        </tr>  
+                        <!-- <tr *ngFor="let data of taxtable">
+                            <td>{{data.semi_Monthly_Taxtable1}}</td>
+                            <td>{{data.semi_Monthly_Taxtable2}}</td>
+                            <td>{{data.semi_Monthly_Taxtable3}}</td>
+                            <td>{{data.semi_Monthly_Taxtable4}}</td>
+                            <td>{{data.semi_Monthly_Taxtable5}}</td>
+                            <td>{{data.semi_Monthly_Taxtable6}}</td>
+                        </tr> -->
                     </table>
                 </div>
             </div>
@@ -227,15 +260,41 @@
                             <td><span class="menu">5</span></td>
                             <td><span class="menu">6</span></td>
                         </tr>
-                        <tr>
-                            <td>0.00<br>+0% over</td>
-                            <td>0.00<br>+20% over</td>
-                            <td>82.19<br>+25% over</td>
-                            <td>326.58<br>+30% over</td>
-                            <td>456.98<br>+32% over</td>
-                            <td>7,0898.98<br>+35% over</td>
-                        </tr>
-
+                         <tr>
+                            <td>{{SSSdatalist.monthly_Deduction1}}<br>{{SSSdatalist.monthly_Deduction_Value1}}</td>
+                            <td>{{SSSdatalist.monthly_Deduction2}}<br>{{SSSdatalist.monthly_Deduction_Value2}}</td>
+                            <td>{{SSSdatalist.monthly_Deduction3}}<br>{{SSSdatalist.monthly_Deduction_Value3}}</td>
+                            <td>{{SSSdatalist.monthly_Deduction4}}<br>{{SSSdatalist.monthly_Deduction_Value4}}</td>
+                            <td>{{SSSdatalist.monthly_Deduction5}}<br>{{SSSdatalist.monthly_Deduction_Value5}}</td>
+                            <td>{{SSSdatalist.monthly_Deduction6}}<br>{{SSSdatalist.monthly_Deduction_Value6}}</td>
+                         
+                        </tr>  
+                        <!-- <tr *ngFor="let data of deductions">
+                            <td>{{data.monthly_Deduction1}}
+                                <br>
+                                {{data.monthly_Deduction_Value1}}
+                            </td>
+                            <td>{{data.monthly_Deduction2}}
+                                <br>
+                                {{data.monthly_Deduction_Value2}}
+                            </td>
+                            <td>{{data.monthly_Deduction3}}
+                                <br>
+                                {{data.monthly_Deduction_Value3}}
+                            </td>
+                            <td>{{data.monthly_Deduction4}}
+                                <br>
+                                {{data.monthly_Deduction_Value4}}
+                            </td>
+                            <td>{{data.monthly_Deduction5}}
+                                <br>
+                                {{data.monthly_Deduction_Value5}}
+                            </td>
+                            <td>{{data.monthly_Deduction6}}
+                                <br>
+                                {{data.monthly_Deduction_Value6}}
+                            </td>
+                        </tr> -->
                     </table>
                 </div>
             </div>
@@ -252,13 +311,21 @@
                             <td><span class="menu">6</span></td>
                         </tr>
                         <tr>
-                            <td>0.00</td>
-                            <td>654.00</td>
-                            <td>1096.00</td>
-                            <td>2,987.00</td>
-                            <td>5,877.00</td>
-                            <td>21,787.00</td>
-                        </tr>
+                            <td>{{SSSdatalist.monthly_Taxtable1}}</td>
+                            <td>{{SSSdatalist.monthly_Taxtable2}}</td>
+                            <td>{{SSSdatalist.monthly_Taxtable3}}</td>
+                            <td>{{SSSdatalist.monthly_Taxtable4}}</td>
+                            <td>{{SSSdatalist.monthly_Taxtable5}}</td>
+                            <td>{{SSSdatalist.monthly_Taxtable6}}</td>
+                        </tr> 
+                        <!-- <tr *ngFor="let data of taxtable">
+                            <td>{{data.monthly_Taxtable1}}</td>
+                            <td>{{data.monthly_Taxtable2}}</td>
+                            <td>{{data.monthly_Taxtable3}}</td>
+                            <td>{{data.monthly_Taxtable4}}</td>
+                            <td>{{data.monthly_Taxtable5}}</td>
+                            <td>{{data.monthly_Taxtable6}}</td>
+                        </tr> -->
                     </table>
                 </div>
             </div>
