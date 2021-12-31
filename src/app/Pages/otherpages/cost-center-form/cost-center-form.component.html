@@ -12,7 +12,7 @@
         <br>
         <div class="row LocDashboard">
             <div class="col-lg-12">
-                <label>Cost Center  Details</label>
+                <label>Cost Center Details</label>
             </div>
         </div>
         <div class="card BOXCARD">
@@ -29,13 +29,14 @@
             </div>
             <div class="row leavereq">
                 <div class="col-md-2">
-                    <input type="text"  class="form-control inputfield" [(ngModel)]="name">
+                    <input type="text" class="form-control inputfield" [(ngModel)]="name">
                 </div>
                 <div class="col-md-2">
                     <input type="text" class="form-control inputfield" [(ngModel)]="code">
                 </div>
                 <div class="col-md-4">
-                    <textarea type="text" class="form-control inputfield" placeholder="Write here remarks" [(ngModel)]="remarks"></textarea>
+                    <textarea type="text" class="form-control inputfield" placeholder="Write here remarks"
+                        [(ngModel)]="remarks"></textarea>
                 </div>
             </div>
             <br>
@@ -46,14 +47,11 @@
                 </div>
                 <div class="col-lg-1">
                     <button type="button" class="form-control SubmitBTN" *ngIf="id==null || id==undefined"
-                            (click)="OnSubmit()">Save</button>
-                        <button type="button" class="form-control SubmitBTN" *ngIf="id!=null || id!=undefined"
-                            (click)="Update()">Update</button>
+                        (click)="OnSubmit()">Save</button>
+                    <button type="button" class="form-control SubmitBTN" *ngIf="id!=null || id!=undefined"
+                        (click)="Update()">Update</button>
                 </div>
             </div>
         </div><br>
     </div>
     <div class="col-lg-1"></div>
-
-
-   
