@@ -42,6 +42,7 @@ import{ PayrollReportComponent} from './Pages/Attendence/payroll-report/payroll-
 import{ StaffReportComponent}from './Pages/Attendence/staff-report/staff-report.component'
 import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
 import { ApplyLeaveComponent } from './Pages/otherpages/apply-leave/apply-leave.component';
+import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
@@ -136,7 +137,8 @@ const routes: Routes = [
   {path:'LeaveReport',component:LeaveReportComponent},
   {path:'OvertimeReport',component:OvertimeReportComponent},
   {path:'PayrollReportComponent',component:PayrollReportComponent},
-  {path:' StaffReportComponent',component: StaffReportComponent}
+  {path:'StaffReportComponent',component: StaffReportComponent},
+  {path:'TaxtableAnnual',component:TaxtableAnnualComponent}
 
 ];
 
