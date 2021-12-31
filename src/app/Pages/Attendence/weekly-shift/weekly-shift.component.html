@@ -1,16 +1,17 @@
 <div class="container-fluid">
-    
+
     <div class="row">
         <div class="col-md-1">
         </div>
         <div class="col-md-10">
-            <div>
+            <!-- <div>
                 <ul>
-                    <li><a class="active" routerLink="/WeeklyShift"> My Weekly Shift</a></li>
-                    <!-- <li><a class="leavelist" routerLink="/MyTeamWeeklyShift">My Team Weekly Shift</a></li> -->
+                    <li><a class="active" routerLink="/WeeklyShift"> <u>My Weekly Shift</u></a></li>
+                    <li *ngIf="roleid==2"><a class="leavelist" routerLink="/MyTeamWeeklyShift">My Team Weekly Shift</a>
+                    </li>
                 </ul>
-            </div>
-          <br>
+            </div> -->
+            <br>
             <div class="card">
                 <div>
                     <label class="leavebalance">Period</label>
@@ -33,7 +34,7 @@
                         <input type="date" class="form-control">
                     </div>
                     <div class="col-md-2">
-                        <button class=" form-control submitbtn leavelist" (click)="Refresh()">Refresh</button>
+                        <button class=" form-control submitbtn leavelist">Refresh</button>
                     </div>
                 </div>
                 <br>
@@ -49,18 +50,24 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>SHIFTDATE</th>
-                                <th>SHIFTNAME</th>
-                                <th>STARTTIME</th>
-                                <th>ENDTIME</th>
-                            </tr>
-                            <tr *ngFor="let week of weeklyShift">
-                               <td>{{week.shiftDate}}</td>
-                               <td>{{week.shiftName}}</td>
-                               <td>{{week.startTime}}</td>
-                               <td>{{week.endTime}}</td>   
+                                <th>SHIFT DATE</th>
+                                <th>SHIFT NAME</th>
+                                <th>START TIME</th>
+                                <th>END TIME</th>
                             </tr>
                         </thead>
+                       
+                            <tbody>
+                                <tr *ngFor="let project of workplaceList">
+                                  
+                                    <td>{{project.shiftDate|date}}</td>
+                                    <td>{{project.shiftName}}</td>
+                                    <td>{{project.startTime|date:'hh:mm'}}</td>
+                                    <td>{{project.endTime|date:'hh:mm'}}</td>
+                                </tr>
+                               
+                            </tbody>
+                       
                     </table>
                 </div>
             </div>

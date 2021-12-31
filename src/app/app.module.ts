@@ -45,6 +45,14 @@ import { SSSComponent } from './Pages/otherpages/sss/sss.component';
 import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
 import { UserComponent } from './Pages/Attendence/user/user.component';
 import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
+import { NgWizardConfig, NgWizardModule, THEME } from 'ng-wizard';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { NgxFullCalendarModule } from '../../node_modules/ngx-fullcalendar';
+
+const ngWizardConfig: NgWizardConfig = {
+  theme: THEME.circles
+};
+
 
 @NgModule({
   declarations: [
@@ -88,7 +96,8 @@ import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
     SSSComponent,
     AdjustmentComponent,
     UserComponent,
-    PayrollComponent
+    PayrollComponent,
+    EmployeeDashboardComponent
 
   ],
   imports: [
@@ -97,7 +106,9 @@ import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
     FormsModule,
     NgbModule,
     NgxDropzoneModule,
-    HttpClientModule
+    NgxFullCalendarModule,
+    HttpClientModule,
+    NgWizardModule.forRoot(ngWizardConfig),
   ],
   providers: [HttpClient],
   

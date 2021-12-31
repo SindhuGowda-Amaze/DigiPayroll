@@ -10,22 +10,19 @@ import { ActivatedRoute } from '@angular/router';
 export class WeeklyShiftComponent implements OnInit {
   weeklyShift:any;
   constructor(private DigiServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
-
+ 
+  roleid:any;
   ngOnInit(): void {
-    this.GetMyWeeklyShift();
+    this.GetAnnouncements();
+    this.roleid = localStorage.getItem('roledid');
   }
-
-  public GetMyWeeklyShift()
-  {
+  term:any;
+  workplaceList:any;
+  public GetAnnouncements() {
     debugger
-   this.DigiServiceService.GetMyWeeklyShift().subscribe(data=>{
+    this.DigiServiceService.GetStaffShiftDetails().subscribe(data => {
       debugger
-      this.weeklyShift=data;
-    },
-    )
-  }
-
-  Refresh(){
-    location.reload();
+      this.workplaceList = data.slice(0,5);
+    })
   }
 }
