@@ -45,6 +45,7 @@ import { SSSComponent } from './Pages/otherpages/sss/sss.component';
 import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.component';
 import { UserComponent } from './Pages/Attendence/user/user.component';
 import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
+import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
 
 @NgModule({
@@ -90,6 +91,7 @@ import { CompanyDashboardComponent } from './Pages/company-dashboard/company-das
     AdjustmentComponent,
     UserComponent,
     PayrollComponent,
+    TaxtableAnnualComponent,
     CompanyDashboardComponent
 
   ],
