@@ -1,41 +1,76 @@
 <div class="container">
     <hr class="HrLine">
     <div class="row">
-        <div class="col-lg-12">
+        <!-- <div class="col-lg-12">
             <ul>
                 <li><a class="active" routerLink="/AttendanceView">MY REGULARIZATION LIST</a></li>
-                <!-- <li><a class="leavelist" routerLink="/MyTeamAttendenceRegularisation">MY TEAM REGULARIZATION LIST</a></li> -->
+                <li><a class="leavelist" routerLink="/MyTeamAttendenceRegularisation"><u>MY TEAM REGULARIZATION
+                            LIST</u></a>
+                </li>
             </ul>
-        </div>
+        </div> -->
     </div>
     <br>
+    <div class="row">
+        <div class="col-md-5">
+
+        </div>
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-2">
+            <!-- <a><button *ngIf="selecallbtn" class="form-control AddExpense" >Approve
+                    All</button></a> -->
+        </div>
+    </div><br>
     <div class="row">
         <div class="col-md-12">
             <table class="table">
                 <thead>
                     <tr>
-                        <!-- <th>Check Box</th> -->
+                        <!-- <th>Select All <input type="checkbox" name="select-all" id="select-all"
+                                (click)="selectALL(true)" /></th> -->
                         <th>Date</th>
+                        <th>Employee Name</th>
                         <th>Shift</th>
                         <th>Expected In Time</th>
                         <th>Punch In Time</th>
                         <th>Expected Out Time</th>
                         <th>Punch Out Time</th>
                         <th>Work Hours</th>
-                        <th>Extra Hours</th>                      
-                    </tr>
-                    <tr *ngFor="let shift of shiftdetails">
-                      <td>{{shift.date}}</td>
-                      <td>{{shift.shift}}</td>
-                      <td>{{shift.expectedInTime}}</td>
-                      <td>{{shift.punchInTime}}</td>
-                      <td>{{shift.expectedOutTime}}</td>
-                      <td>{{shift.punchOutTime}}</td>
-                      <td>{{shift.workHours}}</td>
-                      <td>{{shift.extraHours}}</td>
-                      
+                        <th>Extra Hours</th>
+                        <!-- <th>Actions</th> -->
                     </tr>
                 </thead>
+                <tbody>
+                    <tr *ngFor="let attendance of attendancelist">
+                        <!-- <td><input type="checkbox"> </td> -->
+                        <td>{{attendance.signinDate|date}}</td>
+                        <td>{{attendance.name}}</td>
+
+                        <td>General Shift</td>
+                        <td>10:00</td>
+                        <td>
+                            <p style="color:red">{{attendance.signinDate|date:'hh:mm'}}</p>
+                            <!-- <p ng-if="(attendance.signinDate|date:'hh:mm' > attendance.signinDate|date:'10:00')&& attendance.approve==true"
+                                style="color:black">{{attendance.signinDate|date:'hh:mm'}}</p> -->
+                        </td>
+
+                        <td>5:00</td>
+                        <td ng-if="attendance.signoutDate|date:'06:00' > attendance.signoutDate|date:'hh:mm'">
+                            {{attendance.signoutDate|date:'hh:mm'}}</td>
+                        <td>{{attendance.hr}}</td>
+                        <td>NA</td>
+
+
+                        <!-- <td class="txt">
+                            <img class="img" (click)="ApproveAttendanceRegularisation(attendance.id)"
+                                src="assets/Images/check-mark.png">
+                            <img class="imgcancel" src="assets/Images/cancel (1).png">
+                        </td> -->
+
+                    </tr>
+
+                </tbody>
             </table>
         </div>
     </div>
@@ -110,13 +145,12 @@
     </div> -->
     <br>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <!-- <div class="modal fade" id="exampleModalCenter" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
     <div class="modal-dialog modal-dialog-centered" role="document" >
         <div class="modal-content" style="width: max-content;margin-left: -171px;">
