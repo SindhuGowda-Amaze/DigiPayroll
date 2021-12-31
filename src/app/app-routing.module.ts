@@ -45,6 +45,9 @@ import { ApplyLeaveComponent } from './Pages/otherpages/apply-leave/apply-leave.
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
+import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecompanyprofile.component';
+import { UpdateBankComponent } from './update-bank/update-bank.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
@@ -144,7 +147,11 @@ const routes: Routes = [
   {path:'EmployeeDashboard',component: EmployeeDashboardComponent},
   { path: 'EmployeeForm/:id', component: EmployeeFormComponent },
   {path:'StaffReportComponent',component: StaffReportComponent},
-  {path:'TaxtableAnnual',component:TaxtableAnnualComponent}
+  {path:'TaxtableAnnual',component:TaxtableAnnualComponent},
+  {path:'Updatecompanyprofile',component:UpdatecompanyprofileComponent},
+  {path:'UpdateBank',component:UpdateBankComponent}
+
+
 
 ];
 
