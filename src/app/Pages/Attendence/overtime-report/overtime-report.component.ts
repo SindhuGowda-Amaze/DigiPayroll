@@ -8,20 +8,25 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./overtime-report.component.css']
 })
 export class OvertimeReportComponent implements OnInit {
-  time:any;
-  timedetails:any;
-  constructor(private DigiServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
+  time: any;
+  timedetails: any;
+  constructor(private DigiServiceService: DigipayrollServiceService, private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.GetMyOverTimeDetails();
   }
-  public GetMyOverTimeDetails()
-  {
+  public GetMyOverTimeDetails() {
     debugger
-   this.DigiServiceService.GetMyOverTimeDetails().subscribe(data=>{
+    this.DigiServiceService.GetMyOverTimeDetails().subscribe(data => {
       debugger
-      this.timedetails=data;
+      this.timedetails = data;
     },
     )
   }
+
+  refresh(){
+    location.reload();
+  }
 }
+
+

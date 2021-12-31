@@ -46,6 +46,7 @@ import { AdjustmentComponent } from './Pages/Attendence/adjustment/adjustment.co
 import { UserComponent } from './Pages/Attendence/user/user.component';
 import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
+import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +91,8 @@ import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.compo
     AdjustmentComponent,
     UserComponent,
     PayrollComponent,
-    TaxtableAnnualComponent
+    TaxtableAnnualComponent,
+    CompanyDashboardComponent
 
   ],
   imports: [

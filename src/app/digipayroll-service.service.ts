@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DigipayrollServiceService {
 
-  // public baseURL = "http://localhost:4199/";   
-  public baseURL = "http://103.133.214.197/DigiPayroll/";
+  public baseURL = "http://localhost:4199/";   
+  // public baseURL = "http://103.133.214.197/DigiPayroll/";
  
   constructor(private http: HttpClient  ) { }
 
@@ -106,7 +106,10 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
- 
+  public InsertUserDetails(json:any){
+    let APIURL=this.baseURL+"Master/InsertUserDetails";
+    return this.http.post<any[]>(APIURL,json);
+  }
 
   public InsertCompanyAdjustment(json:any){
     let APIURL=this.baseURL+"Master/InsertCompanyAdjustment";
@@ -244,6 +247,11 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
+  public InsertPayroll(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertPayroll";
+    return this.http.post<any[]>(APIURL,json);
+  }
 
 
 
@@ -282,10 +290,10 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
-  public DeletePayroll(ID : any) {
+  public DeletePayroll(id : any) {
     debugger
     let APIURL = this.baseURL + "Master/DeletePayroll";
-    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayroll?ID=" +ID);
+    return this.http.get<any[]>(this.baseURL+ "Master/DeletePayroll?ID=" +id);
   }
 
   public InsertBanks(json : any) {
@@ -332,7 +340,17 @@ export class DigipayrollServiceService {
   }
 
 
-  
+  public GetMyLeaveReport() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetMyLeaveReport";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetLeaveBalance() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetLeaveBalance";
+    return this.http.get<any[]>(APIURL);
+  }
 
   
   public AttachmentsUpload(files: any) {

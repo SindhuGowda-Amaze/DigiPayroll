@@ -28,7 +28,7 @@
                         <input class="form-control" type="date" placeholder="Duration">
                     </div> 
                     <div class="col-md-2">
-                        <button class=" form-control submitbtn leavelist">Refresh</button>
+                        <button class=" form-control submitbtn leavelist" (click)="refresh()">Refresh</button>
                     </div> 
                     <div class="col-md-2">
                         <button class=" form-control submitbtn leavelist">Download</button>
@@ -50,18 +50,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>                              
-                                <td>28 Jul 2021 </td>
-                                <td>29 Jul 2021 </td>
-                                <td>Paid time off leave<br>
-                                    <span style="color: silver;font-size: 12px;">Others</span>
+                            <tr *ngFor="let leaveReport of myleaveReportList">                              
+                                <td>{{leaveReport.fromDate}}</td>
+                                <td>{{leaveReport.toDate}}</td>
+                                <td>{{leaveReport.leaveType}}<br>
+                                    <span style="color: silver;font-size: 12px;">{{leaveReport.leaveReason}}</span>
                                 </td>
-                                <td>1day </td>
-                                <td>Manager Approval<br>
-                                    <span style="color: #4282be;">Pending</span>
+                                <td>{{leaveReport.leaveDaysCount}}</td>
+                                <td>{{leaveReport.leaveStage}}<br>
+                                    <span style="color: #4282be;">{{leaveReport.leaveStatus}}</span>
                                 </td>
                             </tr>
-                            <tr>                         
+                            <!-- <tr>                         
                                 <td>12 Aug 2021 </td>
                                 <td>21 Aug 2021 </td>
                                 <td>Vacation Type<br>
@@ -94,7 +94,7 @@
                                 <td>Manager Approval<br>
                                     <span style="color: #4282be;">Pending</span>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
