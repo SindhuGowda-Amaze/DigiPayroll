@@ -16,6 +16,7 @@ export class UserFormComponent implements OnInit {
   isTotal: any;
   isLocked: any;
   model_Access: any;
+  model_AccessList: any;
   constructor(private DigipayrollServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
   
   ngOnInit(): void {

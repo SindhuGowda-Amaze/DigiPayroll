@@ -108,12 +108,20 @@
                 </div>
             </div>
             <div class="row leavereq">
-                <div class="col-md-2">
+                <!-- <div class="col-md-2">
                     <div class="dropdown">
                         <select class="form-control inputfield fonttxt" [(ngModel)]="model_Access">
                             <option value="Select">Select Y/N ?</option>
                             <option value="1">Y</option>
                             <option value="2">N</option>
+                        </select>
+                    </div>
+                </div> -->
+                <div class="col-md-2">
+                    <div class="dropdown">
+                        <select class="form-control inputfield fonttxt" name="Model Access" Id="Model Access" [(ngModel)]="model_Access">
+                            <option value="">Select </option>
+                            <option *ngFor="let model_Access of model_AccessList" value={{model_Access.id}}>{{model_Access.short}} </option>
                         </select>
                     </div>
                 </div>
