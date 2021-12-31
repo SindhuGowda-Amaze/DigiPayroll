@@ -1,3 +1,22 @@
+.newrequest{
+    background-color: #21a4da;
+    color: white;
+}
+
+.card{
+    padding: 20px;
+}
+th{
+    background-color: #e4e5e6;
+}
+.dropdown-toggle{
+    text-align: left;
+}
+.LocDashboard{
+    padding-top: 10px;
+    margin: 0px;
+    background-color: #e4e5e6;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -21,12 +40,6 @@ ul {
     text-decoration: 3px solid rgb(28, 32, 94) underline;
   }
 
-  .cardlabel {
-    font-family: 'DIN Bold';
-    font-size: 20px;
-    margin-top: -1px;
-  }
-
   .requestbtn{
       background-color: #4282be;
       color: white;
@@ -47,7 +60,7 @@ ul {
       color: white;
   } */
 .applyleavetxt{
-    padding: 0px 10px;
+  
     font-family: 'DIN Bold';
     font-size: 20px;
     font-weight: bold;
@@ -63,7 +76,7 @@ ul {
       background-color: #e4e5e6;
   }
   td{
-    background-color: white;
+    background-color: rgb(247, 242, 242);
     color: #494949;
 }
   .show3res{
@@ -76,7 +89,7 @@ ul {
   }
   .leavebalance{
     padding-top: 10px;
-    padding-left: 10px;
+  
     font-weight: bold;
     color: #404040;
     font-size: 20px;
@@ -106,8 +119,5 @@ ul {
   .submitbtn{
     background-color: #2F87CC;
     color: white;
-}
-.txt{
-    color: red;
 }
   

@@ -51,6 +51,14 @@ import { NgxFullCalendarModule } from '../../node_modules/ngx-fullcalendar';
 
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
+import { LeaveTypeDashboardComponent } from './leave-type-dashboard/leave-type-dashboard.component';
+import { LeaveTypeFornComponent } from './leave-type-forn/leave-type-forn.component';
+import { StateMasterDashComponent } from './state-master-dash/state-master-dash.component';
+import { StateMasterComponent } from './state-master/state-master.component';
+import { CityMasterDashComponent } from './city-master-dash/city-master-dash.component';
+import { CityMasterComponent } from './city-master/city-master.component';
+import { CountryMasterDashComponent } from './country-master-dash/country-master-dash.component';
+import { CountryMasterComponent } from './country-master/country-master.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -101,7 +109,15 @@ const ngWizardConfig: NgWizardConfig = {
     PayrollComponent,
     EmployeeDashboardComponent,
     TaxtableAnnualComponent,
-    CompanyDashboardComponent
+    CompanyDashboardComponent,
+    LeaveTypeDashboardComponent,
+    LeaveTypeFornComponent,
+    StateMasterDashComponent,
+    StateMasterComponent,
+    CityMasterDashComponent,
+    CityMasterComponent,
+    CountryMasterDashComponent,
+    CountryMasterComponent
 
   ],
   imports: [

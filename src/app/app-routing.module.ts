@@ -45,7 +45,14 @@ import { ApplyLeaveComponent } from './Pages/otherpages/apply-leave/apply-leave.
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
-
+import { LeaveTypeDashboardComponent } from './leave-type-dashboard/leave-type-dashboard.component';
+import { LeaveTypeFornComponent } from './leave-type-forn/leave-type-forn.component';
+import { StateMasterComponent } from './state-master/state-master.component';
+import { StateMasterDashComponent } from './state-master-dash/state-master-dash.component';
+import { CountryMasterComponent } from './country-master/country-master.component';
+import { CountryMasterDashComponent } from './country-master-dash/country-master-dash.component';
+import { CityMasterComponent } from './city-master/city-master.component';
+import { CityMasterDashComponent } from './city-master-dash/city-master-dash.component';
 const routes: Routes = [
   { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
 
@@ -144,7 +151,20 @@ const routes: Routes = [
   {path:'EmployeeDashboard',component: EmployeeDashboardComponent},
   { path: 'EmployeeForm/:id', component: EmployeeFormComponent },
   {path:'StaffReportComponent',component: StaffReportComponent},
-  {path:'TaxtableAnnual',component:TaxtableAnnualComponent}
+  {path:'TaxtableAnnual',component:TaxtableAnnualComponent},
+  {path:'LeaveTypeDashboard',component:LeaveTypeDashboardComponent},
+  {path:'LeaveTypeForn',component:LeaveTypeFornComponent},
+  {path:'LeaveTypeForn/:id',component:LeaveTypeFornComponent},
+  {path:'StateMaster',component:StateMasterComponent},
+  {path:'StateMasterDash',component:StateMasterDashComponent},
+  {path:'CountryMaster',component:CountryMasterComponent},
+  {path:'CountryMasterDash',component:CountryMasterDashComponent},
+  {path:'CityMaster',component:CityMasterComponent},
+  {path:'CityMasterDash',component:CityMasterDashComponent},
+  
+
+  
+
 
 ];
 

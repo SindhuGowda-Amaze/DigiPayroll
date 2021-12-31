@@ -1,16 +1,18 @@
 <div class="container-fluid">
+
     <div class="row">
         <div class="col-md-1">
+           
         </div>
         <div class="col-md-10">
-            <!-- <div>
+             <div>
                 <div>
                     <ul>
-                        <li><a class="active" routerLink="/AttendenceDetails"> My Attendence Details</a></li>
-                        <li><a class="leavelist" routerLink="/MyTeamAttendence">My Team Attendence Details</a></li>
+                        <li><a class="active"  data-toggle="modal" data-target="#Allocate"> Mark Attendance</a></li>
+                      
                     </ul>
                 </div>
-            </div> -->
+            </div> 
             <br>
             <div class="card">
                 <br>
@@ -104,3 +106,49 @@
 <br>
 <br>
 <br>
+
+
+
+<div id="Allocate" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <div class="row">
+
+                    <div class="col-lg-2">
+                        <i class="fa fa-bullhorn" aria-hidden="true" style="font-size:30px;color: #2F87CC;"></i>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <h1 class="cardlabel">Mark Attendance</h1>
+                    </div>
+                </div>
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body ">
+                <div class="container-fluid">
+                    <div class="row" style="height: 210px;">
+                        <div class="col-lg-6">
+                            <img (click)="punchin()" src="assets/images/punchin.png" style="width:70px;"><br>
+                            <label style="color: #555;font-size:14px;margin-top:4px">Punch in time</label>
+                            <label style="color: #36acdd;margin-left:8px">10:30 am</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <img (click)="punchout()" src="assets/images/punchout.png"
+                                style="width:70px;transform: rotate(-80deg);"><br>
+                            <label style="color: #555;font-size:14px;margin-top:4px">Punch out time</label>
+                            <!-- <label style="color: #36acdd;margin-left:8x">05:30 pm</label> -->
+                        </div>
+
+                    </div>
+
+                    <br />
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
