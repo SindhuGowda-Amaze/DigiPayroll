@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DigiPayroll';
+
+  
+  company_name: any;
+  temp:any
+  ngOnInit() {
+    this.temp=localStorage.getItem('temp')
+    this.company_name = localStorage.getItem("company_name");
+  }
 }

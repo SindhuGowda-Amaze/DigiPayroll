@@ -15,13 +15,13 @@ export class PayGroupComponent implements OnInit {
 
   ngOnInit(): void {
     this.GetPayGroup();
-    // this.ActivatedRoute.params.subscribe(params => {
-    //   debugger
-    //   this.id = params["id"];
-    //   if (this.id != null && this.id != undefined) {
-    //     this.GetPayGroup();
-    //   }
-    // })
+    this.ActivatedRoute.params.subscribe(params => {
+      debugger
+      this.id = params["id"];
+      if (this.id != null && this.id != undefined) {
+        this.GetPayGroup();
+      }
+    })
   }
   public GetPayGroup() {
     debugger
@@ -32,7 +32,7 @@ export class PayGroupComponent implements OnInit {
       })
   }
 
-  public Ondelete(id:any) {
+  public Ondelete(id: any) {
     this.DigipayrollServiceService.DeletePayGroup(id).subscribe(
       data => {
         debugger
@@ -42,8 +42,19 @@ export class PayGroupComponent implements OnInit {
     )
   }
 
-   // Modify(details: any){
-  //   debugger
-  //  location.href="/CostCenterForm/"+ details.id;
-  // }
+  GetId(id: any) {
+    this.id = id
+  }
+
+  update() {
+    debugger
+    if (this.id== null || this.id==undefined) {
+      Swal.fire('Please Select the Record to Modify');
+      // location.href = "/PayGroup"
+    }
+
+    else {
+      location.href = "/PayGroupForm/" + this.id;
+    }
+  }
 }

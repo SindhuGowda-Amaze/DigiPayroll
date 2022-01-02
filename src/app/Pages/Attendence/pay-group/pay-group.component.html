@@ -23,7 +23,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li routerLink="/PayGroupForm"><a href="/PayGroupForm">Modify</a></li>
+                        <li ><a (click)="update()">Modify</a></li>
                     </ul>
                 </div>
 
@@ -45,7 +45,7 @@
                             </thead>
                             <tbody>
                                 <tr  class="newFont"  *ngFor="let details of result">
-                                    <td class="SelectData"><input type="checkbox">{{details.selectedData}}</td>
+                                    <td class="SelectData"  (click)="GetId(details.id)"><input type="checkbox"></td>
                                     <td>{{details.description}}</td>
                                     <td><img class="imgcancel" (click)="Ondelete(details.id)"  src="/assets/cancel (1).png"></td>
                                 </tr>

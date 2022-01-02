@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import Swal from 'sweetalert2';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-bank-form',
   templateUrl: './bank-form.component.html',
@@ -12,10 +13,16 @@ export class BankFormComponent implements OnInit {
   remarks:any;
   result:any;
   id:any;
-  constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
+  constructor(private DigipayrollServiceService: DigipayrollServiceService,private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this. GetBankDetails() ;
+    this.ActivatedRoute.params.subscribe(params => {
+      this.id = params['id'];
+      if (this.id != undefined && this.id != null) {
+        this.GetBankDetails();
+      }
+    })
+  //  this. GetBankDetails() ;
   }
   OnSubmit(){
     debugger 
@@ -43,12 +50,13 @@ export class BankFormComponent implements OnInit {
 		this.code=this.result[0].code;
     this.remarks=this.result[0].remarks;
       }
-    )
+    ) 
   }
 
   Update(){
     debugger
      var json = {
+      'ID': this.id,
       "name": this.name,
       "code": this.code,
       "remarks":this.remarks           

@@ -34,7 +34,7 @@
                 <div class="col-md-2">
                     <input type="text" class="form-control inputfield" [(ngModel)]="code">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <textarea type="text" class="form-control inputfield" placeholder="Write here remarks" [(ngModel)]="remarks"></textarea>
                 </div>
             </div>
@@ -45,9 +45,9 @@
                     <button class="form-control CancelBTN">Cancel</button>
                 </div>
                 <div class="col-lg-1">
-                    <button class="form-control SubmitBTN" (click)="OnSubmit()" >Submit</button>
-                    <!-- <button class="form-control SubmitBTN" *ngif="id==null || id==undefined" (click)="OnSubmit()" >Submit</button>
-                    <button class="form-control SubmitBTN" *ngif="id!==null || id!==undefined"  (click)="Update()">Edit</button>   -->
+                    <!-- <button class="form-control SubmitBTN" (click)="OnSubmit()" >Submit</button> -->
+                    <button class="form-control SubmitBTN" *ngIf="id==undefined"  (click)="OnSubmit()" >Save</button>
+                    <button class="form-control SubmitBTN" *ngIf="id!= undefined"   (click)="Update()">Update</button>  
                 </div>
             </div>
         </div><br>

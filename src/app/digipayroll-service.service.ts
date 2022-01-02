@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DigipayrollServiceService {
 
-  // public baseURL = "http://localhost:4199/";   
+ // public baseURL = "http://localhost:4199/";   
   public baseURL = "http://103.133.214.197/DigiPayroll/";
   public host = "http://103.133.214.197/digiOfficeV4API";
   url:any;
@@ -356,6 +356,9 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
+  
+ 
+
   public DeleteDepartment(id : any) {
     debugger
     let APIURL = this.baseURL + "Master/DeleteDepartment?ID="+id;
@@ -409,8 +412,7 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL + "Master/InsertPayGroup";
     return this.http.post<any[]>(APIURL,json);
   }
-
-  public UpdateUpdatePayGroupBanks(json : any) {    //not yet done
+  public UpdatePayGroup(json : any) {    //not yet done
     debugger
     let APIURL = this.baseURL + "Master/UpdatePayGroup";
     return this.http.post<any[]>(APIURL,json);
@@ -621,6 +623,12 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(
       this.host + "/MobileUser/CancelLeave?ID=" + ID + "&NoOfDays=" + NoOfDays + "&UserID=" + UserID + "&LeaveTypeID=" + LeaveTypeID + "&Status=" + Status
     );
+  }
+
+  public GetLoginTypeMaster() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetLoginTypeMaster";
+    return this.http.get<any[]>(APIURL);
   }
 
 }
