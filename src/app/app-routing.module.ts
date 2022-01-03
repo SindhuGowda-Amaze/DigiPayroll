@@ -50,6 +50,7 @@ import { UpdateBankComponent } from './update-bank/update-bank.component';
 
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -161,7 +162,8 @@ const routes: Routes = [
   { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
   { path: 'Updatecompanyprofile', component: UpdatecompanyprofileComponent },
   { path: 'UpdateBank', component: UpdateBankComponent },
-  { path: 'CurrencyMaster', component: CurrencyMasterComponent }
+  { path: 'CurrencyMaster', component: CurrencyMasterComponent },
+  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent }
 
 ];
 

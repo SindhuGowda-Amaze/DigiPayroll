@@ -55,6 +55,7 @@ import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecomp
 import { UpdateBankComponent } from './update-bank/update-bank.component';
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -109,7 +110,8 @@ const ngWizardConfig: NgWizardConfig = {
     UpdatecompanyprofileComponent,
     UpdateBankComponent,
     CurrencyMasterComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    CurrencyMasterFormComponent
 
   ],
   imports: [
