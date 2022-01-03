@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./sss.component.css']
 })
 export class SSSComponent implements OnInit {
-
+  ID:any;
   constructor( private DigipayrollServiceService: DigipayrollServiceService, private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -17,11 +17,23 @@ export class SSSComponent implements OnInit {
   }
 
 
-  Update (SSSdata: any){
-    debugger
-   location.href="/sssForm/"+ SSSdata.id;
+  // Update (SSSdata: any){
+  //   debugger
+  //  location.href="/sssForm/"+ SSSdata.id;
+  // }
+  GetId(id: any) {
+    this.ID = id
   }
 
+  update() {
+    debugger
+    if (this.ID== null || this.ID==undefined) {
+      Swal.fire('Please Select the Record to Modify');
+    }
+    else {
+      location.href="#/sssForm/"+ this.ID;
+    }
+  }
 
   SSSdatalist:any
 

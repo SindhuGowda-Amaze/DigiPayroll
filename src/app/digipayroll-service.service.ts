@@ -33,6 +33,12 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
+  public UpdateAdjustment(json: any) {
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateAdjustment";
+    return this.http.post<any[]>(APIURL, json);
+  }
+
 
 
 

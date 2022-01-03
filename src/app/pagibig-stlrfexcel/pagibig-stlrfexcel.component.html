@@ -5,7 +5,7 @@
             <p class="taxtable">Pag-ibig Short-term Loan Remittance Excel</p> <hr>
 
             <div class="container">
-                <div class="row">
+                <div class="row FilterClass">
                    
                   
                     <div class="col-lg-3">
@@ -36,20 +36,31 @@
                       <div class="col-lg-3"></div>
                       </div>
                     <br/>
-                <div class="row">
+                <div class="row FilterClass">
                    
                   
                   <div class="col-lg-3">
 
                   </div>
                     <div class="col-lg-2">
-                        <p class="month">Select Start Month And Year:</p>
+                        <p>Select Start Month And Year:</p>
                     </div>
                     <div class="col-lg-2">
                         <div class="dropdown">
                             <select class="form-control inputfield" id="Month" name="Month"  [(ngModel)]="Month" ><br/>
                                 <option value="Select">Select Month </option>
                                 <option value="jan">January </option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>  
                                 
                             </select>
                         </div>
@@ -63,6 +74,8 @@
                                 <select class="form-control inputfield" id="Year" name="Year" [(ngModel)]="Year"><br/>
                                     <option value="Select">Select Year </option>
                                     <option value="2021">2021 </option>
+                                    <option value="2020">2020 </option>
+                                    <option value="2019">2019 </option>
                                     
                                 </select>
                             </div>
@@ -73,7 +86,7 @@
                     </div>
                     <br/>
                      
-                <div class="row">
+                <div class="row FilterClass">
                    
                   
                     <div class="col-lg-3">

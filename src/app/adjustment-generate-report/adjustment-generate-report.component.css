@@ -67,12 +67,9 @@ text-shadow: initial;
 letter-spacing: 0.5px;
 background-color:#2F87CC ;
 color:white;
-border-radius: 5px;
+border-radius: 15px;
 border:none;
-padding: 5px;
-width:40%;
-float: right;
-margin-right: 15px;
+margin-left: 10px;
 font-size: 15px;
 font-weight: bold;
 }
@@ -80,10 +77,10 @@ font-weight: bold;
 .edit {
     width: 85%;
     border: none;
-    background-color: whitesmoke ;
+    background-color: #2F87CC ;
     text-align: center;
     border-radius: 16px;
-    color: black;
+    color: white;
     margin-top: 6px;
   }
 
