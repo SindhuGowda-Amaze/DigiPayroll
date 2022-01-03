@@ -68,6 +68,10 @@ import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-
 
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
+import { ER2Component } from './er2/er2.component';
+import { RFreportComponent } from './rfreport/rfreport.component';
+import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -136,7 +140,11 @@ const ngWizardConfig: NgWizardConfig = {
     CurrencyMasterFormComponent,
     MonthlySummaryReportComponent, 
     YTDReportComponent,
-    YTDReportAdjustmentComponent
+    YTDReportAdjustmentComponent,
+    CertificateOfContributionComponent,
+    ER2Component,
+    RFreportComponent,
+    RF1PDFComponent
 
   ],
   imports: [
