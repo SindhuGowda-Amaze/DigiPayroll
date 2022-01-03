@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
+import {FormsModule} from "@angular/forms";
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 import { AppComponent } from './app.component';
@@ -65,7 +65,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
-import { YTDRepotComponent } from './ytdrepot/ytdrepot.component';
+
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
 const ngWizardConfig: NgWizardConfig = {
@@ -134,16 +134,17 @@ const ngWizardConfig: NgWizardConfig = {
     LoginPageComponent,
     PayrollSummaryReportComponent,
     CurrencyMasterFormComponent,
-    MonthlySummaryReportComponent,
-    YTDRepotComponent,
+    MonthlySummaryReportComponent, 
     YTDReportComponent,
     YTDReportAdjustmentComponent
 
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
     FormsModule,
+    BrowserModule,
+ 
+    AppRoutingModule,
+ 
     NgbModule,
     NgxDropzoneModule,
     NgxFullCalendarModule,
