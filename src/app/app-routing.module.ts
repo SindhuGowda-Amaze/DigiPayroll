@@ -59,6 +59,10 @@ import { UpdateBankComponent } from './update-bank/update-bank.component';
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
+import { PaySlipReportComponent } from './pay-slip-report/pay-slip-report.component';
+import { CertificateOfLoanComponent } from './certificate-of-loan/certificate-of-loan.component';
+import { M1excelComponent } from './m1excel/m1excel.component';
+import { M1mcrfComponent } from './m1mcrf/m1mcrf.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -177,7 +181,10 @@ const routes: Routes = [
   {path:'CountryMasterDash',component:CountryMasterDashComponent},
   {path:'CityMaster',component:CityMasterComponent},
   {path:'CityMasterDash',component:CityMasterDashComponent},
-  
+  {path:'PaySlipReport',component:PaySlipReportComponent},
+  {path:'CertificateOfLoan',component:CertificateOfLoanComponent},
+  {path:'M1excel',component:M1excelComponent},
+  {path:'M1mcrf',component:M1mcrfComponent},
 
   
 

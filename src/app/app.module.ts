@@ -64,6 +64,10 @@ import { UpdateBankComponent } from './update-bank/update-bank.component';
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
+import { PaySlipReportComponent } from './pay-slip-report/pay-slip-report.component';
+import { CertificateOfLoanComponent } from './certificate-of-loan/certificate-of-loan.component';
+import { M1mcrfComponent } from './m1mcrf/m1mcrf.component';
+import { M1excelComponent } from './m1excel/m1excel.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -128,7 +132,11 @@ const ngWizardConfig: NgWizardConfig = {
     UpdateBankComponent,
     CurrencyMasterComponent,
     LoginPageComponent,
-    CurrencyMasterFormComponent
+    CurrencyMasterFormComponent,
+    PaySlipReportComponent,
+    CertificateOfLoanComponent,
+    M1mcrfComponent,
+    M1excelComponent
 
   ],
   imports: [
