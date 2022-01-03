@@ -23,7 +23,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a (click)="Update">Modify</a></li>
+                        <li><a (click)="update()">Modify</a></li>
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@
                             </thead>
                             <tbody>
                                 <tr class="newFont" *ngFor="let application of Otlist">
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"  (click)="GetId(application.id)"><input type="checkbox"></td>
                                     <td>{{application.day}}</td>
                                     <td>{{application.normal}}</td>
                                     <td>{{application.ot}}</td>

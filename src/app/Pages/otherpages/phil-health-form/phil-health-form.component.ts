@@ -76,7 +76,7 @@ export class PhilHealthFormComponent implements OnInit {
       data => {
       debugger
       let result = data;
-      location.href="/PhillHealth/";
+      location.href="#/PhillHealth/";
       Swal.fire("Update Sucessfully.....!");
     })
   }
