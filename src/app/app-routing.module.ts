@@ -77,15 +77,17 @@ import { SSSLMSComponent } from './ssslms/ssslms.component';
 import { SSSAMSCCLReportComponent } from './sssamscclreport/sssamscclreport.component';
 
 import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
-  import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
-  import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
-  import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
-  import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
+import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
+import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
+import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
+import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
 import { PreliminaryReportComponent } from './preliminary-report/preliminary-report.component';
+import { UserFormPreFillComponent } from './user-form-pre-fill/user-form-pre-fill.component';
+import { UserResetComponent } from './user-reset/user-reset.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
-  
+
   { path: 'PagibigSTLRF', component: PagibigSTLRFComponent },
   { path: 'SSSML1Report', component: SSSML1ReportComponent },
   { path: 'SSSRL1Report', component: SSSRL1ReportComponent },
@@ -212,21 +214,26 @@ const routes: Routes = [
   { path: 'CityMaster', component: CityMasterComponent },
   { path: 'CityMasterDash', component: CityMasterDashComponent },
   { path: 'CurrencyMaster', component: CurrencyMasterComponent },
-  {path:'StaffReportComponent',component: StaffReportComponent},
-  {path:'TaxtableAnnual',component:TaxtableAnnualComponent},
-  {path:'LeaveTypeDashboard',component:LeaveTypeDashboardComponent},
-  {path:'LeaveTypeForn',component:LeaveTypeFornComponent},
-  {path:'LeaveTypeForn/:id',component:LeaveTypeFornComponent},
-  {path:'StateMaster',component:StateMasterComponent},
-  {path:'StateMasterDash',component:StateMasterDashComponent},
-  {path:'CountryMasterDash',component:CountryMasterDashComponent},
-  {path:'CityMaster',component:CityMasterComponent},
-  {path:'CityMasterDash',component:CityMasterDashComponent},
-  {path:'PaySlipReport',component:PaySlipReportComponent},
-  {path:'CertificateOfLoan',component:CertificateOfLoanComponent},
-  {path:'M1excel',component:M1excelComponent},
-  {path:'M1mcrf',component:M1mcrfComponent},
-  {path:'CurrencyMaster',component:CurrencyMasterComponent},
+  { path: 'StaffReportComponent', component: StaffReportComponent },
+  { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
+  { path: 'LeaveTypeDashboard', component: LeaveTypeDashboardComponent },
+  { path: 'LeaveTypeForn', component: LeaveTypeFornComponent },
+  { path: 'LeaveTypeForn/:id', component: LeaveTypeFornComponent },
+  { path: 'StateMaster', component: StateMasterComponent },
+  { path: 'StateMasterDash', component: StateMasterDashComponent },
+  { path: 'CountryMasterDash', component: CountryMasterDashComponent },
+  { path: 'CityMaster', component: CityMasterComponent },
+  { path: 'CityMasterDash', component: CityMasterDashComponent },
+  { path: 'PaySlipReport', component: PaySlipReportComponent },
+  { path: 'CertificateOfLoan', component: CertificateOfLoanComponent },
+  { path: 'M1excel', component: M1excelComponent },
+  { path: 'M1mcrf', component: M1mcrfComponent },
+  { path: 'UserFormPreFill', component: UserFormPreFillComponent },
+  { path: 'UserReset', component: UserResetComponent },
+
+
+
+  { path: 'CurrencyMaster', component: CurrencyMasterComponent },
   { path: 'StaffReportComponent', component: StaffReportComponent },
   { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
   { path: 'Updatecompanyprofile', component: UpdatecompanyprofileComponent },

@@ -83,6 +83,8 @@ import { CertificateOfContributionComponent } from './certificate-of-contributio
 import { ER2Component } from './er2/er2.component';
 import { RFreportComponent } from './rfreport/rfreport.component';
 import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
+import { UserFormPreFillComponent } from './user-form-pre-fill/user-form-pre-fill.component';
+import { UserResetComponent } from './user-reset/user-reset.component';
 import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import {NgxPaginationModule} from 'ngx-pagination';
@@ -174,6 +176,8 @@ const ngWizardConfig: NgWizardConfig = {
     ER2Component,
     RFreportComponent,
     RF1PDFComponent,
+    UserFormPreFillComponent,
+    UserResetComponent,
     AdjustmentGenerateReportComponent,
     SpinnerComponent,
     PreliminaryReportComponent

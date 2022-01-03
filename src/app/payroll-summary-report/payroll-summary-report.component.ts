@@ -16,8 +16,10 @@ export class PayrollSummaryReportComponent implements OnInit {
 
   constructor() { }
   loader:any;
+  showleaseforprint:any;
   ngOnInit(): void {
     this.loader = false;
+    this.showleaseforprint = 0;
   }
 
 
@@ -99,5 +101,11 @@ public pageChanged(even:any)
     this.loader = false;
   }
 
+
+
+  
+  public showpdf(){
+    this.showleaseforprint = 1;
+  }
 
 }
