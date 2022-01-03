@@ -74,6 +74,8 @@ import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-
 
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
+import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
 
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
@@ -149,7 +151,9 @@ const ngWizardConfig: NgWizardConfig = {
     SSSRL1ReportComponent,
     MonthlySummaryReportComponent,
     YTDReportComponent,
-    YTDReportAdjustmentComponent
+    YTDReportAdjustmentComponent,
+    PagibigSTLRFComponent,
+    PagibigSTLRFExcelComponent
 
   ],
   imports: [

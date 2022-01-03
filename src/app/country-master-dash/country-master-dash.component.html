@@ -48,9 +48,9 @@
                                 <tr *ngFor="let holiday of leavelist">
                                     <td>{{holiday.short}}</td>
                                     <td>{{holiday.description}}</td>
-                                    <td> <button class="upload"
+                                    <td> <button class="EditBTN"
                                             [routerLink]="['/CountryMasterForm',holiday.id]">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <button class="upload" (click)="DeleteCountryType(holiday.id)">Delete</button>
+                                        <button class="DeleteBTN" (click)="DeleteCountryType(holiday.id)">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>

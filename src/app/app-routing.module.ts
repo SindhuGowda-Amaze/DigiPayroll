@@ -70,15 +70,19 @@ import { SSSLMSComponent } from './ssslms/ssslms.component';
 import { SSSAMSCCLReportComponent } from './sssamscclreport/sssamscclreport.component';
   import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
   import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
+  import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
+  import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
-
+  
+  { path: 'PagibigSTLRF', component: PagibigSTLRFComponent },
   { path: 'SSSML1Report', component: SSSML1ReportComponent },
   { path: 'SSSRL1Report', component: SSSRL1ReportComponent },
   { path: 'SSSAMSCCLReport', component: SSSAMSCCLReportComponent },
   { path: 'SSSLMSReport', component: SSSLMSComponent },
   { path: 'SSSR5Report', component: SSSR5ReportComponent },
   { path: 'SSSR3Report', component: SSSR3ReportComponent },
+  { path: 'PagibigSTLRFExcel', component: PagibigSTLRFExcelComponent },
   {
     path: "Login", component: LoginPageComponent
   },
