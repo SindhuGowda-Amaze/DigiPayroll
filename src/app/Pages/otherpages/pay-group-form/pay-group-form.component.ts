@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import Swal from 'sweetalert2';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-pay-group-form',
   templateUrl: './pay-group-form.component.html',
@@ -9,9 +10,16 @@ import Swal from 'sweetalert2';
 export class PayGroupFormComponent implements OnInit {
 id : any;
 description:any;
-  constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
+  result: any;
+  constructor(private DigipayrollServiceService: DigipayrollServiceService,private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.ActivatedRoute.params.subscribe(params => {
+      this.id = params['id'];
+      if (this.id != undefined && this.id != null) {
+        this.GetPayGroup();
+      }
+    })
   }
 
   OnSubmit(){
@@ -28,7 +36,31 @@ description:any;
       })
   }
 
-  Update(){
+  GetPayGroup() {
+    this.DigipayrollServiceService.GetPayGroup().subscribe(
+    data => {
+    debugger
+    this.result = data;
+		this.result=this.result.filter((x: { id: any; })=>x.id==Number(this.id));
+		this.description=this.result[0].description;
+	
+      }
+    ) 
+  }
 
+  Update(){
+    debugger
+    var json = {
+     'ID': this.id,
+     "description": this.description        
+     };
+   
+     this.DigipayrollServiceService.UpdatePayGroup(json).subscribe(
+       data => {
+       debugger
+       let result = data;
+       Swal.fire("Update Sucessfully");
+       location.href="/PayGroup"
+     })
   }
 }

@@ -42,11 +42,23 @@ export class BankComponent implements OnInit {
       }
     )
   }
+  GetId(id: any) {
+    this.id = id
+  }
 
-   // Modify(details: any){
-  //   debugger
-  //  location.href="/CostCenterForm/"+ details.id;
-  // }
+
+    update() {
+      debugger
+      if (this.id== null || this.id==undefined) {
+        Swal.fire('Please Select the Record to Modify');
+        // location.href = "/PayGroup"
+      }
+  
+      else {
+        location.href="/BankForm/"+ this.id;
+      }
+    }
+
 
 
 }

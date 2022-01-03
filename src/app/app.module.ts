@@ -59,7 +59,10 @@ import { CityMasterDashComponent } from './city-master-dash/city-master-dash.com
 import { CityMasterComponent } from './city-master/city-master.component';
 import { CountryMasterDashComponent } from './country-master-dash/country-master-dash.component';
 import { CountryMasterComponent } from './country-master/country-master.component';
+import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecompanyprofile.component';
+import { UpdateBankComponent } from './update-bank/update-bank.component';
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -119,7 +122,11 @@ const ngWizardConfig: NgWizardConfig = {
     CityMasterComponent,
     CountryMasterDashComponent,
     CountryMasterComponent,
-    CurrencyMasterComponent
+    CurrencyMasterComponent,
+    UpdatecompanyprofileComponent,
+    UpdateBankComponent,
+    CurrencyMasterComponent,
+    LoginPageComponent
 
   ],
   imports: [
