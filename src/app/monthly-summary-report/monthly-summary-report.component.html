@@ -1,0 +1,104 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href=""class="Heading fontheading">MONTHLY PAYROLL SUMMARY REPORT</a>
+                    <hr class="HrLine">
+                </div>
+            </div>
+            <div class="row FilterClass fontheading">
+                <div class="col-lg-2">
+                    Filter By
+                </div>
+                <div class="col-lg-2">
+                    <input class="form-control" type="date" placeholder="Duration">
+                </div>
+                <div class="col-lg-6">
+                    <input class="form-control" type="search" placeholder="Search for date , Type or Code">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-8 View">
+                    <ul>
+                        <li><a class="active fontheading">View</a></li>
+                        <li ><a>Select PayRoll</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="/PayRollForm"><button class="button fontheading">Add</button> </a>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered fonttxt">
+                            <thead>
+                                <tr class="newFont">
+                                    <th class="SelectData">Select</th>
+                                    <th>Year</th>
+                                    <th>Month</th>
+                                    <th>Payroll Run type</th>
+                                    <th>Pay Group</th>
+                                <tr>
+                            </thead>
+                           <tr *ngFor="let data of selectdata">
+                            <td class="SelectData"><input type="checkbox">{{data.selectedData}}</td>
+                               <td>{{data.year}}</td>
+                               <td>{{data.month}}</td>
+                               <td>{{data.pay_Roll_Run_Type}}</td>
+                               <td>
+                                   {{data.pay_Group}}</td>
+                               <td><button class="form-control" data-toggle="modal"
+                                data-target="#payroll">Run Payroll</button><br>
+                                   <img class="imgcancel" (click)="Ondelete(data.id)"  src="/assets/cancel (1).png"></td>
+                           </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-1"></div>
+</div>
+
+
+
+<div id="payroll" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Run PayRoll</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <label class="Text">Leave Deduction :</label>
+                        <label class="Text">Adjustment Deduction :</label>
+                        <label class="Text">Hired :</label>
+                        <label class="Text">Hired :</label>
+                    </div>
+                    
+                </div> <br>
+
+                <div class="row">
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-2">
+                        <button class="form-control Save">save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <hr>
+                <div class="col-lg-2">
+                    <button class="Button">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
