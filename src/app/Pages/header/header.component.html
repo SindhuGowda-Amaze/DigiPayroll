@@ -76,7 +76,7 @@
         </div>
 
         <div class="col-lg-1" style="margin-right: -25px;">
-            <h6  class=" dropdown-toggle menutext" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            <!-- <h6  class=" dropdown-toggle menutext" type="button" id="dropdownMenu1" data-toggle="dropdown"
             aria-expanded="false">Reports</h6>
             <ul class="dropdown-menu">
                 <li class="dropdown-item"><a  class="menuitem" tabindex="-1" routerLink="/AttendenceReport">Attendence Report</a></li>
@@ -85,7 +85,66 @@
                 <li class="dropdown-item"><a class="menuitem" routerLink="/GeneratePayslip">Generate PaySlips</a></li>
                 <li class="dropdown-item"><a class="menuitem" routerLink="/StaffReport">Staff Report</a></li>
                 <li class="dropdown-item"><a class="menuitem" routerLink="/OvertimeReport">Overtime Report</a></li>
-            </ul>
+            </ul> -->
+
+
+            <div class="dropdown">
+                <h6 class=" dropdown-toggle menutext" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-expanded="false">
+                   Report
+            </h6>
+                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                    <li class="dropdown-item"><a href="#"></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item menutext" tabindex="-1">Payroll</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a  class="menuitem" tabindex="-1" routerLink="/CompanyDashboard">Payroll Summary</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/CostCenter">Monthly Summary</a></li> 
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Department">PaySlip</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Bank">Adjustment Report</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/PayGroup">YTD Report</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/PayGroup">YTD Report- Adjustments</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item menutext" tabindex="-1">SSS</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="menuitem" tabindex="-1" routerLink="/OtRates">R-3</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Adjustment">R-5</a></li>
+                           <li class="dropdown-item"><a class="menuitem" routerLink="/CompanyAdjustment"> ML-1</a></li> 
+                           <li class="dropdown-item"><a class="menuitem" routerLink="/CompanyAdjustment"> R1-A</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item menutext" tabindex="-1">PhilHealth</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="menuitem" tabindex="-1" routerLink="/OtRates">ER-2</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Adjustment">RF-1 Data</a></li>
+                           <li class="dropdown-item"><a class="menuitem" routerLink="/CompanyAdjustment">RF-1 Pdf</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item menutext" tabindex="-1">PAG-IBIG</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a class="menuitem" tabindex="-1" routerLink="/OtRates">M1-1(MCRF)</a></li>
+                            <li class="dropdown-item"><a class="menuitem" routerLink="/Adjustment">M1-1 Excel</a></li>
+                           <li class="dropdown-item"><a class="menuitem" routerLink="/CompanyAdjustment">Pag-ibig STLRF</a></li> 
+                           <li class="dropdown-item"><a class="menuitem" routerLink="/CompanyAdjustment">Pag-ibig STLRF Excel</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item menutext" tabindex="-1">Certificate of Contribution</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item menutext" tabindex="-1">Certificate of Loan</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="col-lg-1">
