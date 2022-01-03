@@ -48,8 +48,8 @@
                                 <tr *ngFor="let holiday of leavelist ">
                                     <td>{{holiday.short}}</td>
                                     <td>{{holiday.description}}</td>
-                                    <td> <button class="upload"   [routerLink]="['/CityMaster',holiday.id]" >Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <button class="upload" (click)="DeleteCityType(holiday.id)" >Delete</button></td>
+                                    <td> <button class="EditBTN"   [routerLink]="['/CityMaster',holiday.id]" >Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <button class="DeleteBTN" (click)="DeleteCityType(holiday.id)" >Delete</button></td>
                                 </tr>
                             </tbody>
                         </table>
