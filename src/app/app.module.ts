@@ -48,13 +48,22 @@ import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
 import { NgWizardConfig, NgWizardModule, THEME } from 'ng-wizard';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { NgxFullCalendarModule } from '../../node_modules/ngx-fullcalendar';
-
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
+import { LeaveTypeDashboardComponent } from './leave-type-dashboard/leave-type-dashboard.component';
+import { LeaveTypeFornComponent } from './leave-type-forn/leave-type-forn.component';
+import { StateMasterDashComponent } from './state-master-dash/state-master-dash.component';
+import { StateMasterComponent } from './state-master/state-master.component';
+import { CityMasterDashComponent } from './city-master-dash/city-master-dash.component';
+import { CityMasterComponent } from './city-master/city-master.component';
+import { CountryMasterDashComponent } from './country-master-dash/country-master-dash.component';
+import { CountryMasterComponent } from './country-master/country-master.component';
 import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecompanyprofile.component';
 import { UpdateBankComponent } from './update-bank/update-bank.component';
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
+import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -106,10 +115,21 @@ const ngWizardConfig: NgWizardConfig = {
     EmployeeDashboardComponent,
     TaxtableAnnualComponent,
     CompanyDashboardComponent,
+    LeaveTypeDashboardComponent,
+    LeaveTypeFornComponent,
+    StateMasterDashComponent,
+    StateMasterComponent,
+    CityMasterDashComponent,
+    CityMasterComponent,
+    CountryMasterDashComponent,
+    CountryMasterComponent,
+    CurrencyMasterComponent,
     UpdatecompanyprofileComponent,
     UpdateBankComponent,
     CurrencyMasterComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    PayrollSummaryReportComponent,
+    CurrencyMasterFormComponent
 
   ],
   imports: [
