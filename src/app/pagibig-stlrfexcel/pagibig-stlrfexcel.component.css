@@ -2,8 +2,9 @@
     margin-left: 36px;
     height: 38px;
     border-radius: 23px;
-    background: #1693a7;
+    background: #2F87CC;
     color: white;
+    border:none;
 }
 
 .generate1{
@@ -89,4 +90,9 @@
 
 .month{
     margin-left:-36px;
+}
+.FilterClass{
+   color: black;
+   font-size: 15px;
+   font-weight: bold;
 }
