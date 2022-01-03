@@ -80,10 +80,10 @@ font-weight: bold;
 .edit {
     width: 85%;
     border: none;
-    background-color: #2F87CC ;
+    background-color: #bec1c4 ;
     text-align: center;
     border-radius: 16px;
-    color: white;
+    color: black;
     margin-top: 6px;
   }
 

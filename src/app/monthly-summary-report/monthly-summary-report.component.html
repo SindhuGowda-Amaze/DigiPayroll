@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <table class="table table-bordered fonttxt">
+                        <table class="table table-bordered fonttxt" id="downloadaplication">
                             <thead>
                                 <tr class="newFont">
                                     <th class="SelectData">Select</th>
@@ -131,7 +131,7 @@
                                     <td>21042</td>
                                     <td>Tan, Marina Ela Navarro</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Rank and File</td>
                                 </tr>
                             </thead>
 
@@ -148,6 +148,17 @@
                     </div>
                     <div class="col-lg-4"></div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2">
+                        <button class="button" (click)="exportexcel()">Export to Excel</button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="button">Bank Advise List</button>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+
             </div>
         </div>
     </div>
