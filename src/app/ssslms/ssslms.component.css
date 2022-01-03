@@ -2,27 +2,30 @@
     margin-left: 36px;
     height: 38px;
     border-radius: 23px;
-    background: #1693a7;
+    background: #2F87CC;
     color: white;
+    border:none;
 }
 
 .generate1{
     height: 38px;
     border-radius: 23px;
-    background: #1693a7;
+    background: #2F87CC;
     color: white;
     width: 250px;
     margin-left: -10px;
+    border:none;
 }
 
 
 .generate2{
     height: 39px;
     border-radius: 23px;
-    background: #1693a7;
+    background: #2F87CC;
     color: white;
     width: 297px;
     margin-left: -36px;
+    border:none;
 }
 
 .government{  
@@ -86,3 +89,8 @@
 .input{
    padding: 10px;
 }
+.FilterClass{
+   color: black;
+   font-size: 15px;
+   font-weight: bold;
+ }
