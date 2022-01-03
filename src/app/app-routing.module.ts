@@ -60,10 +60,22 @@ import { CurrencyMasterComponent } from './currency-master/currency-master.compo
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
+import { SSSR3ReportComponent } from './sssr3-report/sssr3-report.component';
 
+  import { SSSR5ReportComponent } from './sssr5-report/sssr5-report.component';
+import { SSSLMSComponent } from './ssslms/ssslms.component';
+import { SSSAMSCCLReportComponent } from './sssamscclreport/sssamscclreport.component';
+  import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
+  import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
 
+  { path: 'SSSML1Report', component: SSSML1ReportComponent },
+  { path: 'SSSRL1Report', component: SSSRL1ReportComponent },
+  { path: 'SSSAMSCCLReport', component: SSSAMSCCLReportComponent },
+  { path: 'SSSLMSReport', component: SSSLMSComponent },
+  { path: 'SSSR5Report', component: SSSR5ReportComponent },
+  { path: 'SSSR3Report', component: SSSR3ReportComponent },
   {
     path: "Login", component: LoginPageComponent
   },
