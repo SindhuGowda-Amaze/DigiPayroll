@@ -64,6 +64,10 @@ import { CurrencyMasterComponent } from './currency-master/currency-master.compo
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
+import { PaySlipReportComponent } from './pay-slip-report/pay-slip-report.component';
+import { CertificateOfLoanComponent } from './certificate-of-loan/certificate-of-loan.component';
+import { M1mcrfComponent } from './m1mcrf/m1mcrf.component';
+import { M1excelComponent } from './m1excel/m1excel.component';
 import { SSSR3ReportComponent } from './sssr3-report/sssr3-report.component';
 import { SSSR5ReportComponent } from './sssr5-report/sssr5-report.component';
 import { SSSLMSComponent } from './ssslms/ssslms.component';
@@ -73,11 +77,14 @@ import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
+import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
 import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
 import { ER2Component } from './er2/er2.component';
 import { RFreportComponent } from './rfreport/rfreport.component';
 import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
 import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
@@ -143,6 +150,11 @@ const ngWizardConfig: NgWizardConfig = {
     UpdateBankComponent,
     CurrencyMasterComponent,
     LoginPageComponent,
+    CurrencyMasterFormComponent,
+    PaySlipReportComponent,
+    CertificateOfLoanComponent,
+    M1mcrfComponent,
+    M1excelComponent,
     PayrollSummaryReportComponent,
     CurrencyMasterFormComponent,
     SSSR3ReportComponent,
@@ -154,11 +166,14 @@ const ngWizardConfig: NgWizardConfig = {
     MonthlySummaryReportComponent,
     YTDReportComponent,
     YTDReportAdjustmentComponent,
+    PagibigSTLRFComponent,
+    PagibigSTLRFExcelComponent,
     CertificateOfContributionComponent,
     ER2Component,
     RFreportComponent,
     RF1PDFComponent,
-    AdjustmentGenerateReportComponent
+    AdjustmentGenerateReportComponent,
+    SpinnerComponent
 
   ],
   imports: [
