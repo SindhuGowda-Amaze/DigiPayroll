@@ -85,6 +85,7 @@ import { RFreportComponent } from './rfreport/rfreport.component';
 import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
 import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
 import { SpinnerComponent } from './spinner/spinner.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
@@ -185,6 +186,7 @@ const ngWizardConfig: NgWizardConfig = {
     NgxFullCalendarModule,
     HttpClientModule,
     NgWizardModule.forRoot(ngWizardConfig),
+    NgxPaginationModule
   ],
   providers: [HttpClient],
   

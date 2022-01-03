@@ -6,6 +6,7 @@ const EXCEL_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.
 const EXCEL_EXTENSION = '.xlsx';
 import { saveAs } from 'file-saver';
 import * as FileSaver from 'file-saver';
+import {NgxPaginationModule} from 'ngx-pagination';
 @Component({
   selector: 'app-payroll-summary-report',
   templateUrl: './payroll-summary-report.component.html',
@@ -68,8 +69,23 @@ export class PayrollSummaryReportComponent implements OnInit {
   }
 
 
-  fileName = 'Approved Applicants Reports.xlsx';
+
+  p: number = 1;
+  
+  
+public pageChanged(even:any) 
+{
+   let fgdgfgd = even;
+
+    this.p = even;
+   }
+
+
+
+
+  fileName = 'Payroll Summary.xlsx';
   exportexcel(): void {
+    this.loader = true;
     /* table id is passed over here */
     let element = document.getElementById('downloadaplication');
     const ws: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
@@ -80,7 +96,7 @@ export class PayrollSummaryReportComponent implements OnInit {
 
     /* save to file */
     XLSX.writeFile(wb, this.fileName);
-
+    this.loader = false;
   }
 
 
