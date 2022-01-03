@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
@@ -64,14 +64,20 @@ import { CurrencyMasterComponent } from './currency-master/currency-master.compo
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
+import { SSSR3ReportComponent } from './sssr3-report/sssr3-report.component';
+import { SSSR5ReportComponent } from './sssr5-report/sssr5-report.component';
+import { SSSLMSComponent } from './ssslms/ssslms.component';
+import { SSSAMSCCLReportComponent } from './sssamscclreport/sssamscclreport.component';
+import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
+import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
-
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
 import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
 import { ER2Component } from './er2/er2.component';
 import { RFreportComponent } from './rfreport/rfreport.component';
 import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
+
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -138,7 +144,13 @@ const ngWizardConfig: NgWizardConfig = {
     LoginPageComponent,
     PayrollSummaryReportComponent,
     CurrencyMasterFormComponent,
-    MonthlySummaryReportComponent, 
+    SSSR3ReportComponent,
+    SSSR5ReportComponent,
+    SSSLMSComponent,
+    SSSAMSCCLReportComponent,
+    SSSML1ReportComponent,
+    SSSRL1ReportComponent,
+    MonthlySummaryReportComponent,
     YTDReportComponent,
     YTDReportAdjustmentComponent,
     CertificateOfContributionComponent,
@@ -148,12 +160,10 @@ const ngWizardConfig: NgWizardConfig = {
 
   ],
   imports: [
+    NgbModule,
     FormsModule,
     BrowserModule,
- 
     AppRoutingModule,
- 
-    NgbModule,
     NgxDropzoneModule,
     NgxFullCalendarModule,
     HttpClientModule,

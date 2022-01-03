@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!-- 
+=======
+>>>>>>> ce051fc7ff5ad9135e231945f62be6942bb6355d
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-1"></div>
@@ -17,7 +20,7 @@
                     <input class="form-control" type="date" placeholder="Duration">
                 </div>
                 <div class="col-lg-6">
-                    <input class="form-control" type="search" placeholder="Search for date , Type or Code">
+                    <input class="form-control" type="search" placeholder="Search....">
                 </div>
             </div><br>
             <div class="row">
@@ -46,16 +49,18 @@
                                     <th>Pay Group</th>
                                 <tr>
                             </thead>
-                           <tr *ngFor="let data of selectdata">
-                            <td class="SelectData"><input type="checkbox">{{data.selectedData}}</td>
-                               <td>{{data.year}}</td>
-                               <td>{{data.month}}</td>
-                               <td>{{data.pay_Roll_Run_Type}}</td>
-                               <td>
-                                   {{data.pay_Group}}</td>
-                               <td><button class="form-control" data-toggle="modal"
-                                data-target="#payroll">Run Payroll</button><br>
-                                   <img class="imgcancel" (click)="Ondelete(data.id)"  src="/assets/cancel (1).png"></td>
+                           <tr>
+                            <td class="SelectData"><input type="checkbox"></td>
+                               <td>2021</td>
+                               <td>December</td>
+                               <td>Normal</td>
+                               <td *ngFor="let paygroup of result">
+                                <select class="form-control" [(ngModel)]="Tax_Table_Starts_on">
+                                    <option value="description">{{paygroup.description}}</option>
+                                </select>
+
+                               </td>
+
                            </tr>
                         </table>
                     </div>
@@ -68,6 +73,7 @@
 
 
 
+<<<<<<< HEAD
 <div id="payroll" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -102,3 +108,5 @@
         </div>
     </div>
 </div> -->
+=======
+>>>>>>> ce051fc7ff5ad9135e231945f62be6942bb6355d
