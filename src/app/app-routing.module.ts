@@ -55,12 +55,16 @@ import { CityMasterComponent } from './city-master/city-master.component';
 import { CityMasterDashComponent } from './city-master-dash/city-master-dash.component';
 import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecompanyprofile.component';
 import { UpdateBankComponent } from './update-bank/update-bank.component';
-
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
+import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
+import{RFreportComponent} from './rfreport/rfreport.component';
+import { ER2Component } from './er2/er2.component';
+import{RF1PDFComponent} from './rf1-pdf/rf1-pdf.component'
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -187,7 +191,11 @@ const routes: Routes = [
   { path: 'CurrencyMaster', component: CurrencyMasterComponent },
   {path:'PayrollSummaryReport',component:PayrollSummaryReportComponent},
   { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent },
-  { path: 'MonthlySummaryReport', component: MonthlySummaryReportComponent }
+  { path: 'MonthlySummaryReport', component: MonthlySummaryReportComponent },
+  {path:'CertificateOfContribution',component:CertificateOfContributionComponent},
+  {path:'ER2',component:ER2Component},
+  {path:'RFreport',component:RFreportComponent},
+  {path:'RF1PDF',component:RF1PDFComponent}
 
 ];
 
