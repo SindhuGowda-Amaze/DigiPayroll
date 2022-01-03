@@ -81,6 +81,7 @@ import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/
   import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
   import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
   import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
+import { PreliminaryReportComponent } from './preliminary-report/preliminary-report.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -240,7 +241,8 @@ const routes: Routes = [
   { path: 'RF1PDF', component: RF1PDFComponent },
   { path: 'YTDReportAdjustment', component: YTDReportAdjustmentComponent },
   { path: 'YTDReport', component: YTDReportComponent },
-  { path: 'AdjustmentGenerateReport', component: AdjustmentGenerateReportComponent }
+  { path: 'AdjustmentGenerateReport', component: AdjustmentGenerateReportComponent },
+  { path: 'PreliminaryReport', component: PreliminaryReportComponent }
 
 
 ];
