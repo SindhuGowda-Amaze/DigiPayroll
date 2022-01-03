@@ -7,7 +7,7 @@
         <div class="col-lg-10">
             <div class="row">
                 <div class="col-lg-12">
-                    <a href="" class="Heading">Payroll Summary  Report</a>
+                    <a href="" class="Heading">Payroll Summary Report</a>
                     <hr class="HrLine">
                 </div>
             </div>
@@ -26,6 +26,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
+                        <li><a>Select PayRoll</a></li>
                         <!-- <li><a class="active">Modify</a></li> -->
                         <!-- <li><a (click)="update()">Modify</a></li> -->
                     </ul>
@@ -41,7 +42,7 @@
                     <div class="col-lg-12">
                         <table class="table" id="downloadaplication">
                             <thead>
-                                <tr class="newFont" >
+                                <tr class="newFont">
                                     <th>Select</th>
                                     <th>Year</th>
                                     <th>Month</th>
@@ -51,44 +52,55 @@
                                 <tr>
                             </thead>
                             <tbody>
-                             
-                                 <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
+
+                                <tr class="newFont">
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo"></td>
                                     <td>2021</td>
                                     <td>December</td>
                                     <td>2</td>
                                     <td>Normal</td>
                                     <td>Payroll for 12/1/2021 - 12/15/2021(Rank and File,Rank and File - Deployed)</td>
                                 </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                <tr class="newFont">
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo"></td>
                                     <td>2021</td>
                                     <td>November</td>
                                     <td>2</td>
                                     <td>Normal</td>
                                     <td>Payroll for 12/1/2021 - 12/15/2021(Rank and File,Rank and File - Deployed)</td>
                                 </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                <tr class="newFont">
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo"></td>
                                     <td>2021</td>
                                     <td>December</td>
                                     <td>1</td>
                                     <td>Final</td>
-                                  <td> Final Pay(Rank and File - Deployed)</td>
+                                    <td> Final Pay(Rank and File - Deployed)</td>
                                 </tr>
-                                <tr  class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                <tr class="newFont">
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo"></td>
                                     <td>2021</td>
                                     <td>December</td>
                                     <td>2</td>
                                     <td>Final</td>
-                                   <td> Final Pay(Rank and File - Deployed)</td>
-                                </tr> 
+                                    <td> Final Pay(Rank and File - Deployed)</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                 </div><br>
-                 <div class="row">
+                </div><br>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <p><input type="checkbox"> Include employee middle name in bank advice list</p>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div> <br>
+                <div class="row">
                     <div class="col-lg-3">
                     <button class="Extra" (click)="convetToPDF1()">Export to PDF </button>
                     </div>
@@ -101,10 +113,48 @@
                     <div class="col-lg-3">
                         <button class="Extra">Bank Advise List</button>
                     </div>
-              </div>
+                </div>
+                <div class="container-fluid" id="demo" class="collapse">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul>
+                                <li><a class="active fontheading">Select ALL</a></li>
+                                <li><a class="active fontheading">Uncheck ALL</a></li>
+                                <li></li>
+                                <li><a class="active fontheading">Employees in selected Period</a></li>
+                            </ul>
+                        </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table table-bordered fonttxt">
+                                <thead>
+                                    <tr class="newFont">
+                                        <th class="SelectData"><input type="checkbox"></th>
+                                        <th> Employee ID</th>
+                                        <th>Name</th>
+                                        <th>Status</th>                   
+                                    </tr>
+                                    <tr>
+                                        <td class="SelectData"><input type="checkbox"></td>
+                                        <td>21042</td>
+                                        <td>Tan, Marina Ela Navarro</td>
+                                        <td>Active</td>
+                                    </tr>
+                                </thead>
+                
+                            </table>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
     <div class="col-lg-1"></div>
 </div>
+
+
+
+
