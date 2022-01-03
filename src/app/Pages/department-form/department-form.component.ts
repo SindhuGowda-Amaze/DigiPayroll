@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import Swal from 'sweetalert2';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-department-form',
   templateUrl: './department-form.component.html',
@@ -11,11 +12,18 @@ export class DepartmentFormComponent implements OnInit {
   code:any;
   remarks:any;
   result:any;
-  id:any;
-  constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
+  ID:any;
+  constructor(private DigipayrollServiceService: DigipayrollServiceService,private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this. GetDepartment() ;
+    this.ActivatedRoute.params.subscribe(params => {
+      this.ID = params['id'];
+      if (this.ID != undefined && this.ID != null) {
+        this.GetDepartment();
+      }
+    })
+  
+   // this. GetDepartment() ;
   }
   OnSubmit(){
     debugger 
@@ -27,7 +35,7 @@ export class DepartmentFormComponent implements OnInit {
     this.DigipayrollServiceService.InsertDepartment(json).subscribe(
       data => {
         debugger
-        let id = data;
+        let ID = data;
     alert("Successfully saved!!")
       location.href="/Department"
       })
@@ -38,7 +46,7 @@ export class DepartmentFormComponent implements OnInit {
     data => {
     debugger
     this.result = data;
-		this.result=this.result.filter((x: { id: any; })=>x.id==Number(this.id));
+		this.result=this.result.filter((x: { id: any; })=>x.id==Number(this.ID));
 		this.name=this.result[0].name;
 		this.code=this.result[0].code;
     this.remarks=this.result[0].remarks;
@@ -49,6 +57,7 @@ export class DepartmentFormComponent implements OnInit {
   Update(){
     debugger
      var json = {
+      'ID': this.ID,
       "name": this.name,
       "code": this.code,
       "remarks":this.remarks           

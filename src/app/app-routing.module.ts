@@ -35,21 +35,28 @@ import { OvertimeDetailsComponent } from './Pages/Attendence/overtime-details/ov
 import { RegularisationDetailsComponent } from './Pages/Attendence/regularisation-details/regularisation-details.component';
 import { WeeklyShiftComponent } from './Pages/Attendence/weekly-shift/weekly-shift.component';
 import { AttendenceReportComponent } from './Pages/Attendence/attendence-report/attendence-report.component';
-import{GeneratePayslipComponent} from './Pages/Attendence/generate-payslip/generate-payslip.component';
-import{LeaveReportComponent} from './Pages/Attendence/leave-report/leave-report.component';
-import{OvertimeReportComponent} from './Pages/Attendence/overtime-report/overtime-report.component';
-import{ PayrollReportComponent} from './Pages/Attendence/payroll-report/payroll-report.component';
-import{ StaffReportComponent}from './Pages/Attendence/staff-report/staff-report.component'
+import { GeneratePayslipComponent } from './Pages/Attendence/generate-payslip/generate-payslip.component';
+import { LeaveReportComponent } from './Pages/Attendence/leave-report/leave-report.component';
+import { OvertimeReportComponent } from './Pages/Attendence/overtime-report/overtime-report.component';
+import { PayrollReportComponent } from './Pages/Attendence/payroll-report/payroll-report.component';
+import { StaffReportComponent } from './Pages/Attendence/staff-report/staff-report.component'
 import { LeaveListDashboardComponent } from './Pages/leave-list-dashboard/leave-list-dashboard.component';
 import { ApplyLeaveComponent } from './Pages/otherpages/apply-leave/apply-leave.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
+import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecompanyprofile.component';
+import { UpdateBankComponent } from './update-bank/update-bank.component';
+
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
+  { path: '', redirectTo: '/Login', pathMatch: 'full' },
 
+  {
+    path: "Login", component: LoginPageComponent
+  },
   {
     path: "CompanyProfile", component: CompanyProfileComponent
   },
@@ -81,7 +88,13 @@ const routes: Routes = [
     path: "BankForm", component: BankFormComponent
   },
   {
+    path: "BankForm/:id", component: BankFormComponent
+  },
+  {
     path: "PayGroupForm", component: PayGroupFormComponent
+  },
+  {
+    path: "PayGroupForm/:id", component: PayGroupFormComponent
   },
   {
     path: "DepartmentForm", component: DepartmentFormComponent
@@ -113,40 +126,42 @@ const routes: Routes = [
   {
     path: "ApplyLeave", component: ApplyLeaveComponent
   },
-  {path:'Department',component:DepartmentComponent},
-  {path:'Department',component:DepartmentComponent},
-  {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
-  {path:'CompanyDashboard',component:CompanyDashboardComponent},
-  {path:'PayRoll',component:PayrollComponent},
-  {path:'Employee',component:EmployeeComponent},
-  {path:'Government',component:GovernmentComponent},
-  {path:'OtRates',component:OtRatesComponent},
-  {path:'PayGroup',component:PayGroupComponent},
-  {path:'PhillHealth',component:PhillHealthComponent},
-  {path:'SSS',component:SSSComponent},
-  {path:'Bank',component:BankComponent},
-  {path:'Adjustment',component:AdjustmentComponent},
-  {path:'CostCenter',component:CostCenterComponent},
-  {path:'TaxTable',component:TaxTableComponent},
-  {path:'TaxTable/:id',component:TaxTableComponent},
-  {path:'User',component:UserComponent},
-  {path:'Adolfo',component:AdolfoComponent},
-  {path:'Footer',component:FooterComponent},
-  {path:'AttendenceDetails',component:AttendenceDetailsComponent},
-  {path:'OvertimeDetails',component:OvertimeDetailsComponent},
-  {path:'RegularisationDetails',component:RegularisationDetailsComponent},
-  {path:'WeeklyShift',component:WeeklyShiftComponent},
-  {path:'AttendenceReport',component:AttendenceReportComponent},
-  {path:'GeneratePayslip',component:GeneratePayslipComponent},
-  {path:'LeaveReport',component:LeaveReportComponent},
-  {path:'OvertimeReport',component:OvertimeReportComponent},
-  {path:'PayrollReportComponent',component:PayrollReportComponent},
-  {path:' StaffReportComponent',component: StaffReportComponent},
-  {path:'EmployeeDashboard',component: EmployeeDashboardComponent},
+  { path: 'Department', component: DepartmentComponent },
+  { path: 'DepartmentForm/:id', component: DepartmentFormComponent },
+  { path: 'CompanyAdjustment', component: CompanyAdjustmentComponent },
+  { path: 'CompanyDashboard', component: CompanyDashboardComponent },
+  { path: 'PayRoll', component: PayrollComponent },
+  { path: 'Employee', component: EmployeeComponent },
+  { path: 'Government', component: GovernmentComponent },
+  { path: 'OtRates', component: OtRatesComponent },
+  { path: 'PayGroup', component: PayGroupComponent },
+  { path: 'PhillHealth', component: PhillHealthComponent },
+  { path: 'SSS', component: SSSComponent },
+  { path: 'Bank', component: BankComponent },
+  { path: 'Adjustment', component: AdjustmentComponent },
+  { path: 'CostCenter', component: CostCenterComponent },
+  { path: 'TaxTable', component: TaxTableComponent },
+  { path: 'TaxTable/:id', component: TaxTableComponent },
+  { path: 'User', component: UserComponent },
+  { path: 'Adolfo', component: AdolfoComponent },
+  { path: 'Footer', component: FooterComponent },
+  { path: 'AttendenceDetails', component: AttendenceDetailsComponent },
+  { path: 'OvertimeDetails', component: OvertimeDetailsComponent },
+  { path: 'RegularisationDetails', component: RegularisationDetailsComponent },
+  { path: 'WeeklyShift', component: WeeklyShiftComponent },
+  { path: 'AttendenceReport', component: AttendenceReportComponent },
+  { path: 'GeneratePayslip', component: GeneratePayslipComponent },
+  { path: 'LeaveReport', component: LeaveReportComponent },
+  { path: 'OvertimeReport', component: OvertimeReportComponent },
+  { path: 'PayrollReportComponent', component: PayrollReportComponent },
+  { path: ' StaffReportComponent', component: StaffReportComponent },
+  { path: 'EmployeeDashboard', component: EmployeeDashboardComponent },
   { path: 'EmployeeForm/:id', component: EmployeeFormComponent },
-  {path:'StaffReportComponent',component: StaffReportComponent},
-  {path:'TaxtableAnnual',component:TaxtableAnnualComponent},
-  {path:'CurrencyMaster',component:CurrencyMasterComponent}
+  { path: 'StaffReportComponent', component: StaffReportComponent },
+  { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
+  { path: 'Updatecompanyprofile', component: UpdatecompanyprofileComponent },
+  { path: 'UpdateBank', component: UpdateBankComponent },
+  { path: 'CurrencyMaster', component: CurrencyMasterComponent }
 
 ];
 

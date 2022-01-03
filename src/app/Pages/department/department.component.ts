@@ -11,14 +11,14 @@ export class DepartmentComponent implements OnInit {
 
   constructor(private ActivatedRoute: ActivatedRoute, private DigipayrollServiceService: DigipayrollServiceService) { }
   SelectedData: any;
-  id: any;
+  ID: any;
   result: any;
   ngOnInit(): void {
     this.GetDepartment();
     this.ActivatedRoute.params.subscribe(params => {
       debugger
-      this.id = params["id"];
-      if (this.id != null && this.id != undefined) {
+      this.ID = params["id"];
+      if (this.ID != null && this.ID != undefined) {
         this.GetDepartment();
       }
     })
@@ -32,6 +32,11 @@ export class DepartmentComponent implements OnInit {
       })
   }
 
+  GetId(id: any) {
+    this.ID = id
+  }
+
+
   public Ondelete(id:any) {
     this.DigipayrollServiceService.DeleteDepartment(id).subscribe(
       data => {
@@ -42,8 +47,16 @@ export class DepartmentComponent implements OnInit {
     )
   }
 
-   // Modify(details: any){
-  //   debugger
-  //  location.href="/CostCenterForm/"+ details.id;
-  // }
+
+  update() {
+    debugger
+    if (this.ID== null || this.ID==undefined) {
+      Swal.fire('Please Select the Record to Modify');
+      // location.href = "/PayGroup"
+    }
+
+    else {
+      location.href="/DepartmentForm/"+ this.ID;
+    }
+  }
 }
