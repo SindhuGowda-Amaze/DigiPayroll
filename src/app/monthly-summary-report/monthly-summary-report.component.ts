@@ -9,6 +9,7 @@ export class MonthlySummaryReportComponent implements OnInit {
 
   constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
 result:any;
+Tax_Table_Starts_on:any;
   ngOnInit(): void {
     this.GetPayGroup();
   }
