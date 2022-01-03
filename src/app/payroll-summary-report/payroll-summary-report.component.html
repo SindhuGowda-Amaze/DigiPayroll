@@ -93,14 +93,14 @@
                         </table>
                     </div>
                 </div><br>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-4"></div>
                     <div class="col-lg-4">
                         <p><input type="checkbox"> Include employee middle name in bank advice list</p>
                     </div>
                     <div class="col-lg-4"></div>
-                </div> <br>
-                <div class="row">
+                </div> <br> -->
+                <!-- <div class="row">
                     <div class="col-lg-3">
                     <button class="Extra" (click)="convetToPDF1()">Export to PDF </button>
                     </div>
@@ -113,13 +113,13 @@
                     <div class="col-lg-3">
                         <button class="Extra">Bank Advise List</button>
                     </div>
-                </div><br>
+                </div><br> -->
                 <div class="container-fluid" id="demo" class="collapse">
                     <div class="row">
                         <div class="col-lg-12">
                             <ul>
-                                <li><a class="active fontheading">Select ALL</a></li>
-                                <li><a class="active fontheading">Uncheck ALL</a></li>
+                                <li><a class="active fontheading">Select</a></li>
+                                <li><a class="active fontheading">Uncheck</a></li>
                                 <li><a class="active fontheading">Employees in selected Period</a></li>
                             </ul>
                         </div>
@@ -151,8 +151,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul>
-                                <li><a class="active fontheading">Select ALL</a></li>
-                                <li><a class="active fontheading">Uncheck ALL</a></li>
+                                <li><a class="active fontheading">Select</a></li>
+                                <li><a class="active fontheading">Unselect</a></li>
                                 <li></li>
                                 <li><a class="active fontheading">Employees in selected Period</a></li>
                             </ul>
@@ -164,7 +164,7 @@
                             <table class="table table-bordered fonttxt">
                                 <thead>
                                     <tr class="newFont">
-                                        <th class="SelectData"><input type="checkbox"></th>
+                                        <th class="SelectData"><input type="checkbox" ></th>
                                         <th> Employee ID</th>
                                         <th>Name</th>
                                         <th>Status</th>                   
@@ -176,55 +176,55 @@
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>20-017</td>
                                         <td>Tan, Marina Ela Navarro</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21-098</td>
                                         <td>Blanch, Stephaine</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21-091</td>
                                         <td>Tan, Marina Ela Navarro</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21042</td>
                                         <td>Enedya,Lalit</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21-123</td>
                                         <td>Tan, Marina Ela Navarro</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>20-124</td>
                                         <td>Dela,Cruz</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>19-021</td>
                                         <td>Chavez, Ma. Russell Bullecer</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21-021</td>
                                         <td>Cardeno, Dina Quintana</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>20-123</td>
                                         <td>Blanch, Aldrin De Guzman</td>
                                         <td>Active</td>
@@ -237,6 +237,57 @@
                     </div>
                 </div>
                
+                <div class="container-fluid" id="Paygrouppdf" class="collapse">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul>
+                                <li><a class="active fontheading">Select</a></li>
+                                <li><a class="active fontheading">Unselect</a></li>
+                                <li></li>
+                                <li><a class="active fontheading">Employees in selected Period</a></li>
+                            </ul>
+                        </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table table-bordered fonttxt">
+                                <thead>
+                                    <tr class="newFont">
+                                        <th class="SelectData"><input type="checkbox" ></th>
+                                        <th> Employee ID</th>
+                                        <th>Name</th>
+                                        <th>Status</th>                   
+                                    </tr>
+                                    <tr>
+                                        <td class="SelectData"><input type="checkbox" id="Paygrouppdf" class="collapse"></td>
+                                        <td>21042</td>
+                                        <td>Tan, Marina Ela Navarro</td>
+                                        <td>Active</td>
+                                    </tr>
+
+                                </thead>
+                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div>
         </div>
