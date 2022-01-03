@@ -61,6 +61,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 import { SSSR3ReportComponent } from './sssr3-report/sssr3-report.component';
+import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
+import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+import { YTDReportComponent } from './ytdreport/ytdreport.component';
 
   import { SSSR5ReportComponent } from './sssr5-report/sssr5-report.component';
 import { SSSLMSComponent } from './ssslms/ssslms.component';
@@ -197,7 +200,11 @@ const routes: Routes = [
   { path: 'UpdateBank', component: UpdateBankComponent },
   { path: 'CurrencyMaster', component: CurrencyMasterComponent },
   {path:'PayrollSummaryReport',component:PayrollSummaryReportComponent},
-  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent }
+  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent },
+  { path: 'MonthlySummaryReport', component: MonthlySummaryReportComponent },
+  { path: 'YTDReportAdjustment', component: YTDReportAdjustmentComponent },
+  { path: 'YTDReport', component: YTDReportComponent }
+
 
 ];
 

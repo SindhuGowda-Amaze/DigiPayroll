@@ -36,7 +36,7 @@ export class LoginPageComponent implements OnInit {
     // sessionStorage.setItem('userName', 'admin');
      sessionStorage.setItem('temp', '1');
     // this.router.navigate(["/Dashboard"]);
-    location.href="/PayRoll"
+    location.href="#/PayRoll"
     // sessionStorage.setItem('roleid', '1');
     // location.reload();
 

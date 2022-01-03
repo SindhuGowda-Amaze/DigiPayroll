@@ -1,56 +1,107 @@
-<!-- <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-        <div class="row ">
-            <div class="col-lg-5">
-                <p class="FormHeadText">DEPARTMENT </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10"></div>
-        </div>
-        <br>
-        <div class="row LocDashboard">
-            <div class="col-lg-12">
-                <label>Department  Details</label>
-            </div>
-        </div>
-        <div class="card BOXCARD">
-            <div class="row leavereq">
-                <div class="col-md-2">
-                    <label>Name<span style="color: red;">*</span></label>
-                </div>
-                <div class="col-md-2">
-                    <label>Code<span style="color: red;">*</span></label>
-                </div>
-                <div class="col-md-2">
-                    <label>Remarks<span style="color: red;">*</span></label>
-                </div>
-            </div>
-            <div class="row leavereq">
-                <div class="col-md-2">
-                    <input type="text" class="form-control inputfield" [(ngModel)]="name">
-                </div>
-                <div class="col-md-2">
-                    <input type="text" class="form-control inputfield" [(ngModel)]="code">
-                </div>
-                <div class="col-md-4">
-                    <textarea type="text" class="form-control inputfield" placeholder="Write here remarks" [(ngModel)]="remarks"></textarea>
-                </div>
-            </div>
-            <br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
             <div class="row">
-                <div class="col-lg-10"></div>
-                <div class="col-lg-1">
-                    <button class="form-control CancelBTN">Cancel</button>
-                </div>
-                <div class="col-lg-1">
-                 <button class="form-control SubmitBTN" (click)="OnSubmit()" >Submit</button>
-                    <button class="form-control SubmitBTN" *ngIf="ID==undefined"  (click)="OnSubmit()" >Save</button>
-                    <button class="form-control SubmitBTN" *ngIf="ID!= undefined"   (click)="Update()">Update</button>  
+                <div class="col-lg-12">
+                    <a href="" class="Heading">Payroll Summary  Report</a>
+                    <hr class="HrLine">
                 </div>
             </div>
-        </div><br>
+            <!-- <div class="row FilterClass">
+                <div class="col-lg-2">
+                    Filter By
+                </div>
+                <div class="col-lg-2">
+                    <input class="form-control" type="date" placeholder="Duration">
+                </div>
+                <div class="col-lg-6">
+                    <input class="form-control" type="search" placeholder="Search for date , Type or Code">
+                </div>
+            </div><br> -->
+            <div class="row">
+                <div class="col-lg-8 View">
+                    <ul>
+                        <li><a class="active">View</a></li>
+                        <!-- <li><a class="active">Modify</a></li> -->
+                        <!-- <li><a (click)="update()">Modify</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- <div class="col-lg-4">
+                    <a href="/DepartmentForm"><button class="button">Add</button> </a>
+                </div> -->
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table">
+                            <thead>
+                                <tr class="newFont" >
+                                    <th>Select</th>
+                                    <th>Year</th>
+                                    <th>Month</th>
+                                    <th>Period</th>
+                                    <th>Payroll Run Type</th>
+                                    <th>Description</th>
+                                <tr>
+                            </thead>
+                            <tbody>
+                             
+                                 <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>2021</td>
+                                    <td>December</td>
+                                    <td>2</td>
+                                    <td>Normal</td>
+                                    <td>Payroll for 12/1/2021 - 12/15/2021(Rank and File,Rank and File - Deployed)</td>
+                                </tr>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>2021</td>
+                                    <td>November</td>
+                                    <td>2</td>
+                                    <td>Normal</td>
+                                    <td>Payroll for 12/1/2021 - 12/15/2021(Rank and File,Rank and File - Deployed)</td>
+                                </tr>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>2021</td>
+                                    <td>December</td>
+                                    <td>1</td>
+                                    <td>Final</td>
+                                  <td> Final Pay(Rank and File - Deployed)</td>
+                                </tr>
+                                <tr  class="newFont">
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>2021</td>
+                                    <td>December</td>
+                                    <td>2</td>
+                                    <td>Final</td>
+                                   <td> Final Pay(Rank and File - Deployed)</td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                 </div><br>
+                 <div class="row">
+                    <div class="col-lg-3">
+                    <button class="Extra">Export to PDF </button>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="Extra">Export to Excel</button>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="Extra">Employer Contributions </button>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="Extra">Bank Advise List</button>
+                    </div>
+              </div>
+
+            </div>
+        </div>
     </div>
     <div class="col-lg-1"></div>
-    </div> -->
+</div>
