@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 import { AppComponent } from './app.component';
@@ -48,7 +48,6 @@ import { PayrollComponent } from './Pages/Attendence/payroll/payroll.component';
 import { NgWizardConfig, NgWizardModule, THEME } from 'ng-wizard';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { NgxFullCalendarModule } from '../../node_modules/ngx-fullcalendar';
-
 import { TaxtableAnnualComponent } from './taxtable-annual/taxtable-annual.component';
 import { CompanyDashboardComponent } from './Pages/company-dashboard/company-dashboard.component';
 import { LeaveTypeDashboardComponent } from './leave-type-dashboard/leave-type-dashboard.component';
@@ -63,11 +62,26 @@ import { UpdatecompanyprofileComponent } from './updatecompanyprofile/updatecomp
 import { UpdateBankComponent } from './update-bank/update-bank.component';
 import { CurrencyMasterComponent } from './currency-master/currency-master.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 import { PaySlipReportComponent } from './pay-slip-report/pay-slip-report.component';
 import { CertificateOfLoanComponent } from './certificate-of-loan/certificate-of-loan.component';
 import { M1mcrfComponent } from './m1mcrf/m1mcrf.component';
 import { M1excelComponent } from './m1excel/m1excel.component';
+import { SSSR3ReportComponent } from './sssr3-report/sssr3-report.component';
+import { SSSR5ReportComponent } from './sssr5-report/sssr5-report.component';
+import { SSSLMSComponent } from './ssslms/ssslms.component';
+import { SSSAMSCCLReportComponent } from './sssamscclreport/sssamscclreport.component';
+import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
+import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
+import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
+import { YTDReportComponent } from './ytdreport/ytdreport.component';
+import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
+import { ER2Component } from './er2/er2.component';
+import { RFreportComponent } from './rfreport/rfreport.component';
+import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
+
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -136,14 +150,29 @@ const ngWizardConfig: NgWizardConfig = {
     PaySlipReportComponent,
     CertificateOfLoanComponent,
     M1mcrfComponent,
-    M1excelComponent
+    M1excelComponent,
+    PayrollSummaryReportComponent,
+    CurrencyMasterFormComponent,
+    SSSR3ReportComponent,
+    SSSR5ReportComponent,
+    SSSLMSComponent,
+    SSSAMSCCLReportComponent,
+    SSSML1ReportComponent,
+    SSSRL1ReportComponent,
+    MonthlySummaryReportComponent,
+    YTDReportComponent,
+    YTDReportAdjustmentComponent,
+    CertificateOfContributionComponent,
+    ER2Component,
+    RFreportComponent,
+    RF1PDFComponent
 
   ],
   imports: [
+    NgbModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    NgbModule,
     NgxDropzoneModule,
     NgxFullCalendarModule,
     HttpClientModule,

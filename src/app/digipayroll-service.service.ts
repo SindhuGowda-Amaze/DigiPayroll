@@ -41,6 +41,12 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
+  // public UpdatePhilHealth(json : any) {   
+  //   debugger
+  //   let APIURL = this.baseURL + "Master/UpdatePhilHealth";
+  //   return this.http.post<any[]>(APIURL,json);
+  // }
+
 
   
   public GetAttendance() {

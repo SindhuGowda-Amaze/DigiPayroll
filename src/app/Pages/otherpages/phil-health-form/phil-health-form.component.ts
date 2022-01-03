@@ -37,24 +37,19 @@ export class PhilHealthFormComponent implements OnInit {
       debugger
       this.result = data;
       this.result=this.result.filter((x: {id: any;})=>x.id==Number(this.id));
- 
       this.monthlybasicsalary=this.result[0].monthly_Basic_Salary_Into_Five;
       this.monthlyshare=this.result[0].monthly_Share;
       this.personalshare=this.result[0].personal_Share;
-      this.employershare=this.result[0].employee_Share;
-       
- 
+      this.employershare=this.result[0].employee_Share; 
      })
   }
      
   save(){
-      var json = {
-     
+      var json = {    
      "Monthly_Basic_Salary_Into_Five": this.monthlybasicsalary,
      "Monthly_Share": this.monthlyshare,
      "Personal_Share": this.personalshare,
      "Employee_Share": this.employershare,
- 
   };
  
   this.DigipayrollServiceService.InsertPhilHealth(json).subscribe(
@@ -62,8 +57,7 @@ export class PhilHealthFormComponent implements OnInit {
      debugger
      let result = data;
      location.href="/PhillHealth/"
-  })
- 
+  }) 
   alert("Mentioned Monthly basicsalary is "+this.monthlybasicsalary)
   alert("Mentioned Monthly share is "+this.monthlyshare)
   }
