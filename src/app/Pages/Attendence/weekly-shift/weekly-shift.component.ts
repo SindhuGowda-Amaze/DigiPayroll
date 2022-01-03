@@ -22,7 +22,7 @@ export class WeeklyShiftComponent implements OnInit {
     debugger
     this.DigiServiceService.GetStaffShiftDetails().subscribe(data => {
       debugger
-      this.workplaceList = data.slice(0,5);
+      this.workplaceList = data.filter(x=>x.id==10357).slice(0,5);
     })
   }
 }

@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import{DigipayrollServiceService}from '../../../digipayroll-service.service'
-
+import { DatePipe } from '@angular/common';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-attendence-details',
   templateUrl: './attendence-details.component.html',
-  styleUrls: ['./attendence-details.component.css']
+  styleUrls: ['./attendence-details.component.css'],
+  providers: [DatePipe]
 })
 export class AttendenceDetailsComponent implements OnInit {
   shiftdetails:any;
@@ -15,7 +17,7 @@ export class AttendenceDetailsComponent implements OnInit {
 
 
 
-  constructor(private DigiPayrollService:DigipayrollServiceService,private AcivatedRoute:ActivatedRoute) { }
+  constructor(private DigiPayrollService:DigipayrollServiceService,private AcivatedRoute:ActivatedRoute, private datePipe: DatePipe) { }
 
   dropdownList: any = [];
   selectedItems: any = [];
@@ -23,10 +25,16 @@ export class AttendenceDetailsComponent implements OnInit {
 
   roleid: any
   staffID: any;
+  myDate: any;
   ngOnInit(): void {
 
-    this.roleid = localStorage.getItem('roledid');
-    this.staffID = localStorage.getItem('staffid');
+
+
+
+    this.myDate = new Date();
+
+    this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
+   
     this.GetAttendance();
     this.DigiPayrollService.GetMyDetails().subscribe((data: any) => {
       debugger
@@ -56,6 +64,56 @@ export class AttendenceDetailsComponent implements OnInit {
     })
 
   }
+
+  UserID: any;
+  SigninDate: any;
+  SigninLocation: any;
+  StatusID: any;
+  public punchin() {
+
+    var entity = {
+
+
+      UserID: localStorage.getItem('staffid'),
+      SigninDate: this.datePipe.transform((new Date), 'MM/dd/yyyy h:mm:ss'),
+      SigninLocation: 'Office',
+      StatusID: this.StatusID
+
+    }
+    this.DigiPayrollService.InsertAttendanceWeb(entity).subscribe(data => {
+      if (data != 0) {
+        this.punchinId = data
+        localStorage.setItem('PunchINid', this.punchinId)
+        Swal.fire('Punched In Succesfully')
+      }
+
+    })
+
+  }
+
+  punchinId: any;
+  public punchout() {
+
+    var entity = {
+
+
+      ID: localStorage.getItem('PunchINid'),
+      SignoutDate: this.datePipe.transform((new Date), 'MM/dd/yyyy h:mm:ss'),
+      SignoutLocation: 'Office',
+      StatusID: this.StatusID
+
+    }
+    this.DigiPayrollService.UpdateAttendanceWeb(entity).subscribe(data => {
+      if (data != 0) {
+        Swal.fire('Punched Out Succesfully')
+      }
+
+    })
+
+  }
+
+
+
   startdate: any;
   enddate: any;
   attendancelist: any;
