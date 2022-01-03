@@ -81,6 +81,8 @@ import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/
   import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
   import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
   import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
+import { UserFormPreFillComponent } from './user-form-pre-fill/user-form-pre-fill.component';
+import { UserResetComponent } from './user-reset/user-reset.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -225,6 +227,11 @@ const routes: Routes = [
   {path:'CertificateOfLoan',component:CertificateOfLoanComponent},
   {path:'M1excel',component:M1excelComponent},
   {path:'M1mcrf',component:M1mcrfComponent},
+  {path:'UserFormPreFill',component:UserFormPreFillComponent},
+  {path:'UserReset',component:UserResetComponent},
+
+  
+
   {path:'CurrencyMaster',component:CurrencyMasterComponent},
   { path: 'StaffReportComponent', component: StaffReportComponent },
   { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
