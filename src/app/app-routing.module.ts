@@ -62,9 +62,9 @@ import { CurrencyMasterFormComponent } from './currency-master-form/currency-mas
 import { SSSR3ReportComponent } from './sssr3-report/sssr3-report.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
 import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
-import{RFreportComponent} from './rfreport/rfreport.component';
+import { RFreportComponent } from './rfreport/rfreport.component';
 import { ER2Component } from './er2/er2.component';
-import{RF1PDFComponent} from './rf1-pdf/rf1-pdf.component'
+import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component'
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { SSSR5ReportComponent } from './sssr5-report/sssr5-report.component';
@@ -72,6 +72,7 @@ import { SSSLMSComponent } from './ssslms/ssslms.component';
 import { SSSAMSCCLReportComponent } from './sssamscclreport/sssamscclreport.component';
 import { SSSML1ReportComponent } from './sssml1-report/sssml1-report.component';
 import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
+import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
 
@@ -142,6 +143,9 @@ const routes: Routes = [
     path: "AdjustmentForm", component: AdjustmentFormComponent
   },
   {
+    path: "AdjustmentForm/:id", component: AdjustmentFormComponent
+  },
+  {
     path: "EmployeeForm", component: EmployeeFormComponent
   },
   {
@@ -184,32 +188,33 @@ const routes: Routes = [
   { path: ' StaffReportComponent', component: StaffReportComponent },
   { path: 'EmployeeDashboard', component: EmployeeDashboardComponent },
   { path: 'EmployeeForm/:id', component: EmployeeFormComponent },
-  {path:'StaffReportComponent',component: StaffReportComponent},
-  {path:'TaxtableAnnual',component:TaxtableAnnualComponent},
-  {path:'LeaveTypeDashboard',component:LeaveTypeDashboardComponent},
-  {path:'LeaveTypeForn',component:LeaveTypeFornComponent},
-  {path:'LeaveTypeForn/:id',component:LeaveTypeFornComponent},
-  {path:'StateMaster',component:StateMasterComponent},
-  {path:'StateMasterDash',component:StateMasterDashComponent},
-  {path:'CountryMaster',component:CountryMasterComponent},
-  {path:'CountryMasterDash',component:CountryMasterDashComponent},
-  {path:'CityMaster',component:CityMasterComponent},
-  {path:'CityMasterDash',component:CityMasterDashComponent},
-  {path:'CurrencyMaster',component:CurrencyMasterComponent},
+  { path: 'StaffReportComponent', component: StaffReportComponent },
+  { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
+  { path: 'LeaveTypeDashboard', component: LeaveTypeDashboardComponent },
+  { path: 'LeaveTypeForn', component: LeaveTypeFornComponent },
+  { path: 'LeaveTypeForn/:id', component: LeaveTypeFornComponent },
+  { path: 'StateMaster', component: StateMasterComponent },
+  { path: 'StateMasterDash', component: StateMasterDashComponent },
+  { path: 'CountryMaster', component: CountryMasterComponent },
+  { path: 'CountryMasterDash', component: CountryMasterDashComponent },
+  { path: 'CityMaster', component: CityMasterComponent },
+  { path: 'CityMasterDash', component: CityMasterDashComponent },
+  { path: 'CurrencyMaster', component: CurrencyMasterComponent },
   { path: 'StaffReportComponent', component: StaffReportComponent },
   { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
   { path: 'Updatecompanyprofile', component: UpdatecompanyprofileComponent },
   { path: 'UpdateBank', component: UpdateBankComponent },
   { path: 'CurrencyMaster', component: CurrencyMasterComponent },
-  {path:'PayrollSummaryReport',component:PayrollSummaryReportComponent},
+  { path: 'PayrollSummaryReport', component: PayrollSummaryReportComponent },
   { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent },
   { path: 'MonthlySummaryReport', component: MonthlySummaryReportComponent },
-  {path:'CertificateOfContribution',component:CertificateOfContributionComponent},
-  {path:'ER2',component:ER2Component},
-  {path:'RFreport',component:RFreportComponent},
-  {path:'RF1PDF',component:RF1PDFComponent},
+  { path: 'CertificateOfContribution', component: CertificateOfContributionComponent },
+  { path: 'ER2', component: ER2Component },
+  { path: 'RFreport', component: RFreportComponent },
+  { path: 'RF1PDF', component: RF1PDFComponent },
   { path: 'YTDReportAdjustment', component: YTDReportAdjustmentComponent },
-  { path: 'YTDReport', component: YTDReportComponent }
+  { path: 'YTDReport', component: YTDReportComponent },
+  { path: 'AdjustmentGenerateReport', component: AdjustmentGenerateReportComponent }
 
 
 ];

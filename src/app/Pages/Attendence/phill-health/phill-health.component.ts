@@ -11,15 +11,29 @@ import Swal from 'sweetalert2';
 export class PhillHealthComponent implements OnInit {
 
   constructor(private DigipayrollServiceService: DigipayrollServiceService, private ActivatedRoute:ActivatedRoute) { }
-
+ID:any;
   ngOnInit(): void {
     debugger
     this.GetPhilHealth();
   }
 
-  Update (salary: any){
+  // Update (salary: any){
+  //   debugger
+  //  location.href="/PhilHealthForm/"+ salary.id;
+  // }
+
+  GetId(id: any) {
+    this.ID = id
+  }
+
+  update() {
     debugger
-   location.href="/PhilHealthForm/"+ salary.id;
+    if (this.ID== null || this.ID==undefined) {
+      Swal.fire('Please Select the Record to Modify');
+    }
+    else {
+      location.href="#/PhilHealthForm/"+ this.ID;
+    }
   }
 
   salarylist:any;

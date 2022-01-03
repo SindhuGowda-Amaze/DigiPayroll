@@ -23,12 +23,12 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a  href="/AdjustmentForm">Modify</a></li>
+                        <li><a  href="" (click)="update()">Modify</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="/AdjustmentForm"><button class="button">Add</button> </a>
+                    <a href="#/AdjustmentForm"><button class="button">Add</button> </a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                                     <!-- <th>Action</th> -->
                                 <tr>
                                     <tr *ngFor="let employee of employeedetails">
-                                        <td class="SelectData"><input type="checkbox">{{employee.selectedData}}</td>
+                                        <td class="SelectData" (click)="GetId(employee.id)"><input type="checkbox"></td>
                                         <td>{{employee.type}}</td>
                                         <td>{{employee.name}}</td>
                                         <td>{{employee.code}}</td>

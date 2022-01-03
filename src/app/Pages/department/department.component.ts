@@ -15,13 +15,7 @@ export class DepartmentComponent implements OnInit {
   result: any;
   ngOnInit(): void {
     this.GetDepartment();
-    this.ActivatedRoute.params.subscribe(params => {
-      debugger
-      this.ID = params["id"];
-      if (this.ID != null && this.ID != undefined) {
-        this.GetDepartment();
-      }
-    })
+   
   }
   public GetDepartment() {
     debugger
@@ -56,7 +50,7 @@ export class DepartmentComponent implements OnInit {
     }
 
     else {
-      location.href="/DepartmentForm/"+ this.ID;
+      location.href="#/DepartmentForm/"+ this.ID;
     }
   }
 }

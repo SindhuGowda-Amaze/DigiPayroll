@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigipayrollServiceService } from 'src/app/digipayroll-service.service';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-adjustment',
@@ -10,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class AdjustmentComponent implements OnInit {
 
   employeedetails:any;
+  ID:any;
   constructor(private DigiPayrollService:DigipayrollServiceService,private ActivatedRouted:ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -24,4 +26,19 @@ export class AdjustmentComponent implements OnInit {
      })
   }
 
+  GetId(id: any) {
+    this.ID = id
+  }
+
+  update() {
+    debugger
+    if (this.ID== null || this.ID==undefined) {
+      Swal.fire('Please Select the Record to Modify');
+      // location.href = "/PayGroup"
+    }
+
+    else {
+      location.href="#/AdjustmentForm/"+ this.ID;
+    }
+  }
 }

@@ -77,6 +77,7 @@ import { CertificateOfContributionComponent } from './certificate-of-contributio
 import { ER2Component } from './er2/er2.component';
 import { RFreportComponent } from './rfreport/rfreport.component';
 import { RF1PDFComponent } from './rf1-pdf/rf1-pdf.component';
+import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
 
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
@@ -156,7 +157,8 @@ const ngWizardConfig: NgWizardConfig = {
     CertificateOfContributionComponent,
     ER2Component,
     RFreportComponent,
-    RF1PDFComponent
+    RF1PDFComponent,
+    AdjustmentGenerateReportComponent
 
   ],
   imports: [

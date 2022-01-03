@@ -40,9 +40,9 @@ export class OtRatesFormComponent implements OnInit {
       this.result=this.result.filter((x: {id: any;})=>x.id==Number(this.id));
       this.day=this.result[0].day;
       this.normal=this.result[0].normal;
-      this.oT=this.result[0].oT;
-      this.nD=this.result[0].nD;
-      this.nDOT=this.result[0].nDOT;
+      this.oT=this.result[0].ot;
+      this.nD=this.result[0].nd;
+      this.nDOT=this.result[0].ndot;
  
      })
   }
@@ -75,16 +75,16 @@ export class OtRatesFormComponent implements OnInit {
       "ID":this.id,
       "Day": this.day,
       "Normal": this.normal,
-      "OT": this.oT,
-      "ND": this.nD,
-      "NDOT": this.nDOT,
+      "ot": this.oT,
+      "nd": this.nD,
+      "ndot": this.nDOT,
     };
    
     this.DigipayrollServiceService.UpdateOTRates(json).subscribe(
       data => {
       debugger
       let result = data;
-      location.href="/OtRates/";
+      location.href="#/OtRates/";
       Swal.fire("Updated Sucessfully.....!");
     })
   }
