@@ -77,6 +77,8 @@ import { SSSRL1ReportComponent } from './sssrl1-report/sssrl1-report.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+import { PagibigSTLRFComponent } from './pagibig-stlrf/pagibig-stlrf.component';
+import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfexcel.component';
 import { CertificateOfContributionComponent } from './certificate-of-contribution/certificate-of-contribution.component';
 import { ER2Component } from './er2/er2.component';
 import { RFreportComponent } from './rfreport/rfreport.component';
@@ -162,6 +164,8 @@ const ngWizardConfig: NgWizardConfig = {
     MonthlySummaryReportComponent,
     YTDReportComponent,
     YTDReportAdjustmentComponent,
+    PagibigSTLRFComponent,
+    PagibigSTLRFExcelComponent,
     CertificateOfContributionComponent,
     ER2Component,
     RFreportComponent,

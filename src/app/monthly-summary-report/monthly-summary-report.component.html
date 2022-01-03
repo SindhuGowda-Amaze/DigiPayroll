@@ -30,17 +30,6 @@
                                     <th>Pay Group</th>
                                 <tr>
                             </thead>
-                           <tr>
-                            <td class="SelectData"><input type="checkbox"></td>
-                               <td>2021</td>
-                               <td>December</td>
-                               <td>Normal</td>
-                               <td *ngFor="let paygroup of result">
-                                <select class="form-control" [(ngModel)]="Tax_Table_Starts_on">
-                                    <option value="description">{{paygroup.description}}</option>
-                                </select>
-                               </td>
-                           </tr>
                             <tr>
                                 <td class="SelectData"><input type="checkbox" data-toggle="collapse"
                                         data-target="#demo"></td>
@@ -159,18 +148,6 @@
                     <div class="col-lg-4"></div>
                 </div>
             </div>
-            <div>
-                <div class="row">
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-2">
-                        <button class="form-control button">EXPORT TO EXCEL</button>
-                    </div>
-                    <div class="col-lg-2">
-                        <button class="form-control button">BANK ADVICE LIST</button>
-                    </div>
-                    <div class="col-lg-4"></div>
-                </div>
-            </div><br>
         </div>
     </div>
     <div class="col-lg-1"></div>
