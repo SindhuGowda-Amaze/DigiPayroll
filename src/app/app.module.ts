@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 import { AppComponent } from './app.component';
@@ -65,9 +65,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
 import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
-import { YTDRepotComponent } from './ytdrepot/ytdrepot.component';
 import { YTDReportComponent } from './ytdreport/ytdreport.component';
 import { YTDReportAdjustmentComponent } from './ytdreport-adjustment/ytdreport-adjustment.component';
+
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
 };
@@ -135,16 +135,17 @@ const ngWizardConfig: NgWizardConfig = {
     PayrollSummaryReportComponent,
     CurrencyMasterFormComponent,
     MonthlySummaryReportComponent,
-    YTDRepotComponent,
     YTDReportComponent,
     YTDReportAdjustmentComponent
 
   ],
   imports: [
+    NgbModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    NgbModule,
+    
+   
     NgxDropzoneModule,
     NgxFullCalendarModule,
     HttpClientModule,
