@@ -53,6 +53,8 @@ import { CountryMasterComponent } from './country-master/country-master.componen
 import { CountryMasterDashComponent } from './country-master-dash/country-master-dash.component';
 import { CityMasterComponent } from './city-master/city-master.component';
 import { CityMasterDashComponent } from './city-master-dash/city-master-dash.component';
+import { CurrencyMasterComponent } from './currency-master/currency-master.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/CompanyProfile', pathMatch: 'full' },
 
@@ -120,7 +122,7 @@ const routes: Routes = [
     path: "ApplyLeave", component: ApplyLeaveComponent
   },
   {path:'Department',component:DepartmentComponent},
-  {path:'Department',component:DepartmentComponent},
+  {path:'DepartmentForm/:id',component:DepartmentFormComponent},
   {path:'CompanyAdjustment',component:CompanyAdjustmentComponent},
   {path:'CompanyDashboard',component:CompanyDashboardComponent},
   {path:'PayRoll',component:PayrollComponent},
@@ -165,6 +167,7 @@ const routes: Routes = [
 
   
 
+  {path:'CurrencyMaster',component:CurrencyMasterComponent}
 
 ];
 
