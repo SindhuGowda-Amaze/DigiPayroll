@@ -60,6 +60,7 @@ import { CurrencyMasterComponent } from './currency-master/currency-master.compo
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PayrollSummaryReportComponent } from './payroll-summary-report/payroll-summary-report.component';
 import { CurrencyMasterFormComponent } from './currency-master-form/currency-master-form.component';
+import { MonthlySummaryReportComponent } from './monthly-summary-report/monthly-summary-report.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -185,7 +186,8 @@ const routes: Routes = [
   { path: 'UpdateBank', component: UpdateBankComponent },
   { path: 'CurrencyMaster', component: CurrencyMasterComponent },
   {path:'PayrollSummaryReport',component:PayrollSummaryReportComponent},
-  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent }
+  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent },
+  { path: 'MonthlySummaryReport', component: MonthlySummaryReportComponent }
 
 ];
 
