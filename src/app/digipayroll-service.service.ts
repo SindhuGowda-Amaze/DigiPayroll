@@ -55,6 +55,32 @@ export class DigipayrollServiceService {
     );
   }
 
+  public GetLeaveType() {
+    return this.http.get<any[]>(
+      this.host + "/MasterDemo/GetLeaveType"
+
+    );
+  }
+
+  public DeleteLeaveTypeMaster(ID: any) {
+    return this.http.get<any[]>(
+      this.host + "/ProjectRequest/DeleteLeaveTypeMaster?ID=" + ID);
+  }
+
+
+
+  public UpdateAttendanceWeb(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/UpdateAttendanceWeb';
+    return this.http.post(this.url, data);
+  }
+
+  
+  public InsertAttendanceWeb(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/InsertAttendanceWeb';
+    return this.http.post(this.url, data);
+  }
   
 
   public UpdatePhilHealth(json: any) {
@@ -141,13 +167,25 @@ export class DigipayrollServiceService {
     );
   }
 
-
+ public InsertLeaveTypeMaster(data: any) {
+    debugger;
+    this.url = this.host + '/ProjectRequest/InsertLeaveTypeMaster';
+    return this.http.post(this.url, data);
+  }
 
   public GetNomination() {
     return this.http.get<any[]>(
       this.host + "/Master/GetNomination"
     );
   }
+
+  public UpdateLeaveType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/UpdateLeaveType';
+    return this.http.post(this.url, data);
+  }
+
+
 
   public GetEmploymentDetails() {
     return this.http.get<any[]>(
@@ -630,6 +668,89 @@ export class DigipayrollServiceService {
       this.host + "/MobileUser/CancelLeave?ID=" + ID + "&NoOfDays=" + NoOfDays + "&UserID=" + UserID + "&LeaveTypeID=" + LeaveTypeID + "&Status=" + Status
     );
   }
+
+  public GetCountryType() {
+    return this.http.get<any[]>(
+      this.host + "/Building/GetCountryType"
+    );
+  }
+
+
+  
+  public DeleteStateType(ID: any) {
+    return this.http.get<any[]>(
+      this.host + "/Master/DeleteStateType?ID=" + ID);
+  }
+
+
+
+  public GetStateType() {
+    return this.http.get<any[]>(
+      this.host + "/Building/GetStateType?CountryID=" + 1
+    );
+  }
+
+
+  public GetCityType() {
+    return this.http.get<any[]>(
+      this.host + "/Building/GetCityType?StateID=4"
+    );
+  }
+
+ public UpdateCityType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/UpdateCityType';
+    return this.http.post(this.url, data);
+  }
+
+
+  public UpdateCountryType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/UpdateCountryType';
+    return this.http.post(this.url, data);
+  }
+
+
+  public UpdateStateType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/UpdateStateType';
+    return this.http.post(this.url, data);
+  }
+
+
+  public InsertStateType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/InsertStateType';
+    return this.http.post(this.url, data);
+  }
+
+
+
+  public InsertCityType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/InsertCityType';
+    return this.http.post(this.url, data);
+  }
+
+
+  public InsertCountryType(data: any) {
+    debugger;
+    this.url = this.host + '/MobileUser/InsertCountryType';
+    return this.http.post(this.url, data);
+  }
+
+
+  public DeleteCountryType(ID: any) {
+    return this.http.get<any[]>(
+      this.host + "/Master/DeleteCountryType?ID=" + ID);
+  }
+
+  
+  public DeleteCityType(ID: any) {
+    return this.http.get<any[]>(
+      this.host + "/Master/DeleteCityType?ID=" + ID);
+  }
+
 
   public GetLoginTypeMaster() {
     debugger
