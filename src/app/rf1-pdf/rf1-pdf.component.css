@@ -1,3 +1,4 @@
+
  
    .img{
     width: 25px;
@@ -53,26 +54,24 @@ ul {
 }
 
 .Heading{
-  
+  padding-left: 15px;
   font-size: 15px;
   font-weight: bold;
   color: black;
   text-decoration-line: underline;
-  text-align: center;
 }
 
 .button{
-text-transform: uppercase;
+  text-transform: uppercase;
 font-weight: initial;
 text-shadow: initial;
 letter-spacing: 0.5px;
 background-color:#2F87CC ;
 color:white;
-border-radius: 25px;
-width: 90%;
+border-radius: 5px;
 border:none;
 padding: 5px;
-
+width:40%;
 float: right;
 margin-right: 15px;
 font-size: 15px;
@@ -131,4 +130,13 @@ font-weight: bold;
   
     .SelectData{
       text-align: center;
+    }
+    .button{
+      width:60%;
+      border: none;
+      background-color: #2F87CC ;
+      text-align: center;
+      border-radius: 12px;
+      color: white;
+      padding:5px;
     }

@@ -1,1 +1,121 @@
-<p>ytdreport works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="" class="Heading fontheading">YTD SUMMARY REPORT</a>
+                    <hr class="HrLine">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 View">
+                    <ul>
+                        <li><a class="active fontheading">View</a></li>
+                        <li><a>Select PayRoll</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered fonttxt">
+                            <thead>
+                                <tr class="newFont">
+                                    <th class="SelectData"></th>
+                                    <th>Year</th>
+                                    <th>Pay Group</th>
+                                <tr>
+                            </thead>
+                            <tr>
+                                <td class="SelectData"><input type="checkbox" data-toggle="collapse"data-target="#demo"></td>
+                                <td>2019</td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=" ">Select</option>
+                                        <option value="description" *ngFor="let paygroup of result">
+                                            {{paygroup.description}}</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                        data-target="#demo"></td>
+                                <td>2020</td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=" ">Select</option>
+                                        <option value="description" *ngFor="let paygroup of result">
+                                            {{paygroup.description}}</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                        data-target="#demo"></td>
+                                <td>2021</td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value=" ">Select</option>
+                                        <option value="description" *ngFor="let paygroup of result">
+                                            {{paygroup.description}}</option>
+                                    </select>
+                                </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="demo" class="collapse">
+                <div class="row">
+                    <ul>
+                        <li><a class="active fontheading">Employees</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered fonttxt">
+                            <thead>
+                                <tr class="newFont">
+                                    <th class="SelectData"><input type="checkbox"></th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Pay Group</th>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td>21042</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Development</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <p><input type="checkbox"> Include employee middle name in bank advice list</p>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-2">
+                        <button class="form-control button">EXPORT TO EXCEL</button>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div><br>
+        </div>
+    </div>
+    <div class="col-lg-1"></div>
+</div>
