@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <table class="table table-bordered fonttxt">
+                        <table class="table table-bordered fonttxt" id="downloadaplication">
                             <thead>
                                 <tr class="newFont">
                                     <th class="SelectData">Select</th>
@@ -47,7 +47,7 @@
                             </tr>
                             <tr>
                                 <td class="SelectData"><input type="checkbox" data-toggle="collapse"
-                                        data-target="#demo"></td>
+                                        data-target="#monthpayroll"></td>
                                 <td>2021</td>
                                 <td>December</td>
                                 <td>13th Month</td>
@@ -131,8 +131,126 @@
                                     <td>21042</td>
                                     <td>Tan, Marina Ela Navarro</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Rank and File</td>
                                 </tr>
+                            </thead>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="monthpayroll" class="collapse">
+                <div class="row">
+                    <ul>
+                        <li><a class="active fontheading" >Select ALL</a></li>
+                        <li><a class="active fontheading">Uncheck ALL</a></li>
+                        <li></li>
+                        <li><a class="active fontheading">Employees in selected Period</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered fonttxt">
+                            <thead>
+                                <tr class="newFont">
+                                    <th class="SelectData"><input type="checkbox"></th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Pay Group</th>
+                                </tr>
+                                <tr> 
+                                    <td class="SelectData"><input type="checkbox"checked></td>
+                                    <td>21042</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21042</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21042</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21042</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>20-017</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21-098</td>
+                                    <td>Blanch, Stephaine</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21-091</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21042</td>
+                                    <td>Enedya,Lalit</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21-123</td>
+                                    <td>Tan, Marina Ela Navarro</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>20-124</td>
+                                    <td>Dela,Cruz</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>19-021</td>
+                                    <td>Chavez, Ma. Russell Bullecer</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>21-021</td>
+                                    <td>Cardeno, Dina Quintana</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" checked></td>
+                                    <td>20-123</td>
+                                    <td>Blanch, Aldrin De Guzman</td>
+                                    <td>Active</td>
+                                    <td>Rank and File Deployed</td>
+                                </tr>
+
                             </thead>
 
                         </table>
@@ -148,13 +266,22 @@
                     </div>
                     <div class="col-lg-4"></div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2">
+                        <button class="button" (click)="exportexcel()">Export to Excel</button>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="button">Bank Advise List</button>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+
             </div>
         </div>
     </div>
     <div class="col-lg-1"></div>
 </div>
-
-
 
 
 

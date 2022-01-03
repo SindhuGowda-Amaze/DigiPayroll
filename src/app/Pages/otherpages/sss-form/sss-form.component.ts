@@ -105,7 +105,7 @@ export class SssFormComponent implements OnInit {
       data => {
       debugger
       let result = data;
-      location.href="/SSS";
+      location.href="#/SSS";
       Swal.fire("Updated Sucessfully....!");
     })
   }

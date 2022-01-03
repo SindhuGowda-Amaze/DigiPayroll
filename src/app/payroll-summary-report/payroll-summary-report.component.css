@@ -71,14 +71,14 @@
   }
 
 .Extra{
-    width: 85%;
-    text-transform: uppercase;
-    border: none;
-    background-color: #2F87CC ;
-    text-align: center;
-    color: white;
-    padding:5px;
-    border-radius: 12px;
+  height: 38px;
+  border-radius: 23px;
+  background: #2F87CC;
+  color: white;
+  width: 250px;
+  margin-left: -10px;
+  border:none;
+  width:70%;
 }
 
   

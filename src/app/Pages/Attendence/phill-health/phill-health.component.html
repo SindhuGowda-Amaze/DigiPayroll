@@ -25,7 +25,7 @@
                     <ul>
                         <li><a class="active">View</a></li>
                         <!-- <li><a href="/PhilHealthForm" >Modify</a></li> -->
-                        <li><a (click)="Update">Modify</a></li>
+                        <li><a (click)="update()">Modify</a></li>
                     </ul>
                 </div>
 
@@ -50,7 +50,7 @@
                             </thead>
                             <tbody>
                                 <tr class="newFont" *ngFor="let salary of salarylist">
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData" (click)="GetId(salary.id)"><input type="checkbox"></td>
                                     <!-- <td>{{salary.monthly_Basic_Salary_Into_Five|number:'1.2-2'}}</td> -->
                                     <td>{{salary.monthly_Basic_Salary_Into_Five}}</td>
                                     <td>{{salary.monthly_Share}}</td>

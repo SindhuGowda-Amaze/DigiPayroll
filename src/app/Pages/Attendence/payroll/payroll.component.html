@@ -61,9 +61,9 @@
                                <td>{{data.description}}</td>
                                <td>{{data.transaction_Date}}</td>
                                <td>{{data.status}}</td>
-                               <td><button class="form-control" data-toggle="modal"
+                               <td><button class="form-control  edit" data-toggle="modal"
                                 data-target="#payroll">Run Payroll</button><br>
-                                   <img class="imgcancel" (click)="Ondelete(data.id)"  src="/assets/cancel (1).png"></td>
+                                   <button  class="form-control  edit"  (click)="Ondelete(data.id)"  src="/assets/cancel (1).png">Delete</button></td>
                            </tr>
                         </table>
                     </div>

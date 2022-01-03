@@ -24,7 +24,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a (click)="Update">Modify</a></li>
+                        <li><a (click)="update()">Modify</a></li>
                     </ul>
                 </div>
 
@@ -55,7 +55,7 @@
                             </thead>
                             <tbody>
                                 <tr class="newFont" *ngFor="let SSSdata of SSSdatalist">
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"  (click)="GetId(SSSdata.id)"><input type="checkbox"></td>
                                        <!-- <td>{{salary.monthly_Basic_Salary_Into_Five|number:'1.2-2'}}</td> -->
                                     <td>{{SSSdata.min_Range|number:'1.2-2'}}</td>
                                     <td>{{SSSdata.max_Range|number:'1.2-2'}}</td>
