@@ -215,6 +215,7 @@ input:checked+.slider:before {
 .fonttxt {
   font-size: 12px;
   font-weight: bold;
+  float: right;
 }
 
 .Cal {
