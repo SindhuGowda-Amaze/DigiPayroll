@@ -12,6 +12,8 @@ export class MonthlySummaryReportComponent implements OnInit {
 
   constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
 result:any;
+showtable:any;
+Checked:any;
 Tax_Table_Starts_on:any;
   ngOnInit(): void {
     this.GetPayGroup();
@@ -30,8 +32,10 @@ Tax_Table_Starts_on:any;
   fileName = 'Approved Applicants Reports.xlsx';
   exportexcel(): void {
     /* table id is passed over here */
-    let element = document.getElementById('downloadaplication');
+    let element = document.getElementById('download');
+    debugger
     const ws: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
+    debugger
 
     /* generate workbook and add the worksheet */
     const wb: XLSX.WorkBook = XLSX.utils.book_new();
@@ -41,5 +45,17 @@ Tax_Table_Starts_on:any;
     XLSX.writeFile(wb, this.fileName);
 
   }
+
+  Showdata(even:any){
+    debugger
+      this.showtable=1;   
+  }
+
+
+
+
+
+
+
 
 }
