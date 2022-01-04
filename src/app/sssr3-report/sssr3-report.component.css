@@ -1,20 +1,22 @@
-.generate{
-    margin-left: 36px;
-    height: 38px;
-    border-radius: 23px;
-    background: #2F87CC;
-    color: white;
-    border:none;
+.generate {
+   margin-left: 36px;
+   height: 38px;
+   border-radius: 7px;
+   background: #2F87CC;
+   color: white;
+   border: none;
+   width: 100px;
 }
 
 .generate1{
-    height: 38px;
-    border-radius: 23px;
-    background: #2F87CC;
-    color: white;
-    width: 250px;
-    margin-left: -10px;
-    border: none;
+   border-radius: 8px;
+   background: #2F87CC;
+   color: white;
+   width: 200px;
+   margin-left: -10px;
+   border: none;
+   padding: 8px;
+   margin-left: 10px;
 }
 
 
@@ -97,7 +99,20 @@
    border-radius: 8px;
    background: #2F87CC;
    color: white;
-   width: 178px;
-   margin-left: 1100px;
+   width: 170px;
    border: none;
+   margin-left: 195px;
+}
+.fetch{
+   height: 34px;
+    border-radius: 8px;
+    background: #2F87CC;
+    color: white;
+    width: 178px;
+    margin-left: 1100px;
+    border: none;
+}
+
+.table, td {
+   background-color: white;
 }

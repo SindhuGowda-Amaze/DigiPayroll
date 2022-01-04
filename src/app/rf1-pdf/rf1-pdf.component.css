@@ -1,10 +1,11 @@
 .generate {
   margin-left: 36px;
   height: 38px;
-  border-radius: 23px;
+  border-radius: 7px;
   background: #2F87CC;
   color: white;
   border: none;
+  width: 100px;
 }
 
 .generate1 {
@@ -38,8 +39,8 @@
 
 .form-control {
   width: 100%;
-  height: auto;
-  padding: 0px;
+  height: 34px;
+
 }
 
 .save {
@@ -104,6 +105,24 @@
   margin-left: -10px;
   border: none;
   width: 60%;
+}
+
+.button1 {
+  text-transform: uppercase;
+  font-weight: initial;
+  text-shadow: initial;
+  letter-spacing: 0.5px;
+  background-color: #2F87CC;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 30%;
+  float: right;
+  margin-right: 44px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top:14px;
 }
 
 .FilterClass {
