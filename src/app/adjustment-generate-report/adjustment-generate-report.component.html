@@ -71,22 +71,15 @@
                         </table>
                      </div>
                       
-                     <div class="container-fluid" id="details" class="collapse" *ngIf="selectone==false"> 
+                     <div class="container-fluid"  > 
+                        
+                        <br/>
+          
+                     <div class="container-fluid"  id="demo1" class="collapse" *ngIf="selectone==false" >
                         <div class="row">
                             <ul>
                                 <li><a class="active fontheading">Salary Details of Employee in selected Period</a></li>
                                 <li> <button class="generate5" (click)="exportexcel()">Export to Excel</button></li>
-                            </ul>
-                        </div>
-                        <br/>
-          
-                     <div class="container-fluid"  id="demo1" class="collapse"  *ngIf="selectone==false">
-                        <div class="row">
-                            <ul>
-                                <!-- <li><a class="active fontheading" id="#demo" class="collapse" style="margin-left: 20px;">Select ALL</a></li> -->
-                                <!-- <li><a class="active fontheading">Uncheck ALL</a></li> -->
-                                <li></li>
-                                <li><a class="active fontheading" >Employees</a></li>
                             </ul>
                         </div>
                         <div class="row" class="rowwidth1">
@@ -253,7 +246,7 @@
                         </div>
                     </div>
 
-                    <div class="container-fluid" id="details" class="collapse" *ngIf="selectone==true"> 
+                    <div class="container-fluid" id="demo" class="collapse" *ngIf="selectone==true" > 
                         <div class="row">
                             <ul>
                                 <li><a class="active fontheading">Salary Details of Employee in selected Period</a></li>
@@ -261,7 +254,7 @@
                             </ul>
                         </div>
                         <br/>
-                    <div class="container-fluid"  id="demo" class="collapse" *ngIf="selectone==true">
+                    <div class="container-fluid"  id="demo" class="collapse" >
                         <div class="row">
                             <ul>
                                 <!-- <li><a class="active fontheading" id="#demo" class="collapse" style="margin-left: 20px;">Select ALL</a></li> -->
