@@ -24,18 +24,27 @@
             </div>
             <br>
 
+            <div class="row">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-3">
+                    <button class="generate" data-toggle="collapse" data-target="#demo">FETCH</button>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <br>
+
             <div class="container-fluid" id="demo" class="collapse">
                 <div class="row View">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <a class="active fontheading">Employees in selected Period</a>
                     </div>
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3">
-                        <button class="form-control button" (click)="exportexcel()">EXPORT TO
-                            EXCEL</button>
+                    <div class="col-lg-8"></div>
+                    <div class="col-lg-2">
+                      <button class="generate5" (click)="exportexcel()">EXPORT TO EXCEL</button>
                     </div>
                 </div>
+                    
+                <br>
                 <div class="row">
                     <div class="col-lg-12">
                         <table class="table table-bordered fonttxt">
@@ -135,14 +144,7 @@
                 </div>
             </div>
             <div>
-                <div class="row">
-                    <div class="col-lg-5"></div>
-                    <div class="col-lg-2">
-                        <button class="form-control button1" data-toggle="collapse"
-                        data-target="#demo">FETCH REPORT</button>
-                    </div>
-                    <div class="col-lg-4"></div>
-                </div>
+                
             </div><br>
         </div>
     </div>

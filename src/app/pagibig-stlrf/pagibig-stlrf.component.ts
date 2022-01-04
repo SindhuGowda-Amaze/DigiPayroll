@@ -64,7 +64,7 @@ export class PagibigSTLRFComponent implements OnInit {
 
       }
       doc.deletePage(1)
-      doc.save('STLRF.pdf');
+      doc.save('STLRF Report.pdf');
       this.loader=false
       var pdf1 = doc.output('blob');
       var file = new File([pdf1], "Application.pdf");
