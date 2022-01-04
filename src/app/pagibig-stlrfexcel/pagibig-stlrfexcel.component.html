@@ -2,52 +2,36 @@
     <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">
-            <p class="taxtable">Pag-ibig Short-term Loan Remittance Excel</p> <hr>
-
+            <p class="taxtable">Pag-ibig Short-term Loan Remittance Excel</p>
+            <hr>
             <div class="container">
                 <div class="row FilterClass">
-                   
-                  
                     <div class="col-lg-3">
-  
                     </div>
-                      <div class="col-lg-2">
-                       Loan Type:
-                      </div>
-
-
-                      <div class="col-lg-2">
-                          <div class="dropdown">
-                              <select class="form-control inputfield" id="Loan" name="Loan"  [(ngModel)]="Loan" ><br/>
-                                  <option value="Select">Select Loan </option>
-                                  <option value="HDMF">HDMF Loan </option>
-                                  <option value="Calamity">Calamity Loan </option>
-                                
-                                  
-                              </select>
-                          </div>
-                         
-                      </div>
-                     
-                     
-                      
-                       
-                     
-                      <div class="col-lg-3"></div>
-                      </div>
-                    <br/>
+                    <div class="col-lg-2">
+                        Loan Type:
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="dropdown">
+                            <select class="form-control inputfield" id="Loan" name="Loan" [(ngModel)]="Loan"><br />
+                                <option value="Select">Select Loan </option>
+                                <option value="HDMF">HDMF Loan </option>
+                                <option value="Calamity">Calamity Loan </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <br />
                 <div class="row FilterClass">
-                   
-                  
-                  <div class="col-lg-3">
-
-                  </div>
+                    <div class="col-lg-3">
+                    </div>
                     <div class="col-lg-2">
                         <p>Select Start Month And Year:</p>
                     </div>
                     <div class="col-lg-2">
                         <div class="dropdown">
-                            <select class="form-control inputfield" id="Month" name="Month"  [(ngModel)]="Month" ><br/>
+                            <select class="form-control inputfield" id="Month" name="Month" [(ngModel)]="Month"><br />
                                 <option value="Select">Select Month </option>
                                 <option value="jan">January </option>
                                 <option value="February">February</option>
@@ -60,79 +44,160 @@
                                 <option value="September">September</option>
                                 <option value="October">October</option>
                                 <option value="November">November</option>
-                                <option value="December">December</option>  
-                                
+                                <option value="December">December</option>
                             </select>
                         </div>
-                       
                     </div>
-                   
-                   
-                    
-                        <div class="col-lg-2">
-                            <div class="dropdown">
-                                <select class="form-control inputfield" id="Year" name="Year" [(ngModel)]="Year"><br/>
-                                    <option value="Select">Select Year </option>
-                                    <option value="2021">2021 </option>
-                                    <option value="2020">2020 </option>
-                                    <option value="2019">2019 </option>
-                                    
-                                </select>
-                            </div>
-                           
+                    <div class="col-lg-2">
+                        <div class="dropdown">
+                            <select class="form-control inputfield" id="Year" name="Year" [(ngModel)]="Year"><br />
+                                <option value="Select">Select Year </option>
+                                <option value="2021">2021 </option>
+                                <option value="2020">2020 </option>
+                                <option value="2019">2019 </option>
+                            </select>
                         </div>
-                   
+                    </div>
                     <div class="col-lg-3"></div>
-                    </div>
-                    <br/>
-                     
+                </div>
+                <br />
                 <div class="row FilterClass">
-                   
-                  
                     <div class="col-lg-3">
-  
                     </div>
-                      <div class="col-lg-2">
-                         Signatory Person:
-                      </div>
-
-
-                      <div class="col-lg-2">
-                          <div class="dropdown">
-                              <select class="form-control inputfield" id="Month" name="Month"  [(ngModel)]="Person" ><br/>
-                                  <option value="Select">Select Person </option>
-                                  <option value="Admin">Admin </option>
-                                  <option value="Admin">HR </option>
-                                  <option value="Admin">FINANCE </option>
-                                
-                                  
-                              </select>
-                          </div>
-                         
-                      </div>
-                     
-                     
-                      
-                       
-                     
-                      <div class="col-lg-3"></div>
-                      </div>
-                    <br/>
-              <div class="row">
-                  <div class="col-lg-5">
-
-                  </div>
-                  <div class="col-lg-3">
-                      <button class="generate">GENERATE</button>
-                  </div>
-              </div>
-              <br/>
-         
-              <br>
+                    <div class="col-lg-2">
+                        Signatory Person:
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="dropdown">
+                            <select class="form-control inputfield" id="Month" name="Month" [(ngModel)]="Person"><br />
+                                <option value="Select">Select Person </option>
+                                <option value="Admin">Admin </option>
+                                <option value="Admin">HR </option>
+                                <option value="Admin">FINANCE </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-lg-5">
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="generate" data-toggle="collapse" data-target="#demo">GENERATE</button>
+                    </div>
+                </div>
+                <br />
+                <br>
             </div>
+
+            <div class="container-fluid" id="demo" class="collapse">
+                <div class="row View">
+                    <!-- <ul>
+                        <li><a class="active fontheading">Select ALL</a></li>
+                        <li><a class="active fontheading">Uncheck ALL</a></li>
+                        <a class="active fontheading">Employees in selected Period</a>
+                    </ul> -->
+                    <div class="col-lg-3">
+                        <!-- <a class="active fontheading">Employees in selected Period</a> -->
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3">
+                        <button class="form-control button" (click)="exportexcel()">EXPORT TO
+                            EXCEL</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-bordered fonttxt">
+                            <thead>
+                                <tr class="newFont">
+                                    <th class="SelectData">Select</th>
+                                    <th>EmployeeR ID</th>
+                                    <th>Employer Name</th>
+                                    <th>Address</th>
+                                    <th>Pag-IBIG ID/RTN</th>
+                                    <th>LAST NAME</th>
+                                    <th>FIRST NAME</th>
+                                    <th>MIDDLE NAME</th>
+                                    <th>LOAN TYPE</th>
+                                    <th>REMARKS</th>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo1"></td>
+                                    <td>209754750003</td>
+                                    <td>TalentZone Inc</td>
+                                    <td>5F Phinma Plaza, 39 Phinma Dr, Rockwell Center, Makati City </td>
+                                    <td>121166372089</td>
+                                    <td>Intal</td>
+                                    <td>Maria Cassandra</td>
+                                    <td>Grajo</td>
+                                    <td>HDMF Loan</td>
+                                    <td>Terminated</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo1"></td>
+                                    <td>209754750003</td>
+                                    <td>TalentZone Inc</td>
+                                    <td>5F Phinma Plaza, 39 Phinma Dr, Rockwell Center, Makati City </td>
+                                    <td>108002278259</td>
+                                    <td>Olaguer</td>
+                                    <td>Ajel</td>
+                                    <td>Celestino</td>
+                                    <td>Calmity Loan</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo1"></td>
+                                    <td>209754750003</td>
+                                    <td>TalentZone Inc</td>
+                                    <td>5F Phinma Plaza, 39 Phinma Dr, Rockwell Center, Makati City </td>
+                                    <td>108002278259</td>
+                                    <td>Bersamira</td>
+                                    <td>Carlo</td>
+                                    <td>de Guzman</td>
+                                    <td>Calmity Loan</td>
+                                    <td>Terminated</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo1"></td>
+                                    <td>209754750003</td>
+                                    <td>TalentZone Inc</td>
+                                    <td>5F Phinma Plaza, 39 Phinma Dr, Rockwell Center, Makati City </td>
+                                    <td>108002278259</td>
+                                    <td>Rac</td>
+                                    <td>Lyla</td>
+                                    <td>Gonzales</td>
+                                    <td>HDMF Loan</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                            data-target="#demo1"></td>
+                                    <td>209754750003</td>
+                                    <td>TalentZone Inc</td>
+                                    <td>5F Phinma Plaza, 39 Phinma Dr, Rockwell Center, Makati City </td>
+                                    <td>108002278259</td>
+                                    <td>Sager</td>
+                                    <td>Edmond Albert Moses</td>
+                                    <td>Catipan</td>
+                                    <td>HDMF Loan</td>
+                                    <td>Active</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <div class="col-lg-1"></div>
     </div>
-    </div>
-    <hr>    
-    <br>
+</div>
+<hr>
+<br>
