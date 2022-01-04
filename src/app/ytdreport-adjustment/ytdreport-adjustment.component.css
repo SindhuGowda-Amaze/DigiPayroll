@@ -79,7 +79,24 @@ font-size: 15px;
 font-weight: bold;
 } */
 
+.generate {
+  margin-left: 36px;
+  height: 38px;
+  border-radius: 7px;
+  background: #2F87CC;
+  color: white;
+  border: none;
+  width: 100px;
+}
 
+.generate5{
+  height: 34px;
+  border-radius: 8px;
+  background: #2F87CC;
+  color: white;
+  width: 170px;
+  border: none;
+}
 
 .button {
   background-color: #2f87cc;
