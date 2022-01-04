@@ -15,7 +15,7 @@ export class PreliminaryReportComponent implements OnInit {
   }
   loader:any;
   
-  fileName = 'Payroll Summary.xlsx';
+  fileName = 'Preliminary Report.xlsx';
   exportexcel(): void {
     this.loader = true;
     /* table id is passed over here */
