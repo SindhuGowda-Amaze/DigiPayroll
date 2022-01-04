@@ -165,3 +165,12 @@ div.cls_005 {
     font-style: normal;
     text-decoration: none
 }
+
+.generate4{
+    margin-left: 64px;
+    height: 38px;
+    border-radius: 23px;
+    background: #2F87CC;
+    color: white;
+    border: none;
+    }
