@@ -70,9 +70,25 @@ color:white;
 border-radius: 15px;
 border:none;
 padding: 10px;
-
+margin-left: 36px;
 font-size: 15px;
 font-weight: bold;
+margin-left: 36px;
+}
+.Fetch{
+  text-transform: uppercase;
+  font-weight: initial;
+  text-shadow: initial;
+  letter-spacing: 0.5px;
+  background-color:#2F87CC ;
+  color:white;
+  border-radius: 15px;
+  border:none;
+  padding: 10px;
+  margin-left: 36px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 36px;
 }
 
 .edit {
