@@ -13,6 +13,8 @@ export class UpdatecompanyprofileComponent implements OnInit {
   constructor(private DigipayrollServiceService:DigipayrollServiceService,private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.Work_Months_Per_Year=12;
+    this.Periods_Per_Month='1(Semi-Monthly)';
     this.ActivatedRoute.params.subscribe(params=>{
       debugger
        this.id=params["id"];

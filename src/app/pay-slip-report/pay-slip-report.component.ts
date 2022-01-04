@@ -15,6 +15,7 @@ export class PaySlipReportComponent implements OnInit {
   constructor(private DigipayrollServiceService: DigipayrollServiceService) { }
 
   result:any;
+  Company_logo:any;
   ngOnInit(): void {
     this.GetPayGroup();
   }
@@ -85,6 +86,33 @@ export class PaySlipReportComponent implements OnInit {
     }).then(() => {
      
     });;
+  }
+
+
+  files: File[] = [];
+  onSelect(event: { addedFiles: any; }) {
+    debugger
+    console.log(event);
+    this.files.push(event.addedFiles[0]);
+    this.uploadattachments();
+    console.log("content", this.files);
+  }
+
+
+  onRemove(event:any)
+  {
+debugger
+console.log(event);
+this.files.splice(this.files.indexOf(event),1);
+  }
+
+  public uploadattachments() {
+    debugger
+    this.DigipayrollServiceService.AttachmentsUpload(this.files).subscribe(res => {
+      debugger
+      this.Company_logo = res;
+      alert("ATTACHMENT UPLOADED");
+    })
   }
 
 }
