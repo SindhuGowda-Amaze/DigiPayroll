@@ -88,6 +88,7 @@ import { UserResetComponent } from './user-reset/user-reset.component';
 import { AdjustmentGenerateReportComponent } from './adjustment-generate-report/adjustment-generate-report.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { PreliminaryReportComponent } from './preliminary-report/preliminary-report.component';
 
 const ngWizardConfig: NgWizardConfig = {
   theme: THEME.circles
@@ -178,7 +179,8 @@ const ngWizardConfig: NgWizardConfig = {
     UserFormPreFillComponent,
     UserResetComponent,
     AdjustmentGenerateReportComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    PreliminaryReportComponent
 
   ],
   imports: [

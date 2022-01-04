@@ -1,21 +1,4 @@
  
-   .img{
-    width: 25px;
-    height: 10%;
-  }
-  .img:hover{
-      background-color: chartreuse;
-      color: white;
-  }
-  .imgcancel{
-    width: 25px;
-    height: 10%;
-  }
-  .imgcancel:hover{
-    background-color: red;
-    color: white;
-  }
-  
 
 ul {
     list-style-type: none;
@@ -53,38 +36,26 @@ ul {
 }
 
 .Heading{
-  
+  padding-left: 15px;
   font-size: 15px;
   font-weight: bold;
   color: black;
   text-decoration-line: underline;
-  text-align: center;
 }
 
-/* .button{
-text-transform: uppercase;
+.button{
+  text-transform: uppercase;
 font-weight: initial;
 text-shadow: initial;
 letter-spacing: 0.5px;
 background-color:#2F87CC ;
 color:white;
-border-radius: 25px;
-width: 90%;
+border-radius: 15px;
 border:none;
-padding: 5px;
+padding: 10px;
 
-float: right;
-margin-right: 15px;
 font-size: 15px;
 font-weight: bold;
-} */
-
-.button {
-  background-color: #2f87cc;
-  color: white;
-  border-radius: 20px;
-  border: none;
-  width: 150px;
 }
 
 .edit {
@@ -92,7 +63,7 @@ font-weight: bold;
     border: none;
     background-color: #2F87CC ;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 10px;
     color: white;
     margin-top: 6px;
   }
