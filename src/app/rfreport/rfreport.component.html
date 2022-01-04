@@ -1,5 +1,3 @@
-
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-1"></div>
@@ -7,13 +5,14 @@
             <div class="row">
                 <div class="col-lg-5"></div>
                 <div class="col-lg-4">
-                    <a href=""class="Heading "> RF-1 Data</a>
+                    <a href="" class="Heading "> RF-1 Data</a>
                 </div>
-            </div> <hr>
+            </div>
+            <hr>
             <div class="row FilterClass fontheading">
-             <div class="col-lg-2"></div>
+                <div class="col-lg-2"></div>
                 <div class="col-lg-3">
-                   <p> Select Start Month & Year:</p>
+                    <p> Select Start Month & Year:</p>
                 </div>
                 <div class="col-lg-2">
                     <select name="cars" id="Month" class="form-control">
@@ -29,18 +28,18 @@
                         <option value="September">September</option>
                         <option value="October">October</option>
                         <option value="November">November</option>
-                        <option value="December">December</option>                       
-                      </select>
+                        <option value="December">December</option>
+                    </select>
                 </div>
                 <div class="col-lg-2">
                     <select name="cars" id="Month" class="form-control">
                         <!-- <option value="Select">Select</option> -->
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
-                        <option value="2019">2019</option>                                          
-                      </select>
-                </div>            
-            </div><br> 
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+            </div><br>
             <!-- <div class="row FilterClass fontheading">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-2">
@@ -55,26 +54,336 @@
                       </select>
                 </div>
             </div> <br> -->
-           
-           <div class="row">
-               <div class="col-lg-5"></div>
-               <div class="col-lg-2">
-                   <button class="button">Generate</button>
-               </div>
-           </div>
-             
+
+            <div class="row">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-2">
+                    <button class="button" data-toggle="collapse" data-target="#demo">Generate</button>
+                </div>
+            </div>
+            <br>
+                <div class="container-fluid" id="demo" class="collapse">
+                    <div class="row View">
+                        <ul>
+                           
+                            <li><a class="active fontheading">Employees in selected Period</a></li>
+                            <li><button class="form-control button" (click)="exportexcel()">EXPORT TO EXCEL</button></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table table-bordered fonttxt" id="downloadaplication">
+                                <thead>
+                                    <tr class="newFont">
+                                        <!-- <th class="SelectData">Select</th> -->
+                                        <th>LAST NAME</th>
+                                        <th>FIRST NAME</th>
+                                        <th>MIDDLE NAME</th>
+                                        <th>PHILHEALTH NO</th>
+                                        <th>ACTUAL SALARY</th>
+                                        <th>BASE MONTHLY SALARY</th>
+                                        <th>BIRTHDATE</th>
+                                        <th>EMPLOYEE SHARE</th>
+                                        <th>EMPLOYER SHARE</th>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                        <td>Intal</td>
+                                        <td>Maria Cassandra</td>
+                                        <td>Grajo</td>
+                                        <td>010511130781</td>
+                                        <td>50,000.00</td>
+                                        <td>25,000.00</td>
+                                        <td>07231987</td>
+                                        <td>375.00</td>
+                                        <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Olaguer</td>
+                                                <td>Ajel</td>
+                                                <td>Celestino</td>
+                                                <td>010502171432</td>
+                                                <td>80,000.00</td>
+                                                <td>90,000.00</td>
+                                                <td>06251984</td>
+                                                <td>600.00</td>
+                                                <td>600.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Bersamira</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Baltazar</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Bersamira</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Rac</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Tiamson</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Jumao-as</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Labasan</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>de los Reyes</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Sager</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Ancheta</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Gutierrez</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Villanueva</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Burac</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Carreon</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Cedillo</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Galvez</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Sagun</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                    <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Gumapac</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                     <tr>
+                                        <!-- <td class="SelectData"><input type="checkbox" data-toggle="collapse"
+                                                data-target="#demo1"></td> -->
+                                                <td>Ordoñez</td>
+                                                <td>Maria Cassandra</td>
+                                                <td>Grajo</td>
+                                                <td>010511130781</td>
+                                                <td>50,000.00</td>
+                                                <td>25,000.00</td>
+                                                <td>07231987</td>
+                                                <td>375.00</td>
+                                                <td>375.00</td>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container-fluid" id="demo1" class="collapse">
+                   
+                    <div class="row Overflow">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-2">
+                                    <button class="form-control button" (click)="exportexcel()">EXPORT TO EXCEL</button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button class="form-control button" (click)="exportexcel()">SEND TO EMAIL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <br>
+                <br>
         </div>
     </div>
     <div class="col-lg-1"></div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
