@@ -74,6 +74,11 @@ font-size: 15px;
 font-weight: bold;
 } */
 
+.Overflow{
+  width: 100%;
+  overflow-x: scroll;
+}
+
 .button {
   background-color: #2f87cc;
   color: white;
