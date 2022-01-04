@@ -1,6 +1,5 @@
 
-
-<div class="container-fluid">
+ <div class="container-fluid">
     <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">
@@ -34,7 +33,7 @@
                 </div>
                 <div class="col-lg-2">
                     <select name="cars" id="Month" class="form-control">
-                        <!-- <option value="Select">Select</option> -->
+                        <option value="Select">Select</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>                                          
@@ -54,12 +53,13 @@
                         <option value="Finance">Finance</option>                                          
                       </select>
                 </div>
-            </div> <br>
+            </div> <br> 
+            
            
            <div class="row">
                <div class="col-lg-5"></div>
                <div class="col-lg-2">
-                   <button class="button" (click)="showpdf()">Generate</button>
+                   <button class="generate" (click)="showpdf()">GENERATE</button>
                </div>
            </div>
              
@@ -67,17 +67,22 @@
     </div>
     <div class="col-lg-1"></div>
 </div>
-
-<br/>
-<br/>
 <div class="row" *ngIf="showleaseforprint==1">
-    <div class="col-lg-5">
+    <!-- <div class="col-lg-5">
 
     </div>
     <div class="col-lg-3">
-       <button class="generate4" (click)="convetToPDF1()">Convert To PDF </button>
+       <button class="button1" (click)="convetToPDF1()">Convert To PDF </button>
+    </div> -->
+
+    <div class="col-lg-5">
     </div>
-<div id="downloadaplication" style="position:absolute;left:50%;margin-left:-396px;top:0px;width:792px;height:612px;border-style:outset;overflow:hidden;margin-top: 400px;">
+    <div class="col-lg-4">
+        <button class="button1" (click)="convetToPDF1()">Convert To PDF</button>
+    </div>
+
+
+<div id="downloadaplication" style="position:absolute;left:50%;margin-left:-396px;top:0px;width:792px;height:612px;border-style:outset;overflow:hidden;margin-top: 300px;">
     <div style="position:absolute;left:0px;top:0px">
     <img src="assets/images/ER2.jpg" width=792 height=612></div>
     <div style="position:absolute;left:180.00px;top:96.22px" class="cls_003"><span class="cls_003">TalentUS Inc.</span></div>

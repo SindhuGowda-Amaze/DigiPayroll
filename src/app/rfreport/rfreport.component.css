@@ -58,18 +58,31 @@ ul {
  font-weight: bold;
  } */
 
+ .generate {
+  margin-left: 36px;
+  height: 38px;
+  border-radius: 7px;
+  background: #2F87CC;
+  color: white;
+  border: none;
+  width: 100px;
+}
+
  .Overflow{
    width: 100%;
    overflow-x: scroll;
  }
  
  .button {
-   background-color: #2f87cc;
-   color: white;
-   border-radius: 20px;
-   border: none;
-   width: 150px;
- }
+  background-color: #2f87cc;
+  color: white;
+  height: 38px;
+  border-radius: 7px;
+  border: none;
+  width: 140px;
+  float: right;
+  margin-bottom: 10px;
+}
  
  .edit {
    width: 85%;
