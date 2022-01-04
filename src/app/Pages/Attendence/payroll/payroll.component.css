@@ -80,10 +80,10 @@ font-weight: bold;
 .edit {
     width: 85%;
     border: none;
-    background-color: whitesmoke ;
+    background: #2F87CC;
     text-align: center;
     border-radius: 16px;
-    color: black;
+    color: white;
     margin-top: 6px;
   }
 
@@ -130,3 +130,6 @@ font-weight: bold;
     .SelectData{
       text-align: center;
     }
+
+
+    
