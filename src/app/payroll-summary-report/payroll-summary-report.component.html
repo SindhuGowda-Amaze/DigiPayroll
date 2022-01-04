@@ -74,6 +74,14 @@
                         </table>
                     </div>
                 </div><br>
+                <!-- <div class="row">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <p><input type="checkbox"> Include employee middle name in bank advice list</p>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div> <br> -->
+                <!-- <div class="row">
                
                 <div class="row">
                     <div class="col-lg-3">
@@ -88,7 +96,7 @@
                     <div class="col-lg-3">
                         <button class="Extra">Bank Advise List</button>
                     </div>
-                </div><br>
+                </div><br> -->
                 <div class="container-fluid" id="demo" class="collapse">
                     <div class="row">
                         <div class="col-lg-12">
@@ -126,8 +134,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ul>
-                                <li><a class="active fontheading">Select ALL</a></li>
-                                <li><a class="active fontheading">Uncheck ALL</a></li>
+                                <li><a class="active fontheading">Select</a></li>
+                                <li><a class="active fontheading">UnSelect</a></li>
                                 <li></li>
                                 <li><a class="active fontheading">Employees in selected Period</a></li>
                             </ul>
@@ -151,55 +159,55 @@
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>20-017</td>
                                         <td>Tan, Marina Ela Navarro</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21-098</td>
                                         <td>Blanch, Stephaine</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox"></td>
                                         <td>21-091</td>
                                         <td>Tan, Marina Ela Navarro</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox" ></td>
                                         <td>21042</td>
                                         <td>Enedya,Lalit</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox" ></td>
                                         <td>21-123</td>
                                         <td>Tan, Marina Ela Navarro</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox" ></td>
                                         <td>20-124</td>
                                         <td>Dela,Cruz</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox" ></td>
                                         <td>19-021</td>
                                         <td>Chavez, Ma. Russell Bullecer</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox" ></td>
                                         <td>21-021</td>
                                         <td>Cardeno, Dina Quintana</td>
                                         <td>Active</td>
                                     </tr>
                                     <tr>
-                                        <td class="SelectData"><input type="checkbox" checked></td>
+                                        <td class="SelectData"><input type="checkbox" ></td>
                                         <td>20-123</td>
                                         <td>Blanch, Aldrin De Guzman</td>
                                         <td>Active</td>
@@ -211,22 +219,24 @@
                         </div>
                     </div>
                 </div>
-               
-
             </div>
         </div>
     </div>
     <div class="col-lg-1"></div>
 </div>
 
-<div class="row" *ngIf="showleaseforprint==1">
+<div class="row"*ngIf="showleaseforprint==1">
     <div class="col-lg-5">
-
     </div>
+    <div class="col-lg-2"></div>
     <div class="col-lg-3">
-       <button (click)="convetToPDF1()">Convert To PDF </button>
-    </div>
-<div id="downloadaplication" style="position:absolute;left:50%;margin-left:-504px;top:0px;width:1008px;height:612px;border-style:outset;overflow:hidden;margin-top:1300px;">
+       <button (click)="convetToPDF1()">Convert To PDF </button> &nbsp;&nbsp;
+       <button (click)="exportexcel()">Export to Excel</button>
+    </div>        
+</div>
+
+<div class="row" *ngIf="showleaseforprint==1">
+<div id="downloadaplication" id="download" style="position:absolute;left:50%;margin-left:-504px;top:0px;width:1008px;height:612px;border-style:outset;overflow:hidden;margin-top:1100px;">
     <div style="position:absolute;left:0px;top:0px">
     <img src="assets/images/back.jpg" width=1008 height=612></div>
     <div style="position:absolute;left:21.60px;top:15.55px" class="cls_003"><span class="cls_003">TalentUS Inc.</span></div>

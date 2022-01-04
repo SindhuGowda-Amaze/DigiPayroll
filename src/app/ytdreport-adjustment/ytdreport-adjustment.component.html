@@ -13,8 +13,7 @@
                     <div class="col-lg-3"></div>
                     <div class="col-lg-2" style="text-align: right;"><P>Select Year:</P></div>
                     <div class="col-lg-2">
-                        <select class="form-control" data-toggle="collapse"
-                        data-target="#demo">
+                        <select class="form-control">
                             <option value="" >Select</option>
                             <option value="1" >2021</option>
                             <option value="2">2020</option>
@@ -28,8 +27,8 @@
             <div class="container-fluid" id="demo" class="collapse">
                 <div class="row View">
                     <ul>
-                        <li><a class="active fontheading">Select ALL</a></li>
-                        <li><a class="active fontheading">Uncheck ALL</a></li>
+                        <!-- <li><a class="active fontheading">Select ALL</a></li>
+                        <li><a class="active fontheading">Uncheck ALL</a></li> -->
                         <li></li>
                         <li><a class="active fontheading">Employees in selected Period</a></li>
                     </ul>
@@ -44,6 +43,7 @@
                                     <th>Name</th>
                                     <th>Status</th>
                                     <th>Pay Group</th>
+                                    <th>Action</th>
                                 </tr>
                                 <tr>
                                     <td class="SelectData"><input type="checkbox" data-toggle="collapse"
@@ -51,7 +51,9 @@
                                     <td>21042</td>
                                     <td>Tan, Marina Ela Navarro</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Rank & File</td>
+                                    <td><button class="form-control button" (click)="exportexcel()">EXPORT TO
+                                        EXCEL</button></td>
                                 </tr>
                                 <tr>
                                     <td class="SelectData"><input type="checkbox" data-toggle="collapse"
@@ -59,7 +61,9 @@
                                     <td>21049</td>
                                     <td>Jerry Hason</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Rank & File Deployed</td>
+                                    <td><button class="form-control button" (click)="exportexcel()">EXPORT TO
+                                        EXCEL</button></td>
                                 </tr>
                                 <tr>
                                     <td class="SelectData"><input type="checkbox" data-toggle="collapse"
@@ -67,7 +71,9 @@
                                     <td>21051</td>
                                     <td>Tom Crise</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Officers</td>
+                                    <td><button class="form-control button" (click)="exportexcel()">EXPORT TO
+                                        EXCEL</button></td>
                                 </tr>
                                 <tr>
                                     <td class="SelectData"><input type="checkbox" data-toggle="collapse"
@@ -75,7 +81,9 @@
                                     <td>21062</td>
                                     <td>Michel Jordon</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Officers deployed</td>
+                                    <td><button class="form-control button" (click)="exportexcel()">EXPORT TO
+                                        EXCEL</button></td>
                                 </tr>
                                 <tr>
                                     <td class="SelectData"><input type="checkbox" data-toggle="collapse"
@@ -83,7 +91,9 @@
                                     <td>21067</td>
                                     <td>Perry Jay</td>
                                     <td>Active</td>
-                                    <td>Development</td>
+                                    <td>Rank & File</td>
+                                    <td><button class="form-control button" (click)="exportexcel()">EXPORT TO
+                                        EXCEL</button></td>
                                 </tr>
                             </thead>
 
@@ -95,7 +105,8 @@
                 <div class="row">
                     <div class="col-lg-5"></div>
                     <div class="col-lg-2">
-                        <button class="form-control button">EXPORT</button>
+                        <button class="form-control button" data-toggle="collapse"
+                        data-target="#demo">FETCH REPORT</button>
                     </div>
                     <div class="col-lg-4"></div>
                 </div>

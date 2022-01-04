@@ -59,7 +59,7 @@
            <div class="row">
                <div class="col-lg-5"></div>
                <div class="col-lg-2">
-                   <button class="button">Generate</button>
+                   <button class="button" (click)="showpdf()">Generate</button>
                </div>
            </div>
              
@@ -68,8 +68,32 @@
     <div class="col-lg-1"></div>
 </div>
 
+<br/>
+<br/>
+<div class="row" *ngIf="showleaseforprint==1">
+    <div class="col-lg-5">
 
-
+    </div>
+    <div class="col-lg-3">
+       <button class="generate4" (click)="convetToPDF1()">Convert To PDF </button>
+    </div>
+<div id="downloadaplication" style="position:absolute;left:50%;margin-left:-396px;top:0px;width:792px;height:612px;border-style:outset;overflow:hidden;margin-top: 400px;">
+    <div style="position:absolute;left:0px;top:0px">
+    <img src="assets/images/ER2.jpg" width=792 height=612></div>
+    <div style="position:absolute;left:180.00px;top:96.22px" class="cls_003"><span class="cls_003">TalentUS Inc.</span></div>
+    <div style="position:absolute;left:655.20px;top:96.22px" class="cls_003"><span class="cls_003">004000010244</span></div>
+    <div style="position:absolute;left:79.20px;top:117.82px" class="cls_003"><span class="cls_003">5F Phinma Plaza, 39 Phinma Dr,</span></div>
+    <div style="position:absolute;left:532.80px;top:117.82px" class="cls_003"><span class="cls_003">andrew@talentusph.com</span></div>
+    <div style="position:absolute;left:14.40px;top:190.82px" class="cls_002"><span class="cls_002">190900538980</span></div>
+    <div style="position:absolute;left:122.40px;top:190.82px" class="cls_002"><span class="cls_002">Dela Cruz, Julie Anne San Jose</span></div>
+    <div style="position:absolute;left:302.40px;top:190.82px" class="cls_002"><span class="cls_002">Closing Officer</span></div>
+    <div style="position:absolute;left:445.41px;top:190.82px" class="cls_002"><span class="cls_002">45,000.00</span></div>
+    <div style="position:absolute;left:489.60px;top:190.82px" class="cls_002"><span class="cls_002">1/4/2021</span></div>
+    <div style="position:absolute;left:561.60px;top:189.15px" class="cls_004"><span class="cls_004">1</span></div>
+    <div style="position:absolute;left:172.80px;top:546.93px" class="cls_005"><span class="cls_005">1</span></div>
+    <div style="position:absolute;left:620.83px;top:550.53px" class="cls_003"><span class="cls_003">Lovely Cabalfin</span></div>
+    </div>
+</div>
 
 
 

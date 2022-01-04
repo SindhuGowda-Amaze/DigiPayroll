@@ -123,7 +123,7 @@
 
                   </div>
                   <div class="col-lg-3">
-                      <button class="generate">GENERATE</button>
+                      <button class="generate" (click)="showpdf()">GENERATE</button>
                   </div>
               </div>
               <br/>
@@ -136,3 +136,31 @@
     </div>
     <hr>    
     <br>
+
+
+    <br/>
+<br/>
+<div class="row" *ngIf="showleaseforprint==1">
+    <div class="col-lg-5">
+
+    </div>
+    <div class="col-lg-3">
+       <button class="generate4" (click)="convetToPDF1()">Convert To PDF </button>
+    </div>
+    <div id="downloadaplication" style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden;margin-top:500px">
+        <div style="position:absolute;left:0px;top:0px">
+        <img src="assets/images/PagiBigstlrf.jpg" width=612 height=792></div>
+        <div style="position:absolute;left:477.82px;top:99.85px" class="cls_002"><span class="cls_002">209754750003</span></div>
+        <div style="position:absolute;left:21.60px;top:158.05px" class="cls_003"><span class="cls_003">TalentUS Inc.</span></div>
+        <div style="position:absolute;left:496.80px;top:186.85px" class="cls_003"><span class="cls_003">JANUARY 2021</span></div>
+        <div style="position:absolute;left:21.60px;top:190.46px" class="cls_003"><span class="cls_003">5F Phinma Plaza, 39 Phinma Dr,</span></div>
+        <div style="position:absolute;left:21.60px;top:215.65px" class="cls_003"><span class="cls_003">Rockwell Center, Makati City</span></div>
+        <div style="position:absolute;left:417.60px;top:215.65px" class="cls_003"><span class="cls_003">1210</span></div>
+        <div style="position:absolute;left:496.80px;top:215.65px" class="cls_003"><span class="cls_003">0284212755</span></div>
+        <div style="position:absolute;left:115.20px;top:604.96px" class="cls_004"><span class="cls_004">0</span></div>
+        <div style="position:absolute;left:577.25px;top:604.96px" class="cls_004"><span class="cls_004">0.00</span></div>
+        <div style="position:absolute;left:107.55px;top:676.46px" class="cls_003"><span class="cls_003">Lovely Cabalfin</span></div>
+        <div style="position:absolute;left:337.13px;top:676.46px" class="cls_003"><span class="cls_003">Admin Manager</span></div>
+        <div style="position:absolute;left:507.40px;top:676.46px" class="cls_003"><span class="cls_003">1/4/2022</span></div>
+        </div>
+    </div>

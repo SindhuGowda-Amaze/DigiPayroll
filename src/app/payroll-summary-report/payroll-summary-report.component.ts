@@ -44,14 +44,9 @@ export class PayrollSummaryReportComponent implements OnInit {
 
         const contentDataURL = canvas.toDataURL('image/png')
         position = heightLeft - imgHeight;
-
         doc.addPage();
-
-
-        doc.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);
-      
+        doc.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);      
         heightLeft -= pageHeight;
-
       }
       doc.deletePage(1)
       doc.save('PayrollSummary.pdf');
@@ -62,16 +57,9 @@ export class PayrollSummaryReportComponent implements OnInit {
       debugger
       body.append('Dan', file);
       console.log('pdf', pdf1)
-    
-
-
-    }).then(() => {
-     
+    }).then(() => {     
     });;
   }
-
-
-
   p: number = 1;
   
   
@@ -89,7 +77,7 @@ public pageChanged(even:any)
   exportexcel(): void {
     this.loader = true;
     /* table id is passed over here */
-    let element = document.getElementById('downloadaplication');
+    let element = document.getElementById('download');
     const ws: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
 
     /* generate workbook and add the worksheet */
