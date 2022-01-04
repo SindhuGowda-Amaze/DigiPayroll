@@ -23,7 +23,7 @@ export class YTDReportComponent implements OnInit {
       })
   }
 
-  fileName = 'Approved Applicants Reports.xlsx';
+  fileName = 'YTD Report.xlsx';
   exportexcel(): void {
     /* table id is passed over here */
     let element = document.getElementById('downloadaplication');

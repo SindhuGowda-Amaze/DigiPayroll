@@ -71,7 +71,7 @@ export class PaySlipReportComponent implements OnInit {
 
       }
       doc.deletePage(1)
-      doc.save('PayrollSummary.pdf');
+      doc.save('Payslip.pdf');
       
       var pdf1 = doc.output('blob');
       var file = new File([pdf1], "Application.pdf");
