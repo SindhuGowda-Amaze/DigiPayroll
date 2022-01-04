@@ -111,3 +111,13 @@ font-weight: bold;
     .SelectData{
       text-align: center;
     }
+
+    .generate5{
+      height: 34px;
+      border-radius: 8px;
+      background: #2F87CC;
+      color: white;
+      width: 178px;
+      margin-left: 1000px;
+      border: none;
+   }
