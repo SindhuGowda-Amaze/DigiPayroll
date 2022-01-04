@@ -54,7 +54,7 @@ export class SSSML1ReportComponent implements OnInit {
 
       }
       doc.deletePage(1)
-      doc.save('PayrollSummary.pdf');
+      doc.save('ML1 Report.pdf');
       
       var pdf1 = doc.output('blob');
       var file = new File([pdf1], "Application.pdf");

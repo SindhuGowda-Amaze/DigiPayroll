@@ -113,7 +113,7 @@ font-weight: bold;
   .fontheading{
     font-size: 14px;
     font-weight: bold;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     }
     .fonttxt{
       font-size: 12px;
@@ -129,11 +129,19 @@ font-weight: bold;
       text-align: center;
     }
     .rowwidth{
-      width: 90%;
+      width: 100%;
       overflow-x: scroll;
+      margin-left: 0px;
     }
-    .rowwidth1{
-      width: 87%;
-      overflow-x: scroll;
-    }
+  
    
+    .generate5{
+      height: 34px;
+      border-radius: 8px;
+      background: #2F87CC;
+      color: white;
+      width: 178px;
+      margin-left: 1000px;
+      margin-bottom: 10px;
+      border: none;
+   }
