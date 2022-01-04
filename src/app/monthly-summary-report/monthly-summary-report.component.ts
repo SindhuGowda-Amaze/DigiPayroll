@@ -29,7 +29,7 @@ Tax_Table_Starts_on:any;
   }
 
  
-  fileName = 'Approved Applicants Reports.xlsx';
+  fileName = 'Monthly Summary Report.xlsx';
   exportexcel(): void {
     /* table id is passed over here */
     let element = document.getElementById('download');
