@@ -30,39 +30,39 @@
                                     
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse" data-target="#demo"></td>
                                     <td>21028</td>
                                     <td>Tan, Marina Ela Navarro</td>
                                     <td>Active</td>
                                    
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21032</td>
                                     <td>Rac, Lyla Gonzales</td>
                                     <td>Terminated</td>
                                     
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21037</td>
                                     <td>Bodoso, Mary Rose banico</td>
                                     <td>Active</td>
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21040</td>
                                     <td>Cedilla,Luclita Montreo</td>
                                     <td>Terminated</td>
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21043</td>
                                     <td>Gumapac,Glenn Eddie</td>
                                     <td>Active</td>
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21046</td>
                                     <td>Sagala,Joaaquin Jr.Aquine</td>
                                     <td>Active</td>
@@ -70,21 +70,21 @@
                             </thead>
                         </table>
                      </div>
-                     <div class="container-fluid">
-                        <div class="row" *ngIf="showtable==1">
+                     <div class="container-fluid"  id="demo" class="collapse">
+                        <div class="row">
                             <ul>
-                                <li><a class="active fontheading" id="#demo" class="collapse" >Select ALL</a></li>
-                                <li><a class="active fontheading">Uncheck ALL</a></li>
+                                <li><a class="active fontheading" id="#demo" class="collapse" style="margin-left: 20px;">Select ALL</a></li>
+                                <!-- <li><a class="active fontheading">Uncheck ALL</a></li> -->
                                 <li></li>
                                 <li><a class="active fontheading">Employees in selected Period</a></li>
                             </ul>
                         </div>
-                        <div class="row" id="#demo" class="collapse" >
+                        <div class="row" class="rowwidth">
                             <div class="col-lg-12" style="overflow:auto;">
                                 <table class="table table-bordered fonttxt">
                                     <thead>
-                                        <tr class="newFont">
-                                            <th class="SelectData"><input type="checkbox"></th>
+                                        <tr class="newFont" >
+                                            <th class="SelectData" onClick="selectall()"><input type="checkbox"></th>
                                             <th>Employee ID*</th>
                                             <th>Last Name</th>
                                             <th>First Name</th>
@@ -106,7 +106,7 @@
                                             <th>Reference Number</th>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            <td><input type="checkbox" id="check"></td>
                                             <td>20-005</td>
                                             <td>Bersamira</td>
                                             <td>Carlo</td>
@@ -128,7 +128,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            <td><input type="checkbox" id="check"></td>
                                             <td>20-012</td>
                                             <td>Labasan</td>
                                             <td>Carlo</td>
@@ -150,7 +150,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            <td><input type="checkbox" id="check"></td>
                                             <td>20-052</td>
                                             <td>Sagun</td>
                                             <td>Alexander Jr</td>
@@ -172,7 +172,7 @@
                                             <td></td>                                          
                                         </tr>                             
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            <td><input type="checkbox" id="check"></td>
                                             <td>20-029</td>
                                             <td>Bodoso</td>
                                             <td>Mary Rose</td>
@@ -194,7 +194,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            <td><input type="checkbox" id="check"></td>
                                             <td>21-042</td>
                                             <td>Tan</td>
                                             <td>Marina Ela</td>
@@ -216,7 +216,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            <td><input type="checkbox" id="check"></td>
                                             <td>21-049</td>
                                             <td>Sagala</td>
                                             <td>Joaquin Jr.</td>

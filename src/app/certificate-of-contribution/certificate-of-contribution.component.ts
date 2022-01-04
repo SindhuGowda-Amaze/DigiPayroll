@@ -15,6 +15,7 @@ export class CertificateOfContributionComponent implements OnInit {
   ngOnInit(): void {
     this.showsss = 0;
     this.showPhilhealth=0;
+    this.showPagibig=0;
   }
 
 
