@@ -6,10 +6,12 @@ import * as XLSX from 'xlsx';
   styleUrls: ['./preliminary-report.component.css']
 })
 export class PreliminaryReportComponent implements OnInit {
-
+  selecallbtn:any;
   constructor() { }
 
   ngOnInit(): void {
+    this.selecallbtn = false;
+    this.selectone = false;
   }
   loader:any;
   
@@ -27,6 +29,23 @@ export class PreliminaryReportComponent implements OnInit {
     /* save to file */
     XLSX.writeFile(wb, this.fileName);
     this.loader = false;
+  }
+
+  selectone:any;
+  selectALL(checked: boolean) { // pass true or false to check or uncheck all
+    this.selecallbtn = true;
+    this.selectone = false;
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].type == "checkbox") {
+        inputs[i].checked = checked;
+        // This way it won't flip flop them and will set them all to the same value which is passed into the function
+      }
+    }
+  }
+
+  showone(){
+    this.selectone = true;;
   }
 
 }

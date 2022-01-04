@@ -14,7 +14,7 @@
                     <ul>
                         <li ><a class="active fontheading" >Select ALL</a></li>
                         <li><a class="active fontheading">Uncheck ALL</a></li>
-                        <li><a class="active fontheading">Employees in selected Period</a></li>
+                        <!-- <li><a class="active fontheading">Select Employees</a></li> -->
                     </ul>
                 </div>
                 <div class="row">
@@ -22,47 +22,47 @@
                         <table class="table table-bordered fonttxt">
                             <thead>
                                 <tr class="newFont">
-                                    <td class="SelectData"><input type="checkbox"
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse" data-target="#demo1" (click)="selectALL(true)"
                                        ></td>
-                                    <th>ID</th>
+                                    <th>Employee ID</th>
                                     <th>Name</th>
                                     <th>Status</th>
                                     
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox" data-toggle="collapse" data-target="#demo"(click)="showone()"></td>
                                     <td>21028</td>
                                     <td>Tan, Marina Ela Navarro</td>
                                     <td>Active</td>
                                    
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21032</td>
                                     <td>Rac, Lyla Gonzales</td>
                                     <td>Terminated</td>
                                     
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21037</td>
                                     <td>Bodoso, Mary Rose banico</td>
                                     <td>Active</td>
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21040</td>
                                     <td>Cedilla,Luclita Montreo</td>
                                     <td>Terminated</td>
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21043</td>
                                     <td>Gumapac,Glenn Eddie</td>
                                     <td>Active</td>
                                 </tr>
                                 <tr>
-                                    <td class="SelectData"><input type="checkbox"></td>
+                                    <td class="SelectData"><input type="checkbox"data-toggle="collapse" data-target="#demo"></td>
                                     <td>21046</td>
                                     <td>Sagala,Joaaquin Jr.Aquine</td>
                                     <td>Active</td>
@@ -70,21 +70,31 @@
                             </thead>
                         </table>
                      </div>
-                     <div class="container-fluid">
-                        <div class="row" *ngIf="showtable==1">
+                      
+                     <div class="container-fluid" id="details" class="collapse" *ngIf="selectone==false"> 
+                        <div class="row">
                             <ul>
-                                <li><a class="active fontheading" id="#demo" class="collapse" >Select ALL</a></li>
-                                <li><a class="active fontheading">Uncheck ALL</a></li>
-                                <li></li>
-                                <li><a class="active fontheading">Employees in selected Period</a></li>
+                                <li><a class="active fontheading">Salary Details of Employee in selected Period</a></li>
+                                <li> <button class="generate5" (click)="exportexcel()">Export to Excel</button></li>
                             </ul>
                         </div>
-                        <div class="row" id="#demo" class="collapse" >
-                            <div class="col-lg-12" style="overflow:auto;">
+                        <br/>
+          
+                     <div class="container-fluid"  id="demo1" class="collapse"  *ngIf="selectone==false">
+                        <div class="row">
+                            <ul>
+                                <!-- <li><a class="active fontheading" id="#demo" class="collapse" style="margin-left: 20px;">Select ALL</a></li> -->
+                                <!-- <li><a class="active fontheading">Uncheck ALL</a></li> -->
+                                <li></li>
+                                <li><a class="active fontheading" >Employees</a></li>
+                            </ul>
+                        </div>
+                        <div class="row" class="rowwidth1">
+                            <div class="col-lg-12">
                                 <table class="table table-bordered fonttxt">
                                     <thead>
-                                        <tr class="newFont">
-                                            <th class="SelectData"><input type="checkbox"></th>
+                                        <tr class="newFont" >
+                                           
                                             <th>Employee ID*</th>
                                             <th>Last Name</th>
                                             <th>First Name</th>
@@ -106,7 +116,7 @@
                                             <th>Reference Number</th>
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                           
                                             <td>20-005</td>
                                             <td>Bersamira</td>
                                             <td>Carlo</td>
@@ -128,7 +138,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            
                                             <td>20-012</td>
                                             <td>Labasan</td>
                                             <td>Carlo</td>
@@ -150,7 +160,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                           
                                             <td>20-052</td>
                                             <td>Sagun</td>
                                             <td>Alexander Jr</td>
@@ -172,7 +182,7 @@
                                             <td></td>                                          
                                         </tr>                             
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            
                                             <td>20-029</td>
                                             <td>Bodoso</td>
                                             <td>Mary Rose</td>
@@ -194,7 +204,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                           
                                             <td>21-042</td>
                                             <td>Tan</td>
                                             <td>Marina Ela</td>
@@ -216,7 +226,7 @@
                                             <td></td>                                          
                                         </tr>
                                         <tr>
-                                            <td><input type="checkbox"></td>
+                                            
                                             <td>21-049</td>
                                             <td>Sagala</td>
                                             <td>Joaquin Jr.</td>
@@ -242,16 +252,80 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="container-fluid" id="details" class="collapse" *ngIf="selectone==true"> 
+                        <div class="row">
+                            <ul>
+                                <li><a class="active fontheading">Salary Details of Employee in selected Period</a></li>
+                                <li> <button class="generate5" (click)="exportexcel()">Export to Excel</button></li>
+                            </ul>
+                        </div>
+                        <br/>
+                    <div class="container-fluid"  id="demo" class="collapse" *ngIf="selectone==true">
+                        <div class="row">
+                            <ul>
+                                <!-- <li><a class="active fontheading" id="#demo" class="collapse" style="margin-left: 20px;">Select ALL</a></li> -->
+                                <!-- <li><a class="active fontheading">Uncheck ALL</a></li> -->
+                                <li></li>
+                                <li><a class="active fontheading" style="margin-left: 20px;">Employees</a></li>
+                            </ul>
+                        </div>
+                        <div class="row" class="rowwidth">
+                            <div class="col-lg-12" style="overflow:auto;">
+                                <table class="table table-bordered fonttxt">
+                                    <thead>
+                                        <tr class="newFont" >
+                                           
+                                            <th>Employee ID*</th>
+                                            <th>Last Name</th>
+                                            <th>First Name</th>
+                                            <th>Middle Name</th>
+                                            <th>Department</th>
+                                            <th>Adjustment Type</th>
+                                            <th>Adjustment Name</th>
+                                            <th>Adjustment Code</th>
+                                            <th>Adjustment Entry Code</th>
+                                            <th>Adjustment Effectivity Date</th>
+                                            <th>Adjustment Amount</th>  
+                                            <th>Remaining Balance</th>
+                                            <th>Remarks</th>
+                                            <th>Applied Before Tax</th>
+                                            <th>Is Taxable</th>
+                                            <th>Maximum Amount</th>
+                                            <th>Divided Per Period</th>
+                                            <th>Apply Period</th>
+                                            <th>Reference Number</th>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>20-005</td>
+                                            <td>Bersamira</td>
+                                            <td>Carlo</td>
+                                            <td>de Guzman</td>
+                                            <td>CREFCO Team</td>
+                                            <td>SSS Loan</td>
+                                            <td>SSS2 Loan</td>
+                                            <td>Sal Loan</td>
+                                            <td></td>
+                                            <td>2/1/2021</td>
+                                            <td>-10963.06</td>
+                                            <td>-35024.48</td>
+                                            <td>for Carlo Bersamira</td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                            <td>-45987.54</td>
+                                            <td>No</td>
+                                            <td>0</td>
+                                            <td></td>                                          
+                                        </tr>                              
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <br>
-            <div class="row">
-                <div class="col-lg-5"></div>
-                <div class="col-lg-2">
-                    <button class="form-control button">GENERATE</button>
-                </div>
-            </div>
-          
         </div>
     </div>
     <div class="col-lg-1"></div>

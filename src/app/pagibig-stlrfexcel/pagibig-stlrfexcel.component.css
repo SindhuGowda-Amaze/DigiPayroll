@@ -5,6 +5,7 @@
     background: #2F87CC;
     color: white;
     border:none;
+    width: 100px;
 }
 
 .generate1{
@@ -96,3 +97,14 @@
    font-size: 15px;
    font-weight: bold;
 }
+
+.button {
+   background-color: #2f87cc;
+   color: white;
+   height: 38px;
+   border-radius: 20px;
+   border: none;
+   width: 150px;
+   float: right;
+   margin-bottom: 10px;
+ }

@@ -113,6 +113,7 @@ font-weight: bold;
   .fontheading{
     font-size: 14px;
     font-weight: bold;
+    margin-left: 20px;
     }
     .fonttxt{
       font-size: 12px;
@@ -127,3 +128,12 @@ font-weight: bold;
     .SelectData{
       text-align: center;
     }
+    .rowwidth{
+      width: 90%;
+      overflow-x: scroll;
+    }
+    .rowwidth1{
+      width: 87%;
+      overflow-x: scroll;
+    }
+   
