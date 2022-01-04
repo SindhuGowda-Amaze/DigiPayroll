@@ -6,17 +6,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./certificate-of-contribution.component.css']
 })
 export class CertificateOfContributionComponent implements OnInit {
-  showleaseforprint:any;
+  showsss:any;
+  showPhilhealth:any;
+  showPagibig:any;
   constructor() { }
 
   ngOnInit(): void {
-    this.showleaseforprint = 0;
+    this.showsss = 0;
+    this.showPhilhealth=0;
   }
 
 
-  public showpdf(){
-    this.showleaseforprint = 1;
+  public showssspdf(){
+    this.showsss = 1;
+    this.showPhilhealth = 0;
+    this.showPagibig = 0;
   }
+
+  public showphilhealthpdf(){
+    this.showPhilhealth = 1;
+    this.showsss = 0;
+    this.showPagibig = 0;
+  }
+  public showpagibigpdf(){
+    this.showPagibig = 1;
+    this.showPhilhealth = 0;
+    this.showsss = 0;
+  }
+
+
 
 
 }
