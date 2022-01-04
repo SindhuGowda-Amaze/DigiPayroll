@@ -41,7 +41,7 @@ ul {
   text-decoration-line: underline;
   }
   
-  .button{
+  /* .button{
   text-transform: uppercase;
   font-weight: initial;
   text-shadow: initial;
@@ -56,6 +56,19 @@ ul {
   margin-right: 15px;
   font-size: 15px;
   font-weight: bold;
+  } */
+
+  .Overflow{
+    width: 100%;
+    overflow-x: scroll;
+  }
+  
+  .button {
+    background-color: #2f87cc;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
   }
   
   .edit {
