@@ -255,6 +255,26 @@
    width: 60%;
  }
 
+
+ .button1 {
+  text-transform: uppercase;
+  font-weight: initial;
+  text-shadow: initial;
+  letter-spacing: 0.5px;
+  background-color: #2F87CC;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  width: 30%;
+  float: right;
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+
  .FilterClass {
    padding-left: 15px;
    color: black;
