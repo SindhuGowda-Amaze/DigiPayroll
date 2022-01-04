@@ -57,34 +57,22 @@ li a:hover {
   text-decoration-line: underline;
 }
 
-/* .button{
-  text-transform: uppercase;
-font-weight: initial;
-text-shadow: initial;
-letter-spacing: 0.5px;
-background-color:#2F87CC ;
-color:white;
-border-radius: 15px;
-border:none;
-padding: 5px;
 
-float: right;
-margin-right: 15px;
-font-size: 15px;
-font-weight: bold;
-} */
-
-.Overflow{
-  width: 100%;
+.Overflow {
+  width: 101%;
   overflow-x: scroll;
 }
+
 
 .button {
   background-color: #2f87cc;
   color: white;
+  height: 38px;
   border-radius: 20px;
   border: none;
   width: 150px;
+  float: right;
+  margin-bottom: 10px;
 }
 
 .edit {
