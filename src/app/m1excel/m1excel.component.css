@@ -1,6 +1,14 @@
+.generate {
+  margin-left: 36px;
+  height: 38px;
+  border-radius: 7px;
+  background: #2F87CC;
+  color: white;
+  border: none;
+  width: 100px;
+}
 
 .form-control{
- width:100%;
  height:auto;
  padding:0px;
 }
@@ -39,9 +47,9 @@
   background-color: #2f87cc;
   color: white;
   height: 38px;
-  border-radius: 20px;
+  border-radius: 7px;
   border: none;
-  width: 150px;
+  width: 140px;
   float: right;
   margin-bottom: 10px;
 }
@@ -96,7 +104,6 @@
   }
 
   .form-control {
-    width: 100%;
     height: 34px;
   
   }
