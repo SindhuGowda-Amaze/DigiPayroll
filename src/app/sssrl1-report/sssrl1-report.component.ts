@@ -59,7 +59,7 @@ export class SSSRL1ReportComponent implements OnInit {
       doc.save('PayrollSummary.pdf');
       
       var pdf1 = doc.output('blob');
-      var file = new File([pdf1], "Application.pdf");
+      var file = new File([pdf1], "R1-A Report.pdf");
       let body = new FormData();
       debugger
       body.append('Dan', file);
