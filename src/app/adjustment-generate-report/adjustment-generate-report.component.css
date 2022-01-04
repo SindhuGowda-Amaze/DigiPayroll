@@ -127,3 +127,7 @@ font-weight: bold;
     .SelectData{
       text-align: center;
     }
+    .rowwidth{
+      width: 85%;
+      overflow-x: scroll;
+    }

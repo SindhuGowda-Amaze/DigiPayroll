@@ -12,11 +12,14 @@ export class AdjustmentGenerateReportComponent implements OnInit {
 
   showtable:any;
   constructor() { }
-
+  check:any;
   ngOnInit(): void {
+    this.check=false;
   }
 
-
+  selectall(){
+   this.check=true;
+  }
 
   
   fileName = 'Approved Applicants Reports.xlsx';

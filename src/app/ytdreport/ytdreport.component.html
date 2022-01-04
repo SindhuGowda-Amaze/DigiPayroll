@@ -134,9 +134,15 @@
 
             <div class="container-fluid" id="demo1" class="collapse">
                 <div class="row">
-                    <ul>
-                        <li><a class="active fontheading">Employees</a></li>
-                    </ul>
+                    <div class="col-lg-3">
+                        <a class="active fontheading">Employees</a>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3">
+                        <button class="form-control button" (click)="exportexcel()">EXPORT TO
+                            EXCEL</button>
+                    </div>
                 </div>
                 <div class="row Overflow">
                     <div class="col-lg-12">
@@ -176,14 +182,13 @@
                                     <th>Philhealth</th>
                                     <th>HDMF</th>
                                     <th>Deductions Total</th>
-                                    <th>Net Pay</th>
-                                    <th>Taxable Gross</th>
                                     <th>SSSER</th>
                                     <th>SSSEC</th>
                                     <th>PHER</th>
                                     <th>HDMFER</th>
                                     <th>HDMF Additional</th>
-                                    <th>Action</th>
+                                    <th>Taxable Gross</th>
+                                    <th>Net Pay</th>
                                 </tr>
                                 <tr>
                                     <td class="SelectData"><input type="checkbox"></td>
@@ -197,17 +202,17 @@
                                     <td>Management Team</td>
                                     <td>Male</td>
                                     <td>ME</td>
-                                    <td>261.00</td>
-                                    <td>186,000.00</td>
-                                    <td>0.00</td>
-                                    <td>186,000.00</td>
-                                    <td>186,000.00</td>
-                                    <td>8,551.72</td>
-                                    <td>1,068.97</td>
-                                    <td>0.00</td>
-                                    <td>0.00</td>
-                                    <td>186,000.00</td>
-                                    <td>0.00</td>
+                                    <td>261</td>
+                                    <td>20,000.00</td>
+                                    <td>100.00</td>
+                                    <td>30,000.00</td>
+                                    <td>10,000.00</td>
+                                    <td>1,000.00</td>
+                                    <td>125.00</td>
+                                    <td>50.00</td>
+                                    <td>500.00</td>
+                                    <td>30,600.00</td>
+                                    <td>0</td>
                                     <td>0.00</td>
                                     <td>0.00</td>
                                     <td>0.00</td>
@@ -219,15 +224,13 @@
                                     <td>550.00</td>
                                     <td>100.00</td>
                                     <td>1,450.00</td>
-                                    <td>184,550.00</td>
-                                    <td>184,550.00</td>
                                     <td>1,600.00</td>
                                     <td>30.00</td>
                                     <td>550.00</td>
                                     <td>100.00</td>
                                     <td>0.00</td>
-                                    <td><button class="form-control button" (click)="exportexcel()">EXPORT TO
-                                            EXCEL</button></td>
+                                    <td>29,150.00</td>
+                                    <td>29,150.00</td>
                                 </tr>
                             </thead>
                         </table>
