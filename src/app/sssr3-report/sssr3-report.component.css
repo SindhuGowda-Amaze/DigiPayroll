@@ -101,7 +101,7 @@
    color: white;
    width: 170px;
    border: none;
-   margin-left: 195px;
+  
 }
 .fetch{
    height: 34px;
@@ -115,4 +115,9 @@
 
 .table, td {
    background-color: white;
+}
+.count{
+   font-size: 15px;
+   font-weight: bold;
+ 
 }
