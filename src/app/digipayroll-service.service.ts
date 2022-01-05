@@ -16,6 +16,7 @@ export class DigipayrollServiceService {
     let APIURL = this.baseURL+"Master/GetPhilHealth";
     return this.http.get<any[]>(APIURL);
   }
+  
   public GetAdjustment() {
     debugger
     let APIURL = this.baseURL + "Master/GetAdjustment";
