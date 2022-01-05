@@ -47,7 +47,7 @@ export class PayrollComponent implements OnInit {
 
   public convetToPDF1() {
     debugger
-   
+  
     var data: any = document.getElementById('downloadaplication');
     html2canvas(data).then(canvas => {
    
@@ -73,8 +73,8 @@ export class PayrollComponent implements OnInit {
 
       }
       doc.deletePage(1)
-      doc.save('Certificate of Loan.pdf');
-      
+      doc.save('BankAdvice.pdf');
+    
       var pdf1 = doc.output('blob');
       var file = new File([pdf1], "Application.pdf");
       let body = new FormData();
@@ -88,6 +88,7 @@ export class PayrollComponent implements OnInit {
      
     });;
   }
+
 
   GetId(id: any) {
     this.id = id
