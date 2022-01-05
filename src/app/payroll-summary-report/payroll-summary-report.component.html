@@ -203,10 +203,16 @@
         <div class="col-lg-3"></div>
         <div class="col-lg-3">
             <button class="Button" (click)="convetToPDF1()">Convert To PDF </button> &nbsp;&nbsp;
-            <button class="Button" (click)="exportexcel()">Export to Excel</button>
+            <button class="Button" (click)="exportexcel()">Export to Excel</button>       
+        </div> 
+    </div> <br>
+    <div class="row" *ngIf="showleaseforprint==1">
+        <div class="col-lg-9"></div>
+        <div class="col-lg-2">
+           <p style="font-size: 15px;"> Grand Total: 19,214.76</p>
         </div>
     </div> <br>
-
+    
 
 
     <div class="row" *ngIf="showleaseforprint==1">
