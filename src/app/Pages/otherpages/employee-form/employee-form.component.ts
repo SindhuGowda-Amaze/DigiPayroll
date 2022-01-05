@@ -14,6 +14,11 @@ import { DatePipe } from '@angular/common';
   providers: [DatePipe]
 })
 
+
+
+
+
+
 export class EmployeeFormComponent implements OnInit {
 
   stepStates = {
@@ -184,11 +189,8 @@ export class EmployeeFormComponent implements OnInit {
   constructor(public DigiofficeService: DigipayrollServiceService, private ngWizardService: NgWizardService, public router: Router, private activatedroute: ActivatedRoute, public datepipe: DatePipe) { }
 
   leavelist: any;
+  
   ngOnInit(): void {
-
-
-
-
     this.DigiofficeService.GetRoleType().subscribe(data => {
       debugger
       this.RoleTypeList = data;
@@ -548,9 +550,6 @@ export class EmployeeFormComponent implements OnInit {
         this.DigiofficeService.GetSalaryDetails().subscribe(
           data => {
             debugger
-
-
-
             this.leavelist = data.filter(x => x.staffId == this.ID);
             this.EmployeeName = this.leavelist[0].employeeName,
               this.Grade = this.leavelist[0].grade,
@@ -559,8 +558,6 @@ export class EmployeeFormComponent implements OnInit {
               this.PayStructure = this.leavelist[0].payStructure,
               this.EffectiveFromDate = this.datepipe.transform(this.leavelist[0].effectiveFromDate, 'yyyy-MM-dd'),
               this.Reason = this.leavelist[0].reason
-
-
           },
         );
 
@@ -595,10 +592,37 @@ export class EmployeeFormComponent implements OnInit {
 
     //   window.scrollTo(0, 0)
     // }
-
-
-
   }
+
+
+  Company_logo:any;
+
+  files: File[] = [];
+  onSelect(event: { addedFiles: any; }) {
+    debugger
+    console.log(event);
+    this.files.push(event.addedFiles[0]);
+    this.uploadattachments();
+    console.log("content", this.files);
+  }
+
+
+  onRemove(event:any)
+  {
+debugger
+console.log(event);
+this.files.splice(this.files.indexOf(event),1);
+  }
+
+  public uploadattachments() {
+    debugger
+    this.DigiofficeService.AttachmentsUpload(this.files).subscribe(res => {
+      debugger
+      this.Company_logo = res;
+      alert("ATTACHMENT UPLOADED");
+    })
+  }
+
 
 
   public Save() {
