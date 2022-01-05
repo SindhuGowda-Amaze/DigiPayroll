@@ -40,4 +40,19 @@ export class M1excelComponent implements OnInit {
 
   }
 
+  selectone:any;
+  selecallbtn:any;
+  
+  selectALL(checked: boolean) { // pass true or false to check or uncheck all
+    this.selecallbtn = true;
+    this.selectone = false;
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].type == "checkbox") {
+        inputs[i].checked = checked;
+        // This way it won't flip flop them and will set them all to the same value which is passed into the function
+      }
+    }
+  }
+
 }
