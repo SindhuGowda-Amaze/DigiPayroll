@@ -13,6 +13,7 @@ import Swal from 'sweetalert2';
 export class PayrollComponent implements OnInit {
   selectdata:any;
   details: any;
+  id:any;
   constructor(private DigiPayrollServiceService:DigipayrollServiceService) { }
 
   ngOnInit(): void {
@@ -88,5 +89,18 @@ export class PayrollComponent implements OnInit {
     });;
   }
 
+  GetId(id: any) {
+    this.id = id
+  }
 
+  update() {
+    debugger
+    if (this.id== null || this.id==undefined) {
+      Swal.fire('Please Select the Record to Modify');
+    }
+
+    else {
+      location.href="#/PayRollForm/"+ this.id;
+    }
+  }
 }

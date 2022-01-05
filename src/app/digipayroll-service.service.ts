@@ -386,6 +386,12 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
+  public UpdatePayroll(json : any) {    
+    debugger
+    let APIURL = this.baseURL + "Master/UpdatePayroll";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
 
 
   public GetDepartment() {
@@ -400,7 +406,7 @@ export class DigipayrollServiceService {
     return this.http.post<any[]>(APIURL,json);
   }
 
-  public UpdateDepartment(json : any) {    //not yet done
+  public UpdateDepartment(json : any) {    
     debugger
     let APIURL = this.baseURL + "Master/UpdateDepartment";
     return this.http.post<any[]>(APIURL,json);

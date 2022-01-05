@@ -130,6 +130,13 @@ font-weight: bold;
     .SelectData{
       text-align: center;
     }
+    .rowwidth{
+      width: 100%;
+      overflow-x: scroll;
+    }
+    th{
+      border-color: #d4d2d2;
+    }
 
 
     

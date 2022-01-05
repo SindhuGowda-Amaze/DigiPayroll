@@ -92,7 +92,9 @@
                     <button class="form-control CancelBTN fontheading">Cancel</button>
                 </div>
                 <div class="col-lg-1">
-                    <button class="form-control SubmitBTN" (click)="OnSubmit()" >Submit</button>
+                   
+                    <button class="form-control SubmitBTN" *ngIf="id==undefined"  (click)="OnSubmit()" >Save</button>
+                    <button class="form-control SubmitBTN" *ngIf="id!= undefined"   (click)="Update()">Update</button>  
                 </div>
             </div>
         </div><br>

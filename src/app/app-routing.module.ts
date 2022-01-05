@@ -112,6 +112,9 @@ const routes: Routes = [
     path: "PayRollForm", component: PayRollFormComponent
   },
   {
+    path: "PayRollForm/:id", component: PayRollFormComponent
+  },
+  {
     path: "UserForm", component: UserFormComponent
   },
   {

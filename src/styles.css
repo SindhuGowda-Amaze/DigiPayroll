@@ -46,13 +46,14 @@
  
 
    table thead tr th {
-    border: none!important;
+   
     min-width: 50px;
     color: #404040 !important;
     font-size: 12px;
     background: #e4e5e6 !important;
     vertical-align: middle;
     font-family: "DIN Bold";
+    border-color: #5a5959;
 }
 
  .table td {
