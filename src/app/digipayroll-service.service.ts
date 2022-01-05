@@ -7,7 +7,7 @@ export class DigipayrollServiceService {
 
  // public baseURL = "http://localhost:4199/";   
   public baseURL = "http://103.133.214.197/DigiPayroll/";
-  public host = "http://103.133.214.197/digiOfficeV4API";
+  public host = "https://digioffice.amazeone.co/digiofficeapi";
   url:any;
   constructor(private http: HttpClient  ) { }
 
