@@ -103,15 +103,15 @@ export class DigipayrollServiceService {
   }
 
 
-  public GetSSS() {
+  public GetSSS_New() {
     debugger
-    let APIURL = this.baseURL+"Master/GetSSS";
+    let APIURL = this.baseURL+"Master/GetSSS_New";
     return this.http.get<any[]>(APIURL);
   }
 
-  public InsertSSS(json:any) {
+  public InsertSSS_New(json:any) {
     debugger
-    let APIURL = this.baseURL+"Master/InsertSSS";
+    let APIURL = this.baseURL+"Master/InsertSSS_New";
     return this.http.post<any[]>(APIURL, json);
   }
 

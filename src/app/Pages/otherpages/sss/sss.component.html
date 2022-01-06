@@ -24,7 +24,7 @@
                 <div class="col-lg-8 View">
                     <ul>
                         <li><a class="active">View</a></li>
-                        <li><a (click)="update()">Modify</a></li>
+                        <li><a>Modify</a></li>
                     </ul>
                 </div>
 
@@ -40,92 +40,44 @@
                             <thead>
                                 <tr class="newFont">
                                     <th class="SelectData">Select</th>
-                                    <th>Min Range</th>
-                                    <th>Max Range</th>
-                                    <th>Monthly Salary Credit</th>
-                                    <th>SS-ER</th>
-                                    <th>SS-EE</th>
-                                    <th>SS-Total</th>
-                                    <th>MPF-ER</th>
-                                    <th>MPF-EE</th>
-                                    <th>EC-ER</th>
-                                    <th>Total Contibution</th>
-                                    <th>Actions</th>
+                                    <th>Range_Of_Compensastion</th>
+                                    <th>MSCRSS_EC</th>
+                                    <th>MSC_MPF</th>
+                                    <th>MSC_Total</th>
+                                     <th>RSS_ER</th> 
+                                     <th>RSS_EE</th>
+                                     <th>RSS_Total</th>
+                                     <th>EC_ER</th>
+                                     <th>EC_EE</th>
+                                     <th>EE_Total</th>
+                                     <th>MPF_ER</th>
+                                     <th>MPF_EE</th>
+                                     <th>MPF_Total</th>
+                                     <th>ER</th>
+                                     <th>EE</th>
+                                     <th>Total</th>
                                 <tr>
                             </thead>
-                            <tbody>
-                                <tr class="newFont" *ngFor="let SSSdata of SSSdatalist">
-                                    <td class="SelectData"  (click)="GetId(SSSdata.id)"><input type="checkbox"></td>
-                                       <!-- <td>{{salary.monthly_Basic_Salary_Into_Five|number:'1.2-2'}}</td> -->
-                                    <td>{{SSSdata.min_Range|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.max_Range|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.monthly_Salary_Creadited|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.sS_ER|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.sS_EE|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.sS_Total|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.mpF_ER|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.mpF_EE|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.eC_ER|number:'1.2-2'}}</td>
-                                    <td>{{SSSdata.total_Contribution|number:'1.2-2'}}</td>
-                                    <td><img class="imgcancel" src="/assets/cancel (1).png" (click)="delete(SSSdata.id)"></td>
-                                </tr>
-                                <!-- <tr class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>₱ 30,000</td>
-                                    <td>₱ 35,000</td>
-                                    <td>₱ 36,000</td>
-                                    <td>₱ 2,500</td>
-                                    <td>₱ 900</td>
-                                    <td>₱ 3,600</td>
-                                    <td>0.00</td>
-                                    <td>₱ 0.10</td>
-                                    <td>₱ 50</td>
-                                    <td>₱ 3500</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>₱ 40,000</td>
-                                    <td>₱ 45,000</td>
-                                    <td>₱ 46,000</td>
-                                    <td>₱ 3,500</td>
-                                    <td>₱ 1,000</td>
-                                    <td>₱ 4,700</td>
-                                    <td>0.00</td>
-                                    <td>₱ 0.90</td>
-                                    <td>₱ 70</td>
-                                    <td>₱ 5,400</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>₱ 50,000</td>
-                                    <td>₱ 55,000</td>
-                                    <td>₱ 56,000</td>
-                                    <td>₱ 4,900</td>
-                                    <td>₱ 1,800</td>
-                                    <td>₱ 5,900</td>
-                                    <td>0.00</td>
-                                    <td>₱ 10.50</td>
-                                    <td>₱ 90</td>
-                                    <td>₱ 6,200</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr>
-                                <tr class="newFont">
-                                    <td class="SelectData"><input type="checkbox"></td>
-                                    <td>₱ 60,000</td>
-                                    <td>₱ 65,000</td>
-                                    <td>₱ 66,000</td>
-                                    <td>₱ 5,200</td>
-                                    <td>₱ 2,700</td>
-                                    <td>₱ 6,200</td>
-                                    <td>0.00</td>
-                                    <td>₱ 30.80</td>
-                                    <td>₱ 100</td>
-                                    <td>₱ 7,700</td>
-                                    <td><img class="imgcancel" src="../../../assets/cancel (1).png"></td>
-                                </tr> -->
-                            </tbody>
+                              <tbody>
+                               <tr *ngfor="let details of ssslist">
+                                   <td>{{details.range_Of_Compensastion}}</td>
+                                   <td>{{details.mSCRSS_EC}}</td>
+                                   <td>{{details.mSC_MPF}}</td>
+                                   <td>{{details.mSC_Total}}</td>
+                                   <td>{{details.rSS_ER}}</td>
+                                   <td>{{details.rSS_EE}}</td>
+                                   <td>{{details.rSS_Total}}</td>
+                                   <td>{{details.eC_ER}}</td>
+                                   <td>{{details.eC_EE}}</td>
+                                   <td>{{details.eE_Total}}</td>
+                                   <td>{{details.mPF_ER}}</td>
+                                   <td>{{details.mPF_EE}}</td>
+                                   <td>{{details.mPF_Total}}</td>
+                                   <td>{{details.eR}}</td>
+                                   <td>{{details.eE}}</td>
+                                   <td>{{details.total}}</td>
+                               </tr>                             
+                            </tbody> 
                         </table>
                     </div>
                 </div>
