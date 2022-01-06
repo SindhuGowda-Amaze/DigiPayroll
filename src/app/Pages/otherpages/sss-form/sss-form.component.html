@@ -1,4 +1,4 @@
-<!-- <div class="container-fluid">
+<div class="container-fluid">
 
     <div class="row">
         <div class="col-lg-1"></div>
@@ -42,7 +42,7 @@
                 <div class="row leavereq">
                     <div class="col-md-2">
                         <div class="dropdown">
-                            <select class="form-control inputfield" [(ngModel)]="selectMinRange">
+                            <select class="form-control inputfield">
                                 <option value="Select">Select Min. Range</option>
                                 <option value="1">Min. Range 1 to 50</option>
                                 <option value="1">Min. Range 51 to 100</option>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-md-2">
                         <div class="dropdown">
-                            <select class="form-control inputfield" [(ngModel)]="selectMaxRange">
+                            <select class="form-control inputfield" >
                                 <option value="Select">Select Max. Range</option>
                                 <option value="1">Max. Range 1000 to 1500</option>
                                 <option value="1">Max. Range 1501 to 2000</option>
@@ -63,16 +63,16 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectMonthlySalaryCredit">
+                        <input type="text" class="form-control inputfield" >
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectSSER">
+                        <input type="text" class="form-control inputfield">
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectSSEE">
+                        <input type="text" class="form-control inputfield">
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectSSTotal">
+                        <input type="text" class="form-control inputfield">
                     </div>
                 </div>
                 <br>
@@ -92,16 +92,16 @@
                 </div>
                 <div class="row leavereq">
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectMpfEr">
+                        <input type="text" class="form-control inputfield" >
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectMpfEe">
+                        <input type="text" class="form-control inputfield">
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectEcEr">
+                        <input type="text" class="form-control inputfield">
                     </div>
                     <div class="col-md-2">
-                        <input type="text" class="form-control inputfield" [(ngModel)]="selectTotalContribution">
+                        <input type="text" class="form-control inputfield">
                     </div>
                 </div>
                 <br>
@@ -112,10 +112,10 @@
                     </div>
                     <div class="col-lg-1">
                         <button class="form-control SubmitBTN">Submit</button>
-                        <button type="button" class="form-control SubmitBTN" *ngIf="id==null || id==undefined"
-                            (click)="save()">Save</button>
-                        <button type="button" class="form-control SubmitBTN" *ngIf="id!=null || id!=undefined"
-                            (click)="Update()">Update</button>
+                        <button type="button" class="form-control SubmitBTN" 
+                            >Save</button>
+                        <button type="button" class="form-control SubmitBTN"
+                            >Update</button>
                     </div>
                 </div>
             </div><br>
@@ -123,4 +123,4 @@
         <div class="col-lg-1"></div>
     </div>
 
-</div> -->
+</div>

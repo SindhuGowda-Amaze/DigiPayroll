@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="/sssForm"><button class="button">Add</button> </a>
+                    <a href="/SssForm"><button class="button">Add</button> </a>
                 </div>
             </div>
 
@@ -40,41 +40,42 @@
                             <thead>
                                 <tr class="newFont">
                                     <th class="SelectData">Select</th>
-                                    <th>Range_Of_Compensastion</th>
-                                    <th>MSCRSS_EC</th>
-                                    <th>MSC_MPF</th>
-                                    <th>MSC_Total</th>
-                                     <th>RSS_ER</th> 
-                                     <th>RSS_EE</th>
-                                     <th>RSS_Total</th>
-                                     <th>EC_ER</th>
-                                     <th>EC_EE</th>
-                                     <th>EE_Total</th>
-                                     <th>MPF_ER</th>
-                                     <th>MPF_EE</th>
-                                     <th>MPF_Total</th>
+                                    <th>Range Of Compensastion</th>
+                                    <th>MSCRSS EC</th>
+                                    <th>MSC MPF</th>
+                                    <th>MSC Total</th>
+                                     <th>RSS ER</th> 
+                                     <th>RSS EE</th>
+                                     <th>RSS Total</th>
+                                     <th>EC ER</th>
+                                     <th>EC EE</th>
+                                     <th>EE Total</th>
+                                     <th>MPF ER</th>
+                                     <th>MPF EE</th>
+                                     <th>MPF Total</th>
                                      <th>ER</th>
                                      <th>EE</th>
                                      <th>Total</th>
                                 <tr>
                             </thead>
-                              <tbody>
-                               <tr *ngfor="let details of ssslist">
+                              <tbody style="text-align: center;">
+                               <tr *ngFor="let details of ssslist">
+                                   <td><input type="checkbox"></td>
                                    <td>{{details.range_Of_Compensastion}}</td>
-                                   <td>{{details.mSCRSS_EC}}</td>
-                                   <td>{{details.mSC_MPF}}</td>
-                                   <td>{{details.mSC_Total}}</td>
-                                   <td>{{details.rSS_ER}}</td>
-                                   <td>{{details.rSS_EE}}</td>
-                                   <td>{{details.rSS_Total}}</td>
+                                   <td>{{details.mscrsS_EC}}</td>
+                                   <td>{{details.msC_MPF}}</td>
+                                   <td>{{details.msC_Total}}</td>
+                                   <td>{{details.rsS_ER}}</td>
+                                   <td>{{details.rsS_EE}}</td>
+                                   <td>{{details.rsS_Total}}</td>
                                    <td>{{details.eC_ER}}</td>
                                    <td>{{details.eC_EE}}</td>
                                    <td>{{details.eE_Total}}</td>
-                                   <td>{{details.mPF_ER}}</td>
-                                   <td>{{details.mPF_EE}}</td>
-                                   <td>{{details.mPF_Total}}</td>
-                                   <td>{{details.eR}}</td>
-                                   <td>{{details.eE}}</td>
+                                   <td>{{details.mpF_ER}}</td>
+                                   <td>{{details.mpF_EE}}</td>
+                                   <td>{{details.mpF_Total}}</td>
+                                   <td>{{details.er}}</td>
+                                   <td>{{details.ee}}</td>
                                    <td>{{details.total}}</td>
                                </tr>                             
                             </tbody> 
