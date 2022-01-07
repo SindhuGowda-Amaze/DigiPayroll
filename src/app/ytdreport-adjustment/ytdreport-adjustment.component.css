@@ -91,11 +91,12 @@ font-weight: bold;
 
 .generate5{
   height: 34px;
-  border-radius: 8px;
+  border-radius: 7px;
   background: #2F87CC;
   color: white;
-  width: 170px;
+  width: 150px;
   border: none;
+  float: right;
 }
 
 .button {
