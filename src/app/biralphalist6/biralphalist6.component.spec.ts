@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BirAlpaList6.1Component } from './bir-alpa-list6.1.component';
+import { Biralphalist6Component } from './biralphalist6.component';
 
-describe('BirAlpaList6.1Component', () => {
-  let component: BirAlpaList6.1Component;
-  let fixture: ComponentFixture<BirAlpaList6.1Component>;
+describe('Biralphalist6Component', () => {
+  let component: Biralphalist6Component;
+  let fixture: ComponentFixture<Biralphalist6Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BirAlpaList6.1Component ]
+      declarations: [ Biralphalist6Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BirAlpaList6.1Component);
+    fixture = TestBed.createComponent(Biralphalist6Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

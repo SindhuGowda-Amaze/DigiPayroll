@@ -92,8 +92,9 @@ import { Bir2306Component } from './bir2306/bir2306.component';
 import { Bir2316Component } from './bir2316/bir2316.component';
 import { Bir2307Component } from './bir2307/bir2307.component';
 import { BirAnnualizationComponent } from './bir-annualization/bir-annualization.component';
-import { BirAlpaList6 } from './bir-alpa-list6.1/bir-alpa-list6.1.component';
-import { BirAlpaList7 } from './bir-alpa-list7.0/bir-alpa-list7.0.component';
+import { Biralphalist6Component } from './biralphalist6/biralphalist6.component';
+import { Biralphalist7Component } from './biralphalist7/biralphalist7.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -272,8 +273,9 @@ const routes: Routes = [
   { path: 'Bir2316', component: Bir2316Component },
   { path: 'Bir2307', component: Bir2307Component },
   { path: 'BirAnnualization', component: BirAnnualizationComponent },
-  { path: 'BirAlpaList6', component: BirAlpaList6 },
-  { path: 'BirAlpaList7', component: BirAlpaList7 },
+  { path: 'Biralphalist6', component: Biralphalist6Component },
+  { path: 'Biralphalist7', component: Biralphalist7Component },
+ 
 
 
 ];
