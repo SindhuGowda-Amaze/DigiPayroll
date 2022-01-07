@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="/sssForm"><button class="button">Add</button> </a>
+                    <a href="/SssForm"><button class="button">Add</button> </a>
                 </div>
             </div>
 
@@ -40,26 +40,27 @@
                             <thead>
                                 <tr class="newFont">
                                     <th class="SelectData">Select</th>
-                                    <th>Range_Of_Compensastion</th>
-                                    <th>MSCRSS_EC</th>
-                                    <th>MSC_MPF</th>
-                                    <th>MSC_Total</th>
-                                     <th>RSS_ER</th> 
-                                     <th>RSS_EE</th>
-                                     <th>RSS_Total</th>
-                                     <th>EC_ER</th>
-                                     <th>EC_EE</th>
-                                     <th>EE_Total</th>
-                                     <th>MPF_ER</th>
-                                     <th>MPF_EE</th>
-                                     <th>MPF_Total</th>
+                                    <th>Range Of Compensastion</th>
+                                    <th>MSCRSS EC</th>
+                                    <th>MSC MPF</th>
+                                    <th>MSC Total</th>
+                                     <th>RSS ER</th> 
+                                     <th>RSS EE</th>
+                                     <th>RSS Total</th>
+                                     <th>EC ER</th>
+                                     <th>EC EE</th>
+                                     <th>EE Total</th>
+                                     <th>MPF ER</th>
+                                     <th>MPF EE</th>
+                                     <th>MPF Total</th>
                                      <th>ER</th>
                                      <th>EE</th>
                                      <th>Total</th>
                                 <tr>
                             </thead>
-                              <tbody>
+                              <tbody style="text-align: center;">
                                <tr *ngFor="let details of ssslist">
+                                   <td><input type="checkbox"></td>
                                    <td>{{details.range_Of_Compensastion}}</td>
                                    <td>{{details.mscrsS_EC}}</td>
                                    <td>{{details.msC_MPF}}</td>

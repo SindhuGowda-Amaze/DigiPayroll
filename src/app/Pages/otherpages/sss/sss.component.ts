@@ -41,7 +41,8 @@ export class SSSComponent implements OnInit {
     debugger
     this.DigipayrollServiceService.GetSSS_New().subscribe(data=>{
       debugger
-      this.ssslist=data ;
+      this.ssslist=data;
+      console.log('data',this.ssslist)
      })
   }
 
