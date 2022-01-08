@@ -20,6 +20,7 @@ export class BirAnnualizationComponent implements OnInit {
   }
   fileName = 'Monthly Summary Report.xlsx';
   exportexcel(): void {
+    this.showtable=1;  
     /* table id is passed over here */
     let element = document.getElementById('download');
     debugger
@@ -32,7 +33,7 @@ export class BirAnnualizationComponent implements OnInit {
 
     /* save to file */
     XLSX.writeFile(wb, this.fileName);
-
+    this.showtable=0;  
   }
 
   Showdata(){

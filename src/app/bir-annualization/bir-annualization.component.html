@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-lg-5"></div>
                 <div class="col-lg-2">
-                    <button class="generate" >GENERATE</button>
+                    <button class="generate" (click)="exportexcel()">GENERATE</button>
                 </div>
             </div>
 
@@ -102,19 +102,19 @@
 </div>
 
 
-<div class="row" >
+<!-- <div class="row" >
     <div class="col-lg-10"></div>
     <div class="col-lg-2">
         <button class="Fetch" style="margin-left: 10px;">Export to Excel</button>
     </div>
-</div> <br>
+</div> <br> -->
 <!-- <div class="row" *ngIf="showtable==1">
     <div class="col-lg-10"></div>
     <div class="col-lg-2">
        <p style="font-size: 15px; padding-left: 16px;">Grand Total:27,875</p>
     </div>
 </div> <br> -->
-<div class="row">
+<div class="row"   id="download" >
     <div class="col-lg-12" style="overflow:auto;">
         <table class="table table-bordered fonttxt">
             <thead>
@@ -140,18 +140,7 @@
                     <th>SSS</th>
                     <th>Philhealth </th>
                     <th>HDMF</th>
-                    <th>Deductions Total</th>
-                    <th>Net Pay </th>
-                    <th>Assumed 13th Month Accurual</th>
-                    <th>Tax YTD</th>
-                    <th>Net YTD</th>
-                    <th>Taxable Gross</th>
-                    <th>SSS ER</th>
-                    <th>SSS EC</th>
-                    <th>HDMF ER</th>
-                    <th>HDMF Addtitional</th>
-                </tr>
-               
+                </tr>              
             </thead>
         </table>
     </div>

@@ -142,22 +142,22 @@
                                
                             </tr>
                             <tr>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                                 <td>20-004</td>
                                 <td>Intal, Maria Cassandra</td>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                             </tr>
                             <tr>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                                 <td>20-003</td>
                                 <td>Olaguer, Ajel</td>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                             </tr>
                             <tr>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                                 <td>19-002</td>
                                 <td>Fernandez, Andrew</td>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                             </tr>
                         </thead>
 
@@ -167,16 +167,16 @@
 
             <div class="row">
                
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.1</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.1</button><br>
                     <span style="font-size: 9px;color: grey;">Employees terminated
                         before December 31</span></div>
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.3</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.3</button><br>
                     <span style="font-size: 9px;color: grey;">Employees with no previous employers
                         as of December 31 within the year</span></div>
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.4</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.4</button><br>
                     <span style="font-size: 9px;color: grey;">Employees with previous employers
                         as of December 31 within the year</span></div>
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.5</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.5</button><br>
                     <span style="font-size: 9px;color: grey;">Employees who are
                         minimum wage earners
                         </span></div>    <div class="col-lg-1"></div>
@@ -188,16 +188,16 @@
 </div>
 
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-lg-10"></div>
     <div class="col-lg-2">
         <button class="Fetch" style="margin-left: 10px;">Export to Excel</button>
     </div>
-</div> <br>
+</div> <br> -->
 
-<div class="row">
+<div class="row" *ngIf="showtable==1" >
     <div class="col-lg-12" style="overflow:auto;">
-        <table class="table table-bordered fonttxt">
+        <table class="table table-bordered fonttxt" id="download">
             <thead>
                 <tr class="newFont">
                     <th>Employee ID*</th>
