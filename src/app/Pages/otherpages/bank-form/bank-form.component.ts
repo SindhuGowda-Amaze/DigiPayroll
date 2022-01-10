@@ -67,7 +67,7 @@ export class BankFormComponent implements OnInit {
         debugger
         let result = data;
         Swal.fire("Update Sucessfully");
-      location.href="/Bank";
+        location.href="/Bank";
       })
-    }
+  }
 }
