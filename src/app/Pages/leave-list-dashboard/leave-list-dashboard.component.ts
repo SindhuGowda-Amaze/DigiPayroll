@@ -58,13 +58,13 @@ export class LeaveListDashboardComponent implements OnInit {
     debugger
     this.DigiofficeService.GetStaffLeaves(10331, 1, "01-01-2020", "01-01-2025").subscribe(data => {
       debugger
-      this.staffleaves = data.filter(x => x.uuid == 10357);
+      this.staffleaves = data;
       this.buildcallender(this.staffleaves);
     })
   }
   public newlevae() {
     debugger
-    this.router.navigate(['/NewLeaveRequest']);
+    this.router.navigate(['/ApplyLeave']);
   }
   medicalurl: any;
   public getmedicalurl(id: any) {

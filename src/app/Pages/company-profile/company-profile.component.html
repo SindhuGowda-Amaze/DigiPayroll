@@ -1037,14 +1037,14 @@
                         <p class="newFont">Coverage:</p>
                         <div class="row">
                             <div class="col-lg-5">
-                                <div class="form-check">
+                                <!-- <div class="form-check">
                                     <input class="form-check-input" type="radio" id="thirteen_Month_Compuatation_Type"
                                         name="thirteen_Month_Compuatation_Type"
                                         [(ngModel)]="thirteen_Month_Compuatation_Type" value="Pro-rated/Advanced">
                                     <label class="form-check-label newFont" for="flexRadioDefault1">
                                         By Month(custom)
                                     </label>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-check">
@@ -1072,7 +1072,7 @@
                     <div class="col-md-2">
                         <input type="checkbox" class="checkboxtxt" id="SSS_Optional" name="SSS_Optional"
                             (change)="GetSSS_Optional_Deminimis($event)" value="Dominimis">
-                        <label class="checkboxtxt newFont">Dominimis</label>
+                        <label class="checkboxtxt newFont">Deminimis</label>
                     </div>
                     <div class="col-md-2">
                         <input type="checkbox" class="checkboxtxt" id="SSS_Optional" name="SSS_Optional"
@@ -1131,7 +1131,7 @@
                     <div class="col-md-5">
                         <p class="newFont">Coverage:</p>
                         <div class="row tiles">
-                            <div class="col-lg-5">
+                            <!-- <div class="col-lg-5">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" id="PhilHealth_Coverage"
                                         name="PhilHealth_Coverage" [(ngModel)]="PhilHealth_Coverage"
@@ -1140,7 +1140,7 @@
                                         By Month(custom)
                                     </label>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-6">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" id="PhilHealth_Coverage"
@@ -1224,7 +1224,7 @@
                             <input class="form-check-input" type="radio" id="HDMS" name="HDMS" [(ngModel)]="HDMF"
                                 value="Fixed deduction of PHP 100.00 per month from each employee">
                             <label class="form-check-label newFont" for="flexRadioDefault1">
-                                Fixed deduction of PHP 100.00 per month from each employee
+                                Fixed deduction of  monthlysalary*0.01 if monthly salary lesser than 1300 or  monthlysalary*0.04 if monthly salary is greater than 1300  from each employee
                             </label>
                         </div>
                         <div>
@@ -1238,7 +1238,7 @@
                                         name="HDMF_Employer_Contribution" [(ngModel)]="HDMF_Employer_Contribution"
                                         value="Same as Employee(PHP 100.00)">
                                     <label class="form-check-label newFont" for="flexRadioDefault1">
-                                        Same as Employee (PHP 100.00)
+                                        Same as Employee Fixed Deduction
                                     </label>
                                 </div>
                             </div>
