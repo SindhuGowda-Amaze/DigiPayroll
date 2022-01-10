@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DigipayrollServiceService {
 
- // public baseURL = "http://localhost:4199/";   
-  public baseURL = "http://103.133.214.197/DigiPayroll/";
+ public baseURL = "http://localhost:4199/";   
+  // public baseURL = "http://103.133.214.197/DigiPayroll/";
   public host = "https://digioffice.amazeone.co/digiofficeapi";
   url:any;
   constructor(private http: HttpClient  ) { }
@@ -422,11 +422,7 @@ export class DigipayrollServiceService {
     return this.http.get<any[]>(APIURL);
   }
 
-  public GetBanks() {
-    debugger
-    let APIURL = this.baseURL + "Master/GetBanks";
-    return this.http.get<any[]>(APIURL);
-  }
+  
   public DeleteUserDetails(id: any) {
     debugger
     let APIURL = this.baseURL + "Master/DeleteUserDetails?ID=" + id;
@@ -437,6 +433,12 @@ export class DigipayrollServiceService {
     debugger
     let APIURL = this.baseURL + "Master/DeletePayroll";
     return this.http.get<any[]>(this.baseURL+ "Master/DeletePayroll?ID=" +id);
+  }
+
+  public GetBanks() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetBanks";
+    return this.http.get<any[]>(APIURL);
   }
 
   public InsertBanks(json : any) {
@@ -454,6 +456,30 @@ export class DigipayrollServiceService {
   public DeleteBanks(id : any) {
     debugger
     let APIURL = this.baseURL + "Master/DeleteBanks?ID="+id;
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public GetCurrencyMaster() {
+    debugger
+    let APIURL = this.baseURL + "Master/GetCurrencyMaster";
+    return this.http.get<any[]>(APIURL);
+  }
+
+  public InsertCurrencyMaster(json : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/InsertCurrencyMaster";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public UpdateCurrencyMaster(json : any) {    //not yet done
+    debugger
+    let APIURL = this.baseURL + "Master/UpdateCurrencyMaster";
+    return this.http.post<any[]>(APIURL,json);
+  }
+
+  public DeleteCurrencyMaster(id : any) {
+    debugger
+    let APIURL = this.baseURL + "Master/DeleteCurrencyMaster?ID="+id;
     return this.http.get<any[]>(APIURL);
   }
 
