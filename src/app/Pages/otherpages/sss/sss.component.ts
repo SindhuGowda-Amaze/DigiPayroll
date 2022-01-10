@@ -13,7 +13,7 @@ export class SSSComponent implements OnInit {
   constructor( private DigipayrollServiceService: DigipayrollServiceService, private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-   this.GetSSS()
+   this.GetSSS_New()
   }
 
 
@@ -25,34 +25,35 @@ export class SSSComponent implements OnInit {
     this.ID = id
   }
 
-  update() {
-    debugger
-    if (this.ID== null || this.ID==undefined) {
-      Swal.fire('Please Select the Record to Modify');
-    }
-    else {
-      location.href="#/sssForm/"+ this.ID;
-    }
-  }
+  // update() {
+  //   debugger
+  //   if (this.ID== null || this.ID==undefined) {
+  //     Swal.fire('Please Select the Record to Modify');
+  //   }
+  //   else {
+  //     location.href="#/sssForm/"+ this.ID;
+  //   }
+  // }
 
-  SSSdatalist:any
+  ssslist:any
 
-  public GetSSS() {
+  public GetSSS_New() {
     debugger
-    this.DigipayrollServiceService.GetSSS().subscribe(data=>{
+    this.DigipayrollServiceService.GetSSS_New().subscribe(data=>{
       debugger
-      this.SSSdatalist=data ;
+      this.ssslist=data;
+      console.log('data',this.ssslist)
      })
   }
 
-  delete(id: any){
-    debugger;
+  // delete(id: any){
+  //   debugger;
   
-    this.DigipayrollServiceService.DeleteSSS(id).subscribe(
-      data => {
-       Swal.fire('Deleted Successfully...!')   
-       location.reload() 
-    })
-  }
+  //   this.DigipayrollServiceService.DeleteSSS(id).subscribe(
+  //     data => {
+  //      Swal.fire('Deleted Successfully...!')   
+  //      location.reload() 
+  //   })
+  // }
 
 }

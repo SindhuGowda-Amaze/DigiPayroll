@@ -1,13 +1,13 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <div class="row">
             <div class="col-md-4">
                 <ul>
-                    <!-- <li><button class="active form-control">
+                 <li><button class="active form-control">
                                 <a routerLink="/LeaveListDashboard" class="BackEnt"><span
                                         class="BACK">&#8592;</span></a>
-                            </button></li> -->
+                            </button></li> 
                     <li><a class="applyleavetxt">Company Profile</a></li>
                 </ul>
             </div>
@@ -40,12 +40,12 @@
             <div class="row leavereq">
 
                 <div class="col-md-2">
-                    <!-- <ngx-dropzone (change)="onSelect($event)" style="height: 60px;">
+                     <ngx-dropzone (change)="onSelect($event)" style="height: 60px;">
                         <ngx-dropzone-label>Drop it here!</ngx-dropzone-label>
                         <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                             <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
                         </ngx-dropzone-preview>
-                    </ngx-dropzone> -->
+                    </ngx-dropzone> 
                     <img src="/assets/images/AmazeLogo.jpg" width=70 height=70>
 
                 </div>
@@ -76,9 +76,9 @@
                 <div class="col-md-2">
                     <p class="newFont">Phone</p>
                 </div>
-                <!-- <div class="col-md-2">
+             <div class="col-md-2">
                     <p class="newFont">Password</p>
-                </div> -->
+                </div> 
                 <div class="col-md-2">
                     <p class="newFont">Fax</p>
                 </div>
@@ -99,9 +99,9 @@
                 <div class="col-md-2">
                     <input class="form-control inputfield" placeholder="0284212755" [(ngModel)]="Phone">
                 </div>
-                <!-- <div class="col-md-2">
+                 <div class="col-md-2">
                     <input class="form-control inputfield" placeholder="" [(ngModel)]="Password">
-                </div> -->
+                </div> 
                 <div class="col-md-2">
                     <input class="form-control inputfield" placeholder="001" [(ngModel)]="Fax">
                 </div>
@@ -186,12 +186,12 @@
             </div>
             <div class="row leavereq">
                 <div class="col-md-2">
-                    <!-- <ngx-dropzone (change)="onSelect2($event)" style="height: 60px;">
+                <ngx-dropzone (change)="onSelect2($event)" style="height: 60px;">
                         <ngx-dropzone-label>Drop it here!</ngx-dropzone-label>
                         <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove2(f)">
                             <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
                         </ngx-dropzone-preview>
-                    </ngx-dropzone> -->
+                    </ngx-dropzone> 
                     <img src="/assets/images/sign.png" width=70 height=70>
                 </div>
             </div>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="col-md-2">
                     <select class="form-control inputfield" [(ngModel)]="Work_Months_Per_Year" >
-                        <!-- <select class="form-control inputfield"> -->
+                         <select class="form-control inputfield"> 
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -284,7 +284,7 @@
             <div class="row leavereq">
                 <div class="col-md-2">
                     <select class="form-control newFont" [(ngModel)]="Periods_Per_Month">
-                        <!-- <select class="form-control newFont"> -->
+                         <select class="form-control newFont"> 
                         <option value="1(Semi-Monthly)">1(Semi-Monthly)</option>
                         <option value="2(Semi-Monthly)">2(Semi-Monthly)</option>
 
@@ -295,9 +295,9 @@
                         <div class="row ">
 
                             <div class="col-lg-5">
-                                <!-- <input type="checkbox" id="Basic_Salary1" name="Absent_Deduction"
+                                <input type="checkbox" id="Basic_Salary1" name="Absent_Deduction"
                                      value="Basic Salary">
-                                    <label for="Basic_Salary1" class="checkboxtxt"></label> -->
+                                    <label for="Basic_Salary1" class="checkboxtxt"></label> 
                                 <input type="checkbox" id="Basic_Salary" class="checkboxtxt"
                                     (change)="GetAbsent_Deduction_BasicSalary($event)" name="Basic_Salary"
                                     value="Basic_Salary" checked>
@@ -622,8 +622,8 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <!-- <img src="../../../assets/images/eye.png" data-toggle="collapse" data-target="#demo"> -->
-                    <!-- <div class="legend collapse" id="demo"> -->
+                     <img src="../../../assets/images/eye.png" data-toggle="collapse" data-target="#demo"> 
+                     <div class="legend collapse" id="demo"> 
                         <div class="legend">
                         <p>Ord: Ordinary Day<br>
                             RD: Rest Day<br>
@@ -1009,7 +1009,7 @@
                 </div>
             </div>
             <br>
-            <!-- <div class="row leavereq">
+         <div class="row leavereq">
                 <div class="col-md-2">
                     <p class="newFont"> Net Pay Threshold</p>
                 </div>
@@ -1018,7 +1018,7 @@
                         [(ngModel)]="NetPay_Threshold" value="Enable Net Pay Threshold">
                     <label class="checkboxtxt newFont">Enable Net Pay Threshold</label>
                 </div>
-            </div> -->
+            </div> 
         </div>
         <br>
         <div class="card">
@@ -1158,7 +1158,7 @@
                 </div>
             </div>
             <br>
-            <!-- <div class="row leavereq">
+            <div class="row leavereq">
                 <div class="col-md-1"></div>
                 <div class="col-md-1">
                     <p class="newFont">Optional:</p>
@@ -1212,7 +1212,7 @@
                         (change)="GetPhilHealth_Optional_Reimbursement($event)" value="Reimbursement Allowance">
                     <label class="checkboxtxt newFont">Reimbursement Allowance</label>
                 </div>
-            </div> <br> -->
+            </div> <br> 
             <div class="card tiles">
                 <div class="row tiles">
                     <div class="col-lg-1">
@@ -1283,7 +1283,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
+             <div class="row">
                 <div class="col-lg-2">
                     <label class="newFont">Tax Table</label>
                 </div>
@@ -1331,7 +1331,7 @@
                         <label class="form-check-label newFont" for="flexCheckDefault">Including 13th month pay</label>
                     </div>
                 </div>
-            </div> -->
+            </div> 
             <br>
             <div class="row">
                 <div class="col-lg-4">
@@ -1368,4 +1368,4 @@
     </div>
     <div class="col-lg-5"></div>
 </div>
-<br><br>
+<br><br> -->

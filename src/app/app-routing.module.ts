@@ -84,6 +84,17 @@ import { PagibigSTLRFExcelComponent } from './pagibig-stlrfexcel/pagibig-stlrfex
 import { PreliminaryReportComponent } from './preliminary-report/preliminary-report.component';
 import { UserFormPreFillComponent } from './user-form-pre-fill/user-form-pre-fill.component';
 import { UserResetComponent } from './user-reset/user-reset.component';
+import { Bir1601CComponent } from './bir1601-c/bir1601-c.component';
+import { Bir1601EQComponent } from './bir1601-eq/bir1601-eq.component';
+import { Bir1604CComponent } from './bir1604-c/bir1604-c.component';
+import { Bir1604CFComponent } from './bir1604-cf/bir1604-cf.component';
+import { Bir2306Component } from './bir2306/bir2306.component';
+import { Bir2316Component } from './bir2316/bir2316.component';
+import { Bir2307Component } from './bir2307/bir2307.component';
+import { BirAnnualizationComponent } from './bir-annualization/bir-annualization.component';
+import { Biralphalist6Component } from './biralphalist6/biralphalist6.component';
+import { Biralphalist7Component } from './biralphalist7/biralphalist7.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/Login', pathMatch: 'full' },
@@ -252,7 +263,19 @@ const routes: Routes = [
   { path: 'YTDReportAdjustment', component: YTDReportAdjustmentComponent },
   { path: 'YTDReport', component: YTDReportComponent },
   { path: 'AdjustmentGenerateReport', component: AdjustmentGenerateReportComponent },
-  { path: 'PreliminaryReport', component: PreliminaryReportComponent }
+  { path: 'PreliminaryReport', component: PreliminaryReportComponent },
+
+  { path: 'Bir1601C', component: Bir1601CComponent }, 
+  { path: 'Bir1601EQ', component: Bir1601EQComponent },
+  { path: 'Bir1604C', component: Bir1604CComponent },
+  { path: 'Bir1604CF', component: Bir1604CFComponent },
+  { path: 'Bir2306', component: Bir2306Component },
+  { path: 'Bir2316', component: Bir2316Component },
+  { path: 'Bir2307', component: Bir2307Component },
+  { path: 'BirAnnualization', component: BirAnnualizationComponent },
+  { path: 'Biralphalist6', component: Biralphalist6Component },
+  { path: 'Biralphalist7', component: Biralphalist7Component },
+ 
 
 
 ];
