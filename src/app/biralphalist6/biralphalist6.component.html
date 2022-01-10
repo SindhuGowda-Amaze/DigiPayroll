@@ -142,22 +142,22 @@
                                
                             </tr>
                             <tr>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                                 <td>20-004</td>
                                 <td>Intal, Maria Cassandra</td>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                             </tr>
                             <tr>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                                 <td>20-003</td>
                                 <td>Olaguer, Ajel</td>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                             </tr>
                             <tr>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                                 <td>19-002</td>
                                 <td>Fernandez, Andrew</td>
-                                <td class="SelectData"><input type="checkbox"></td>
+                                <td class="SelectData"><input type="checkbox" (click)="Showdata()"></td>
                             </tr>
                         </thead>
 
@@ -167,16 +167,16 @@
 
             <div class="row">
                
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.1</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.1</button><br>
                     <span style="font-size: 9px;color: grey;">Employees terminated
                         before December 31</span></div>
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.3</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.3</button><br>
                     <span style="font-size: 9px;color: grey;">Employees with no previous employers
                         as of December 31 within the year</span></div>
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.4</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.4</button><br>
                     <span style="font-size: 9px;color: grey;">Employees with previous employers
                         as of December 31 within the year</span></div>
-                <div class="col-lg-3"><button class="generate1">GENERATE SCHEDULE 7.5</button><br>
+                <div class="col-lg-3"><button class="generate1" (click)="exportexcel()">GENERATE SCHEDULE 7.5</button><br>
                     <span style="font-size: 9px;color: grey;">Employees who are
                         minimum wage earners
                         </span></div>    <div class="col-lg-1"></div>
@@ -186,47 +186,48 @@
     </div>
     <div class="col-lg-1"></div>
 </div>
-<div class="row" *ngIf="showleaseforprint==1">
-    <!-- <div class="col-lg-5">
 
+
+<!-- <div class="row">
+    <div class="col-lg-10"></div>
+    <div class="col-lg-2">
+        <button class="Fetch" style="margin-left: 10px;">Export to Excel</button>
     </div>
-    <div class="col-lg-3">
-       <button class="button1" (click)="convetToPDF1()">Convert To PDF </button>
-    </div> -->
+</div> <br> -->
 
-    <div class="col-lg-5">
-    </div>
-    <div class="col-lg-4">
-        <button class="button1" (click)="convetToPDF1()">Convert To PDF</button>
-    </div>
-
-
-    <div id="downloadaplication"
-        style="position:absolute;left:50%;margin-left:-396px;top:0px;width:792px;height:612px;border-style:outset;overflow:hidden;margin-top: 300px;">
-        <div style="position:absolute;left:0px;top:0px">
-            <img src="assets/images/ER2.jpg" width=792 height=612>
-        </div>
-        <div style="position:absolute;left:180.00px;top:96.22px" class="cls_003"><span class="cls_003">TalentUS
-                Inc.</span></div>
-        <div style="position:absolute;left:655.20px;top:96.22px" class="cls_003"><span
-                class="cls_003">004000010244</span></div>
-        <div style="position:absolute;left:79.20px;top:117.82px" class="cls_003"><span class="cls_003">5F Phinma Plaza,
-                39 Phinma Dr,</span></div>
-        <div style="position:absolute;left:532.80px;top:117.82px" class="cls_003"><span
-                class="cls_003">andrew@talentusph.com</span></div>
-        <div style="position:absolute;left:14.40px;top:190.82px" class="cls_002"><span
-                class="cls_002">190900538980</span></div>
-        <div style="position:absolute;left:122.40px;top:190.82px" class="cls_002"><span class="cls_002">Dela Cruz, Julie
-                Anne San Jose</span></div>
-        <div style="position:absolute;left:302.40px;top:190.82px" class="cls_002"><span class="cls_002">Closing
-                Officer</span></div>
-        <div style="position:absolute;left:445.41px;top:190.82px" class="cls_002"><span class="cls_002">45,000.00</span>
-        </div>
-        <div style="position:absolute;left:489.60px;top:190.82px" class="cls_002"><span class="cls_002">1/4/2021</span>
-        </div>
-        <div style="position:absolute;left:561.60px;top:189.15px" class="cls_004"><span class="cls_004">1</span></div>
-        <div style="position:absolute;left:172.80px;top:546.93px" class="cls_005"><span class="cls_005">1</span></div>
-        <div style="position:absolute;left:620.83px;top:550.53px" class="cls_003"><span class="cls_003">Lovely
-                Cabalfin</span></div>
+<div class="row" *ngIf="showtable==1" >
+    <div class="col-lg-12" style="overflow:auto;">
+        <table class="table table-bordered fonttxt" id="download">
+            <thead>
+                <tr class="newFont">
+                    <th>Employee ID*</th>
+                    <th>NAME OF EMPLOYEES</th>
+                    <th>EMPLOYMENT</th>
+                    <th>Gross Compensation Income </th>
+                    <th>Non-Taxable 13th Month pay & Other Benefits</th>
+                   <th>De Minimis Benefits</th>
+                   <th>SSS, GSIS, PHIC &
+                    PAG-IBIG Contributions  And  Union Dues
+                   </th>
+                   <th>SALARIES & Other Forms Of Compensation
+                   </th>
+                   <th>Total Non Taxable /Exempt Compensation Income</th>
+                   <th>Taxable Basic Salary</th>
+                   <th>13th Month Pay & Other Benefits </th>
+                   <th>Salaries And Other Forms of Compensation </th>
+                   <th>Total Taxable Compensation Income  </th>
+                   <th>Net Taxable Compensation Income</th>
+                   <th>Tax Due (Jan-Dec)</th>
+                   <th> Tax white(Jan-Nov )</th>
+                   <th>Amt WithHeld And Paid For  In December</th>
+                   <th>Over WithHeld Tax Employee</th>
+                   <th>Amount Of Tax WithHeld As Adjusted </th>
+                   <th>SubTitled Filing ?
+                       Yes/No
+                   </th>
+                </tr>
+          
+            </thead>
+        </table>
     </div>
 </div>

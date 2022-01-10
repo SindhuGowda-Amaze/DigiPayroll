@@ -228,6 +228,8 @@ const routes: Routes = [
   { path: 'CityMaster', component: CityMasterComponent },
   { path: 'CityMasterDash', component: CityMasterDashComponent },
   { path: 'CurrencyMaster', component: CurrencyMasterComponent },
+  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent },
+  { path: 'CurrencyMasterForm/:id', component: CurrencyMasterFormComponent },
   { path: 'StaffReportComponent', component: StaffReportComponent },
   { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
   { path: 'LeaveTypeDashboard', component: LeaveTypeDashboardComponent },
@@ -247,14 +249,12 @@ const routes: Routes = [
 
 
 
-  { path: 'CurrencyMaster', component: CurrencyMasterComponent },
+  
   { path: 'StaffReportComponent', component: StaffReportComponent },
   { path: 'TaxtableAnnual', component: TaxtableAnnualComponent },
   { path: 'Updatecompanyprofile', component: UpdatecompanyprofileComponent },
   { path: 'UpdateBank', component: UpdateBankComponent },
-  { path: 'CurrencyMaster', component: CurrencyMasterComponent },
   { path: 'PayrollSummaryReport', component: PayrollSummaryReportComponent },
-  { path: 'CurrencyMasterForm', component: CurrencyMasterFormComponent },
   { path: 'MonthlySummaryReport', component: MonthlySummaryReportComponent },
   { path: 'CertificateOfContribution', component: CertificateOfContributionComponent },
   { path: 'ER2', component: ER2Component },

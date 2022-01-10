@@ -34,14 +34,21 @@
                                 <tr>
                             </thead>
                             <tbody>
-                                <tr class="newFont">
+                                <tr  class="newFont" *ngFor="let details of result">
+                                    <td>{{details.currencyName}}</td>
+                                    <td>{{details.countryName}}</td>
+                                    <td>{{details.description}}</td>
+                                    <td> <button class="EditBTN" [routerLink]="['/CurrencyMasterForm', details.id]">Edit</button>&nbsp;&nbsp;
+                                        <button class="DeleteBTN" (click)="Ondelete(details.id)" >Delete</button>
+                                    </td>
+                                </tr>
+                                <!-- <tr class="newFont">
                                     <td>Philippines Peso</td>
                                     <td>Philippines</td>
                                     <td>NA</td>
                                     <td> <button class="EditBTN">Edit</button>&nbsp;&nbsp;
                                         <button class="DeleteBTN">Delete</button>
                                     </td>
-                                    <!-- <td><img class="imgcancel" src="/assets/cancel (1).png"></td> -->
                                 </tr>
                                 <tr class="newFont">
                                     <td>Rupees</td>
@@ -50,7 +57,6 @@
                                     <td> <button class="EditBTN">Edit</button>&nbsp;&nbsp;
                                         <button class="DeleteBTN">Delete</button>
                                     </td>
-                                    <!-- <td><img class="imgcancel" src="/assets/cancel (1).png"></td> -->
                                 </tr>
                                 <tr class="newFont">
                                     <td>Dollars</td>
@@ -59,7 +65,6 @@
                                     <td> <button class="EditBTN">Edit</button>&nbsp;&nbsp;
                                         <button class="DeleteBTN">Delete</button>
                                     </td>
-                                    <!-- <td><img class="imgcancel" src="/assets/cancel (1).png"></td> -->
                                 </tr>
                                 <tr class="newFont">
                                     <td>Dhirams</td>
@@ -68,7 +73,6 @@
                                     <td> <button class="EditBTN">Edit</button>&nbsp;&nbsp;
                                         <button class="DeleteBTN">Delete</button>
                                     </td>
-                                    <!-- <td><img class="imgcancel" src="/assets/cancel (1).png"></td> -->
                                 </tr>
                                 <tr class="newFont">
                                     <td>Euros</td>
@@ -77,8 +81,7 @@
                                     <td> <button class="EditBTN">Edit</button>&nbsp;&nbsp;
                                         <button class="DeleteBTN">Delete</button>
                                     </td>
-                                    <!-- <td><img class="imgcancel" src="/assets/cancel (1).png"></td> -->
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
